@@ -1,0 +1,315 @@
+.intro-2 {
+  background: url("/assets/lawyer-today-1.png")no-repeat center center;
+  background-size: cover;
+
+}
+.intro-3 {
+  
+  background-size: cover;
+
+}
+.Line-2{
+  width: 97px;
+height: 0.1px;
+}
+.New-to-Aman-Registe {
+  width: 0;
+  height: 0;
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.25;
+  letter-spacing: normal;
+  color: #f34235;
+}
+
+.intro-3{
+  background: url("/assets/loginsaned1.png")no-repeat center center;
+  background-size: cover;
+  /* width: 1440px;
+height: 380px; */
+object-fit: contain;
+
+}
+.Delivering-your-divi {
+  width: 721px;
+  height: 142px;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.Its-about-more-than {
+  width: 588px;
+  height: 90px;
+  font-family: Roboto;
+  font-size: 18.8px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.Know-More-Copy-2 {
+  width: 92px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  margin-left: -11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f34235;
+}
+.tail-left-copy-3 {
+  width: 63px;
+  height: 10px;
+  margin-top: 8px;
+  object-fit: contain;
+}
+
+.WHAT-IS-Aman- {
+  width: 313px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.A-cutting-edge-build {
+  width: 416px;
+  height: 142px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #282828;
+}
+.Know-More {
+  width: 92px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f34235;
+}
+.benefits {
+  width: 313px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.Reduce-the-impact-of {
+  width: 502px;
+  height: 118px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.06;
+  letter-spacing: normal;
+  color: #282828;
+}
+.Know-More-Copy {
+  width: 92px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f34235;
+}
+.tail-left-copy-2 {
+  width: 39px;
+  height: 11px;
+  margin-left: 12px;
+  object-fit: contain;
+}
+.Remember-Me {
+  width: 119px;
+  height: 59px;
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.25;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+.Sign-in {
+  width: 104px;
+  height: 30px;
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.Rectangle-5 {
+  width: 331px;
+  height: 59px;
+  border-radius: 2px;
+  background-color: #f34235;
+}
+.Rectangle-4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+.Welcome-To-Aman {
+  width: 262px;
+  height: 40px;
+  margin-left: 80px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.Line-2 {
+  width: 97px;
+  height: 0.1px;
+}
+.Mask {
+  width: 399px;
+  height: 440px;
+  border-radius: 8px;
+  /* box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.14);
+  background-color:#f34235; */
+}
+.loginc {
+  width: 262px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.input{
+    width:331px
+}
+.home{
+  font-family: Roboto-Bold;
+  font-size: 16px;
+  line-height: 14px;
+letter-spacing: 0;
+}
+.about{
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  line-height: 15px;
+letter-spacing: 0;
+}
+.letstalk {
+  width: 674px;
+  height: 75px;
+  margin-top:-250px;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.58;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Know-More-Copy-3 {
+  width: 92px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f34235;
+}
+.uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah_si8s-adm__F0000 {
+  width: 1440px;
+  height: 380px;
+  object-fit: contain;
+}
+.btn .fa {
+  margin-left: 3px;
+}
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #424f95 !important;
+  }
+}
+h6 {
+  line-height: 1.7;
+}
+.hm-gradient .full-bg-img {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+}
+@media (max-width: 450px) {
+  .margins {
+      margin-right: 1rem;
+      margin-left: 1rem;
+  }
+}
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+      height: 1040px;
+  }
+}

@@ -1,0 +1,51 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<!------ Include the above in your HEAD tag ---------->
+<section class="view intro-2 hm-gradient">
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+    assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+    <!-- <div class="full-bg-img"> -->
+        <!-- <div class="container flex-center"> -->
+            <!-- <div class="row flex-center pt-5 mt-3"> -->
+                <!-- <div class="col-md-6 text-center"> -->
+                  <br><br><br><br><br><br>
+                    <div class="text-center">
+                        <h1 ><font color="white">GOVERNMENT SERVICES</font></h1>
+                           
+                    </div>
+                <!-- </div> -->
+
+                
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+<br>
+
+<div class="container">
+    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to Government services</b></h3>
+  
+    <div class="row">
+        <div class="col-md-5 Who-We-Are-Aman-is-a">
+                <div class="form-group ml-3">
+                      
+                        <select class="Input-Selector" id="power"
+                                required
+                                [(ngModel)]="model.power" name="power"
+                                #power="ngModel">
+                          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+                          
+                        </select>
+                        <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
+                          Coming soon
+                        </div>
+                      </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br>

@@ -1,0 +1,32 @@
+.intro-2 {
+    background: url("/assets/lawyer-today-1.png")no-repeat center center;
+    background-size: cover;
+    height: 330px;
+ }
+ 
+ .aboutus {
+    background: url("/assets/group-2.png")no-repeat center center;
+    /* background-size: cover; */
+    height: 330px;
+    
+ }
+ .spacer {
+  height: 100px;
+}
+ .Who-We-Are-Aman-is-a {
+    width: 733px;
+    height: 459px;
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+  
+  .Who-We-Are-Aman-is-a .text-style-1 {
+    font-size: 24px;
+  }

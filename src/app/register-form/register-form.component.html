@@ -1,0 +1,147 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!------ Include the above in your HEAD tag ---------->
+<section class="view intro-2 hm-gradient">
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+    assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+    <!-- <div class="full-bg-img"> -->
+        <!-- <div class="container flex-center"> -->
+            <!-- <div class="row flex-center pt-5 mt-3"> -->
+                <!-- <div class="col-md-6 text-center"> -->
+                  <br><br><br><br><br><br>
+                    <div class="text-center">
+                        <h1 ><font color="white">REGISTER NEW ACCOUNT</font></h1>
+                           
+                    </div>
+                <!-- </div> -->
+
+                
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+<br>
+
+<div class="container">
+    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to Aman portal, please enter your information to be able to use the portal and add your property details</b></h3>
+</div>
+<br>
+<div class="container">
+    
+
+  <div class="col-md-10">
+
+    <div [hidden]="submitted">
+     
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <div class="form-group">
+          <label class="Name" for="name">Name<span class="req" style="color: #f54b5e;">* </span></label>
+          <input type="text" class="Input-Selector" id="name" 
+                 required
+                 [(ngModel)]="model.name" name="name"
+                 #name="ngModel">
+          <div [hidden]="name.valid || name.pristine"
+               class="alert" style="color: #f54b5e;">
+            Name is required
+          </div>
+        </div>
+  
+        <div class="form-group">
+            <label class="Name" for="name">Company</label>
+            <input type="text" class="Input-Selector" id="company"
+                   required
+                   [(ngModel)]="model.company" name="company"
+                   #name="ngModel">
+            <!-- <div [hidden]="name.valid || name.pristine"
+                 class="alert alert-danger">
+              Name is required
+            </div> -->
+          </div>
+        
+          <div class="form-group">
+              <label class="Name" for="name">Nationality</label>
+              <input type="text" class="Input-Selector" id="nationality"
+                     required
+                     [(ngModel)]="model.nationality" name="nationality"
+                     #name="ngModel">
+              <!-- <div [hidden]="name.valid || name.pristine"
+                   class="alert alert-danger">
+                Name is required
+              </div> -->
+            </div>
+
+            <div class="form-group">
+                <label class="Name" for="phonenumber">Phone Number</label>
+                <input type="text" class="Input-Selector" id="phonenumber"
+                       required
+                       [(ngModel)]="model.phonenumber" name="phonenumber"
+                       #name="ngModel">
+                <!-- <div [hidden]="name.valid || name.pristine"
+                     class="alert alert-danger">
+                  Name is required
+                </div> -->
+              </div>
+
+              <div class="form-group">
+                  <label class="Name" for="address">Address</label>
+                  <input type="text" class="Input-Selector" id="address"
+                         required
+                         [(ngModel)]="model.address" name="name"
+                         #name="ngModel">
+                  <!-- <div [hidden]="name.valid || name.pristine"
+                       class="alert alert-danger">
+                    Name is required
+                  </div> -->
+                </div>
+
+                <div class="form-group">
+                    <label class="Name" for="pobox">PO Box</label>
+                    <input type="text" class="Input-Selector" id="pobox"
+                           required
+                           [(ngModel)]="model.pobox" name="pobox"
+                           #name="ngModel">
+                    <!-- <div [hidden]="name.valid || name.pristine"
+                         class="alert alert-danger">
+                      Name is required
+                    </div> -->
+                  </div>
+
+                  <div class="form-group">
+                      <label class="Name" for="mobile">Mobile<span class="req" style="color: #f54b5e;">* </span></label>
+                      <input type="text" class="Input-Selector" id="mobile"
+                             required
+                             [(ngModel)]="model.mobile" name="mobile"
+                             #mobile="ngModel">
+                      <div [hidden]="mobile.valid || mobile.pristine"
+                           class="alert" style="color: #f54b5e;">
+                        Mobile number is required
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="Name" for="email">Email<span class="req" style="color: #f54b5e;">* </span></label>
+                        <input type="text" class="Input-Selector" id="email"
+                               required
+                               [(ngModel)]="model.email" name="name"
+                               #name="ngModel">
+                        <div [hidden]="name.valid || name.pristine"
+                             class="alert" style="color: #f54b5e;">
+                          Email is required
+                        </div>
+                      </div>
+                      <re-captcha (resolved)="resolved($event)" siteKey="6LcGq4AUAAAAAFGETWgfjh4rV7yc6iosDMNV5SaL"></re-captcha>
+             <br>
+                      <div class="col-md-4">    
+
+        <button type="submit" class="btn Rectangle-5-Copy" [disabled]="!heroForm.form.valid">Create Account</button>
+        <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+      </div>
+      </form>
+      <br>
+    </div>
+  </div>
