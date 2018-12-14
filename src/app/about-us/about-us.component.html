@@ -1,3 +1,5 @@
+<button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -15,7 +17,7 @@ class="NEM mt-3"> -->
                 <!-- <div class="col-md-6 text-center"> -->
                   <br><br><br><br><br><br>
                     <div class="text-center">
-                        <h1 ><font color="white">ABOUT US</font></h1>
+                        <h1 ><font color="white">{{'ABOUT US' |translate:user}}</font></h1>
                            
                     </div>
                 <!-- </div> -->
@@ -35,12 +37,12 @@ class="NEM mt-3"> -->
         <div class="col-md-6 Who-We-Are-Aman-is-a">
     <!-- <h4><b>Who We Are</b></h4> -->
     <p>
-        SANED is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE.  
+        {{'SANED is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. ' |translate:user}} 
 
     </p>
     <!-- <h4><b>What We Do</b></h4> -->
     <p>
-        SANED was established in 2016 and soon gained a significant market share in the Emirate of Sharjah by delivering Total Facilities Management, predominately through in-house teams providing  MEP, cleaning, security and modification services.  
+        {{'SANED was established in 2016 and soon gained a significant market share in the Emirate of Sharjah by delivering Total Facilities Management, predominately through in-house teams providing  MEP, cleaning, security and modification services.' |translate:user}}
     </p>
    
   </div>

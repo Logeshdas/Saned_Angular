@@ -2,6 +2,11 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
+//============start ts import================
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+//=============== end ts import==============
 import { AppComponent }  from './app.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
@@ -25,12 +30,25 @@ const routes: Routes=[
 {path:'login',component:LoginComponent},
 
 ]
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     RecaptchaModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    // ============start ts============
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+    // =========== end ts ============
   ],
   declarations: [
     AppComponent,

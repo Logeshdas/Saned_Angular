@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+//===start=========
+import { TranslateService } from '@ngx-translate/core';
+//==========end========
 @Component({
   
   selector: 'app-root',
@@ -12,5 +14,15 @@ export class AppComponent {
   resolved(captchaResponse: string) {
         console.log(`Resolved captcha with response ${captchaResponse}:`);
     }
- 
+    user={
+     
+    }
+ //===================translate start=========
+ constructor(private translate: TranslateService) {
+  translate.setDefaultLang('en');
+}
+switchLanguage(language: string) {
+  this.translate.use(language);
+}
+//============ translate end============
 }

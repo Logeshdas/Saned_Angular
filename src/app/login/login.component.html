@@ -1,3 +1,7 @@
+
+<button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button>
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,13 +29,13 @@ class="NEM mt-3"> -->
                         <div class="row flex-center pt-5 mt-3">
                             <div class="col-md-12 text-center text-md-left margins">
                                 <div class="white-text">
-                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">Delivering your divine 
-                                        land live who you are.</font></a>
+                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'Delivering your divine 
+                                        land live who you are.' | translate:user}}</font></a>
                                         <br>
                                         <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-                                        <a class="wow fadeInLeft Its-about-more-than" data-wow-delay="0.3s"><font color="white">It’s about more than numbers: it’s about people. Large followings are good. Active and engaged audiences are better. That’s the big picture we paint.</font></a>
+                                        <a class="wow fadeInLeft Its-about-more-than" data-wow-delay="0.3s"><font color="white">{{'It’s about more than numbers: it’s about people. Large followings are good. Active and engaged audiences are better. That’s the big picture we paint.'| translate:user}}</font></a>
                                         <br>
-                                        <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                                        <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
                                         <a href=""> <img  src="./assets/tail-left-copy.png"
                                          srcset="./assets/tail-left-copy@2x.png 2x,
                                                  ./assets/tail-left-copy@3x.png 3x"
@@ -49,14 +53,14 @@ class="NEM mt-3"> -->
                         <div class="w3-card-11 w3-white">
                             <div class="w3-container w3-white">
                               <br>
-                              <a class="Welcome-To-Aman">Welcome to Aman</a>
+                              <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
                             </div>
                             <br>
                             <div class="container">
                                     <div class="row">
                                     <div class="col-md-11"> 
                               <p>                  
-                              <label class="loginc"><b>Email ID</b>
+                              <label class="loginc"><b>{{'Email ID'| translate:user}}</b>
                               <input class="w3-input" id="email" name="email"></label>
                               
                               <!-- <input class="w3-input" id="email" name="email" [(ngmodel)]="email" type="text"></p>            -->
@@ -67,11 +71,11 @@ class="NEM mt-3"> -->
                              <div class="col-md-11">
                              
 <br> <p>      
-                              <label class="loginc"><b>Password</b>
+                              <label class="loginc"><b>{{'Password'| translate:user}}</b>
                               <input class="w3-input" id="email" name="email"></label>
                               <!-- <input class="w3-input w3-border w3-sand" id="password" name="password" [(ngmodel)]="password" name="last" type="text"></p> -->
                               <br>  <br>   <input  type="checkbox" class="Rectangle-4 ">
-<label class="Remember-Me ml-2">Remember Me</label>
+<label class="Remember-Me ml-2">{{'Remember Me'|translate:user}}</label>
 </div>
 </div>
 </div>
@@ -79,8 +83,8 @@ class="NEM mt-3"> -->
         <div class="row">
 <div class="col-md-12">
    
- <button class="w3-btn w3-red col-md-12"><a class="Rectangle-5">Submit</a></button>
-   <p>New to Aman?<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+ <button class="w3-btn w3-red col-md-12"><a class="Rectangle-5">{{'Submit' |translate:user}}</a></button>
+   <p>{{'New to Aman?' |translate:user}}<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">{{'Register Here' |translate:user}}</font></a></p>
    </div>
 </div>
 </div>
@@ -103,13 +107,13 @@ class="NEM mt-3"> -->
           <div class="col-sm-6">
               <div class="col-sm-8 ">
 
-                  <a class="WHAT-IS-Aman-">WHAT IS Aman ?</a>
+                  <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
               </div>
             
-              <p class="col-sm-12 text-justify " > A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.
+              <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
              <br>
              <br>
-                <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
             <a href=""> <img  src="./assets/tail-left-copy.png"
              srcset="./assets/tail-left-copy@2x.png 2x,
                      ./assets/tail-left-copy@3x.png 3x"
@@ -119,13 +123,15 @@ class="NEM mt-3"> -->
           <br>
           <div class="col-sm-6">
               <div class="col-sm-5">
-                  <a class="benefits">BENEFITS</a>
+                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
                   </div>
-                  <p class="col-md-12 text-justify " > Reduce the impact of any security, fire and life safety event.
-                      Maximize efficient safety monitoring of property and assets.
-                      Analyze data to help emergency services.
+                  <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event' | translate:user }}.
+                    <br> 
+                    {{'Maximize efficient safety monitoring of property and assets.' | translate:user}}
                       <br>
-                      <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                      {{'Analyze data to help emergency services.'| translate:user}}
+                      <br>
+                      <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
                       <a href=""> <img  src="./assets/tail-left-copy.png"
                        srcset="./assets/tail-left-copy@2x.png 2x,
                                ./assets/tail-left-copy@3x.png 3x"
@@ -144,12 +150,12 @@ class="NEM mt-3"> -->
             
             class="intro-3">
             
-            <div class="col-sm-12 text-center" style="margin-top:-250px"><font color="white" class=" letstalk">LET’S TALK TOGETHER </font>
+            <div class="col-sm-12 text-center" style="margin-top:-250px"><font color="white" class=" letstalk">{{'LET’S TALK TOGETHER' |translate:user}} </font>
             </div>
                 <br>
             <br>
             <div class="text-center col-lg-12">
-                <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
                 <a href=""> <img  src="./assets/tail-left-copy.png"
                  srcset="./assets/tail-left-copy@2x.png 2x,
                          ./assets/tail-left-copy@3x.png 3x"
