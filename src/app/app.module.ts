@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule,FormGroup}   from '@angular/forms';
 
 //============start ts import================
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -20,6 +20,8 @@ import { FooterComponent } from './footer/footer.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { Loginv2Component } from './loginv2/loginv2.component';
+import { Footerv2Component } from './footerv2/footerv2.component';
 
 const routes: Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -37,7 +39,10 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     FormsModule,
+    // FormGroup,
     RecaptchaModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
     // ============start ts============
     HttpClientModule,
@@ -58,7 +63,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutUsComponent,
     GovernmentServicesComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    Loginv2Component,
+    Footerv2Component,
+    
   ],
   providers: [
     {

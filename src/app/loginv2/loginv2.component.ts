@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { Login } from '../login';
 import { HttpClient } from '@angular/common/http';
 // import { AuthService } from '../auth.service';
 
@@ -14,26 +13,19 @@ import { Login } from '../login';
 //import { AuthService } from '../auth.service';
 // ================ login import end================
 
-
-
-
 //===start=========
 import { TranslateService } from '@ngx-translate/core';
 //==========end=======
-
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-loginv2',
+  templateUrl: './loginv2.component.html',
+  styleUrls: ['./loginv2.component.css']
 })
-
-export class LoginComponent implements OnInit {
-    // API_URL  =  'http://localhost:3000';
-    public email:any;
-    public password:string;
-    // memail=this.email;
-    
-  model: Login = { userid: "email", password: "admin" };
+export class Loginv2Component implements OnInit {
+  public email:any;
+  public password:string;
+model:"";
+  // model: Login = { userid: "email", password: "admin" };
   loginForm: FormGroup
   message: string;
   returnUrl: string;
@@ -47,27 +39,16 @@ switchLanguage(language: string) {
   this.translate.use(language);
 }
 //============ translate end============
-ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-        userid: ['', Validators.required],
-        password: ['', Validators.required]
-    });
-    this.returnUrl = '/about-us';
-    //this.AuthService.logout();
-}
-// convenience getter for easy access to form fields
-get f() { return this.loginForm.controls; }
 
-
-login() {
-
+  ngOnInit() {
+  }
+  login() {
     // stop here if form is invalid
     if (this.loginForm.invalid) {
-        return;
-    }
-    else{
-
-        console.log("Enter in to the login page");
+      return;
+  }
+  else{
+    console.log("Enter in to the login page");
         console.log("Email-id",this.email)
         console.log("Email-id",this.password)
         this.httpClient.post('http://127.0.0.1:8084/login', {email: this.email} )
@@ -80,28 +61,6 @@ login() {
             }
       
           );
-        // return  this.httpClient.post(`${this.API_URL}/api/login/`);
-
-        // console.log("Email12334",this.model.userid)
-        // console.log("password23452",this.model.password)
-        
-        // if(this.f.userid.value == this.model.userid && this.f.password.value == this.model.password){
-        //    console.log("verify",this.f.userid.value)
-        //     console.log("Login successful");
-        //     //this.authService.authLogin(this.model);
-        //     localStorage.setItem('isLoggedIn', "true");
-        //     localStorage.setItem('token', this.f.userid.value);
-        //     this.router.navigate([this.returnUrl]);
-        // }
-        // else{
-        //     this.message = "Please check your userid and password";
-        // }
-    }
-}
-
-  user:{
-
   }
-  
-
+  }
 }
