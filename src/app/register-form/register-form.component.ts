@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { RecaptchaModule } from 'ng-recaptcha';
-import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
+import { Component, OnInit } from '@angular/core';
+import { APIService } from '../api.service';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 import { RegisterForm }    from '../register-form';
 // import { getMaxListeners } from 'cluster';
 @Component({
@@ -12,26 +13,66 @@ import { RegisterForm }    from '../register-form';
       .success { color: green; }
   ` ],
 })
-export class RegisterFormComponent  {
+export class RegisterFormComponent implements OnInit {
 
   // powers = ['Really Smart', 'Super Flexible',
   //           'Super Hot', 'Weather Changer'];
 
   // model = new RegisterForm(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
-  model = new RegisterForm('', '', '','','','','','');
-  submitted = false;
+  model: any = {};
+    data: any = {};
 
-  onSubmit() { this.submitted = true; }
+    constructor(private  apiService:  APIService,private router: Router) { }
 
-  // TODO: Remove this when we're done
-  get diagnostic() { return JSON.stringify(this.model); }
+    ngOnInit() {
+    }
+  
+      createContact(model){
+          this.apiService.createContact(model).subscribe((response) => {
+              this.data = response;
+              if(this.data.code = '200'){
+                  console.log("data=====>",this.data);
+                  
+                //   alert('OTP sent to email' );
+  
+              
+                }
+
+              this.router.navigate(['/login']);
+              
+          });
+          
+      };
+      sendotp(model){
+        this.apiService.sendotp(model).subscribe((response) => {
+            this.data = response;
+            if(this.data.code = '200'){
+                console.log("data=====>",this.data);
+                
+              //   alert('OTP sent to email' );
+
+            
+              }
+
+            // this.router.navigate(['/login']);
+            
+        });
+        
+    };
+  
+  
+      backhome() {
+        this.router.navigate(['/login']);
+      }
+  
+  
 
   resolved(captchaResponse: string) {
     console.log(`Resolved captcha with response ${captchaResponse}:`);
 }
 
 }
-
+export class AppModalContentComponent { }
 
 
 

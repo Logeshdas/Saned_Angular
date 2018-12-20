@@ -1,43 +1,94 @@
-<nav class="navbar navbar-expand-md  navbar-toggleable fixed-top pt-0 navbar-light bg-light">
-    <!-- <img src="./assets/Logo.png" class="img-thumbnail"> -->
-    <img src="./assets/group-5.png" srcset="./assests/group-5@2x.png 2x,
-                ./assests/group-5@3x.png 3x"
-class="img">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <br>
-    <hr>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+<div id="id02" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
         
-    <br>
-    <hr>
-        <div class="collapse navbar-collapse nav navbar-right col-md-10" id="myNavbar" >
-          <ul class="nav navbar-nav mt-2 col-sm-12">
-              <div class="col-sm-2">
-                  <li><a routerLink="login" style="color:black; font-family:Roboto;font-size:18px"> Home</a></li>
-              </div>
-              <div class="col-sm-2">
-                  <li><a routerLink="about-us" style="color:black; font-family:Roboto;font-size:18px">About US</a></li>
-              </div>
-              <div class="col-sm-3">
-              <li><a routerLink="government-services" style="color:black;font-family:Roboto;font-size:18px">Aman Overview</a></li>
-            </div>
-            <div class="col-sm-2">
-              <li><a routerLink="login" style="color:black;font-family:Roboto;font-size:18px">Contact Us</a></li>
-            </div>
-            <div class="col-sm-2">
-              <li><a href="" style="color:black;font-family:Roboto;font-size:18px">Sitemap</a></li>
-              </div>
-              <div class="col-sm-1">
-              <li><a href="" style="color:black;font-family:Roboto;font-size:18px">Search</a></li>
-            </div>
-          </ul>
-        </div>
-     
       </div>
-    <hr>
-    </nav>
-    <hr>
-    
-    <router-outlet></router-outlet>
+      <h3 class="text-center"><b>Contact Us</b></h3>
+      <div class="container">
+      
+       <div class="row">
+         <div class="col-md-1"></div>
+      <div class="col-md-5">
+          <h5><b>Company Address:</b></h5> 
+       <p>
+          Tower 400, 12th Floor, Mina Road,
+  Sharjah, PO Box 4638 Sharjah - UAE 
+  Tel: +971 6 597 2222
+  Fax: +971 6 572 2331
+  Email: helpdesk.hsg@apleona.com
+  www.saned.ae
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <br>
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+        ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+  class="img-thumbnail">
+      </div>
+      </div>
+  
+      </div>
+      <br><br><br>
+    </form>
+  </div>
+  
+  
+  
+  <nav class="navbar navbar-expand-md  navbar-toggleable fixed-top pt-0 navbar-light bg-light">
+      <!-- <img src="./assets/Logo.png" class="img-thumbnail"> -->
+      <img src="./assets/sd copy.png" srcset="./assests/sd copy@2x.png 2x,
+                  ./assests/sd copy@3x.png 3x"
+  class="img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <br>
+      <hr>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          
+      <br>
+      <hr>
+          <div class="collapse navbar-collapse nav navbar-right col-md-10" id="myNavbar" >
+            <ul class="nav navbar-nav mt-2 col-sm-12 mt-4">
+              <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+                    <li><a routerLink="login" style="color:black; font-family:Roboto;font-size:18px"> Home</a></li>
+                </div>
+                <div class="col-sm-2">
+                    <li><a routerLink="about-us" style="color:black; font-family:Roboto;font-size:18px">About Us</a></li>
+                </div>
+                <div class="col-sm-2">
+                <li><a routerLink="government-services" style="color:black;font-family:Roboto;font-size:18px">Services</a></li>
+              </div>
+              <div class="col-sm-2">
+                <li><a routerLink="" onclick="document.getElementById('id02').style.display='block'" style="color:black;font-family:Roboto;font-size:18px">Contact Us</a></li>
+              </div>
+              <div class="col-sm-2">
+                <li><a href="" style="color:black;font-family:Roboto;font-size:18px">Sitemap</a></li>
+                </div>
+                <div class="col-sm-1">
+                <li><a href="" style="color:black;font-family:Roboto;font-size:18px">Search</a></li>
+              </div>
+            </ul>
+          </div>
+       
+        </div>
+      <hr>
+      </nav>
+      <hr>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+            
+      <router-outlet></router-outlet>

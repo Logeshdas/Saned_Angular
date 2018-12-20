@@ -1,12 +1,22 @@
-
+<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button> -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <!------ Include the above in your HEAD tag ---------->
 <section class="view intro-2 hm-gradient">
+        <div class="">
+                <div class="col-md-1">
+                    <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+                    <img  src="./assets/group.png"
+                                                     srcset="./assets/group@2x.png 2x,
+                                                             ./assets/group@3x.png 3x"
+                                                     class="img-responsive">
+                </div>
+            </div>
+             
     <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
     assests/lawyer-today-1@3x.png 3x"
 class="NEM mt-3"> -->
@@ -14,9 +24,9 @@ class="NEM mt-3"> -->
         <!-- <div class="container flex-center"> -->
             <!-- <div class="row flex-center pt-5 mt-3"> -->
                 <!-- <div class="col-md-6 text-center"> -->
-                  <br><br><br><br><br><br>
+                  <br><br>
                     <div class="text-center">
-                        <h1 ><font color="white">GOVERNMENT SERVICES</font></h1>
+                        <h1 ><font color="white">WELCOME TO SERVICES</font></h1>
                            
                     </div>
                 <!-- </div> -->
@@ -28,24 +38,29 @@ class="NEM mt-3"> -->
 </section>
 <br>
 
-<div class="container">
-    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to Government services</b></h3>
-  
+<div class=" col-md-12">
+    <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+   
+   <div class="card col-md-12" style="border-radius: 18px;
+   background: white;">
+   <br>
     <div class="row">
-        <div class="col-md-5 Who-We-Are-Aman-is-a">
-                <div class="form-group ml-3">
+        <div class="col-md-5 mr-2 Who-We-Are-Aman-is-a">
+    <!-- <h4><b>Who We Are</b></h4> -->
+    <br>
+    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Aman services</b></h3>
+    
                       
-                        <select class="Input-Selector" id="power"
-                                required
-                                [(ngModel)]="model.power" name="power"
-                                #power="ngModel">
-                          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
-                          
-                        </select>
-                        <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
-                          Coming soon
-                        </div>
-                      </div>
-</div>
-</div>
-<br><br><br><br><br><br><br><br>
+            <select class="Input-Selector" id="power"
+                    required
+                    [(ngModel)]="model.power" name="power"
+                    #power="ngModel">
+              <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+              
+            </select>
+            <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
+              Coming soon
+            </div>
+    
+
+  </div>

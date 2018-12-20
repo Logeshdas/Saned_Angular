@@ -1,3 +1,6 @@
+<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,21 +20,88 @@
                 <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
                 assests/lawyer-today-1@3x.png 3x"
 class="NEM mt-3"> -->
-<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <img src="./assets/group.png" class="img-responsive">
+    </div>
+    <div class="col-md-4">
+            
+             
+        <input type="radio" class="btn ml-2" (click)="switchLanguage('arabic')" name="arabic"> <font color="white">Arabic</font>
+      
+        <input type="radio" class="btn ml-2" (click)="switchLanguage('en')" name="arabic"> <font color="white"> English</font>
+
+<!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
+<button type="submit" style="background-color: #ff0000;width: 94px;padding: 3px 10px;
+margin-left: 12px;" routerLink="/register-form">REGISTER</button> 
+
+      <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
+      "><font color="white">LOGIN </font></a>
+
+      <div id="id01" class="modal">
+        
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
+          </div>
+      
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <label class="col-md text-left"><b>Email ID</b></label>
+            <input type="text" class="w3-input" id="email_id"
+            required
+            [(ngModel)]="model.email_id" name="name"
+            #name="ngModel">
+          
+            <label class="col-md text-left"><b>Password</b> </label>
+            <input type="password" class="w3-input" id="password"
+            required
+            [(ngModel)]="model.password" name="password"
+            #password="ngModel"> 
+            
+            <label class="col-md text-left">
+                    <input  type="checkbox" class="Rectangle-4 "> Remember me
+            
+             <a href="#" class="ml-5">Forgot password?</a></label>
+            <button class="w3-btn w3-red col-md-12" (click)="login(model)"><a class="Rectangle-5">Submit</a></button>
+   <p>New to Aman?<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+          </div>
+          </div>
+          </div>
+      
+          
+        </form>
+      </div>
+      
+</div>
+</div>
+<div class="mt">
   <div class="row">
+     
 <div class="col-md-7">
+    
                 <div class="full-bg-img">
+                   
                     <div class="container flex-center">
-                        <div class="row flex-center pt-5 mt-3">
+                       
+                        <div class="row flex-center pt-4 ">
                             <div class="col-md-12 text-center text-md-left margins">
-                                <div class="white-text">
-                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">Delivering your divine 
-                                        land live who you are.</font></a>
+                              <!-- <section class="logov2"></section> -->
+                              
+                              
+                              <div class="white-text mt-2">
+                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'‘Welcome to SANED - We manage and run 
+                                        your real estate and technical facilities and 
+                                        support you in your core business with our 
+                                        wide range of services.”' | translate:user}}</font></a>
                                         <br>
                                         <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-                                        <a class="wow fadeInLeft Its-about-more-than" data-wow-delay="0.3s"><font color="white">It’s about more than numbers: it’s about people. Large followings are good. Active and engaged audiences are better. That’s the big picture we paint.</font></a>
+                                        
                                         <br>
-                                        <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                                        <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a>
                                         <a href=""> <img  src="./assets/tail-left-copy.png"
                                          srcset="./assets/tail-left-copy@2x.png 2x,
                                                  ./assets/tail-left-copy@3x.png 3x"
@@ -44,52 +114,7 @@ class="NEM mt-3"> -->
                   </div>
 <br>
 
-<div class="col-md-5">
-                    <div class="col-md-11 mt-5">
-                        <div class="w3-card-11 w3-white">
-                            <div class="w3-container w3-white">
-                              <br>
-                              <a class="Welcome-To-Aman">Welcome to Aman</a>
-                            </div>
-                            <br>
-                            <div class="container">
-                                    <div class="row">
-                                    <div class="col-md-11"> 
-                              <p>                  
-                              <label class="loginc"><b>Email ID</b>
-                              <input class="w3-input" id="email" name="email"></label>
-                              
-                              <!-- <input class="w3-input" id="email" name="email" [(ngmodel)]="email" type="text"></p>            -->
-                             </div>
-
-                             <div class="container">
-                                    <div class="row">
-                             <div class="col-md-11">
-                             
-<br> <p>      
-                              <label class="loginc"><b>Password</b>
-                              <input class="w3-input" id="email" name="email"></label>
-                              <!-- <input class="w3-input w3-border w3-sand" id="password" name="password" [(ngmodel)]="password" name="last" type="text"></p> -->
-                              <br>  <br>   <input  type="checkbox" class="Rectangle-4 ">
-<label class="Remember-Me ml-2">Remember Me</label>
-</div>
-</div>
-</div>
-<div class="container">
-        <div class="row">
-<div class="col-md-12">
-   
- <button class="w3-btn w3-red col-md-12"><a class="Rectangle-5">Submit</a></button>
-   <p>New to Aman?<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
-   </div>
-</div>
-</div>
-                    </div>
-            </div>
-
-                          </div>
-                        </div>
-                </div><hr style="color:red;">
+                <hr style="color:red;">
               </div>
               </div>
               
@@ -102,14 +127,19 @@ class="NEM mt-3"> -->
         <div class="row">
           <div class="col-sm-6">
               <div class="col-sm-8 ">
-
-                  <a class="WHAT-IS-Aman-">WHAT IS Aman ?</a>
+                  <img  src="/assets/002-fire-extinguisher.png"
+                  srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                          /assets/002-fire-extinguisher@3x.png 3x"
+                  class="fire-extinguisher">
+                  <br>
+                  <br>
+                  <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
               </div>
             
-              <p class="col-sm-12 text-justify " > A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.
+              <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
              <br>
              <br>
-                <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a>
             <a href=""> <img  src="./assets/tail-left-copy.png"
              srcset="./assets/tail-left-copy@2x.png 2x,
                      ./assets/tail-left-copy@3x.png 3x"
@@ -117,15 +147,25 @@ class="NEM mt-3"> -->
             </p>
           </div>
           <br>
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-1"></div> -->
+          <div class="col-md-6">
               <div class="col-sm-5">
-                  <a class="benefits">BENEFITS</a>
+                  <img  src="./assets/001-teacher.png"
+                  srcset="./assets/001-teacher@2x.png 2x,
+                          ./assets/001-teacher@3x.png 3x"
+                  class="teacher">
+                  <br>
+                  <br>
+                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
                   </div>
-                  <p class="col-md-12 text-justify " > Reduce the impact of any security, fire and life safety event.
-                      Maximize efficient safety monitoring of property and assets.
-                      Analyze data to help emergency services.
+                  <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event.' | translate:user }}.
+                    <br> 
+                    {{'Maximize efficient safety monitoring of property and assets.' | translate:user}}
                       <br>
-                      <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
+                      {{'Analyze data to help emergency services.'| translate:user}}
+                      <br>
+                      <br>
+                      <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
                       <a href=""> <img  src="./assets/tail-left-copy.png"
                        srcset="./assets/tail-left-copy@2x.png 2x,
                                ./assets/tail-left-copy@3x.png 3x"
@@ -136,37 +176,57 @@ class="NEM mt-3"> -->
       </div>
       <br>
       <br>
-      <div class="">
-          <div class="">
-              <div class="">
-            <!-- <a class="letstalk" ><font color="white">LET’S TALK TOGETHER</font></a> -->
-            <img src="./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000.png"
-            
-            class="intro-3">
-            
-            <div class="col-sm-12 text-center" style="margin-top:-250px"><font color="white" class=" letstalk">LET’S TALK TOGETHER </font>
-            </div>
-                <br>
-            <br>
-            <div class="text-center col-lg-12">
-                <a href=""><font color="#f34235" class="Know-More">Know more </font></a>
-                <a href=""> <img  src="./assets/tail-left-copy.png"
-                 srcset="./assets/tail-left-copy@2x.png 2x,
-                         ./assets/tail-left-copy@3x.png 3x"
-                 class="tail-left-copy"></a>
+      <section class="details-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="/assets/shutterstock-220781335.png" 
+                                srcset="./assets/shutterstock-220781335@2x.png 2x,
+                                ./assets/shutterstock-220781335@3x.png 3x" alt="">
+                                <a href="#" class="btn-card1" style="">blog</a> 
+                              </div>
+                            <div class="card-desc text-justify" style="height:173px;">
+                                <!-- <span class="blog"><h4>Blog</h4></span> -->
+                                <p> {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
+                                    <!-- <a href="#" class="btn-card">blog</a>    -->
+                            </div>
+                        </div>
                     </div>
-                    
-        </div>
-        </div>
-        </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<router-outlet></router-outlet>
-   
-
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                
+                                <img src="/assets/shutterstock-775043446.png" 
+                                srcset="./assets/shutterstock-775043446@2x.png 2x,
+                                ./assets/shutterstock-775043446@3x.png 3x" alt="">
+                                <!-- <span><h4>News</h4></span> -->
+                                <a href="#" class="btn-card2" style="">News</a>
+                            </div>
+                            <div class="card-desc text-justify">
+                                
+                                <p> {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
+                                    <!-- <a href="#" class="btn-card">Read</a>    -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="/assets/shutterstock-772324159.png" 
+                                srcset="./assets/shutterstock-772324159@2x.png 2x,
+                                ./assets/shutterstock-772324159@3x.png 3x" alt="">
+                                <!-- <span><h4>Linkedln</h4></span> -->
+                                <a href="#" class="btn-card3" style="">Linked In</a>
+                            </div>
+                            <div class="card-desc">
+                               
+                                <p> {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
+                                    <!-- <a href="#" class="btn-card">Read</a>    -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

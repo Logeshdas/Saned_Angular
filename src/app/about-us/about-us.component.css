@@ -1,15 +1,18 @@
 .intro-2 {
-    background: url("/assets/lawyer-today-1.png")no-repeat center center;
+    background: url("/assets/abtus.png")no-repeat center center;
     background-size: cover;
-    height: 330px;
+    height: 635px;
  }
  
  .aboutus {
-    background: url("/assets/group-2.png")no-repeat center center;
+    background: url("/assets/group-4.png")no-repeat center center;
     /* background-size: cover; */
     height: 330px;
+    border-radius: 18px;
     
  }
+
+
  .spacer {
   height: 100px;
 }

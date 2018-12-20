@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslateService,) { }
 
   ngOnInit() {
   }
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
+  
+   user:{
+  
+    }
 
 }
