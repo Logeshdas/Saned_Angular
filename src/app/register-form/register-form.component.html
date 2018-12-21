@@ -5,11 +5,25 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+<!-- <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css"> -->
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-
+.partitioned {
+  padding-left: 15px;
+  letter-spacing: 42px;
+  border: 0;
+  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  width: 220px;
+  
+}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -163,7 +177,7 @@ class="NEM mt-3"> -->
     <!-- </div> -->
 </section>
 <br>
-<div id="id03" class="modal">
+<div id="id03" class="modal" style="display: none;">
   
     <form class="modal-content animate col-md-4" action="/action_page.php">
       <div class="imgcontainer">
@@ -192,36 +206,53 @@ class="NEM mt-3"> -->
     </form>
   </div>
 
-
-
+<!-- 
+<span id="id02"  style="display: none;"> -->
 <div id="id01" class="modal">
   
     <form class="modal-content animate col-md-4" action="/action_page.php">
+     
+      
       <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+        <span onclick="document.getElementById('id01').style.delay='200000'" class="close" style="delay:none;" title="close">&times;</span>
         <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
-        <h3>Thanks for Registration</h3>
+        <h3>ENTER OTP</h3>
       </div>
   
-      <div class="container">
-        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">Confirmation email has been successfully sent to your email address</p>
+      <div class="container" >
+        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">OTP has been sent to your email address and mobile number</p>
         <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-  
+        <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+        <input type="text" class="form-control col-md-4 inline" id="otp"
+                                   required
+                                   [(ngModel)]="model.otp" name="name"
+                                   #name="ngModel">     
+                                   
+                                   <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+
+                            <div [hidden]="name.valid || name.pristine"
+                                 class="alert" style="color: #f54b5e;">
+                              otp is required
+                            </div>
+        <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
         <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
           
-        <!-- <button style="background-color: #ff0000;" (click)="backhome" type="submit">Back to home</button> -->
+        <button style="background-color: #ff0000;" (click)="emailotpverification(model)" type="submit">Submit</button>
         <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label> -->
       </div>
-  
+   
       <!-- <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div> -->
     </form>
   </div>
+<!-- </span> -->
   
 <div class="container col-md-12">
     <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
@@ -236,7 +267,7 @@ class="NEM mt-3"> -->
     <div class="col-md-10">
 
         <div [hidden]="submitted">
-          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+          <form name="form"    novalidate>
           
             <div class="form-group">
               <label class="Name" for="name">Name<span class="req" style="color: #f54b5e;">* </span></label>
@@ -330,14 +361,14 @@ class="NEM mt-3"> -->
                                    [(ngModel)]="model.email" name="name"
                                    #name="ngModel">     
                                    
-                                   <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>       
+                                   <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
 
                             <div [hidden]="name.valid || name.pristine"
                                  class="alert" style="color: #f54b5e;">
                               Email is required
                             </div>
                           </div>
-                          <div class="form-group">
+                          <!-- <div class="form-group">
                               <label class="Name" for="otp">Enter OTP<span class="req" style="color: #f54b5e;">* </span></label>
                               <input type="text" class="form-control col-md-4" id="otp"
                                      required
@@ -347,7 +378,7 @@ class="NEM mt-3"> -->
                                    class="alert" style="color: #f54b5e;">
                                 Otp is required
                               </div>
-                            </div>
+                            </div> -->
 
 
                           <div class="form-group">
@@ -394,13 +425,13 @@ class="NEM mt-3"> -->
                                   -->
                                   <div >
                                     <label >
-                                      <input type="radio" id="radio" value="amanservices"
-                                              [(ngModel)]="model.services" name="services"
+                                      <input type="checkbox" id="radio" value="amanservices"
+                                              [(ngModel)]="model.aman" name="services"
                                              >Aman
                                             </label>
                                             <label style="margin-left:10px" >
-                                                <input type="radio" id="radio" value="salamaservices"
-                                                        [(ngModel)]="model.services" name="services"
+                                                <input type="checkbox" id="radio" value="salamaservices"
+                                                        [(ngModel)]="model.salama" name="services"
                                                        >Salama
                                                       </label>
                                           </div>
@@ -415,7 +446,7 @@ class="NEM mt-3"> -->
                           
                           <div class="col-md-4">    
                               <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-            <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='block'" class="btn Rectangle-5-Copy" (click)="createContact(model)">Create Account</button>
+            <button type="submit"  style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='block'" class="btn Rectangle-5-Copy" (click)=" createContact(model)"  >Create Account</button>
             <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
           </div>
           </form>

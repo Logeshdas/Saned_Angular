@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { APIService } from '../api.service';
 import { Router } from '@angular/router';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -24,14 +25,22 @@ export class LoginComponent implements OnInit {
       login(model){
           this.apiService.login(model).subscribe((response) => {
               this.data = response;
-              if(this.data.code = '200'){
+              if(this.data.status == "true"){
                   console.log("data=====>",this.data);
-                  alert('Login Successful' );
+                //   alert('Login Successful' );
   
-              
+                this.router.navigate(['/government-services']);
+                }
+               else if(this.data.Message=="Invalid User name")
+                {
+                        swal("Invalid User name");
+                }
+               else if(this.data.Message=="Password is Incorrect")
+                {
+                    swal("Password is Incorrect");
                 }
 
-              this.router.navigate(['/government-services']);
+              
               
           });
           

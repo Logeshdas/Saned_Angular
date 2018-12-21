@@ -3,6 +3,7 @@ import { APIService } from '../api.service';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 import { RegisterForm }    from '../register-form';
+import swal from 'sweetalert2';
 // import { getMaxListeners } from 'cluster';
 @Component({
   selector: 'app-register-form',
@@ -30,19 +31,41 @@ export class RegisterFormComponent implements OnInit {
       createContact(model){
           this.apiService.createContact(model).subscribe((response) => {
               this.data = response;
-              if(this.data.code = '200'){
+              if(this.data.Message == "User Already Registered"){
+                // document.getElementById('id01').style.display='none'
                   console.log("data=====>",this.data);
                   
-                //   alert('OTP sent to email' );
+                  swal(this.data.Message );
   
               
                 }
-
-              this.router.navigate(['/login']);
+else{
+  swal("Please check your email")
+  document.getElementById('id02').style.display='block'
+}
+              // this.router.navigate(['/login']);
               
           });
           
       };
+
+      emailotpverification(model){
+        this.apiService.emailotpverification(model).subscribe((response) => {
+            this.data = response;
+            if(this.data.status == "true"){
+                console.log("data=====>",this.data);
+                
+                swal('Registration Successful' )
+
+                this.router.navigate(['/login']);
+              }
+
+           
+            
+        });
+        
+    };
+
       sendotp(model){
         this.apiService.sendotp(model).subscribe((response) => {
             this.data = response;

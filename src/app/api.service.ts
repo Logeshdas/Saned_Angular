@@ -17,7 +17,10 @@ export  class  APIService {
         return  this.httpClient.post(`${this.API_URL}/emailotp`,contact);
         
     }
-
+    emailotpverification(contact){
+        return  this.httpClient.post(`${this.API_URL}/emailotpverification`,contact);
+        
+    }
     login(contact){
         return  this.httpClient.post(`${this.API_URL}/login`,contact);
         

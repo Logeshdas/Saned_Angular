@@ -48,15 +48,16 @@ class="NEM mt-3"> -->
         <div class="col-md-5 mr-2 Who-We-Are-Aman-is-a">
     <!-- <h4><b>Who We Are</b></h4> -->
     <br>
-    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Aman services</b></h3>
+    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Saned services</b></h3>
     
                       
             <select class="Input-Selector" id="power"
                     required
                     [(ngModel)]="model.power" name="power"
-                    #power="ngModel">
-              <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
-              
+                    #power="ngModel" style="margin-left: 15px;width: 254px;">
+                    <option  [value]="pow">Select Service</option>
+              <option  [value]="pow">Aman Services</option>
+              <option  [value]="pow">Salama Services</option>
             </select>
             <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
               Coming soon

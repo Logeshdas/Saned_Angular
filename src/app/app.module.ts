@@ -19,6 +19,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RecaptchaDirective } from './recaptcha.directive';
 import { Loginv2Component } from './loginv2/loginv2.component';
+import Swal from 'sweetalert2';
+import { AmanservicesComponent } from './amanservices/amanservices.component';
+import { SalamaservicesComponent } from './salamaservices/salamaservices.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { ContactComponent } from './contact/contact.component'
 
 const routes: Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -27,6 +32,9 @@ const routes: Routes=[
 {path:'government-services',component:GovernmentServicesComponent},
 {path:'home',component:LoginComponent},
 {path:'login',component:LoginComponent},
+{path:'contactus',component:ContactusComponent},
+{path:'amanservices',component:AmanservicesComponent},
+{path:'salamaservices',component:SalamaservicesComponent},
 
 ]
 
@@ -39,8 +47,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     RecaptchaModule,
     HttpClientModule,
+    
     RouterModule.forRoot(routes),
     HttpClientModule,
+    
    TranslateModule.forRoot({
      loader: {
        provide: TranslateLoader,
@@ -59,7 +69,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     LoginComponent,
     RecaptchaDirective,
-    Loginv2Component
+    Loginv2Component,
+    AmanservicesComponent,
+    SalamaservicesComponent,
+    ContactusComponent,
+    ContactComponent
   ],
   providers: [
     {
