@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
 <button (click)="switchLanguage('en')">English</button> -->
+=======
+
+<button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button>
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -89,6 +95,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                        
                         <div class="row flex-center pt-4 ">
                             <div class="col-md-12 text-center text-md-left margins">
+<<<<<<< HEAD
                               <!-- <section class="logov2"></section> -->
                               
                               
@@ -102,6 +109,16 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                                         
                                         <br>
                                         <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a>
+=======
+                                <div class="white-text">
+                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'Delivering your divine 
+                                        land live who you are.' | translate:user}}</font></a>
+                                        <br>
+                                        <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+                                        <a class="wow fadeInLeft Its-about-more-than" data-wow-delay="0.3s"><font color="white">{{'It’s about more than numbers: it’s about people. Large followings are good. Active and engaged audiences are better. That’s the big picture we paint.'| translate:user}}</font></a>
+                                        <br>
+                                        <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
                                         <a href=""> <img  src="./assets/tail-left-copy.png"
                                          srcset="./assets/tail-left-copy@2x.png 2x,
                                                  ./assets/tail-left-copy@3x.png 3x"
@@ -114,7 +131,119 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                   </div>
 <br>
 
+<<<<<<< HEAD
                 <hr style="color:red;">
+=======
+<div class="col-md-5">
+                    <div class="col-md-11 mt-5">
+                        <div class="w3-card-11 w3-white">
+                            <div class="w3-container w3-white">
+                              <br>
+                              <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
+                            </div>
+                            <br>
+                            <!-- ========================= -->
+                            <div class="container">
+                                    <div class="row">
+                                    <div class="col-md-11"> 
+                                            
+                              <!-- <p>                  
+                              <label class="loginc"><b>{{'Email ID'| translate:user}}</b>
+                              <input class="w3-input" id="email" name="email"></label> -->
+                              
+                              <!-- <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+                                    <div class="form-group">
+                                      <label for="name">Name</label>
+                                      <input type="text" class="form-control" id="name"
+                                             required
+                                             [(ngModel)]="model.name" name="name"
+                                             #name="ngModel">
+                                      <div [hidden]="name.valid || name.pristine"
+                                           class="alert alert-danger">
+                                        Name is required
+                                      </div>
+                                    </div>
+                                    </form> -->
+                             </div>
+
+                             <div class="container">
+                                    <div class="row">
+                             <div class="col-md-11">
+                                    <div [hidden]="submitted">
+     
+                                            <form  [formGroup]="loginForm">
+                                              <div class="form-group">
+                                                <label class="Name" for="userid">Email ID</label>
+                                                <input type="text"  class="form-control" formControlName="userid"  [(ngModel)]="email" name="ngModel" >
+                                                                                
+                                                
+                                                <!-- <input type="text" class="form-control" formControlName="userid"> -->
+                                                <div [hidden]="name || name"
+                                                     class="alert" style="color: #f54b5e;">
+                                                  Email is required
+                                                </div>
+                                              </div>
+
+                                              <!-- <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+                                                    <label for="password" class="col-md-3 col-sm-5 col-xs-12">Password</label>
+                                                    <div class="col-md-9 col-sm-7 col-xs-12">
+                                                      <input type="password" class="form-control" formControlName="password"/>
+                                                      <div *ngIf="submitted && f.password.errors" class="help-block">
+                                                        <div *ngIf="f.password.errors.required">Password is required</div>
+                                                      </div>
+                                                    </div>
+                                                  </div> -->
+                                        
+                                              <div class="form-group clearfix">
+                                                    <!-- <label for="password" class="Password">Password</label> -->
+                                                  <label class="Name" for="name">Password</label>
+                                                  <input type="password"  class="form-control" formControlName="password"  [(ngModel)]="password" >
+                                                  
+                                                </div>
+                                                            <div class="col-md-12">    
+                                      
+                                              <!-- <button type="submit" (click)="login(model)">Submit</button> -->
+                                              <button class="w3-btn w3-red col-md-12  Rectangle-5" type="submit" (click)="login(model)">{{'Submit' |translate:user}}</button>
+   <p>{{'New to Aman?' |translate:user}}<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">{{'Register Here' |translate:user}}</font></a></p>
+                                             
+                                            </div>
+                                            </form>
+                                            <br>
+                                          </div>
+                                    <!-- <label class="loginc"><b>{{'Email ID' | translate:user}}</b>
+                                        <input type="text" class="Input-Selector" id="email"
+                                        required
+                                        [(ngModel)]="model.email" name="name"
+                                        #name="ngModel">
+                                    </label>
+                             
+<br><br><br>
+ <p>      
+                              <label class="loginc"><b>{{'Password'| translate:user}}</b>
+                              <input class="w3-input" id="email" name="email"></label>
+                             
+                              <br>  <br>   <input  type="checkbox" class="Rectangle-4 ">
+<label class="Remember-Me ml-2">{{'Remember Me'|translate:user}}</label> -->
+</div>
+</div>
+</div>
+<div class="container">
+        <div class="row">
+<!-- <div class="col-md-12">
+   
+ <button class="w3-btn w3-red col-md-12"><a class="Rectangle-5" type="submit" (click)="login(model)">{{'Submit' |translate:user}}</a></button>
+   <p>{{'New to Aman?' |translate:user}}<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">{{'Register Here' |translate:user}}</font></a></p>
+   </div> -->
+</div>
+</div>
+                    </div>
+            </div>
+            <!-- =================== -->
+
+                          </div>
+                        </div>
+                </div><hr style="color:red;">
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
               </div>
               </div>
               
@@ -128,6 +257,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
             
           <div class="col-sm-5">
               <div class="col-sm-8 ">
+<<<<<<< HEAD
                   <img  src="/assets/002-fire-extinguisher.png"
                   srcset="/assets/002-fire-extinguisher@2x.png 2x,
                           /assets/002-fire-extinguisher@3x.png 3x"
@@ -135,18 +265,27 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                   <br>
                   <br>
                   <a class="WHAT-IS-Aman-">{{'WHAT IS AMAN ?'|translate:user}}</a>
+=======
+
+                  <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
               </div>
             
               <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
              <br>
              <br>
+<<<<<<< HEAD
                 <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a>
+=======
+                <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
             <a href=""> <img  src="./assets/tail-left-copy.png"
              srcset="./assets/tail-left-copy@2x.png 2x,
                      ./assets/tail-left-copy@3x.png 3x"
              class="tail-left-copy"></a>
             </p>
           </div>
+<<<<<<< HEAD
           
           <div class="col-sm-1"></div>
           <div class="col-md-6">
@@ -158,6 +297,12 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                   <br>
                   <br>
                   <a class="benefits">{{'WHAT IS SALAMA ?'| translate:user}}</a>
+=======
+          <br>
+          <div class="col-sm-6">
+              <div class="col-sm-5">
+                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
                   </div>
                   <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event.' | translate:user }}.
                     <br> 
@@ -165,7 +310,10 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                       <br>
                       {{'Analyze data to help emergency services.'| translate:user}}
                       <br>
+<<<<<<< HEAD
                       <br>
+=======
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
                       <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
                       <a href=""> <img  src="./assets/tail-left-copy.png"
                        srcset="./assets/tail-left-copy@2x.png 2x,
@@ -177,6 +325,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
       </div>
       <br>
       <br>
+<<<<<<< HEAD
       <section class="details-card">
             <div class="container">
                 <div class="row">
@@ -231,3 +380,51 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                 </div>
             </div>
         </section>
+=======
+      <section class="view intro-4 hm-gradient">
+       
+                          <br><br><br><br><br><br>
+                            <div class="text-center">
+                                <h1><font color="white">{{'LET’S TALK TOGETHER' |translate:user}}</font></h1>
+                                <div class="text-center col-lg-12">
+                                        <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
+                                        <a href=""> <img  src="./assets/tail-left-copy.png"
+                                         srcset="./assets/tail-left-copy@2x.png 2x,
+                                                 ./assets/tail-left-copy@3x.png 3x"
+                                         class="tail-left-copy"></a>
+                                            </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                  
+        </section>
+      <!-- <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+         
+            <img src="./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000.png"
+            srcset="./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000@2x.png 2x,
+                               ./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000@3x.png 3x"
+            
+            class="img-responsive">
+            
+            <div class="col-sm-12 text-center" style="margin-top:-250px"><font color="white" class=" letstalk">{{'LET’S TALK TOGETHER' |translate:user}} </font>
+            </div>
+                <br>
+            <br>
+            <div class="text-center col-lg-12">
+                <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
+                <a href=""> <img  src="./assets/tail-left-copy.png"
+                 srcset="./assets/tail-left-copy@2x.png 2x,
+                         ./assets/tail-left-copy@3x.png 3x"
+                 class="tail-left-copy"></a>
+                    </div>
+                    
+        </div>
+        </div>
+        </div> -->
+
+
+<router-outlet></router-outlet>
+   
+
+>>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
