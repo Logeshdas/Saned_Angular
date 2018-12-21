@@ -1,0 +1,268 @@
+<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button> -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<div>
+        <p>
+            <label><input #arabic type="radio" name="size" (change)="0" checked>عربى</label>
+            <label><input #english type="radio" name="size" (change)="0">English</label>
+        </p>
+<div *ngIf="english.checked">
+<!------ Include the above in your HEAD tag ---------->
+<section class="view intro-2 hm-gradient">
+        <div class="">
+                <div class="col-md-1">
+                    <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+                    <img  src="./assets/group.png"
+                                                     srcset="./assets/group@2x.png 2x,
+                                                             ./assets/group@3x.png 3x"
+                                                     class="img-responsive">
+                </div>
+            </div>
+             
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+    assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+    <!-- <div class="full-bg-img"> -->
+        <!-- <div class="container flex-center"> -->
+            <!-- <div class="row flex-center pt-5 mt-3"> -->
+                <!-- <div class="col-md-6 text-center"> -->
+                  <br><br>
+                    <div class="text-center">
+                        <h1 ><font color="white">WELCOME TO SERVICES</font></h1>
+                           
+                    </div>
+                <!-- </div> -->
+
+                
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+<br>
+
+<div class="">
+    <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+   
+   <div class="card col-md-11" style="border-radius: 18px;
+   background: white;">
+   <br>
+    <div class="row ml-4">
+
+        <div class="col-md-5"></div>
+        <br><br>
+        <div class="col-md-2">
+         
+            <img  src="/assets/002-fire-extinguisher.png"
+            srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                    /assets/002-fire-extinguisher@3x.png 3x"
+            class="fire-extinguisher">
+            <div style="margin-left: 20px;">
+            <h5><b>AMAN</b></h5>
+        </div>           <br><br>
+        </div>
+        
+
+
+        <div class="col-md-5 mr-2 Who-We-Are-Aman-is-a">
+    <!-- <h4><b>Who We Are</b></h4> -->
+   <h5><b>Description</b></h5>
+   <p>
+        AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. 
+
+   </p>
+    <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Saned services</b></h3>
+    
+                      
+            <select class="Input-Selector" id="power"
+                    required
+                    [(ngModel)]="model.power" name="power"
+                    #power="ngModel" style="margin-left: 15px;width: 254px;">
+                    <option  [value]="pow">Select Service</option>
+              <option  [value]="pow">Aman Services</option>
+              <option  [value]="pow">Salama Services</option>
+            </select>
+            <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
+              Coming soon
+            </div> -->
+    
+
+  </div>
+
+<div class="col-md-1"></div>
+<div class="col-md-5">
+
+<h5><b>Objectives</b></h5>
+<p>
+        AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. 
+
+</p>
+
+</div>
+<div class="row">
+<div class="col-md-5 ml-3">
+<h5><b>Technical Information</b></h5>
+<p>AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. </p>
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-5" style="margin-left: -8px;">
+<h5> <b>Commercial Information</b> </h5>
+<p>
+        AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. 
+</p>
+
+</div>
+<div class="col-md-5"></div>
+        <div class="col-md-7">
+         
+                <button type="submit" style="background-color: #ff0000;
+                width: 156px;
+                padding: 3px 10px;
+                margin-left: -27px;
+                color: white;
+                border-radius: 8px;" routerLink="/register-form">REGISTER HERE</button> 
+        
+        </div>
+        
+</div>
+
+
+
+
+<br>
+
+</div>
+</div>
+</div>
+</div>
+<!-- ===arabic -->
+
+
+<div *ngIf="arabic.checked" >
+        <!------ Include the above in your HEAD tag ---------->
+        <section class="view intro-2 hm-gradient" dir="rtl">
+                <div class="">
+                        <div class="col-md-1">
+                            <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+                            <img  src="./assets/group.png"
+                                                             srcset="./assets/group@2x.png 2x,
+                                                                     ./assets/group@3x.png 3x"
+                                                             class="img-responsive">
+                        </div>
+                    </div>
+                     
+            <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+            assests/lawyer-today-1@3x.png 3x"
+        class="NEM mt-3"> -->
+            <!-- <div class="full-bg-img"> -->
+                <!-- <div class="container flex-center"> -->
+                    <!-- <div class="row flex-center pt-5 mt-3"> -->
+                        <!-- <div class="col-md-6 text-center"> -->
+                          <br><br>
+                            <div class="text-center" >
+                                <h1 ><font color="white" >مرحبا بكم في الخدمات</font></h1>
+                                   
+                            </div>
+                        <!-- </div> -->
+        
+                        
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </section>
+        <br>
+        
+        <div class="">
+            <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+           
+           <div class="card col-md-11" style="border-radius: 18px;
+           background: white;">
+           <br>
+            <div class="row ml-4">
+        
+                <div class="col-md-5"></div>
+                <br><br>
+                <div class="col-md-2">
+                 
+                    <img  src="/assets/002-fire-extinguisher.png"
+                    srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                            /assets/002-fire-extinguisher@3x.png 3x"
+                    class="fire-extinguisher">
+                    <div style="margin-left: 20px;">
+                    <h5><b>AMAN</b></h5>
+                </div>           <br><br>
+                </div>
+                
+        
+        
+                <div class="col-md-5 mr-2 Who-We-Are-Aman-is-a">
+            <!-- <h4><b>Who We Are</b></h4> -->
+           <h5><b>وصف</b></h5>
+           <p>
+                AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
+           </p>
+            <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Saned services</b></h3>
+            
+                              
+                    <select class="Input-Selector" id="power"
+                            required
+                            [(ngModel)]="model.power" name="power"
+                            #power="ngModel" style="margin-left: 15px;width: 254px;">
+                            <option  [value]="pow">Select Service</option>
+                      <option  [value]="pow">Aman Services</option>
+                      <option  [value]="pow">Salama Services</option>
+                    </select>
+                    <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
+                      Coming soon
+                    </div> -->
+            
+        
+          </div>
+        
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+        
+        <h5><b>الأهداف</b></h5>
+        <p>
+                AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
+        </p>
+        
+        </div>
+        <div class="row">
+        <div class="col-md-5 ml-3">
+        <h5><b>معلومات تقنية</b></h5>
+        <p>AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5" style="margin-left: -8px;">
+        <h5> <b>معلومات تجارية</b> </h5>
+        <p>
+                AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
+        </p>
+        
+        </div>
+        <div class="col-md-5"></div>
+                <div class="col-md-7">
+                 
+                        <button type="submit" style="background-color: #ff0000;
+                        width: 156px;
+                        padding: 3px 10px;
+                        margin-left: -27px;
+                        color: white;
+                        border-radius: 8px;" routerLink="/register-form">سجل هنا</button> 
+                
+                </div>
+                
+        </div>
+        
+        
+        
+        
+        <br>
+        
+        </div>
+        </div>
+        </div> </div>

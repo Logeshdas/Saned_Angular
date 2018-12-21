@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -130,8 +129,12 @@ span.psw {
 }
 </style>
 </head>
-
-
+<div>
+  <p>
+      <label><input #arabic type="radio" name="size" (change)="0" checked>عربى</label>
+      <label><input #english type="radio" name="size" (change)="0">English</label>
+  </p>
+<div *ngIf="english.checked">
 <!------ Include the above in your HEAD tag ---------->
 <section class="view intro-2 hm-gradient" style="background: url(/assets/lawyer-today-1.png);height: 635px;" >
     <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
@@ -144,7 +147,10 @@ class="NEM mt-3"> -->
                                          srcset="./assets/group@2x.png 2x,
                                                  ./assets/group@3x.png 3x"
                                          class="img-responsive">
-    </div>
+                                         
+    
+    
+                                        </div>
 </div>
     <!-- <div class="full-bg-img"> -->
         <!-- <div class="container flex-center"> -->
@@ -163,59 +169,42 @@ class="NEM mt-3"> -->
     <!-- </div> -->
 </section>
 <br>
-<div id="id03" class="modal">
-  
-    <form class="modal-content animate col-md-4" action="/action_page.php">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="close">&times;</span>
-        <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
-        <h3>OTP Sent</h3>
-      </div>
-  
-      <div class="container">
-        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">Otp has been sent to your email</p>
-        <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-  
-        <!-- <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required> -->
-          
-        <!-- <button style="background-color: #ff0000;" (click)="backhome" type="submit">Back to home</button> -->
-        <!-- <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label> -->
-      </div>
-  
-      <!-- <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div> -->
-    </form>
-  </div>
-
-
-
 <div id="id01" class="modal">
-  
+
     <form class="modal-content animate col-md-4" action="/action_page.php">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
         <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
-        <h3>Thanks for Registration</h3>
+        <h3>Enter One Time Password</h3>
       </div>
-  
+ 
       <div class="container">
-        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">Confirmation email has been successfully sent to your email address</p>
+        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent to your email address and mobile number</p>
         <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-  
+        <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+        <input type="text" class="form-control col-md-4 inline" id="otp"
+                                   required
+                                   [(ngModel)]="model.otp" name="name"
+                                   #name="ngModel">
+ 
+                                   <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+ 
+                            <div [hidden]="name.valid || name.pristine"
+                                 class="alert" style="color: #f54b5e;">
+                                 One Time Password is required
+                            </div>
+        <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
         <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
-          
-        <!-- <button style="background-color: #ff0000;" (click)="backhome" type="submit">Back to home</button> -->
+ 
+        <button style="background-color: #ff0000;" (click)="emailotpverification(model)" type="submit">Submit</button>
         <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label> -->
       </div>
-  
+ 
       <!-- <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
@@ -232,9 +221,11 @@ class="NEM mt-3"> -->
     <div class="row">
         <div class="col-md-12 Who-We-Are-Aman-is-a">
     <!-- <h4><b>Who We Are</b></h4> -->
-    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to Aman portal, please enter your information to be able to use the portal and add your property details</b></h3>
+    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to service portal, please enter your information to be able to use the portal and add your property details</b></h3>
     <div class="col-md-10">
 
+
+      
         <div [hidden]="submitted">
           <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
           
@@ -324,32 +315,15 @@ class="NEM mt-3"> -->
     
                         <div class="form-group">
                             <label class="Name" for="email">Email<span class="req" style="color: #f54b5e;">* </span></label>
-                         
-                            <input type="text" class="form-control col-md-4 inline" id="email"
+                            <input type="text" class="form-control col-md-4" id="email"
                                    required
                                    [(ngModel)]="model.email" name="name"
-                                   #name="ngModel">     
-                                   
-                                   <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>       
-
+                                   #name="ngModel">
                             <div [hidden]="name.valid || name.pristine"
                                  class="alert" style="color: #f54b5e;">
                               Email is required
                             </div>
                           </div>
-                          <div class="form-group">
-                              <label class="Name" for="otp">Enter OTP<span class="req" style="color: #f54b5e;">* </span></label>
-                              <input type="text" class="form-control col-md-4" id="otp"
-                                     required
-                                     [(ngModel)]="model.otp" name="otp"
-                                     #otp="ngModel">            
-                              <div [hidden]="otp.valid || otp.pristine"
-                                   class="alert" style="color: #f54b5e;">
-                                Otp is required
-                              </div>
-                            </div>
-
-
                           <div class="form-group">
                             <label class="Name" for="password">Password<span class="req" style="color: #f54b5e;">* </span></label>
                             <input type="password" class="form-control col-md-4" id="password"
@@ -394,13 +368,13 @@ class="NEM mt-3"> -->
                                   -->
                                   <div >
                                     <label >
-                                      <input type="radio" id="radio" value="amanservices"
-                                              [(ngModel)]="model.services" name="services"
+                                      <input type="checkbox" id="checkbox" value="amanservices"
+                                              [(ngModel)]="model.amanservices" name="services"
                                              >Aman
                                             </label>
                                             <label style="margin-left:10px" >
-                                                <input type="radio" id="radio" value="salamaservices"
-                                                        [(ngModel)]="model.services" name="services"
+                                                <input type="checkbox" id="checkbox" value="salamaservices"
+                                                        [(ngModel)]="model.salamaservices" name="services"
                                                        >Salama
                                                       </label>
                                           </div>
@@ -415,7 +389,7 @@ class="NEM mt-3"> -->
                           
                           <div class="col-md-4">    
                               <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-            <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='block'" class="btn Rectangle-5-Copy" (click)="createContact(model)">Create Account</button>
+            <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy" (click)="createContact(model)">Create Account</button>
             <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
           </div>
           </form>
@@ -441,5 +415,305 @@ class="NEM mt-3"> -->
         }
     }
     </script>
-    <router-outlet></router-outlet>
+   </div>
+    </div>
+
+<!-- ====Arabic -->
+
+<div *ngIf="arabic.checked" dir="rtl">
+  <!------ Include the above in your HEAD tag ---------->
+  <section dir="rtl" class="view intro-2 hm-gradient" style="background: url(/assets/lawyer-today-1.png);height: 635px;" >
+      <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+      assests/lawyer-today-1@3x.png 3x"
+  class="NEM mt-3"> -->
+  <div dir="rtl" class="">
+      <div class="col-md-1">
+          <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+          <img  src="./assets/group.png"
+                                           srcset="./assets/group@2x.png 2x,
+                                                   ./assets/group@3x.png 3x"
+                                           class="img-responsive">
+                                          
+      
+      
+                                          </div>
+  </div>
+      <!-- <div class="full-bg-img"> -->
+          <!-- <div class="container flex-center"> -->
+              <!-- <div class="row flex-center pt-5 mt-3"> -->
+                  <!-- <div class="col-md-6 text-center"> -->
+                    <br><br><br><br><br><br>
+                      <div class="text-center">
+                          <h1 ><font color="white">تسجيل حساب جديد</font></h1>
+                             
+                      </div>
+                  <!-- </div> -->
+  
+                  
+              <!-- </div> -->
+          <!-- </div> -->
+      <!-- </div> -->
+  </section>
+  <br>
+  <div id="id01" class="modal">
+
+      <form class="modal-content animate col-md-4" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
+          <h3>Enter One Time Password</h3>
+        </div>
+   
+        <div class="container">
+          <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent to your email address and mobile number</p>
+          <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
+          <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+          <input type="text" class="form-control col-md-4 inline" id="otp"
+                                     required
+                                     [(ngModel)]="model.otp" name="name"
+                                     #name="ngModel">
+   
+                                     <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+   
+                              <div [hidden]="name.valid || name.pristine"
+                                   class="alert" style="color: #f54b5e;">
+                                   One Time Password is required
+                              </div>
+          <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+          <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+          <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
+          <!-- <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required> -->
+   
+          <button style="background-color: #ff0000;" (click)="emailotpverification(model)" type="submit">Submit</button>
+          <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label> -->
+        </div>
+   
+        <!-- <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div> -->
+      </form>
+    </div>
     
+  <div dir="rtl" class="container col-md-12">
+      <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+     
+     <div class="card col-md-12" style="border-radius: 18px;
+     background: white;margin-top: -201px;">
+     <br>
+      <div class="row">
+          <div class="col-md-12 Who-We-Are-Aman-is-a">
+      <!-- <h4><b>Who We Are</b></h4> -->
+      <h3 class="col-sm-12 Welcome-to-Aman-port"><b>مرحبًا بك في مدخل الخدمة ، يرجى إدخال معلوماتك حتى تتمكن من استخدام البوابة وإضافة تفاصيل الممتلكات الخاصة بك</b></h3>
+      <div class="col-md">
+  
+<div class="col-md-7" >
+
+      <div class="col-md-5" > 
+          <div [hidden]="submitted" >
+            <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+            
+              <div class="form-group">
+                <label class="Name" for="name">اسم<span class="req" style="color: #f54b5e;">* </span></label>
+                <input  type="text" class="form-control col-md-10" id="name" 
+                       required
+                       [(ngModel)]="model.name" name="name"
+                       #name="ngModel">
+                <div [hidden]="name.valid || name.pristine"
+                     class="alert" style="color: #f54b5e;">
+                     مطلوب اسم
+                </div>
+              </div>
+        
+              <div class="form-group">
+                  <label class="Name" for="name">شركة</label>
+                  <input type="text" class="form-control col-md-10" id="company"
+                         required
+                         [(ngModel)]="model.company" name="company"
+                         #name="ngModel">
+                  <!-- <div [hidden]="name.valid || name.pristine"
+                       class="alert alert-danger">
+                    Name is required
+                  </div> -->
+                </div>
+              
+                <div class="form-group">
+                    <label class="Name" for="name">جنسية</label>
+                    <input type="text" class="form-control col-md-10" id="nationality"
+                           required
+                           [(ngModel)]="model.nationality" name="nationality"
+                           #name="ngModel">
+                    <!-- <div [hidden]="name.valid || name.pristine"
+                         class="alert alert-danger">
+                      Name is required
+                    </div> -->
+                  </div>
+      
+                  <div class="form-group">
+                      <label class="Name" for="phonenumber">رقم الهاتف</label>
+                      <input type="text" class="form-control col-md-10" id="phonenumber"
+                             required
+                             [(ngModel)]="model.phonenumber" name="phonenumber"
+                             #name="ngModel">
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                           class="alert alert-danger">
+                        Name is required
+                      </div> -->
+                    </div>
+      
+                    <div class="form-group">
+                        <label class="Name" for="address">عنوان</label>
+                        <input type="text" class="form-control col-md-10" id="address"
+                               required
+                               [(ngModel)]="model.address" name="name"
+                               #name="ngModel">
+                        <!-- <div [hidden]="name.valid || name.pristine"
+                             class="alert alert-danger">
+                          Name is required
+                        </div> -->
+                      </div>
+      
+                      <div class="form-group">
+                          <label class="Name" for="pobox">صندوق بريد</label>
+                          <input type="text" class="form-control col-md-10" id="pobox"
+                                 required
+                                 [(ngModel)]="model.pobox" name="pobox"
+                                 #name="ngModel">
+                          <!-- <div [hidden]="name.valid || name.pristine"
+                               class="alert alert-danger">
+                            Name is required
+                          </div> -->
+                        </div>
+      
+                        <div class="form-group">
+                            <label class="Name" for="mobile" dir="rtl">التليفون المحمول<span class="req" style="color: #f54b5e;">* </span></label>
+                            <input type="text" class="form-control col-md-11" id="mobile"
+                                   required
+                                   [(ngModel)]="model.mobile" name="mobile"
+                                   #mobile="ngModel">
+                            <div [hidden]="mobile.valid || mobile.pristine"
+                                 class="alert" style="color: #f54b5e;" dir="rtl">
+                                 رقم الجوال مطلوب
+                            </div>
+                          </div>
+      
+                          <div class="form-group">
+                              <label class="Name" for="email">البريد الإلكتروني<span class="req" style="color: #f54b5e;">* </span></label>
+                              <input type="text" class="form-control col-md-10" id="email"
+                                     required
+                                     [(ngModel)]="model.email" name="name"
+                                     #name="ngModel">
+                              <div [hidden]="name.valid || name.pristine"
+                                   class="alert" style="color: #f54b5e;">
+                                   البريد الالكتروني مطلوب
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="Name" for="password">كلمه السر<span class="req" style="color: #f54b5e;">* </span></label>
+                              <input type="password" class="form-control col-md-10" id="password"
+                                     required
+                                     [(ngModel)]="model.password" name="password"
+                                     #password="ngModel">
+                              <div [hidden]="password.valid || password.pristine"
+                                   class="alert" style="color: #f54b5e;">
+                                   كلمة المرور مطلوبة
+                              </div>
+                            </div>
+  
+                            <div class="form-group">
+                                <label class="Name" for="confirmpassword">تأكيد كلمة المرور<span class="req" style="color: #f54b5e;">* </span></label>
+                                <input type="password" class="form-control col-md-10" id="confirmpassword"
+                                       required
+                                       [(ngModel)]="model.confirmpassword" name="confirmpassword"
+                                       #confirmpassword="ngModel">
+                                <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
+                                     class="alert" style="color: #f54b5e;">
+                                     أكد رقمك السري
+                                </div>
+                              </div>
+                              <div class="form-group ">
+                                  <label class="Name">ابق على اتصال</label>
+                                  <!-- <input type="radio" id="myRadio" name="test" required>
+                                  -->
+                                  <div >
+                                  <input type="radio" id="myRadio" value="yes"
+                                          [(ngModel)]="model.stayconnect" name="stayconnect"
+                                         >اشترك في صحيفتنا الإخبارية
+  </div>
+                                         <!-- <div [hidden]="stayconnect.valid || stayconnect.pristine"
+                                       class="alert" style="color: #f54b5e;">
+                                    Confirm your password
+                                  </div> -->
+                                </div>
+    
+                                <div class="form-group col-md-9">
+                                    <label class="Name">اختر الخدمة</label>
+                                    <!-- <input type="radio" id="myRadio" name="test" >
+                                    -->
+                                    <div >
+                                      <label >
+                                        <input type="checkbox" id="checkbox" value="amanservices"
+                                                [(ngModel)]="model.amanservices" name="services"
+                                               >تأمين
+                                              </label>
+                                              <label style="margin-left:10px" >
+                                                  <input type="checkbox" id="checkbox" value="salamaservices"
+                                                          [(ngModel)]="model.salamaservices" name="services"
+                                                         >سلامة
+                                                        </label>
+                                            </div>
+                                    <!-- <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
+                                         class="alert" style="color: #f54b5e;">
+                                      Confirm your password
+                                    </div> -->
+                                  </div>
+                                  <div class="form-group col-md-2">  
+                            <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LcbnoAUAAAAAMSXUw-ITzMbg18NjbMUuQ92Xc5k"></re-captcha>
+      </div>
+                            
+                            <div class="col-md-11">    
+                                <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+              <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy" (click)="createContact(model)">إنشاء حساب</button>
+              <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+            </div>
+            </form>
+          </div>
+
+
+
+
+            <br>
+          </div>
+        </div>
+      
+    
+    
+
+
+
+    </div>
+  
+  </div>
+  
+  </div>
+  </div>
+  <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+     </div>
+      </div>
+
+
+
+    </div>

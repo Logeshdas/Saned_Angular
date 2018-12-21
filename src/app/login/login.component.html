@@ -8,8 +8,27 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!------ Include the above in your HEAD tag ---------->
 
+<!-- <input type="radio" class="btn ml-2"  name="arabic"> <font color="white"> <span><a routerLink="loginarabic">عربى</a></span> </font>
+      
+<input type="radio" class="btn ml-2" routerLink="login" name="arabic"> <font color="white"> English</font>
+         -->
 
-        <!--Main Navigation-->
+<div>
+    <p>
+        <label><input #arabic type="radio" name="size" (change)="0" checked>عربى</label>
+        <label><input #english type="radio" name="size" (change)="0">English</label>
+    </p>
+
+   <!-- <h3 *ngIf="big.checked">Big heading</h3>
+    <p *ngIf="small.checked">Small paragraph</p> -->
+
+
+
+
+
+<div *ngIf="english.checked">
+
+<!--Main Navigation-->
         <header>
 
             <!--Navbar-->
@@ -23,17 +42,15 @@ class="NEM mt-3"> -->
 <div class="row">
     <div class="col-md-8">
         <img src="./assets/group.png" class="img-responsive">
+        
     </div>
     <div class="col-md-4">
             
              
-        <input type="radio" class="btn ml-2" (click)="switchLanguage('arabic')" name="arabic"> <font color="white">Arabic</font>
-      
-        <input type="radio" class="btn ml-2" (click)="switchLanguage('en')" name="arabic"> <font color="white"> English</font>
-
+           
+        <button type="submit" style="background-color: #ff0000;padding: 3px 8px;margin-left:237px " routerLink="/register-form">REGISTER</button>
 <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
-<button type="submit" style="background-color: #ff0000;width: 94px;padding: 3px 10px;
-margin-left: 12px;" routerLink="/register-form">REGISTER</button> 
+ 
 
       <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
       "><font color="white">LOGIN </font></a>
@@ -78,6 +95,11 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
       
 </div>
 </div>
+
+
+
+
+
 <div class="mt">
   <div class="row">
      
@@ -121,16 +143,22 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
             </section>
 
         </header>
-        <br>
-        <br> <br> <br>
-      <div class="container">
+        <!-- <app-navbarv2></app-navbarv2> -->
+
+
+        <div class="col-md-12">
+        <div class="card col-md-12" style="border-radius: 18px;
+   background: white;">
+      <div class="">
         <div class="row">
+            
           <div class="col-sm-6">
-              <div class="col-sm-8 ">
+                <br><br>
+              <div class="col-sm-7 ">
                   <img  src="/assets/002-fire-extinguisher.png"
                   srcset="/assets/002-fire-extinguisher@2x.png 2x,
                           /assets/002-fire-extinguisher@3x.png 3x"
-                  class="fire-extinguisher">
+                  class="fire-extinguisher " style="cursor: pointer;" routerlink="/govtarabic"> 
                   <br>
                   <br>
                   <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
@@ -149,14 +177,15 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
           <br>
           <!-- <div class="col-sm-1"></div> -->
           <div class="col-md-6">
-              <div class="col-sm-5">
-                  <img  src="./assets/001-teacher.png"
+              <br><br>
+              <div class="col-sm-7">
+                 <a routerLink ="/govtarabic"> <img  src="./assets/001-teacher.png"
                   srcset="./assets/001-teacher@2x.png 2x,
                           ./assets/001-teacher@3x.png 3x"
-                  class="teacher">
+                  class="teacher" style="cursor: pointer;"  ></a>
                   <br>
                   <br>
-                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
+                  <a class="benefits">{{'WHAT IS SALAMA'| translate:user}}</a>
                   </div>
                   <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event.' | translate:user }}.
                     <br> 
@@ -176,6 +205,10 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
       </div>
       <br>
       <br>
+
+
+
+
       <section class="details-card">
             <div class="container">
                 <div class="row">
@@ -218,7 +251,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                                 srcset="./assets/shutterstock-772324159@2x.png 2x,
                                 ./assets/shutterstock-772324159@3x.png 3x" alt="">
                                 <!-- <span><h4>Linkedln</h4></span> -->
-                                <a href="#" class="btn-card3" style="">Linked In</a>
+                                <a href="#" class="btn-card3" style="">LinkedIn</a>
                             </div>
                             <div class="card-desc">
                                
@@ -230,3 +263,252 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                 </div>
             </div>
         </section>
+        
+        </div>
+    </div>
+</div>
+
+<!-- ==================Arabic -->
+<div *ngIf="arabic.checked">
+    <!--Main Navigation-->
+    <header>
+
+        <!--Navbar-->
+      
+
+        <!--Intro Section-->
+        <section dir="rtl" class=" intro-2 hm-gradient">
+            
+            <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+            assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+<div dir="rtl" class="row">
+<div class="col-md-8">
+    <img src="./assets/group.png" class="img-responsive" style="margin-left: 510px;">
+    
+</div>
+<div class="col-md-4">
+        
+         
+        <!-- <input type="radio" class="btn ml-2" routerLink="loginarabic" name="arabic"> <font color="white">عربى</font>
+  
+        <input type="radio" class="btn ml-2" routerLink="login" name="english"> <font color="white"> English</font> -->
+    <button type="submit" style="background-color: #ff0000;padding: 3px 25px;margin-left:8px " routerLink="/register-form">تسجيل</button>
+<!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
+
+
+  <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
+  "><font color="white">تسجيل الدخول </font></a>
+
+  <div id="id01" class="modal">
+    
+        <form class="col-md-4 modal-content animate">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <br>
+                  <a class="Welcome-To-Aman">{{'مرحباً بك في أمان'| translate:user}}</a>
+                </div>
+            
+                <div class="container">
+                  <div class="row">
+                  <div class="col-md-12">
+                  <label class="col-md text-left"><b>عنوان الايميل</b></label>
+                  <input type="text" class="w3-input" id="email_id"
+                  required
+                  [(ngModel)]="model.email_id" name="name"
+                  #name="ngModel">
+                
+                  <label class="col-md text-left"><b>كلمه السر</b> </label>
+                  <input type="password" class="w3-input" id="password"
+                  required
+                  [(ngModel)]="model.password" name="password"
+                  #password="ngModel"> 
+                  
+                  <label class="col-md text-left">
+                          <input  type="checkbox" class="Rectangle-4 "> تذكرنى
+                  
+                   <a href="#" class="ml-5">هل نسيت كلمة المرور؟</a></label>
+                  <button class="w3-btn w3-red col-md-12" (click)="login(model)"><a class="Rectangle-5">خضع</a></button>
+          <p>جديد في أمان؟<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+                </div>
+                </div>
+                </div>
+            
+                
+              </form>
+  </div>
+  
+</div>
+</div>
+
+
+
+
+
+<div class="mt">
+<div class="row">
+ 
+<div class="col-md-7">
+
+            <div class="full-bg-img">
+               
+                <div class="container flex-center">
+                   
+                    <div class="row flex-center pt-4 ">
+                        <div class="col-md-12 text-center text-md-left margins">
+                          <!-- <section class="logov2"></section> -->
+                          
+                          
+                          <div class="white-text mt-2" >
+                                <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'‘"مرحباً بك في SANED - نحن ندير وندير منشآتك العقارية والتقنية ونساندك في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات".' | translate:user}}</font></a>
+                                    <br>
+                                    <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+                                    
+                                    <br>
+                                    <a href=""><font color="red" class="Know-More">{{'تعرف أكثر'|translate:user}} </font></a>
+                                    <a href=""> <img  dir="ltl" src="./assets/tail-left-copy.png"
+                                     srcset="./assets/tail-left-copy@2x.png 2x,
+                                             ./assets/tail-left-copy@3x.png 3x"
+                                     class="tail-left-copy"></a>
+                                </div>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+<br>
+
+            <hr style="color:red;">
+          </div>
+          </div>
+          
+       
+    </section>
+
+    </header>
+    <!-- <app-navbarv2></app-navbarv2> -->
+
+
+
+    <div class="col-md-12" dir="rtl">
+    <div class="card col-md-12" style="border-radius: 18px;
+background: white;">
+  <div class="">
+    <div class="row" dir="rtl">
+      <div class="col-sm-6">
+            <br><br>
+          <div class="col-sm-8 ">
+              <img  src="/assets/002-fire-extinguisher.png"
+              srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                      /assets/002-fire-extinguisher@3x.png 3x"
+              class="fire-extinguisher">
+              <br>
+              <br>
+              <a class="WHAT-IS-Aman-">{{'ما هو أمان؟'|translate:user}}</a>
+          </div>
+        
+          <p class="col-sm-12 text-justify " > {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}
+         <br>
+         <br>
+            <a href=""><font color="red" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a>
+        <a href=""> <img  src="./assets/tail-left-copy.png"
+         srcset="./assets/tail-left-copy@2x.png 2x,
+                 ./assets/tail-left-copy@3x.png 3x"
+         class="tail-left-copy"></a>
+        </p>
+      </div>
+      <br>
+      <!-- <div class="col-sm-1"></div> -->
+      <div class="col-md-6">
+            <br><br>
+          <div class="col-sm-5">
+              <img  src="./assets/001-teacher.png"
+              srcset="./assets/001-teacher@2x.png 2x,
+                      ./assets/001-teacher@3x.png 3x"
+              class="teacher">
+              <br>
+              <br>
+              <a class="benefits">{{'ما هو سلامه'| translate:user}}</a>
+              </div>
+              <p class="col-md-12 text-justify " > {{'الحد من تأثير أي حدث للسلامة والأمن والحرائق والسلامة.' | translate:user }}.
+                <br> 
+                {{'تعظيم كفاءة مراقبة السلامة للممتلكات والأصول.' | translate:user}}
+                  <br>
+                  {{'تحليل البيانات للمساعدة في خدمات الطوارئ.'| translate:user}}
+                  <br>
+                  <br>
+                  <a href=""><font color="#f34235" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a>
+                  <a href=""> <img  src="./assets/tail-left-copy.png"
+                   srcset="./assets/tail-left-copy@2x.png 2x,
+                           ./assets/tail-left-copy@3x.png 3x"
+                   class="tail-left-copy"></a>
+                </p>
+                </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <section class="details-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="/assets/shutterstock-220781335.png" 
+                            srcset="./assets/shutterstock-220781335@2x.png 2x,
+                            ./assets/shutterstock-220781335@3x.png 3x" alt="">
+                            <a href="#" class="btn-card1" style="">مدونة</a> 
+                          </div>
+                        <div class="card-desc text-justify" style="height:173px;" dir="rtl">
+                            <!-- <span class="blog"><h4>Blog</h4></span> -->
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">blog</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            
+                            <img src="/assets/shutterstock-775043446.png" 
+                            srcset="./assets/shutterstock-775043446@2x.png 2x,
+                            ./assets/shutterstock-775043446@3x.png 3x" alt="">
+                            <!-- <span><h4>News</h4></span> -->
+                            <a href="#" class="btn-card2" style="">أخبار</a>
+                        </div>
+                        <div class="card-desc text-justify">
+                            
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">Read</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="/assets/shutterstock-772324159.png" 
+                            srcset="./assets/shutterstock-772324159@2x.png 2x,
+                            ./assets/shutterstock-772324159@3x.png 3x" alt="">
+                            <!-- <span><h4>Linkedln</h4></span> -->
+                            <a href="#" class="btn-card3" style="">ينكدين</a>
+                        </div>
+                        <div class="card-desc">
+                           
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">Read</a>    -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</div>
+
+
+</div>
+
+
+</div>`
+
+

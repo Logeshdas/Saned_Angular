@@ -12,7 +12,10 @@ export class RegisterForm {
         public pobox: string,
         public mobile: string,
         public email: string,
-
+        public password: string,
+        public confirmpassword: string,
+        public stayconnect: string,
+        public services: string,
 
       ) {  }
 }
