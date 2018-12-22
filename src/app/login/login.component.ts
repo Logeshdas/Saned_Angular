@@ -45,6 +45,29 @@ export class LoginComponent implements OnInit {
           });
           
       };
+      forgetpassword(model){
+        this.apiService.forgetpassword(model).subscribe((response) => {
+            this.data = response;
+            if(this.data.Message == "Password should not be a previously used one"){
+             
+                console.log("data=====>",this.data);
+                
+                swal(this.data.Message+"<br>"+"كلمة المرور لا يجب أن تكون كلمة مرور سبق استخدامها" );
+
+              
+              }
+              if(this.data.Message == "password is updated"){
+swal(this.data.Message+"<br>"+"")
+              }
+              if(this.data.Message == "password doesn't match"){
+                swal(this.data.Message+"<br>"+"")
+                              }
+            
+        });
+        if(this.data.Message == "Invalid User Name"){
+            swal(this.data.Message+"<br>"+"")
+                          }
+    };
   
   
       onSubmit() {

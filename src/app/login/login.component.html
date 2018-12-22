@@ -12,26 +12,228 @@
       
 <input type="radio" class="btn ml-2" routerLink="login" name="arabic"> <font color="white"> English</font>
          -->
+         <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                nav{
+                    width: 100%;
+                    height: 50px;
+                    background:rgba(0,0,0,.8);
+                    border-top: 1px solid rgba(255,255);
+                    border-bottom: 1px solid rgba(255,255);
+                    position: sticky;
+                    top:0px;
+                    z-index: 99;
+                }
+                body{
+                    margin: 0;
+                    padding: 0;
+                    font-family: sans-serif;
+                    /* background: #000; */
+                }
+                header{
+                    padding: 10px 100px;
+                    box-sizing: border-box;
+                }
+                section{
+                    width: 100%;
+                    height: 100vh;
+                }
+                .dropdown {
+                  float: left;
+                  overflow: hidden;
+                }
+                
+                .dropdown .dropbtn {
+                  font-size: 16px;  
+                  border: none;
+                  outline: none;
+                  color: white;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit;
+                  margin: 0;
+                }
+                
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                  background-color: red;
+                }
+                
+                .dropdown-content {
+                  display: block;
+                  position: absolute;
+                  background-color: red;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+                }
+                
+                .dropdown-content a {
+                  float: none;
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+                
+                .dropdown-content a:hover {
+                  background-color: #ddd;
+                }
+                ul {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                }
+                ul li a {
+                  text-decoration: none;
+                  color: #e74c3c;
+                  font-family: Tahoma, Arial;
+                }
+                .navigation {
+                  background-color: #35353500;
+                  width: 75%;
+                  margin: 20px auto;
+                  min-height: 50px;
+                }
+                .navigation > li {
+                  float: left;
+                  padding: 0 20px;
+                }
+                .navigation > li > a {
+                  line-height: 50px;
+                  color: #FFF;
+                }
+                .navigation .menu {
+                  position: relative
+                }
+                .navigation .menu .submenu {
+                  position: absolute;
+                  /* width: 200px; */
+                  -webkit-box-shadow: 0px 1px 1px #CCC;
+                  box-shadow: 0px 1px 1px #CCC;
+                  display: none;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+                .navigation .menu:hover .submenu {
+                  display: block
+                }
+                .navigation .menu .submenu:before {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  border-width: 0 6px 6px 6px;
+                  border-style: solid;
+                  border-color: #FFF transparent;
+                  top: -6px;
+                  left: 5px
+                }
+                .navigation .menu .submenu li {
+                  padding: 5px 10px;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+                .navigation .menu .submenu li:hover {
+                  background-color: #e74c3c;
+                }
+                .navigation .menu .submenu li:hover a {
+                  color: #FFF;
+                  padding: 0 11px;
+                }
+                
+                
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                section.sec1{
+                    background: url(natures-temples.png);
+                    background-size: cover;
+                }
+                section.banner{
+                    background: url(Group.png);
+                    background-size: cover;
+                    margin-left: 15px;
+                }
+                section.sec2{
+                   padding: 100px;
+                   box-sizing: border-box;
+                }
+                nav{
+                    width: 100%;
+                    height: 50px;
+                    background:rgba(0,0,0,.8);
+                    border-top: 1px solid rgba(255,255);
+                    border-bottom: 1px solid rgba(255,255);
+                    position: sticky;
+                    top:0px;
+                    z-index: 99
+                }
+                nav ul{
+                    display: flex;
+                    margin: 0px;
+                    padding: 0px;
+                    float: right;
+                }
+                nav ul li{
+                    list-style: none;
+                }
+                
+                
+                nav ul{
+                    display: flex;
+                   
+                    padding: 0px;
+                    /* float: ; */
+                }
+                
+                nav ul li a{
+                    display:block;
+                    color: #fff;
+                    padding: 0 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    line-height: 50px;
+                
+                }
+                
+                </style>
+      <html>
 
-<div>
-    <p>
-        <label><input #arabic type="radio" name="size" (change)="0" checked>عربى</label>
-        <label><input #english type="radio" name="size" (change)="0">English</label>
-    </p>
+        <body>
+        <!-- <header>
+            <img src="Group.png" style="flex:left">
+            </header> -->
+        <div>
+            <!--<div dir="rtl">-->
+                <!--<p>-->
+                    <!--<label><input #english type="radio" name="size" (change)="0"><font color="red">English</font></label>-->
+                    <!--<label><input #arabic type="radio" name="size" (change)="0" checked>عربى</label>-->
+        
+                <!--</p>-->
+            <!--</div>-->
+            <!-- <div class="col-md-12">
+        
+        
+        
+            </div> -->
+           
+            <div class="col-md-12">
+                   
+                <div *ngIf="Lang">
+                    <div class="row ">
+                        <div class="col-md-12 ft_right pt_absolute">
+                            <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> Arabic
+                            <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
+                        </div>
+        
+                    </div>
+                    <div class="row">
+                        <!--<h1>English</h1>-->
+              
 
-   <!-- <h3 *ngIf="big.checked">Big heading</h3>
-    <p *ngIf="small.checked">Small paragraph</p> -->
-
-
-
-
-
-<div *ngIf="english.checked">
-
-<!--Main Navigation-->
-        <header>
-
-            <!--Navbar-->
           
 
             <!--Intro Section-->
@@ -48,12 +250,15 @@ class="NEM mt-3"> -->
             
              
            
-        <button type="submit" style="background-color: #ff0000;padding: 3px 8px;margin-left:237px " routerLink="/register-form">REGISTER</button>
+        <!-- <button type="submit" style="background-color: #ff0000;padding: 3px 8px;margin-left:237px " routerLink="/register-form">REGISTER</button> -->
 <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
- 
+<button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form" class="btn Rectangle-5-Copy">Register</button>
 
-      <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
-      "><font color="white">LOGIN </font></a>
+      <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular;font-size: 21px;
+      "><font color="white">Sign in </font></a>
+
+
+
 
       <div id="id01" class="modal">
         
@@ -61,7 +266,7 @@ class="NEM mt-3"> -->
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <br>
-            <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
+            <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
           </div>
       
           <div class="container">
@@ -82,9 +287,48 @@ class="NEM mt-3"> -->
             <label class="col-md text-left">
                     <input  type="checkbox" class="Rectangle-4 "> Remember me
             
-             <a href="#" class="ml-5">Forgot password?</a></label>
+             <a  onclick="document.getElementById('id02').style.display='block'" class="ml-5">Forgot password?</a></label>
             <button class="w3-btn w3-red col-md-12" (click)="login(model)"><a class="Rectangle-5">Submit</a></button>
    <p>New to Aman?<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+          </div>
+          </div>
+          </div>
+      
+          
+        </form>
+      </div>
+      <div id="id02" style="display:none" class="modal">
+        
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">{{'Forget password'| translate:user}}</a>
+          </div>
+      <br>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <label class="col-md text-left"><b>Email</b></label>
+            <input type="text" class="w3-input" id="email_id"
+            required
+            [(ngModel)]="model.email_id" name="name"
+            #name="ngModel">
+          
+            <label class="col-md text-left"><b>New Password</b> </label>
+            <input type="password" class="w3-input" id="password"
+            required
+            [(ngModel)]="model.password" name="password"
+            #password="ngModel"> 
+            
+            <label class="col-md text-left"><b>Confirm Password</b></label>
+            <input type="password" class="w3-input" id="confirmpassword"
+            required
+            [(ngModel)]="model.confirmpassword" name="name"
+            #name="ngModel">
+
+            <button class="w3-btn w3-red col-md-12" (click)="forgetpassword(model)"><a class="Rectangle-5">Submit</a></button>
+
           </div>
           </div>
           </div>
@@ -123,11 +367,11 @@ class="NEM mt-3"> -->
                                         <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
                                         
                                         <br>
-                                        <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a>
-                                        <a href=""> <img  src="./assets/tail-left-copy.png"
+                                        <!-- <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a> -->
+                                        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
                                          srcset="./assets/tail-left-copy@2x.png 2x,
                                                  ./assets/tail-left-copy@3x.png 3x"
-                                         class="tail-left-copy"></a>
+                                         class="tail-left-copy"></a> -->
                                     </div>  
                             </div>
                             </div>
@@ -141,8 +385,29 @@ class="NEM mt-3"> -->
               </div>
               
             </section>
-
-        </header>
+            <nav style="    margin-top: -52px; " >
+                    <ul class="navigation" style="margin-right: 141px;">
+                        <li><a routerLink="/login">Home</a></li>
+                               <li><a routerLink="/about-us">About Us</a></li>
+                               <li class="menu">
+                                <a href="#">Services</a>
+                                <ul class="submenu" >
+                                  <li style="background: red;"><a routerLink="/amanservices">Aman </a></li>
+                                  <li style="background: red;"><a routerLink="/salamaservices">Salama </a></li>
+                                  <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                                  <li style="background: red;"><a href="#">Link 4</a></li> -->
+                                </ul>
+                              </li>
+                               <li><a routerLink="/contactus">Contact Us</a></li>
+                               <li><a routerLink="/sitemap">Sitemap</a></li>
+                               <li ><a >Search</a></li>
+                 </ul>
+                 </nav>
+                <br>
+                <br>
+                
+                
+       
         <!-- <app-navbarv2></app-navbarv2> -->
 
 
@@ -155,10 +420,11 @@ class="NEM mt-3"> -->
           <div class="col-sm-6">
                 <br><br>
               <div class="col-sm-7 ">
+                  <a href="amanservices">
                   <img  src="/assets/002-fire-extinguisher.png"
                   srcset="/assets/002-fire-extinguisher@2x.png 2x,
                           /assets/002-fire-extinguisher@3x.png 3x"
-                  class="fire-extinguisher " style="cursor: pointer;" routerlink="/govtarabic"> 
+                  class="fire-extinguisher " style="cursor: pointer;" > </a>
                   <br>
                   <br>
                   <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
@@ -167,7 +433,7 @@ class="NEM mt-3"> -->
               <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
              <br>
              <br>
-                <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a>
+                <!-- <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
             <a href=""> <img  src="./assets/tail-left-copy.png"
              srcset="./assets/tail-left-copy@2x.png 2x,
                      ./assets/tail-left-copy@3x.png 3x"
@@ -179,7 +445,7 @@ class="NEM mt-3"> -->
           <div class="col-md-6">
               <br><br>
               <div class="col-sm-7">
-                 <a routerLink ="/govtarabic"> <img  src="./assets/001-teacher.png"
+                 <a href ="salamaservices"> <img  src="./assets/001-teacher.png"
                   srcset="./assets/001-teacher@2x.png 2x,
                           ./assets/001-teacher@3x.png 3x"
                   class="teacher" style="cursor: pointer;"  ></a>
@@ -194,7 +460,7 @@ class="NEM mt-3"> -->
                       {{'Analyze data to help emergency services.'| translate:user}}
                       <br>
                       <br>
-                      <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
+                      <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
                       <a href=""> <img  src="./assets/tail-left-copy.png"
                        srcset="./assets/tail-left-copy@2x.png 2x,
                                ./assets/tail-left-copy@3x.png 3x"
@@ -268,16 +534,27 @@ class="NEM mt-3"> -->
     </div>
 </div>
 
+</div>
 <!-- ==================Arabic -->
-<div *ngIf="arabic.checked">
+<div *ngIf="!Lang">
+    <div class="row ">
+        <div class="col-md-12 ft_right pt_absolute">
+            <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> Arabic
+            <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
+        </div>
+
+
+    </div>
+    <div class="row">
+        <!--<h1>Arabic</h1>-->
     <!--Main Navigation-->
-    <header>
+    
 
         <!--Navbar-->
       
 
         <!--Intro Section-->
-        <section dir="rtl" class=" intro-2 hm-gradient">
+        <section dir="rtl" class=" bb hm-gradient">
             
             <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
             assests/lawyer-today-1@3x.png 3x"
@@ -293,7 +570,7 @@ class="NEM mt-3"> -->
         <!-- <input type="radio" class="btn ml-2" routerLink="loginarabic" name="arabic"> <font color="white">عربى</font>
   
         <input type="radio" class="btn ml-2" routerLink="login" name="english"> <font color="white"> English</font> -->
-    <button type="submit" style="background-color: #ff0000;padding: 3px 25px;margin-left:8px " routerLink="/register-form">تسجيل</button>
+    <button button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form" class="btn Rectangle-5-Copy" routerLink="/register-form">تسجيل</button>
 <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
 
 
@@ -306,7 +583,7 @@ class="NEM mt-3"> -->
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                   <br>
-                  <a class="Welcome-To-Aman">{{'مرحباً بك في أمان'| translate:user}}</a>
+                  <a class="Welcome-To-Aman">{{'مرحبًا بك في SANED'| translate:user}}</a>
                 </div>
             
                 <div class="container">
@@ -365,11 +642,7 @@ class="NEM mt-3"> -->
                                     <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
                                     
                                     <br>
-                                    <a href=""><font color="red" class="Know-More">{{'تعرف أكثر'|translate:user}} </font></a>
-                                    <a href=""> <img  dir="ltl" src="./assets/tail-left-copy.png"
-                                     srcset="./assets/tail-left-copy@2x.png 2x,
-                                             ./assets/tail-left-copy@3x.png 3x"
-                                     class="tail-left-copy"></a>
+                                   
                                 </div>  
                         </div>
                         </div>
@@ -384,8 +657,25 @@ class="NEM mt-3"> -->
           
        
     </section>
-
-    </header>
+    <nav  style=" margin-top: -52px;">
+            <ul class="navigation" style="margin-right: 141px;">
+                <li><a routerLink="/login">الصفحة الرئيسية</a></li>
+                       <li><a routerLink="/about-us">معلومات عنا</a></li>
+                       <li class="menu">
+                        <a href="#">خدمات</a>
+                        <ul class="submenu" >
+                          <li style="background: red;"><a routerLink="/amanservices">تأمين </a></li>
+                          <li style="background: red;"><a routerLink="/salamaservices">سلامة </a></li>
+                          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                          <li style="background: red;"><a href="#">Link 4</a></li> -->
+                        </ul>
+                      </li>
+                       <li><a routerLink="/contactus">اتصل بنا</a></li>
+                       <li><a routerLink="/sitemap">خريطة الموقع</a></li>
+                       <li ><a >بحث</a></li>
+         </ul>
+         </nav>
+      <br><br>
     <!-- <app-navbarv2></app-navbarv2> -->
 
 
@@ -398,10 +688,11 @@ background: white;">
       <div class="col-sm-6">
             <br><br>
           <div class="col-sm-8 ">
+                <a href ="amanservices">
               <img  src="/assets/002-fire-extinguisher.png"
               srcset="/assets/002-fire-extinguisher@2x.png 2x,
                       /assets/002-fire-extinguisher@3x.png 3x"
-              class="fire-extinguisher">
+              class="fire-extinguisher"></a>
               <br>
               <br>
               <a class="WHAT-IS-Aman-">{{'ما هو أمان؟'|translate:user}}</a>
@@ -422,10 +713,11 @@ background: white;">
       <div class="col-md-6">
             <br><br>
           <div class="col-sm-5">
+                <a href ="salamaservices">
               <img  src="./assets/001-teacher.png"
               srcset="./assets/001-teacher@2x.png 2x,
                       ./assets/001-teacher@3x.png 3x"
-              class="teacher">
+              class="teacher"></a>
               <br>
               <br>
               <a class="benefits">{{'ما هو سلامه'| translate:user}}</a>
@@ -509,6 +801,20 @@ background: white;">
 </div>
 
 
-</div>`
+</div>
 
+            </div>
+       
 
+<script>
+    // Get the modal
+    var modal = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+<router-outlet></router-outlet>

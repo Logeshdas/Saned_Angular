@@ -3,6 +3,7 @@
   background-size: cover;
 
 }
+
 .logov2 {
   background: url("/assets/loginv2-2.png")no-repeat center center;
   background-size: cover;
@@ -736,3 +737,8 @@ a.btn-card {
   text-decoration: none;
   color: #fff;
 }
+.bb{
+  background: url("/assets/bb.png")no-repeat center center;
+  background-size: cover;
+  
+  }
