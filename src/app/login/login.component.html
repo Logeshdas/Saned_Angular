@@ -1,24 +1,281 @@
-<<<<<<< HEAD
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
-<button (click)="switchLanguage('en')">English</button> -->
-=======
-
-<button (click)="switchLanguage('arabic')">Arabic</button>
-<button (click)="switchLanguage('en')">English</button>
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!------ Include the above in your HEAD tag ---------->
 
 
-        <!--Main Navigation-->
-        <header>
+<!-- <input type="radio" class="btn ml-2"  name="arabic"> <font color="white"> <span><a routerLink="loginarabic">عربى</a></span> </font>
+      
+<input type="radio" class="btn ml-2" routerLink="login" name="arabic"> <font color="white"> English</font>
+         -->
+         <style>
+             @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+             body {
+    margin: 0;
+    margin-top: -58px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    margin-top: -20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: right;
+    background-color: #fff;
+}
+                body {font-family: Arial, Helvetica, sans-serif;}
+                nav{
+                    width: 100%;
+                    height: 50px;
+                    background:rgba(0,0,0,.8);
+                    border-top: 1px solid rgba(255,255);
+                    border-bottom: 1px solid rgba(255,255);
+                    position: sticky;
+                    top:0px;
+                    z-index: 99;
+                }
+                
+                header{
+                    padding: 10px 100px;
+                    box-sizing: border-box;
+                }
+                section{
+                    width: 100%;
+                    height: 100vh;
+                }
+                .dropdown {
+                  float: left;
+                  overflow: hidden;
+                }
+                
+                .dropdown .dropbtn {
+                  font-size: 16px;  
+                  border: none;
+                  outline: none;
+                  color: white;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit;
+                  margin: 0;
+                }
+                
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                  background-color: red;
+                }
+                
+                .dropdown-content {
+                  display: block;
+                  position: absolute;
+                  background-color: red;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+                }
+                
+                .dropdown-content a {
+                  float: none;
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+                
+                .dropdown-content a:hover {
+                  background-color: #ddd;
+                }
+                ul {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                }
+                ul li a {
+                  text-decoration: none;
+                  color: #e74c3c;
+                  font-family: Tahoma, Arial;
+                }
+                .navigation {
+                  background-color: #35353500;
+                  width: 75%;
+                  margin: 20px auto;
+                  min-height: 50px;
+                }
+                .navigation > li {
+                  float: left;
+                  padding: 0 20px;
+                }
+                .navigation > li > a {
+                  line-height: 50px;
+                  color: #FFF;
+                }
+                .navigation .menu {
+                  position: relative
+                }
+                .navigation .menu .submenu {
+                  position: absolute;
+                  /* width: 200px; */
+                  -webkit-box-shadow: 0px 1px 1px #CCC;
+                  box-shadow: 0px 1px 1px #CCC;
+                  display: none;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+                .navigation .menu:hover .submenu {
+                  display: block
+                }
+                .navigation .menu .submenu:before {
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  border-width: 0 6px 6px 6px;
+                  border-style: solid;
+                  border-color: #FFF transparent;
+                  top: -6px;
+                  left: 5px
+                }
+                .navigation .menu .submenu li {
+                  padding: 5px 10px;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+                .navigation .menu .submenu li:hover {
+                  background-color: #e74c3c;
+                }
+                .navigation .menu .submenu li:hover a {
+                  color: #FFF;
+                  padding: 0 11px;
+                }
+                
+                
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                section.sec1{
+                    background: url(natures-temples.png);
+                    background-size: cover;
+                }
+                section.banner{
+                    background: url(Group.png);
+                    background-size: cover;
+                    margin-left: 15px;
+                }
+                section.sec2{
+                   padding: 100px;
+                   box-sizing: border-box;
+                }
+                nav{
+                    width: 100%;
+                    height: 50px;
+                    background:rgba(0,0,0,.8);
+                    border-top: 1px solid rgba(255,255);
+                    border-bottom: 1px solid rgba(255,255);
+                    position: sticky;
+                    top:0px;
+                    z-index: 99
+                }
+                nav ul{
+                    display: flex;
+                    margin: 0px;
+                    padding: 0px;
+                    float: right;
+                }
+                nav ul li{
+                    list-style: none;
+                }
+                
+                
+                nav ul{
+                    display: flex;
+                   
+                    padding: 0px;
+                    /* float: ; */
+                }
+                
+                nav ul li a{
+                    display:block;
+                    color: #fff;
+                    padding: 0 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    line-height: 50px;
+                
+                }
 
-            <!--Navbar-->
+                 /* ==============footer style start ========= */
+    .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container1{
+   background: black;
+   /* color: white */
+ }
+
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+
+    /* ===========================footer style end================ */
+               
+                
+                </style>
+    
+        <!-- <header>
+            <img src="Group.png" style="flex:left">
+            </header> -->
+        <div>
+            
+           
+            <div class="">
+                   
+                <div *ngIf="Lang">
+                    
+                    <div class="row">
+                        <!--<h1>English</h1>-->
+              
+
           
 
             <!--Intro Section-->
@@ -29,20 +286,21 @@ class="NEM mt-3"> -->
 <div class="row">
     <div class="col-md-8">
         <img src="./assets/group.png" class="img-responsive">
+        
     </div>
     <div class="col-md-4">
             
              
-        <input type="radio" class="btn ml-2" (click)="switchLanguage('arabic')" name="arabic"> <font color="white">Arabic</font>
-      
-        <input type="radio" class="btn ml-2" (click)="switchLanguage('en')" name="arabic"> <font color="white"> English</font>
+          <br><br> 
+        <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/><font color="white">عربى</font> 
+ &nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
+ &nbsp;   <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form" class="btn Rectangle-5-Copy">Register</button>  &nbsp;   
 
-<!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
-<button type="submit" style="background-color: #ff0000;width: 94px;padding: 3px 10px;
-margin-left: 12px;" routerLink="/register-form">REGISTER</button> 
+      <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular;font-size: 21px;
+      "><font color="white">Sign in </font></a>
 
-      <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
-      "><font color="white">LOGIN </font></a>
+
+
 
       <div id="id01" class="modal">
         
@@ -50,7 +308,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <br>
-            <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
+            <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
           </div>
       
           <div class="container">
@@ -71,9 +329,52 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
             <label class="col-md text-left">
                     <input  type="checkbox" class="Rectangle-4 "> Remember me
             
-             <a href="#" class="ml-5">Forgot password?</a></label>
-            <button class="w3-btn w3-red col-md-12" (click)="login(model)"><a class="Rectangle-5">Submit</a></button>
+             <a  onclick="document.getElementById('id02').style.display='block'" class="ml-5" >Forgot password?</a></label>
+            <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
+            color: white;
+            height: 47px;"><a class="Rectangle-5" >Submit</a></button>
    <p>New to Aman?<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+          </div>
+          </div>
+          </div>
+      
+          
+        </form>
+      </div>
+      <div id="id02" style="display:none" class="modal">
+        
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">{{'Forget password'| translate:user}}</a>
+          </div>
+      <br>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <label class="col-md text-left"><b>Email</b></label>
+            <input type="text" class="w3-input" id="email_id"
+            required
+            [(ngModel)]="model.email_id" name="name"
+            #name="ngModel">
+          
+            <label class="col-md text-left"><b>New Password</b> </label>
+            <input type="password" class="w3-input" id="password"
+            required
+            [(ngModel)]="model.password" name="password"
+            #password="ngModel"> 
+            
+            <label class="col-md text-left"><b>Confirm Password</b></label>
+            <input type="password" class="w3-input" id="confirmpassword"
+            required
+            [(ngModel)]="model.confirmpassword" name="name"
+            #name="ngModel">
+
+            <button class="w3-btn w3-red col-md-12" (click)="forgetpassword(model)" style="background: red;
+            color: white;
+            height: 47px;"><a class="Rectangle-5">Submit</a></button>
+
           </div>
           </div>
           </div>
@@ -84,6 +385,11 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
       
 </div>
 </div>
+
+
+
+
+
 <div class="mt">
   <div class="row">
      
@@ -95,7 +401,6 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                        
                         <div class="row flex-center pt-4 ">
                             <div class="col-md-12 text-center text-md-left margins">
-<<<<<<< HEAD
                               <!-- <section class="logov2"></section> -->
                               
                               
@@ -108,21 +413,11 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                                         <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
                                         
                                         <br>
-                                        <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a>
-=======
-                                <div class="white-text">
-                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'Delivering your divine 
-                                        land live who you are.' | translate:user}}</font></a>
-                                        <br>
-                                        <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-                                        <a class="wow fadeInLeft Its-about-more-than" data-wow-delay="0.3s"><font color="white">{{'It’s about more than numbers: it’s about people. Large followings are good. Active and engaged audiences are better. That’s the big picture we paint.'| translate:user}}</font></a>
-                                        <br>
-                                        <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
-                                        <a href=""> <img  src="./assets/tail-left-copy.png"
+                                        <!-- <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a> -->
+                                        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
                                          srcset="./assets/tail-left-copy@2x.png 2x,
                                                  ./assets/tail-left-copy@3x.png 3x"
-                                         class="tail-left-copy"></a>
+                                         class="tail-left-copy"></a> -->
                                     </div>  
                             </div>
                             </div>
@@ -131,178 +426,79 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                   </div>
 <br>
 
-<<<<<<< HEAD
                 <hr style="color:red;">
-=======
-<div class="col-md-5">
-                    <div class="col-md-11 mt-5">
-                        <div class="w3-card-11 w3-white">
-                            <div class="w3-container w3-white">
-                              <br>
-                              <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
-                            </div>
-                            <br>
-                            <!-- ========================= -->
-                            <div class="container">
-                                    <div class="row">
-                                    <div class="col-md-11"> 
-                                            
-                              <!-- <p>                  
-                              <label class="loginc"><b>{{'Email ID'| translate:user}}</b>
-                              <input class="w3-input" id="email" name="email"></label> -->
-                              
-                              <!-- <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-                                    <div class="form-group">
-                                      <label for="name">Name</label>
-                                      <input type="text" class="form-control" id="name"
-                                             required
-                                             [(ngModel)]="model.name" name="name"
-                                             #name="ngModel">
-                                      <div [hidden]="name.valid || name.pristine"
-                                           class="alert alert-danger">
-                                        Name is required
-                                      </div>
-                                    </div>
-                                    </form> -->
-                             </div>
-
-                             <div class="container">
-                                    <div class="row">
-                             <div class="col-md-11">
-                                    <div [hidden]="submitted">
-     
-                                            <form  [formGroup]="loginForm">
-                                              <div class="form-group">
-                                                <label class="Name" for="userid">Email ID</label>
-                                                <input type="text"  class="form-control" formControlName="userid"  [(ngModel)]="email" name="ngModel" >
-                                                                                
-                                                
-                                                <!-- <input type="text" class="form-control" formControlName="userid"> -->
-                                                <div [hidden]="name || name"
-                                                     class="alert" style="color: #f54b5e;">
-                                                  Email is required
-                                                </div>
-                                              </div>
-
-                                              <!-- <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
-                                                    <label for="password" class="col-md-3 col-sm-5 col-xs-12">Password</label>
-                                                    <div class="col-md-9 col-sm-7 col-xs-12">
-                                                      <input type="password" class="form-control" formControlName="password"/>
-                                                      <div *ngIf="submitted && f.password.errors" class="help-block">
-                                                        <div *ngIf="f.password.errors.required">Password is required</div>
-                                                      </div>
-                                                    </div>
-                                                  </div> -->
-                                        
-                                              <div class="form-group clearfix">
-                                                    <!-- <label for="password" class="Password">Password</label> -->
-                                                  <label class="Name" for="name">Password</label>
-                                                  <input type="password"  class="form-control" formControlName="password"  [(ngModel)]="password" >
-                                                  
-                                                </div>
-                                                            <div class="col-md-12">    
-                                      
-                                              <!-- <button type="submit" (click)="login(model)">Submit</button> -->
-                                              <button class="w3-btn w3-red col-md-12  Rectangle-5" type="submit" (click)="login(model)">{{'Submit' |translate:user}}</button>
-   <p>{{'New to Aman?' |translate:user}}<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">{{'Register Here' |translate:user}}</font></a></p>
-                                             
-                                            </div>
-                                            </form>
-                                            <br>
-                                          </div>
-                                    <!-- <label class="loginc"><b>{{'Email ID' | translate:user}}</b>
-                                        <input type="text" class="Input-Selector" id="email"
-                                        required
-                                        [(ngModel)]="model.email" name="name"
-                                        #name="ngModel">
-                                    </label>
-                             
-<br><br><br>
- <p>      
-                              <label class="loginc"><b>{{'Password'| translate:user}}</b>
-                              <input class="w3-input" id="email" name="email"></label>
-                             
-                              <br>  <br>   <input  type="checkbox" class="Rectangle-4 ">
-<label class="Remember-Me ml-2">{{'Remember Me'|translate:user}}</label> -->
-</div>
-</div>
-</div>
-<div class="container">
-        <div class="row">
-<!-- <div class="col-md-12">
-   
- <button class="w3-btn w3-red col-md-12"><a class="Rectangle-5" type="submit" (click)="login(model)">{{'Submit' |translate:user}}</a></button>
-   <p>{{'New to Aman?' |translate:user}}<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">{{'Register Here' |translate:user}}</font></a></p>
-   </div> -->
-</div>
-</div>
-                    </div>
-            </div>
-            <!-- =================== -->
-
-                          </div>
-                        </div>
-                </div><hr style="color:red;">
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
               </div>
               </div>
               
             </section>
+            <nav style="    margin-top: -81px;background: rgba(0, 0, 0, 0.20); " >
+                    <ul class="navigation" style="margin-right: -183px;">
+                        <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
+                               <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
+                               <li class="menu">
+                                <a href="#">S<font style="text-transform: lowercase;">ervices</font></a>
+                                <ul class="submenu" >
+                                  <li style="background:  #252323;;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man </font></a></li>
+                                  <li style="background:  #252323;;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font> </a></li>
+                                  <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                                  <li style="background: red;"><a href="#">Link 4</a></li> -->
+                                </ul>
+                              </li>
+                               <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
+                               <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li>
+                               <li ><font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                                margin-left: -43px;"></i></font></li>
+                 </ul>
+                 </nav>
+                <br>
+                <br>
+                
+                <br>  <br>
+       
+        <!-- <app-navbarv2></app-navbarv2> -->
 
-        </header>
-        <br>
-        <br> <br> <br>
-      <div class="col-md-12 ml-5">
-        <div class="row" style="margin-left: 60px;">
+
+        <div class="col-md-12">
+        <div class="card col-md-12" style="border-radius: 18px;margin-top: -79px;
+   background: white;">
+      <div class="">
+        <div class="row ml-4" >
             
-          <div class="col-sm-5">
-              <div class="col-sm-8 ">
-<<<<<<< HEAD
+          <div class="col-sm-6">
+                <br><br>
+              <div class="col-sm-7 ">
+                  <a href="amanservices">
                   <img  src="/assets/002-fire-extinguisher.png"
                   srcset="/assets/002-fire-extinguisher@2x.png 2x,
                           /assets/002-fire-extinguisher@3x.png 3x"
-                  class="fire-extinguisher">
+                  class="fire-extinguisher " style="cursor: pointer;" > </a>
                   <br>
                   <br>
                   <a class="WHAT-IS-Aman-">{{'WHAT IS AMAN ?'|translate:user}}</a>
-=======
-
-                  <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
               </div>
             
               <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
              <br>
              <br>
-<<<<<<< HEAD
-                <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a>
-=======
-                <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
-            <a href=""> <img  src="./assets/tail-left-copy.png"
+                <!-- <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
+            <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
              srcset="./assets/tail-left-copy@2x.png 2x,
                      ./assets/tail-left-copy@3x.png 3x"
-             class="tail-left-copy"></a>
+             class="tail-left-copy"></a> -->
             </p>
           </div>
-<<<<<<< HEAD
-          
-          <div class="col-sm-1"></div>
+          <br>
+          <!-- <div class="col-sm-1"></div> -->
           <div class="col-md-6">
-              <div class="col-sm-8">
-                  <img  src="./assets/001-teacher.png"
+              <br><br>
+              <div class="col-sm-7">
+                 <a href ="salamaservices"> <img  src="./assets/001-teacher.png"
                   srcset="./assets/001-teacher@2x.png 2x,
                           ./assets/001-teacher@3x.png 3x"
-                  class="teacher">
+                  class="teacher" style="cursor: pointer;"  ></a>
                   <br>
                   <br>
-                  <a class="benefits">{{'WHAT IS SALAMA ?'| translate:user}}</a>
-=======
-          <br>
-          <div class="col-sm-6">
-              <div class="col-sm-5">
-                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
+                  <a class="benefits">{{'WHAT IS SALAMA'| translate:user}}</a>
                   </div>
                   <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event.' | translate:user }}.
                     <br> 
@@ -310,25 +506,25 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                       <br>
                       {{'Analyze data to help emergency services.'| translate:user}}
                       <br>
-<<<<<<< HEAD
                       <br>
-=======
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb
-                      <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
-                      <a href=""> <img  src="./assets/tail-left-copy.png"
+                      <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
+                      <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
                        srcset="./assets/tail-left-copy@2x.png 2x,
                                ./assets/tail-left-copy@3x.png 3x"
-                       class="tail-left-copy"></a>
+                       class="tail-left-copy"></a> -->
                     </p>
                     </div>
         </div>
       </div>
       <br>
       <br>
-<<<<<<< HEAD
+
+
+
+
       <section class="details-card">
             <div class="container">
-                <div class="row">
+                <div class="row "  >
                     <div class="col-md-4">
                         <div class="card-content">
                             <div class="card-img">
@@ -337,7 +533,7 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                                 ./assets/shutterstock-220781335@3x.png 3x" alt="">
                                 <a href="#" class="btn-card1" style="">blog</a> 
                               </div>
-                            <div class="card-desc text-justify" style="height:173px;">
+                            <div class="card-desc text-justify" >
                                 <!-- <span class="blog"><h4>Blog</h4></span> -->
                                 <p> {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
                                     <!-- <a href="#" class="btn-card">blog</a>    -->
@@ -380,51 +576,503 @@ margin-left: 12px;" routerLink="/register-form">REGISTER</button>
                 </div>
             </div>
         </section>
-=======
-      <section class="view intro-4 hm-gradient">
+        
+        </div>
+    </div>
+</div>
+<!-- =====footer  english start== -->
+<div class="container1 col-md-12" >
+    <br><br>
+      <div class="row">
        
-                          <br><br><br><br><br><br>
-                            <div class="text-center">
-                                <h1><font color="white">{{'LET’S TALK TOGETHER' |translate:user}}</font></h1>
-                                <div class="text-center col-lg-12">
-                                        <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
-                                        <a href=""> <img  src="./assets/tail-left-copy.png"
-                                         srcset="./assets/tail-left-copy@2x.png 2x,
-                                                 ./assets/tail-left-copy@3x.png 3x"
-                                         class="tail-left-copy"></a>
-                                            </div>
-                            </div>
-                            <br><br><br><br><br><br>
-                  
-        </section>
-      <!-- <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-         
-            <img src="./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000.png"
-            srcset="./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000@2x.png 2x,
-                               ./assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000@3x.png 3x"
-            
-            class="img-responsive">
-            
-            <div class="col-sm-12 text-center" style="margin-top:-250px"><font color="white" class=" letstalk">{{'LET’S TALK TOGETHER' |translate:user}} </font>
+          <div class="col-sm-2">
+              <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+              ./assests/logo-1-copy@3x.png 3x"
+    class="img-thumbnail">
+          </div>
+          
+          <div class="col-md-2">
+              <h5 class="home" style="color:white">Navigations</h5>
+                        <ul class="list-unstyled quick-links">
+        
+                            <li><a routerLink="/about-us" class="about"><font color="white">About Us</font></a></li>
+                            <li><a class="about" ><font color="white">Services</font></a></li>
+                            <li><a class="about"><font color="white">Sitemap</font></a></li>
+                            <li><a routerLink="/contactus" class="about"><font color="white">Contact Us</font></a></li>
+                        </ul>
             </div>
-                <br>
-            <br>
-            <div class="text-center col-lg-12">
-                <a href=""><font color="#f34235" class="Know-More">{{'Know more'|translate:user}} </font></a>
-                <a href=""> <img  src="./assets/tail-left-copy.png"
-                 srcset="./assets/tail-left-copy@2x.png 2x,
-                         ./assets/tail-left-copy@3x.png 3x"
-                 class="tail-left-copy"></a>
+           
+            <!-- <div class="col-sm-3">
+                <h5 class="home">Support</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                  <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                  <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                  <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+     
+                </ul>
+              </div> -->
+              <div class="col-sm-2">
+                  <h5 class="home" style="color:white">Company Address:</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><p class="about"><font color="white">Tower 400, 12th Floor, Mina Road,</font>
+                        <br>
+                    <font color="white">Sharjah, PO Box 4638 Sharjah - UAE </font>
+                    <br>
+                    <font color="white">Tel: +971 6 597 2222</font>
+                    <br>
+                    <font color="white">Fax: +971 6 572 2331</font>
+                    <br>
+                    <font color="white">Email: helpdesk.hsg@apleona.com</font>
+                    <br>
+                    <font color="white">www.saned.ae</font></p></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                  ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+        class="img-thumbnail">
+              </div>
+              <div class="col-sm-3">
+                <p style="color:white">Follow us
+                  <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+                  <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+                  <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+                  <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
+                  <h6 style="color:white">Join Our Newsletter</h6>
+                  <div class="input-group mb-3">
+                     
+                      <input type="email" style="background: black;
+                      border-color: #6c757d;" class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                       
+                        <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                      </div>
                     </div>
-                    
+            </div>
+                <hr class="col-md-8" style="background:white">
+      </div>
+    
+    
+  <div class="footer">
+   <div>
+      <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. © 2018.</p>
+    </div>
+    
+  </div>
+  <br>
+  </div>
+  <!-- ================footer  english end== -->
+  
+</div>
+<!-- ==================Arabic -->
+<div *ngIf="!Lang">
+    <!-- <div class="row ">
+        <div class="col-md-12 ft_right pt_absolute">
+            <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
+            <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
         </div>
-        </div>
-        </div> -->
 
 
+    </div> -->
+    <div class="row">
+        <!--<h1>Arabic</h1>-->
+    <!--Main Navigation-->
+    
+
+        <!--Navbar-->
+      
+
+        <!--Intro Section-->
+        <section dir="rtl" class=" bb hm-gradient">
+            
+            <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+            assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+<div dir="rtl" class="row">
+<div class="col-md-8">
+    <img src="./assets/group.png" class="img-responsive" style="margin-left: 510px;">
+    
+</div>
+<div class="col-md-4">
+        
+         
+    <br><br> 
+        <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> <font style="color:white">عربى</font>
+ &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
+ 
+    <button button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form" class="btn Rectangle-5-Copy" routerLink="/register-form">تسجيل</button>
+<!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
+
+
+  <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
+  "><font color="white">تسجيل الدخول </font></a>
+
+  <div id="id01" class="modal">
+    
+        <form class="col-md-4 modal-content animate">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <br>
+                  <a class="Welcome-To-Aman">{{'مرحبًا بك في SANED'| translate:user}}</a>
+                </div>
+            
+                <div class="container">
+                  <div class="row">
+                  <div class="col-md-12">
+                  <label class="col-md text-left"><b>عنوان الايميل</b></label>
+                  <input type="text" class="w3-input" id="email_id"
+                  required
+                  [(ngModel)]="model.email_id" name="name"
+                  #name="ngModel">
+                
+                  <label class="col-md text-left"><b>كلمه السر</b> </label>
+                  <input type="password" class="w3-input" id="password"
+                  required
+                  [(ngModel)]="model.password" name="password"
+                  #password="ngModel"> 
+                  
+                  <label class="col-md text-left">
+                          <input  type="checkbox" class="Rectangle-4 "> تذكرنى
+                  
+                          <a  onclick="document.getElementById('id02').style.display='block'" class="ml-5" >هل نسيت كلمة المرور؟</a></label>
+                  <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
+                  color: white;
+                  height: 47px;"><a class="" >خضع</a></button>
+          <p>جديد في أمان؟<a routerLink="/register-form" class="Mask ml-2"> <font color="#f34235">Register Here</font></a></p>
+                </div>
+                </div>
+                </div>
+            
+                
+              </form>
+  </div>
+    
+  <div id="id02" style="display:none" class="modal">
+        
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">هل نسيت كلمة المرور</a>
+          </div>
+      <br>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <label class="col-md text-left"><b>البريد الإلكتروني</b></label>
+            <input type="text" class="w3-input" id="email_id"
+            required
+            [(ngModel)]="model.email_id" name="name"
+            #name="ngModel">
+          
+            <label class="col-md text-left"><b>كلمة السر الجديدة</b> </label>
+            <input type="password" class="w3-input" id="password"
+            required
+            [(ngModel)]="model.password" name="password"
+            #password="ngModel"> 
+            
+            <label class="col-md text-left"><b>تأكيد كلمة المرور</b></label>
+            <input type="password" class="w3-input" id="confirmpassword"
+            required
+            [(ngModel)]="model.confirmpassword" name="name"
+            #name="ngModel">
+
+            <button class="w3-btn w3-red col-md-12" (click)="forgetpassword(model)" style="background: red;
+            color: white;
+            height: 47px;"><a class="Rectangle-5">خضع</a></button>
+
+          </div>
+          </div>
+          </div>
+      
+          
+        </form>
+      </div>
+</div>
+</div>
+
+
+
+
+
+<div class="mt">
+<div class="row ml-4">
+ 
+<div class="col-md-7">
+
+            <div class="full-bg-img">
+               
+                <div class="container flex-center">
+                   
+                    <div class="row flex-center pt-4 ">
+                        <div class="col-md-12 text-center text-md-left margins">
+                          <!-- <section class="logov2"></section> -->
+                          
+                          
+                          <div class="white-text mt-2" >
+                                <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'"مرحباً بك في SANED - نحن ندير وندير منشآتك العقارية والتقنية ونساندك في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات".' | translate:user}}</font></a>
+                                    <br>
+                                    <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+                                    
+                                    <br>
+                                   
+                                </div>  
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+<br>
+
+            <hr style="color:red;">
+          </div>
+          </div>
+          
+       
+    </section>
+    <nav style="    margin-top: -79px;background: rgba(0, 0, 0, 0.20); " >
+        <ul class="navigation" style="margin-right: 415px;" dir="rtl">
+                <li><a routerLink="/login">الصفحة الرئيسية</a></li>
+                       <li><a routerLink="/about-us">معلومات عنا</a></li>
+                       <li class="menu">
+                        <a href="#">خدمات</a>
+                        <ul class="submenu" >
+                          <li style="background:  #252323;;"><a routerLink="/amanservices">تأمين </a></li>
+                          <li style="background:  #252323;;"><a routerLink="/salamaservices">سلامة </a></li>
+                          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                          <li style="background: red;"><a href="#">Link 4</a></li> -->
+                        </ul>
+                      </li>
+                       <li><a routerLink="/contactus">اتصل بنا</a></li>
+                       <li><a routerLink="/sitemap">خريطة الموقع</a></li>
+                       <li ><font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                        margin-right: -46px;"></i></font></li>
+         </ul>
+         </nav>
+      <br><br>
+    <!-- <app-navbarv2></app-navbarv2> -->
+
+
+
+    <div class="container col-md-12" dir="rtl">
+    <div class="card col-md-12" style="border-radius: 18px;margin-top: -79px;
+background: white;margin-top: -91px;">
+  <div class="">
+    <div class="row" dir="rtl">
+      <div class="col-sm-6">
+            <br><br>
+          <div class="col-sm-8 ">
+                <a href ="amanservices" >
+              <img  src="/assets/002-fire-extinguisher.png"
+              srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                      /assets/002-fire-extinguisher@3x.png 3x"
+              class="fire-extinguisher" style="margin-left: 237px;"></a>
+              <br>
+              <br>
+              <a class="WHAT-IS-Aman-" style="margin-left: 160px;">{{'ما هو أمان؟'|translate:user}}</a>
+          </div>
+        
+          <p class="col-sm-12 text-justify " > {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}
+         <br>
+         <br>
+            <!-- <a href=""><font color="red" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
+        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+         srcset="./assets/tail-left-copy@2x.png 2x,
+                 ./assets/tail-left-copy@3x.png 3x"
+         class="tail-left-copy" style="margin-left: 85px;"></a> -->
+        </p>
+      </div>
+      <br>
+      <!-- <div class="col-sm-1"></div> -->
+      <div class="col-md-6">
+            <br><br>
+          <div class="col-sm-5">
+                <a href ="salamaservices">
+              <img  src="./assets/001-teacher.png"
+              srcset="./assets/001-teacher@2x.png 2x,
+                      ./assets/001-teacher@3x.png 3x"
+              class="teacher" style="margin-left: 85px;"></a>
+              <br>
+              <br>
+              <a class="benefits">{{'ما هو سلامه'| translate:user}}</a>
+              </div>
+              <p class="col-md-12 text-justify " > {{'الحد من تأثير أي حدث للسلامة والأمن والحرائق والسلامة.' | translate:user }}.
+                <br> 
+                {{'تعظيم كفاءة مراقبة السلامة للممتلكات والأصول.' | translate:user}}
+                  <br>
+                  {{'تحليل البيانات للمساعدة في خدمات الطوارئ.'| translate:user}}
+                  <br>
+                  <br>
+                  <!-- <a href=""><font color="#f34235" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
+                  <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+                   srcset="./assets/tail-left-copy@2x.png 2x,
+                           ./assets/tail-left-copy@3x.png 3x"
+                   class="tail-left-copy"></a> -->
+                </p>
+                </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <section class="details-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="/assets/shutterstock-220781335.png" 
+                            srcset="./assets/shutterstock-220781335@2x.png 2x,
+                            ./assets/shutterstock-220781335@3x.png 3x" alt="">
+                            <a href="#" class="btn-card1" style="">مدونة</a> 
+                          </div>
+                        <div class="card-desc text-justify"  dir="rtl">
+                            <!-- <span class="blog"><h4>Blog</h4></span> -->
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">blog</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            
+                            <img src="/assets/shutterstock-775043446.png" 
+                            srcset="./assets/shutterstock-775043446@2x.png 2x,
+                            ./assets/shutterstock-775043446@3x.png 3x" alt="">
+                            <!-- <span><h4>News</h4></span> -->
+                            <a href="#" class="btn-card2" style="">أخبار</a>
+                        </div>
+                        <div class="card-desc text-justify">
+                            
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">Read</a>    -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="/assets/shutterstock-772324159.png" 
+                            srcset="./assets/shutterstock-772324159@2x.png 2x,
+                            ./assets/shutterstock-772324159@3x.png 3x" alt="">
+                            <!-- <span><h4>Linkedln</h4></span> -->
+                            <a href="#" class="btn-card3" style="">ينكدين</a>
+                        </div>
+                        <div class="card-desc">
+                           
+                            <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل من 120 ثانية.'|translate:user}}</p>
+                                <!-- <a href="#" class="btn-card">Read</a>    -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+</div>
+
+
+</div>
+ <!-- =============footer arabic start====== -->
+ <div class="container1 col-md-12" dir="rtl">
+    <br><br>
+      <div class="row">
+       
+          <div class="col-sm-2">
+              <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+              ./assests/logo-1-copy@3x.png 3x"
+    class="img-thumbnail">
+          </div>
+          
+          <div class="col-md-2">
+              <h5 class="home" style="color:white">الملاحة</h5>
+                        <ul class="list-unstyled quick-links">
+        
+                            <li><a routerLink="/about-us" class="about"><font color="white">معلومات عنا</font></a></li>
+                            <li><a class="about"><font color="white">خدمات</font></a></li>
+                            <li><a class="about"><font color="white">خريطة الموقع</font></a></li>
+                            <li><a routerLink="/contactus" class="about"><font color="white">اتصل بنا</font></a></li>
+                        </ul>
+            </div>
+           
+            <!-- <div class="col-sm-3">
+                <h5 class="home">Support</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                  <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                  <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                  <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+     
+                </ul>
+              </div> -->
+              <div class="col-sm-2">
+                  <h5 class="home" style="color:white">عنوان الشركة:</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><p class="about"><font color="white">برج 400, 12th أرضية, منجم الطريق,</font>
+                        <br>
+                    <font color="white">الشارقة, PO صندوق 4638 الشارقة - UAE </font>
+                    <br>
+                    <font color="white">الهاتف: +971 6 597 2222</font>
+                    <br>
+                    <font color="white">فاكس: +971 6 572 2331</font>
+                    <br>
+                    <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+                    <br>
+                    <font color="white">www.saned.ae</font></p></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                  ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+        class="img-thumbnail">
+              </div>
+              <div class="col-sm-3">
+                <p style="color:white">تابعنا
+                  <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+                  <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+                  <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+                  <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
+                  <h6 style="color:white">اشترك في صحيفتنا الإخبارية</h6>
+                  <div class="input-group mb-3">
+                     
+                      <input type="email" style="background: black;
+                      border-color: #6c757d;" class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                       
+                        <button class="btn btn-outline-secondary" type="button">الاشتراك</button>
+                      </div>
+                    </div>
+            </div>
+                <hr class="col-md-8" style="background:white">
+      </div>
+    
+    
+  <div class="footer">
+   <div>
+      <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية وسياسات المحتوى الخاصة بنا. © 2018.</p>
+    </div>
+    
+  </div>
+  <br>
+  </div>
+  
+<!-- ========footer arabic end====== -->
+
+</div>
+
+            </div>
+       
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 <router-outlet></router-outlet>
-   
-
->>>>>>> e5dc73a4fa8d78a88eddcf728a6adb261e9872cb

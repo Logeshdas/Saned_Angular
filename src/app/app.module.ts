@@ -24,6 +24,7 @@ import { AmanservicesComponent } from './amanservices/amanservices.component';
 import { SalamaservicesComponent } from './salamaservices/salamaservices.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ContactComponent } from './contact/contact.component'
+import {confirmvalidatorDirective} from './confirmpassvalidator.directive';
 
 const routes: Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -45,7 +46,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     FormsModule,
-    // FormGroup,
     RecaptchaModule,
     HttpClientModule,
     
@@ -74,7 +74,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AmanservicesComponent,
     SalamaservicesComponent,
     ContactusComponent,
-    ContactComponent
+    ContactComponent,
+    confirmvalidatorDirective
   ],
   providers: [
     {

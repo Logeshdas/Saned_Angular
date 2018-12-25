@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-//===start=========
-import { TranslateService } from '@ngx-translate/core';
-//==========end========
 
 import { Hero }    from '../hero';
 
@@ -11,14 +8,6 @@ import { Hero }    from '../hero';
   styleUrls: ['./hero-form.component.css']
 })
 export class HeroFormComponent {
-  //===================translate start=========
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
-  }
-  switchLanguage(language: string) {
-    this.translate.use(language);
-  }
-  //============ translate end============
 
   powers = ['Really Smart', 'Super Flexible',
             'Super Hot', 'Weather Changer'];

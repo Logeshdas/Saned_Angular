@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export  class  APIService {
-    API_URL  =  'http://localhost:8083';
+    API_URL  =  'https://sanedbackend.herokuapp.com';
     
     constructor(private  httpClient:  HttpClient) {}
     createContact(contact){
@@ -15,6 +15,10 @@ export  class  APIService {
     }
     sendotp(contact){
         return  this.httpClient.post(`${this.API_URL}/emailotp`,contact);
+        
+    }
+    forgetpassword(contact){
+        return  this.httpClient.post(`${this.API_URL}/forgetpassword`,contact);
         
     }
     emailotpverification(contact){

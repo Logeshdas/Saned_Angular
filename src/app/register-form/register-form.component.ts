@@ -32,16 +32,16 @@ export class RegisterFormComponent implements OnInit {
           this.apiService.createContact(model).subscribe((response) => {
               this.data = response;
               if(this.data.Message == "User Already Registered"){
-                // document.getElementById('id01').style.display='none'
+               
                   console.log("data=====>",this.data);
                   
-                  swal(this.data.Message );
+                  swal(this.data.Message+"<br>"+"مستخدم مسجل بالفعل" );
   
-              
+                
                 }
 else{
   swal("Please check your email")
-  document.getElementById('id02').style.display='block'
+  document.getElementById('id01').style.display='block'
 }
               // this.router.navigate(['/login']);
               
@@ -55,7 +55,7 @@ else{
             if(this.data.status == "true"){
                 console.log("data=====>",this.data);
                 
-                swal('Registration Successful' )
+                swal('Registration Successful'+"<br>"+"التسجيل ناجح" )
 
                 this.router.navigate(['/login']);
               }

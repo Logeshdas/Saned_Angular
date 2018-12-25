@@ -3,13 +3,9 @@
   background-size: cover;
 
 }
+
 .logov2 {
   background: url("/assets/loginv2-2.png")no-repeat center center;
-  background-size: cover;
-
-}
-.intro-4 {
-  background: url("/assets/uae-sharjah-february-1-2016-al-qasba-canal-and-ferris-wheel-in-sharjah-city-united-arab-emirates-sharjah-third-largest-and-third-most-populous-city-in-uae-and-capital-of-emirate-of-sharjah-si-8-s-adm-f-0000@3x.png") center center;
   background-size: cover;
 
 }
@@ -51,7 +47,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
+/* button {
   background-color:#f34235;
   color: white;
   padding: 14px 20px;
@@ -59,7 +55,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-}
+} */
 
 button:hover {
   opacity: 0.8;
@@ -741,3 +737,8 @@ a.btn-card {
   text-decoration: none;
   color: #fff;
 }
+.bb{
+  background: url("/assets/bb.png")no-repeat center center;
+  background-size: cover;
+  
+  }
