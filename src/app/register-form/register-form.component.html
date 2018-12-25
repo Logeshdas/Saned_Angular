@@ -419,7 +419,7 @@
                 <input type="text" class="form-control col-md-8" id="company"
                        required
                        [(ngModel)]="model.company" name="company"
-                       #name="ngModel">
+                       #company="ngModel">
                 <!-- <div [hidden]="name.valid || name.pristine"
                      class="alert alert-danger">
                   Name is required
@@ -431,7 +431,7 @@
                   <input type="text" class="form-control col-md-8" id="nationality"
                          required
                          [(ngModel)]="model.nationality" name="nationality"
-                         #name="ngModel">
+                         #nationality="ngModel">
                   <!-- <div [hidden]="name.valid || name.pristine"
                        class="alert alert-danger">
                     Name is required
@@ -443,7 +443,7 @@
                     <input type="text" class="form-control col-md-8" id="phonenumber"
                            required
                            [(ngModel)]="model.phonenumber" name="phonenumber"
-                           #name="ngModel">
+                           #phonenumber="ngModel">
                     <!-- <div [hidden]="name.valid || name.pristine"
                          class="alert alert-danger">
                       Name is required
@@ -454,8 +454,8 @@
                       <label class="Name" for="address">Address</label>
                       <input type="text" class="form-control col-md-8" id="address"
                              required
-                             [(ngModel)]="model.address" name="name"
-                             #name="ngModel">
+                             [(ngModel)]="model.address" name="address"
+                             #address="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                            class="alert alert-danger">
                         Name is required
@@ -467,7 +467,7 @@
                         <input type="text" class="form-control col-md-8" id="pobox"
                                required
                                [(ngModel)]="model.pobox" name="pobox"
-                               #name="ngModel">
+                               #pobox="ngModel">
                         <!-- <div [hidden]="name.valid || name.pristine"
                              class="alert alert-danger">
                           Name is required
@@ -490,9 +490,9 @@
                             <label class="Name" for="email">Email<span class="req" style="color: #f54b5e;">* </span></label>
                             <input type="text" class="form-control col-md-8" id="email"
                                    required 
-                                   [(ngModel)]="model.email" name="name"
-                                   #name="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            <div [hidden]="name.valid || name.pristine"
+                                   [(ngModel)]="model.email" name="email"
+                                   #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div [hidden]="email.valid || email.pristine"
                                  class="alert" style="color: #f54b5e;">
                       Invalid Email Address
                             </div>
@@ -529,9 +529,9 @@
                                 <!-- <input type="radio" id="myRadio" name="test" required>
                                 -->
                                 <div >
-                                <input type="radio" id="myRadio" value="yes" 
+                                <input type="checkbox" id="myRadio" value="yes" 
                                         [(ngModel)]="model.stayconnect" name="stayconnect"
-                                       >Join Our Newsletter
+                                       >Subscribe to our Newsletter
 </div>
                                        <!-- <div [hidden]="stayconnect.valid || stayconnect.pristine"
                                      class="alert" style="color: #f54b5e;">
@@ -561,7 +561,7 @@
                                   </div> -->
                                 </div>
                                 <div class="form-group col-md-12">  
-                          <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LcbnoAUAAAAAMSXUw-ITzMbg18NjbMUuQ92Xc5k"></re-captcha>
+                          <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LfQqIQUAAAAABL8W6ckQ5_jVY-flsBo8RHrI9Vx"></re-captcha>
     </div>
     
                           
@@ -648,7 +648,7 @@
                   <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
                   <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
                   
-                  <h6>Join Our Newsletter</h6>
+                  <h6>Subscribe to our Newsletter</h6>
                   <div class="input-group mb-3">
                      
                       <input type="email" style="background: black;
@@ -803,7 +803,7 @@
                        [(ngModel)]="model.name" name="name"
                        #name="ngModel">
                 <div [hidden]="name.valid || name.pristine"
-                     class="alert" style="color: #f54b5e;">
+                     class="alert" style="color: #f54b5e;text-align: -webkit-auto;">
                      مطلوب اسم
                 </div>
               </div>
@@ -813,7 +813,7 @@
                   <input type="text" class="form-control col-md-8" id="company"
                          required
                          [(ngModel)]="model.company" name="company"
-                         #name="ngModel">
+                         #company="ngModel">
                 
                 </div>
               
@@ -822,7 +822,7 @@
                     <input type="text" class="form-control col-md-8" id="nationality"
                            required
                            [(ngModel)]="model.nationality" name="nationality"
-                           #name="ngModel">
+                           #nationality="ngModel">
                 
                   </div>
       
@@ -831,7 +831,7 @@
                       <input type="text" class="form-control col-md-8" id="phonenumber"
                              required
                              [(ngModel)]="model.phonenumber" name="phonenumber"
-                             #name="ngModel">
+                             #phonenumber="ngModel">
                    
                     </div>
       
@@ -839,8 +839,8 @@
                         <label class="Name" for="address" style="text-align: -webkit-auto;">عنوان</label>
                         <input type="text" class="form-control col-md-8" id="address"
                                required
-                               [(ngModel)]="model.address" name="name"
-                               #name="ngModel">
+                               [(ngModel)]="model.address" name="address"
+                               #address="ngModel">
                   
                       </div>
       
@@ -849,7 +849,7 @@
                           <input type="text" class="form-control col-md-8" id="pobox"
                                  required
                                  [(ngModel)]="model.pobox" name="pobox"
-                                 #name="ngModel">
+                                 #pobox="ngModel">
                       
                         </div>
       
@@ -860,7 +860,7 @@
                                    [(ngModel)]="model.mobile" name="mobile"
                                    #mobile="ngModel">
                             <div [hidden]="mobile.valid || mobile.pristine"
-                                 class="alert" style="color: #f54b5e;" dir="rtl">
+                                 class="alert" style="color: #f54b5e;text-align: -webkit-auto;" dir="rtl">
                                  رقم الجوال مطلوب
                             </div>
                           </div>
@@ -868,26 +868,27 @@
                           <div class="form-group col-md-6">
                               <label class="Name" style="text-align: -webkit-auto;" for="email">البريد الإلكتروني<span class="req" style="color: #f54b5e;">* </span></label>
                               <input type="text" class="form-control col-md-8" id="email"
-                                     required
-                                     [(ngModel)]="model.email" name="name"
-                                     #name="ngModel">
-                              <div [hidden]="name.valid || name.pristine"
-                                   class="alert" style="color: #f54b5e;">
-                                   البريد الالكتروني مطلوب
-                              </div>
+                                   required 
+                                   [(ngModel)]="model.email" name="email"
+                                   #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <div [hidden]="email.valid || email.pristine"
+                                 class="alert" style="color: #f54b5e;text-align: -webkit-auto;">
+                      Invalid Email Address
+                            </div>
                             </div>
                             <div class="form-group col-md-6">
-                              <label class="Name" style="text-align: -webkit-auto;" for="password">كلمه السر<span class="req" style="color: #f54b5e;">* </span></label>
-                              <input type="password" class="form-control col-md-8" id="password"
-                                     required
-                                     [(ngModel)]="model.password" name="password"
-                                     #password="ngModel">
+                              <label class="Name" for="password" style="text-align: -webkit-auto;">كلمه السر<span class="req" style="color: #f54b5e;">* </span></label>
+                              <input type="password" class="form-control col-md-8" id="password" required [(ngModel)]="model.password" name="password"
+                                     #password="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+   
                               <div [hidden]="password.valid || password.pristine"
-                                   class="alert" style="color: #f54b5e;">
-                                   كلمة المرور مطلوبة
+                                   class="alert" style="color: #f54b5e;text-align: -webkit-auto;">
+                                   يجب أن تحتوي كلمة المرور على حرف U واحد على الأقل ، رقم واحد على الأقل 8 أحرف
                               </div>
+                              <span id="strength_message"></span>
                             </div>
-  
+
+                            
                             <div class="form-group col-md-6">
                                 <label class="Name" style="text-align: -webkit-auto;" for="confirmpassword">تأكيد كلمة المرور<span class="req" style="color: #f54b5e;">* </span></label>
                                 <input type="password" class="form-control col-md-8" id="confirmpassword" passvalidator="password"
@@ -895,7 +896,7 @@
                                        [(ngModel)]="model.confirmpassword" name="confirmpassword" 
                                        #confirmpassword="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                                 <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
-                                     class="alert" style="color: #f54b5e;">
+                                     class="alert" style="color: #f54b5e;text-align: -webkit-auto;">
                                     
                                      كلمة المرور غير متطابقة
                                 </div>
@@ -909,9 +910,9 @@
                                   <label class="Name" style="text-align: -webkit-auto;">ابق على اتصال</label>
                                  
                                   <div style="text-align: -webkit-auto;">
-                                  <input type="radio" id="myRadio" value="yes"
+                                  <input type="checkbox" id="myRadio" value="yes"
                                           [(ngModel)]="model.stayconnect" name="stayconnect"
-                                         >اشترك في صحيفتنا الإخبارية
+                                         >اشترك في نشرتنا الإخبارية
   </div>
                                    
                                 </div>
@@ -934,7 +935,7 @@
                                  
                                   </div>
                                   <div class="form-group col-md-2">  
-                            <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LcbnoAUAAAAAMSXUw-ITzMbg18NjbMUuQ92Xc5k"></re-captcha>
+                            <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LfQqIQUAAAAABL8W6ckQ5_jVY-flsBo8RHrI9Vx"></re-captcha>
       </div>
                             
                             <div class="col-md-11" style="margin-right:-155">    
@@ -1028,7 +1029,7 @@
                     <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
                     <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
                     
-                    <h6>اشترك في صحيفتنا الإخبارية</h6>
+                    <h6>اشترك في نشرتنا الإخبارية</h6>
                     <div class="input-group mb-3">
                        
                         <input type="email" style="background: black;

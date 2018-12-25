@@ -25,6 +25,7 @@ import { SalamaservicesComponent } from './salamaservices/salamaservices.compone
 import { ContactusComponent } from './contactus/contactus.component';
 import { ContactComponent } from './contact/contact.component'
 import {confirmvalidatorDirective} from './confirmpassvalidator.directive';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const routes: Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -36,7 +37,7 @@ const routes: Routes=[
 {path:'contactus',component:ContactusComponent},
 {path:'amanservices',component:AmanservicesComponent},
 {path:'salamaservices',component:SalamaservicesComponent},
-
+{path:'sitemap',component:SitemapComponent},
 ]
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -75,13 +76,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     SalamaservicesComponent,
     ContactusComponent,
     ContactComponent,
-    confirmvalidatorDirective
+    confirmvalidatorDirective,
+    SitemapComponent
   ],
   providers: [
     {
       provide: RECAPTCHA_SETTINGS,
     useValue: {
-      siteKey: '6LcbnoAUAAAAAMSXUw-ITzMbg18NjbMUuQ92Xc5k',
+      siteKey: '6LfQqIQUAAAAABL8W6ckQ5_jVY-flsBo8RHrI9Vx',
     } as RecaptchaSettings,
     },
     {provide: RECAPTCHA_LANGUAGE,

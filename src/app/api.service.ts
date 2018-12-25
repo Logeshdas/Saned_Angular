@@ -10,7 +10,9 @@ export  class  APIService {
     
     constructor(private  httpClient:  HttpClient) {}
     createContact(contact){
+       
         return  this.httpClient.post(`${this.API_URL}/register`,contact);
+
         
     }
     sendotp(contact){
