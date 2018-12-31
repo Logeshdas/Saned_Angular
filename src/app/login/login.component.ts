@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { APIService } from '../api.service';
 import { Router } from '@angular/router';
 import swal from 'sweetalert2';
+import { SimpleGlobal } from 'ng2-simple-global';
+
 
 @Component({
   selector: 'app-login',
@@ -9,6 +11,8 @@ import swal from 'sweetalert2';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+    localVar;
+
 
     // powers = ['Really Smart', 'Super Flexible',
   //           'Super Hot', 'Weather Changer'];
@@ -17,19 +21,34 @@ export class LoginComponent implements OnInit {
   model: any = {};
     data: any = {};
 
-    constructor(private  apiService:  APIService,private router: Router) { }
+    constructor(private  apiService:  APIService,private router: Router,private sg: SimpleGlobal) {
+      
+     }
 
     ngOnInit() {
     }
+    // logout(model){
+    //     document.getElementById('logout').style.display='none'
+
+    //     this.router.navigate(['/login']);
+    // }
   
       login(model){
           this.apiService.login(model).subscribe((response) => {
               this.data = response;
-              if(this.data.status == "true"){
+              if(this.data.Message == "Login Successful"){
                   console.log("data=====>",this.data);
                 //   alert('Login Successful' );
+                document.getElementById('login').style.display='none'
+                document.getElementById('id01').style.display='none'
+
+                document.getElementById('logout').style.display='block'
+
+
+
+
   
-                this.router.navigate(['/government-services']);
+                this.router.navigate(['/login']);
                 }
                else if(this.data.Message=="Invalid User name")
                 {
@@ -39,16 +58,51 @@ export class LoginComponent implements OnInit {
                 {
                     swal("Password is Incorrect");
                 }
-
+                else if(this.data.Message=="One Time Password is not verified.Please register Again")
+                {
+                    swal("One Time Password is not verified.Please register Again");
+                }
               
               
           });
           
       };
+     newsletter(model){
+        this.apiService.newsletter(model).subscribe((response) => {
+            this.data = response;
+            console.log(this.data);
+            swal(this.data.Message+"<br>"+"اشتركت بنجاح في النشرة الإخبارية" );
+        })
+    };
+
+    forgetotpverification(model){
+        console.log("enter in to otp login ts service",this.model.otp)
+      this.apiService.forgetotpverification(model).subscribe((response) => {
+          this.data = response;
+          if(this.data.status == "true"){
+              console.log("data=====>",this.data);
+              
+              swal('Password updated successfully'+"<br>"+"التسجيل ناجح" )
+              
+              this.router.navigate(['/login']);
+            }
+            else if(this.data.message== "Invalid one time password"){
+                console.log("kavitha")
+                swal('Invalid one time password'+"<br>"+"كلمة مرور غير صالحة مرة واحدة")
+            }
+
+         
+          
+      });
+      
+  };
+
       forgetpassword(model){
         this.apiService.forgetpassword(model).subscribe((response) => {
             this.data = response;
             if(this.data.Message == "Password should not be a previously used one"){
+                document.getElementById('id03').style.display='none'
+
              
                 console.log("data=====>",this.data);
                 
@@ -56,20 +110,35 @@ export class LoginComponent implements OnInit {
 
               
               }
-              if(this.data.Message == "password is updated"){
+             else if(this.data.Message == "password is updated"){
+                document.getElementById('id03').style.display='block'
+
+
 swal(this.data.Message+"<br>"+"")
+                
               }
-              if(this.data.Message == "password doesn't match"){
+             else if(this.data.Message == "password doesn't match"){
+                document.getElementById('id03').style.display='none'
+
                 swal(this.data.Message+"<br>"+"")
                               }
             
-        });
-        if(this.data.Message == "Invalid User Name"){
+       
+        else if(this.data.Message == "Invalid User Name"){
+            document.getElementById('id03').style.display='none'
+
             swal(this.data.Message+"<br>"+"")
                           }
+                          else if(this.data.Message == "Please fill all the details"){
+                            document.getElementById('id03').style.display='none'
+
+                            swal(this.data.Message+"<br>"+"")
+                                          }
+                        });
+
     };
   
-  
+
       onSubmit() {
           // alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model))
       }

@@ -6,19 +6,36 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export  class  APIService {
-    API_URL  =  'http://35.200.219.96:8082';
+    API_URL  =  'https://sanedbackend.herokuapp.com';
     
     constructor(private  httpClient:  HttpClient) {}
     createContact(contact){
         return  this.httpClient.post(`${this.API_URL}/register`,contact);
         
     }
+    forgetotpverification(contact){
+        return  this.httpClient.post(`${this.API_URL}/forgetotpverification`,contact);
+ 
+    }
+    
+    supplierregister(contact){
+        return  this.httpClient.post(`${this.API_URL}/supplier-registration`,contact);
+        
+    }
+    newsletter(contact){
+        return  this.httpClient.post(`${this.API_URL}/newsletter-Residents`,contact);
+ 
+    } 
     sendotp(contact){
         return  this.httpClient.post(`${this.API_URL}/emailotp`,contact);
         
     }
     forgetpassword(contact){
         return  this.httpClient.post(`${this.API_URL}/forgetpassword`,contact);
+        
+    }
+    supplieremailotpverification(contact){
+        return  this.httpClient.post(`${this.API_URL}/supplieremailotpverification`,contact);
         
     }
     emailotpverification(contact){
