@@ -13,15 +13,15 @@ import { SimpleGlobal } from 'ng2-simple-global';
 export class SitemapComponent implements OnInit {
   model: any = {};
   data: any = {};
-  constructor(private  apiService:  APIService,private router: Router,private sg: SimpleGlobal) { }
+  constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }
 
   ngOnInit() {
   }
-  newsletter(model){
+  newsletter(model) {
     this.apiService.newsletter(model).subscribe((response) => {
-        this.data = response;
-        console.log(this.data);
-        swal(this.data.Message+"<br>"+"اشتركت بنجاح في النشرة الإخبارية" );
+      this.data = response;
+      console.log(this.data);
+      swal(this.data.Message + "<br>" + "اشتركت بنجاح في النشرة الإخبارية");
     })
-};
+  };
 }

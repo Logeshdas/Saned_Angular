@@ -1,13 +1,7 @@
 <!DOCTYPE html>
-<html>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+  body {font-family: Arial, Helvetica, sans-serif;}
     nav{
         width: 100%;
         height: 50px;
@@ -72,282 +66,6 @@ input[type=text], input[type=password] {
 button:hover {
   opacity: 0.8;
 }
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-/* ========login form end====== */
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
-    }
-    
-    .dropdown-content {
-      display: block;
-      position: absolute;
-      background-color: red;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    ul li a {
-      text-decoration: none;
-      color: #e74c3c;
-      font-family: Tahoma, Arial;
-    }
-    .navigation {
-      background-color: #35353500;
-      width: 75%;
-      margin: 20px auto;
-      min-height: 50px;
-    }
-    .navigation > li {
-      float: left;
-      padding: 0 20px;
-    }
-    .navigation > li > a {
-      line-height: 50px;
-      color: #FFF;
-    }
-    .navigation .menu {
-      position: relative
-    }
-    .navigation .menu .submenu {
-      position: absolute;
-      /* width: 200px; */
-      -webkit-box-shadow: 0px 1px 1px #CCC;
-      box-shadow: 0px 1px 1px #CCC;
-      display: none;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu:hover .submenu {
-      display: block
-    }
-    .navigation .menu .submenu:before {
-      content: "";
-      position: absolute;
-      display: block;
-      border-width: 0 6px 6px 6px;
-      border-style: solid;
-      border-color: #FFF transparent;
-      top: -6px;
-      left: 5px
-    }
-    .navigation .menu .submenu li {
-      padding: 5px 10px;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu .submenu li:hover {
-      background-color: #e74c3c;
-    }
-    .navigation .menu .submenu li:hover a {
-      color: #FFF;
-      padding: 0 11px;
-    }
-    
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    section.sec1{
-        background: url(natures-temples.png);
-        background-size: cover;
-    }
-    section.banner{
-        background: url(Group.png);
-        background-size: cover;
-        margin-left: 15px;
-    }
-    section.sec2{
-       padding: 100px;
-       box-sizing: border-box;
-    }
-    nav{
-        width: 100%;
-        height: 50px;
-         background:rgba(0,0,0,.8); 
-        border-top: 1px solid rgba(255,255);
-        border-bottom: 1px solid rgba(255,255);
-        position: sticky;
-        top:0px;
-        z-index: 99
-    }
-    nav ul{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-        float: right;
-    }
-    nav ul li{
-        list-style: none;
-    }
-    
-    
-    nav ul{
-        display: flex;
-       
-        padding: 0px;
-        /* float: ; */
-    }
-    
-    nav ul li a{
-        display:block;
-        color: #fff;
-        padding: 0 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 50px;
-    
-    }
-    /* .switch{
-    margin-top: 0;
-    margin-bottom: -5rem;
-    margin-left: 83%;
-    color: red;
-    overflow: hidden;
-}
-.switch1{
-    margin-top: 0;
-    margin-bottom: -2rem;
-    margin-left: 0%;
-    color: red;
-} */
- /* ==============footer style start ========= */
- .footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* height: 75px; */
- }
- .container1{
-   background: black;
-   color: white
- }
- .container{
-   /* background: black; */
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
 .social {
   -webkit-transform: scale(0.8);
   /* Browser Variations: */
@@ -363,7 +81,12 @@ span.psw {
   font-size: 30px;
   width: 30px;
   text-align: center;
-  text-decoration: none;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
   border-radius: 50%;
 }
 .img-thumbnail{
@@ -383,89 +106,341 @@ span.psw {
     line-height: 15px;
   letter-spacing: 0;
   }
+  .container1{
+   background: black;
+   color: white
+ }
 
     /* ===========================footer style end================ */
+
     </style>
-   
+
+
+<!-- <div> -->
+
+<!-- <div class = "switch" id="en" >
+      <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
+      <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
+  </div> -->
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
+}
+/* ========login form end====== */
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+.dropdown-content {
+display: block;
+position: absolute;
+background-color: red;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+ul {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+ul li a {
+text-decoration: none;
+color: #e74c3c;
+font-family: Tahoma, Arial;
+}
+.navigation {
+background-color: #35353500;
+width: 75%;
+margin: 20px auto;
+min-height: 50px;
+}
+.navigation > li {
+float: left;
+padding: 0 20px;
+}
+.navigation > li > a {
+line-height: 50px;
+color: #FFF;
+}
+.navigation .menu {
+position: relative
+}
+.navigation .menu .submenu {
+position: absolute;
+/* width: 200px; */
+-webkit-box-shadow: 0px 1px 1px #CCC;
+box-shadow: 0px 1px 1px #CCC;
+display: none;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+.navigation .menu:hover .submenu {
+display: block
+}
+.navigation .menu .submenu:before {
+content: "";
+position: absolute;
+display: block;
+border-width: 0 6px 6px 6px;
+border-style: solid;
+border-color: #FFF transparent;
+top: -6px;
+left: 5px
+}
+.navigation .menu .submenu li {
+padding: 5px 10px;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
+}
+.navigation .menu .submenu li:hover {
+background-color: #e74c3c;
+}
+.navigation .menu .submenu li:hover a {
+color: #FFF;
+padding: 0 11px;
+}
+
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+section.sec1{
+background: url(natures-temples.png);
+background-size: cover;
+}
+section.banner{
+background: url(Group.png);
+background-size: cover;
+margin-left: 15px;
+}
+section.sec2{
+padding: 100px;
+box-sizing: border-box;
+}
+nav{
+width: 100%;
+height: 50px;
+background:rgba(0,0,0,.8);
+border-top: 1px solid rgba(255,255);
+border-bottom: 1px solid rgba(255,255);
+position: sticky;
+top:0px;
+z-index: 99
+}
+nav ul{
+display: flex;
+margin: 0px;
+padding: 0px;
+float: right;
+}
+nav ul li{
+list-style: none;
+}
+
+
+nav ul{
+display: flex;
+
+padding: 0px;
+/* float: ; */
+}
+
+nav ul li a{
+display:block;
+color: #fff;
+padding: 0 20px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 50px;
+
+}
+/* .switch{
+margin-top: 0;
+margin-bottom: -5rem;
+margin-left: 83%;
+color: red;
+overflow: hidden;
+}
+.switch1{
+margin-top: 0;
+margin-bottom: -2rem;
+margin-left: 0%;
+color: red;
+} */
+/* ==============footer style start ========= */
+.footer {
+/* position: fixed; */
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+/* height: 75px; */
+}
+.container1{
+background: black;
+color: white
+}
+.container{
+/* background: black; */
+color: white
+}
+.social:hover {
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+}
+.social {
+-webkit-transform: scale(0.8);
+/* Browser Variations: */
+
+-moz-transform: scale(0.8);
+-o-transform: scale(0.8);
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+}
+.img-thumbnail{
+background: black;
+border-color: black
+}
+
+.home{
+font-family: Roboto-Bold;
+font-size: 16px;
+line-height: 14px;
+letter-spacing: 0;
+}
+.about{
+font-family: Roboto-Regular;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 0;
+}
+
+/* ===========================footer style end================ */
+</style>
+
 </head>
 <!-- <div> -->
-  
-     <!-- <div class = "switch" id="en" >
+
+<!-- <div class = "switch" id="en" >
       <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
       <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
   </div> -->
 
 
 
-      <div >
-<!------ Include the above in your HEAD tag ---------->
-<div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image.png);height: 623px;" >
-   
-<div class="">
-    <div class="col-md-1">
+<div>
+  <!------ Include the above in your HEAD tag ---------->
+  <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image.png);height: 623px;">
+
+    <div class="">
+      <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
-        <img  src="./assets/group.png"
-                                         srcset="./assets/group@2x.png 2x,
+        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
                                                  ./assets/group@3x.png 3x"
-                                         class="img-responsive">
-                                         
-                                         
-    
-                                        </div>
-                                        <div style="margin-left: 1100px;margin-top: -150px">
-                                        <br><br> 
-                                        <input  type="radio" [value]="false" routerLink="/register-form-arabic"/> <font color="white"> عربى
-                                        </font>
-                                 &nbsp; &nbsp;        <input  style="color:#ff0000;" type="radio" [value]="true" checked="checked" /><font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp; </div>
-</div>
+          class="img-responsive">
+
+
+
+      </div>
+      <div style="margin-left: 1100px;margin-top: -150px">
+        <br><br>
+        <input type="radio" [value]="false" routerLink="/register-form-arabic" />
+        <font color="white"> عربى
+        </font>
+        &nbsp; &nbsp; <input style="color:#ff0000;" type="radio" [value]="true" checked="checked" />
+        <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
+      </div>
+    </div>
     <!-- <div class="full-bg-img"> -->
-        <!-- <div class="container flex-center"> -->
-            <!-- <div class="row flex-center pt-5 mt-3"> -->
-                <!-- <div class="col-md-6 text-center"> -->
-                  <br><br><br><br><br><br>
-                    <div class="text-center">
-                        <h1 ><font color="white">REGISTER </font></h1>
-                           
-                    </div>
-                <!-- </div> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br><br><br><br><br>
+    <div class="text-center">
+      <h1>
+        <font color="white">REGISTER </font>
+      </h1>
 
-                
-            <!-- </div> -->
-        <!-- </div> -->
+    </div>
     <!-- </div> -->
-</div>
-<nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); " >
-  <ul class="navigation" style="margin-right: 141px;">
-        <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
-               <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
-               <li class="menu">
-                <a >S<font style="text-transform: lowercase;">ervices</font></a>
-                <ul class="submenu" >
-                  <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man </font></a></li>
-                  <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font> </a></li>
-                  <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                  <li style="background: red;"><a href="#">Link 4</a></li> -->
-                </ul>
-              </li>
-              <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
-               <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
-               <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li>
-               <li ><font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                margin-left: -43px;"></i></font></li>
-  
 
-</ul>
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 141px;">
+      <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
+      <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
+      <li class="menu">
+        <a>S<font style="text-transform: lowercase;">ervices</font></a>
+        <ul class="submenu">
+          <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
+              </font></a></li>
+          <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
+            </a></li>
+          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                  <li style="background: red;"><a href="#">Link 4</a></li> -->
+        </ul>
+      </li>
+      <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
+      <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
+      <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li>
+      <li>
+        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                margin-left: -43px;"></i></font>
+      </li>
+
+
+    </ul>
   </nav>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<div id="id01" class="modal">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <div id="id01" class="modal">
 
     <form class="modal-content animate col-md-4" action="/action_page.php">
       <div class="imgcontainer">
@@ -473,69 +448,69 @@ span.psw {
         <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
         <h4>Enter One Time Password</h4>
       </div>
- 
+
       <!-- <div class="container"> -->
-        <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent to your email address and mobile number</p>
-        <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-        <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
-        <input type="text" class="form-control col-md-4 inline" id="otp"
-        style="margin-left:130px"       required
-                                   [(ngModel)]="model.otp" name="name"
-                                   #name="ngModel">
- 
-                                   <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
- 
-                            <div [hidden]="name.valid || name.pristine"
-                                 class="alert" style="color: #f54b5e;">
-                                 One Time Password is required
-                            </div>
-        <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+      <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent to
+        your email address and mobile number</p>
+      <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
+      <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+      <input type="text" class="form-control col-md-4 inline" id="otp" style="margin-left:130px" required [(ngModel)]="model.otp"
+        name="name" #name="ngModel">
+
+      <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+
+      <div [hidden]="name.valid || name.pristine" class="alert" style="color: #f54b5e;">
+        One Time Password is required
+      </div>
+      <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
         <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
         <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
-        <!-- <label for="psw"><b>Password</b></label>
+      <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
- 
-        <button style="background-color: #ff0000;margin-left:57px;color: white" class="btn Rectangle-5-Copy" (click)="emailotpverification(model)" type="submit">Submit</button>
-      
+
+      <button style="background-color: #ff0000;margin-left:57px;color: white" class="btn Rectangle-5-Copy" (click)="emailotpverification(model)"
+        type="submit">Submit</button>
+
       <br><br>
-        <!-- <label>
+      <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label> -->
       <!-- </div> -->
- 
+
       <!-- <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div> -->
     </form>
   </div>
-  
+
   <div class="container col-md-12">
     <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-   
-   <div class="card col-md-12" style="border-radius: 18px;
+
+    <div class="card col-md-12" style="border-radius: 18px;
    background: white;color:#494949;margin-top: -170px;">
-   <br>
-    <div class="row ml-5">
+      <br>
+      <div class="row ml-5">
         <div class="col-md-12 Who-We-Are-Aman-is-a">
-    <!-- <h4><b>Who We Are</b></h4> -->
-    <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to services portal</b></h3>
-    <div class="col-md-12">
-      
-        <div [hidden]="submitted">
-          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-          <div class="row col-md-12 ml-5">
-            <div class="form-group col-md-6">
-              <label class="Name" for="name">Name<span class="req" style="color: #f54b5e;">* </span></label>
-             
-                <input type="text" class="form-control col-md-8" name="name" [(ngModel)]="model.name" #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required />
-              
-              <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
-                <div *ngIf="name.errors.required">Name is required</div>
-              </div>
-            
-            </div>
-            <!-- <div class="form-group">
+          <!-- <h4><b>Who We Are</b></h4> -->
+          <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Welcome to services portal</b></h3>
+          <div class="col-md-12">
+
+            <div [hidden]="submitted">
+              <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                <div class="row col-md-12 ml-5">
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="name">Name<span class="req" style="color: #f54b5e;">* </span></label>
+
+                    <input type="text" class="form-control col-md-8" name="name" [(ngModel)]="model.name" #name="ngModel"
+                      [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required />
+
+                    <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+                      <div *ngIf="name.errors.required">Name is required</div>
+                    </div>
+
+                  </div>
+                  <!-- <div class="form-group">
               <label for="firstName">First Name</label>
               <input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstname" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
               <div [hidden]="firstName.valid || firstName.pristine"
@@ -546,71 +521,61 @@ span.psw {
                 <div *ngIf="firstName.errors.required">First Name is required</div>
               </div>
             </div> -->
-      
-            <div class="form-group col-md-6">
-                <label class="Name" for="name">Company</label>
-                <input type="text" class="form-control col-md-8" id="company"
-                       required
-                       [(ngModel)]="model.company" name="company"
-                       #company="ngModel">
-                       
-                <!-- <div [hidden]="name.valid || name.pristine"
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="name">Company</label>
+                    <input type="text" class="form-control col-md-8" id="company" required [(ngModel)]="model.company"
+                      name="company" #company="ngModel">
+
+                    <!-- <div [hidden]="name.valid || name.pristine"
                      class="alert alert-danger">
                   Name is required
                 </div> -->
-              </div>
-            
-              <div class="form-group col-md-6">
-                  <label class="Name" for="name">Nationality</label>
-                  <input type="text" class="form-control col-md-8" id="nationality"
-                         required
-                         [(ngModel)]="model.nationality" name="nationality"
-                         #nationality="ngModel">
-                  <!-- <div [hidden]="name.valid || name.pristine"
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="name">Nationality</label>
+                    <input type="text" class="form-control col-md-8" id="nationality" required [(ngModel)]="model.nationality"
+                      name="nationality" #nationality="ngModel">
+                    <!-- <div [hidden]="name.valid || name.pristine"
                        class="alert alert-danger">
                     Name is required
                   </div> -->
-                </div>
-    
-                <div class="form-group col-md-6">
+                  </div>
+
+                  <div class="form-group col-md-6">
                     <label class="Name" for="phonenumber">Phone Number</label>
-                    <input type="text" class="form-control col-md-8" id="phonenumber"
-                           required
-                           [(ngModel)]="model.phonenumber" name="phonenumber"
-                           #phonenumber="ngModel">
+                    <input type="text" class="form-control col-md-8" id="phonenumber" required [(ngModel)]="model.phonenumber"
+                      name="phonenumber" #phonenumber="ngModel">
                     <!-- <div [hidden]="name.valid || name.pristine"
                          class="alert alert-danger">
                       Name is required
                     </div> -->
                   </div>
-    
+
                   <div class="form-group col-md-6">
-                      <label class="Name" for="address">Address</label>
-                      <input type="text" class="form-control col-md-8" id="address"
-                             required
-                             [(ngModel)]="model.address" name="address"
-                             #address="ngModel">
-                      <!-- <div [hidden]="name.valid || name.pristine"
+                    <label class="Name" for="address">Address</label>
+                    <input type="text" class="form-control col-md-8" id="address" required [(ngModel)]="model.address"
+                      name="address" #address="ngModel">
+                    <!-- <div [hidden]="name.valid || name.pristine"
                            class="alert alert-danger">
                         Name is required
                       </div> -->
-                    </div>
-    
-                    <div class="form-group col-md-6">
-                        <label class="Name" for="pobox">PO Box</label>
-                        <input type="text" class="form-control col-md-8" id="pobox"
-                               required
-                               [(ngModel)]="model.pobox" name="pobox"
-                               #pobox="ngModel">
-                        <!-- <div [hidden]="name.valid || name.pristine"
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="pobox">PO Box</label>
+                    <input type="text" class="form-control col-md-8" id="pobox" required [(ngModel)]="model.pobox" name="pobox"
+                      #pobox="ngModel">
+                    <!-- <div [hidden]="name.valid || name.pristine"
                              class="alert alert-danger">
                           Name is required
                         </div> -->
-                      </div>
-                   
-                      <div class="form-group col-md-6">
-                          <label class="Name" for="mobile">Mobile<span class="req" style="color: #f54b5e;">* </span></label>
-                          <!-- <input type="text" class="form-control col-md-8" id="mobile"
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="mobile">Mobile<span class="req" style="color: #f54b5e;">* </span></label>
+                    <!-- <input type="text" class="form-control col-md-8" id="mobile"
                                  required
                                  [(ngModel)]="model.mobile" name="mobile"
                                  #mobile="ngModel">
@@ -622,169 +587,176 @@ span.psw {
 
 
 
-                          <input type="text" class="form-control col-md-8" name="mobile" [(ngModel)]="model.mobile" #mobile="ngModel" [ngClass]="{ 'is-invalid': f.submitted && mobile.invalid }" required />
-                          
-                          <div *ngIf="f.submitted && mobile.invalid" class="invalid-feedback">
-                            <div *ngIf="mobile.errors.required">Please enter a mobile number</div>
-                          </div>
+                    <input type="text" class="form-control col-md-8" name="mobile" [(ngModel)]="model.mobile" #mobile="ngModel"
+                      [ngClass]="{ 'is-invalid': f.submitted && mobile.invalid }" required />
+
+                    <div *ngIf="f.submitted && mobile.invalid" class="invalid-feedback">
+                      <div *ngIf="mobile.errors.required">Please enter a mobile number</div>
+                    </div>
 
 
 
-                        </div>
-    
-                        <div class="form-group col-md-6">
-                            <label class="Name" for="email">Email<span class="req" style="color: #f54b5e;">* </span></label>
-                            <input type="text" class="form-control col-md-8" id="email"
-                                   required 
-                                   [(ngModel)]="model.email" name="email" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                                   #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            <div [hidden]="email.valid || email.pristine"
-                                 class="alert" style="color: #f54b5e;">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="email">Email<span class="req" style="color: #f54b5e;">* </span></label>
+                    <input type="text" class="form-control col-md-8" id="email" required [(ngModel)]="model.email" name="email"
+                      [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <div [hidden]="email.valid || email.pristine" class="alert" style="color: #f54b5e;">
                       Invalid Email Address
-                            </div>
+                    </div>
 
 
-                            <!-- <input type="text" class="form-control col-md-8" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required /> -->
-                            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
-                              <div *ngIf="email.errors.required">Please enter a Email ID</div>
-                            </div>
+                    <!-- <input type="text" class="form-control col-md-8" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required /> -->
+                    <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                      <div *ngIf="email.errors.required">Please enter a Email ID</div>
+                    </div>
 
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label class="Name" for="password" >Password<span class="req" style="color: #f54b5e;">* </span></label>
-                            <input type="password" class="form-control col-md-8" id="password" required [(ngModel)]="model.password" name="password"
-                                   #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
- 
-                            <div [hidden]="password.valid || password.pristine"
-                                 class="alert" style="color: #f54b5e;">
-                              Password Should contain atleast one Uppercase,one number Min 8 characters
-                            </div>
-                            <span id="strength_message"></span>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="password">Password<span class="req" style="color: #f54b5e;">* </span></label>
+                    <input type="password" class="form-control col-md-8" id="password" required [(ngModel)]="model.password"
+                      name="password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-                            <!-- <input type="text" class="form-control col-md-8" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required /> -->
-                            <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
-                              <div *ngIf="password.errors.required">Please enter a password</div>
-                            </div>
+                    <div [hidden]="password.valid || password.pristine" class="alert" style="color: #f54b5e;">
+                      Password Should contain atleast one Uppercase,one number Min 8 characters
+                    </div>
+                    <span id="strength_message"></span>
+
+                    <!-- <input type="text" class="form-control col-md-8" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required /> -->
+                    <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                      <div *ngIf="password.errors.required">Please enter a password</div>
+                    </div>
 
 
-                          </div>
-                          <div class="form-group col-md-6">
-                              <label class="Name" for="confirmpassword">Confirm Password<span class="req" style="color: #f54b5e;">* </span></label>
-                              <input type="password" class="form-control col-md-8" id="confirmpassword" passvalidator="password"
-                                     required
-                                     [(ngModel)]="model.confirmpassword" [ngClass]="{ 'is-invalid': f.submitted && confirmpassword.invalid }" name="confirmpassword" 
-                                     #confirmpassword="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                              <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
-                                   class="alert" style="color: #f54b5e;">
-                                   Password doesn't match
-                                    </div>
-                              <div [hidden]="confirmpassword.touched && confirmpassword.errors?.notequal"class="alert" style="color: #f54b5e;">
-                                 
-          
-                              </div>
-                              <!-- <input type="text" class="form-control col-md-8" name="confirmpassword" [(ngModel)]="model.confirmpassword" #confirmpassword="ngModel" [ngClass]="{ 'is-invalid': f.submitted && confirmpassword.invalid }" required /> -->
-                            <div *ngIf="f.submitted && confirmpassword.invalid" class="invalid-feedback">
-                              <div *ngIf="confirmpassword.errors.required">Please confirm your password</div>
-                            </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="Name" for="confirmpassword">Confirm Password<span class="req" style="color: #f54b5e;">*
+                      </span></label>
+                    <input type="password" class="form-control col-md-8" id="confirmpassword" passvalidator="password"
+                      required [(ngModel)]="model.confirmpassword" [ngClass]="{ 'is-invalid': f.submitted && confirmpassword.invalid }"
+                      name="confirmpassword" #confirmpassword="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <div [hidden]="confirmpassword.valid || confirmpassword.pristine" class="alert" style="color: #f54b5e;">
+                      Password doesn't match
+                    </div>
+                    <div [hidden]="confirmpassword.touched && confirmpassword.errors?.notequal" class="alert" style="color: #f54b5e;">
 
+
+                    </div>
+                    <!-- <input type="text" class="form-control col-md-8" name="confirmpassword" [(ngModel)]="model.confirmpassword" #confirmpassword="ngModel" [ngClass]="{ 'is-invalid': f.submitted && confirmpassword.invalid }" required /> -->
+                    <div *ngIf="f.submitted && confirmpassword.invalid" class="invalid-feedback">
+                      <div *ngIf="confirmpassword.errors.required">Please confirm your password</div>
+                    </div>
 
 
 
-                            </div>
-                            
-                            <div class="form-group col-md-6">
-                                <label class="Name" style="color:black">Stay Connected</label>
-                                <!-- <input type="radio" id="myRadio" name="test" required>
+
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name" style="color:black">Stay Connected</label>
+                    <!-- <input type="radio" id="myRadio" name="test" required>
                                 -->
-                                <div >
-                                <input type="checkbox" id="myRadio" value="yes" 
-                                        [(ngModel)]="model.stayconnect" name="stayconnect"
-                                       >Subscribe to our Newsletter
-</div>
-                                       <!-- <div [hidden]="stayconnect.valid || stayconnect.pristine"
+                    <div>
+                      <input type="checkbox" id="myRadio" value="yes" [(ngModel)]="model.stayconnect" name="stayconnect">Subscribe
+                      to our Newsletter
+                    </div>
+                    <!-- <div [hidden]="stayconnect.valid || stayconnect.pristine"
                                      class="alert" style="color: #f54b5e;">
                                   Confirm your password
                                 </div> -->
-                              </div>
-  
-                              <div class="form-group col-md-6">
-                                  <label class="Name">Choose Service</label>
-                                  <!-- <input type="radio" id="myRadio" name="test" >
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="Name">Choose Service</label>
+                    <!-- <input type="radio" id="myRadio" name="test" >
                                   -->
-                                  <div >
-                                    <label >
-                                      <input type="checkbox" value="amanservices"
-                                              [(ngModel)]="model.amanservices" name="services"
-                                             >Aman
-                                            </label>
-                                            <label style="margin-left:10px" >
-                                                <input type="checkbox"  value="salamaservices"
-                                                        [(ngModel)]="model.salamaservices" name="services"
-                                                       >Salama
-                                                      </label>
-                                          </div>
-                                  <!-- <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
+                    <div>
+                      <label>
+                        <input type="checkbox" value="amanservices" [(ngModel)]="model.amanservices" name="services">Aman
+                      </label>
+                      <label style="margin-left:10px">
+                        <input type="checkbox" value="salamaservices" [(ngModel)]="model.salamaservices" name="services">Salama
+                      </label>
+                    </div>
+                    <!-- <div [hidden]="confirmpassword.valid || confirmpassword.pristine"
                                        class="alert" style="color: #f54b5e;">
                                     Confirm your password
                                   </div> -->
-                                </div>
-                                <div class="form-group col-md-12">  
-                          <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LfQqIQUAAAAABL8W6ckQ5_jVY-flsBo8RHrI9Vx"></re-captcha>
-    </div>
-    
-                          
-                          <div class=" form-group col-md-12">
-                             
-                              <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-            <button type="submit" style="background-color: #ff0000;padding: 8px 20px;margin-left: 319px;" onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy" (click)="createContact(model)"><font color="white">Create Account</font></button>
-            <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+                  </div>
+                  <div class="form-group col-md-12">
+                    <re-captcha class="g-recaptcha" (resolved)="resolved($event)" siteKey="6LfQqIQUAAAAABL8W6ckQ5_jVY-flsBo8RHrI9Vx"></re-captcha>
+                  </div>
+
+
+                  <div class=" form-group col-md-12">
+
+                    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+                    <button type="submit" style="background-color: #ff0000;padding: 8px 20px;margin-left: 319px;"
+                      onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
+                      (click)="createContact(model)">
+                      <font color="white">Create Account</font>
+                    </button>
+                    <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+                  </div>
+                </div>
+              </form>
+              <br>
+            </div>
           </div>
+
         </div>
-          </form>
-          <br>
-        </div>
+
+      </div>
+    </div>
   </div>
-
-</div>
-
-</div>
-</div></div>
-<script>
+  <script>
     // Get the modal
     var modal = document.getElementById('id01');
-    
+
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
     }
-    </script>
-    
-    <!-- =====footer  english start== -->
-<div class="container1 col-md-12" >
-  <br><br>
+  </script>
+
+  <!-- =====footer  english start== -->
+  <div class="container1 col-md-12">
+    <br><br>
     <div class="row">
-     
-        <div class="col-sm-2">
-            <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
             ./assests/logo-1-copy@3x.png 3x"
-  class="img-thumbnail">
-        </div>
-        
-        <div class="col-md-2">
-            <h5 class="home">Navigations</h5>
-                      <ul class="list-unstyled quick-links">
-      
-                        <li><a routerLink="/about-us" class="about"><font color="white">About Us</font></a></li>
-                        <li><a routerLink="/amanservices" class="about"><font color="white">Services</font></a></li>
-                        <li><a routerLink="/sitemap" class="about"><font color="white">Sitemap</font></a></li>
-                        <li><a routerLink="/contactus"class="about"><font color="white">Contact Us</font></a></li>
-                        <li><a routerLink="/privacy" class="about"><font color="white">Privacy Policy</font></a></li>
-                      </ul>
-          </div>
-         
-          <!-- <div class="col-sm-3">
+          class="img-thumbnail">
+      </div>
+
+      <div class="col-md-2">
+        <h5 class="home">Navigations</h5>
+        <ul class="list-unstyled quick-links">
+
+          <li><a routerLink="/about-us" class="about">
+              <font color="white">About Us</font>
+            </a></li>
+          <li><a routerLink="/amanservices" class="about">
+              <font color="white">Services</font>
+            </a></li>
+          <li><a routerLink="/sitemap" class="about">
+              <font color="white">Sitemap</font>
+            </a></li>
+          <li><a routerLink="/contactus" class="about">
+              <font color="white">Contact Us</font>
+            </a></li>
+          <li><a routerLink="/privacy" class="about">
+              <font color="white">Privacy Policy</font>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-sm-3">
               <h5 class="home">Support</h5>
               <ul class="list-unstyled quick-links">
                 <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -794,71 +766,79 @@ span.psw {
    
               </ul>
             </div> -->
-            <div class="col-sm-2">
-                <h5 class="home">Company Address:</h5>
-                <ul class="list-unstyled quick-links">
-                  <li><p class="about"><font color="white">Tower 400, 12th Floor, Mina Road,</font>
-                      <br>
-                  <font color="white">Sharjah, PO Box 4638 Sharjah - UAE </font>
-                  <br>
-                  <font color="white">Tel: +971 6 597 2222</font>
-                  <br>
-                  <font color="white">Fax: +971 6 572 2331</font>
-                  <br>
-                  <font color="white">Email: helpdesk.hsg@apleona.com</font>
-                  <br>
-                  <a href="https://www.saned.ae" target="_blank"><font color="white">www.saned.ae</font></a> </p></li>
-                </ul>
-              </div>
-              <div class="col-sm-3">
-                <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+      <div class="col-sm-2">
+        <h5 class="home">Company Address:</h5>
+        <ul class="list-unstyled quick-links">
+          <li>
+            <p class="about">
+              <font color="white">Tower 400, 12th Floor, Mina Road,</font>
+              <br>
+              <font color="white">Sharjah, PO Box 4638 Sharjah - UAE </font>
+              <br>
+              <font color="white">Tel: +971 6 597 2222</font>
+              <br>
+              <font color="white">Fax: +971 6 572 2331</font>
+              <br>
+              <font color="white">Email: helpdesk.hsg@apleona.com</font>
+              <br>
+              <a href="https://www.saned.ae" target="_blank">
+                <font color="white">www.saned.ae</font>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
                 ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-      class="img-thumbnail">
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p>Follow us
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6>Subscribe to our Newsletter</h6>
+          <div class="input-group mb-3">
+
+            <input type="email" style="background: black;
+                    border-color: #6c757d;" class="form-control"
+              required placeholder="Enter your mail id" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary" type="button">Subscribe</button>
             </div>
-            <div class="col-sm-3">
-              <p>Follow us
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-                <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
-                <h6>Subscribe to our Newsletter</h6>
-                <div class="input-group mb-3">
-                   
-                    <input type="email" style="background: black;
-                    border-color: #6c757d;" class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                     
-                      <button class="btn btn-outline-secondary" type="button">Subscribe</button>
-                    </div>
-                  </div>
           </div>
-              <hr class="col-md-8" style="background:white">
+      </div>
+      <hr class="col-md-8" style="background:white">
     </div>
-  
-  
-<div class="footer">
- <div>
-    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. © 2018.</p>
+
+
+    <div class="footer">
+      <div>
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+          Policies. © 2018.</p>
+      </div>
+
+    </div>
+    <br>
   </div>
-  
+  <!-- ================footer  english end== -->
 </div>
-<br>
-</div>
-<!-- ================footer  english end== -->
-   </div>
-    
+
 
 <!-- ====Arabic -->
 
-    
-       
-  <!------ Include the above in your HEAD tag ---------->
-  
-  
-  
-     
-      
 
-      <router-outlet></router-outlet>
 
-    <!-- </div> -->
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+<!-- </div> -->

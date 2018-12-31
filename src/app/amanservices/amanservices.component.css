@@ -1,7 +1,11 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .intro-2 {
+<<<<<<< HEAD
     background: url("/assets/hero_image.png")no-repeat center center;
+=======
+    background: url("/assets/lawyer-today-1.png")no-repeat center center;
+>>>>>>> ddb147640691bfd5f7735f8bba41ca858bd80a86
     background-size: cover;
     height: 635px;
  }
