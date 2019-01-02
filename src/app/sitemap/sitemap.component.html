@@ -4,7 +4,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 
   body {font-family: Arial, Helvetica, sans-serif;}
@@ -76,7 +75,7 @@ section{
 ul {
   padding: 0;
   margin: 0;
-  /* list-style: none; */
+  list-style: none;
 }
 ul li a {
   text-decoration: none;
@@ -164,7 +163,6 @@ nav{
     top:0px;
     z-index: 99
 }
-/*  */
 nav ul{
     display: flex;
     margin: 0px;
@@ -270,9 +268,6 @@ nav ul li a{
    background: black;
    /* color: white */
  }
- a:hover {
-  color: red;
-}
  .social:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -360,7 +355,6 @@ ul.li.a{
   border-bottom: 3px solid transparent;
 }
 
-.pointer {cursor: pointer;}
 
 a:link {
    color: #4a4a4a;
@@ -400,7 +394,7 @@ a:active {
           class="img-responsive">
       </div>
     </div>
-    <div class="col-md-4" style="margin-left: 926px;
+    <div class="col-md-4" style="margin-left: 979px;
             margin-top: -130px;">
       <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" routerLink="/sitemap-arabic" />
       <font color="white"> عربى
@@ -424,10 +418,10 @@ class="NEM mt-3"> -->
     <!-- <div class="container flex-center"> -->
     <!-- <div class="row flex-center pt-5 mt-3"> -->
     <!-- <div class="col-md-6 text-center"> -->
-    <br><br><br><br><br><br>
+    <br><br>
     <div class="text-center">
       <h1>
-        <font color="white">SITEMAP</font>
+        <font color="white">WELCOME TO SERVICES</font>
       </h1>
 
     </div>
@@ -465,7 +459,7 @@ class="NEM mt-3"> -->
     </ul>
   </nav>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
   <div class="card col-md-11" style="border-radius: 18px;
    background: white;margin-top: -48px;">
     <br>
@@ -488,17 +482,15 @@ class="NEM mt-3"> -->
    
   </ul>
 </form> -->
-    <ul class="w3-ul w3-hoverable" style="margin-left: 56px;">
-      <li style="cursor:pointer" routerLink="/login">Home</li>
-      <li style="cursor:pointer" routerLink="/about-us">About Us</li>
-      <li style="cursor:pointer" routerLink="/supplier-register">Supplier</li>
-      <li style="cursor:pointer" routerLink="/contactus">Contact Us</li>
-      <li>Services</li>
-      <!-- <h2><a >Services</h2> -->
-      <ul style="margin-left: 35px;">
-        <li style="cursor:pointer" routerLink="/amanservices">Aman Services</li>
-        <li style="cursor:pointer" routerLink="/salamaservices">Salama Services</li>
-      </ul>
+    <h2><a href="" routerLink="/login" class="Home-About-Us-Suppli">Home</a></h2>
+    <h2><a href="" routerLink="/about-us" class="Home-About-Us-Suppli">About Us</a></h2>
+    <h2><a href="" routerLink="/supplier-register" class="Home-About-Us-Suppli">Supplier</a></h2>
+    <h2><a href="" routerLink="/contactus" class="Home-About-Us-Suppli">Contact Us</a></h2>
+    <h2><a href="" routerLink="/contactus" class="Home-About-Us-Suppli">Services</a></h2>
+    <!-- <h2><a class="Home-About-Us-Suppli">Services</a></h2> -->
+    <ul style="margin-left: 93px;">
+      <li><a routerLink="/amanservices" class="Home-About-Us-Suppli1">Aman Services</a></li>
+      <li><a routerLink="/amanservices" class="Home-About-Us-Suppli1">Salama Services</a></li>
     </ul>
     <br>
     <br>

@@ -257,91 +257,99 @@ nav ul li a{
 &nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
 &nbsp; -->
 
-       
-<div >
-<!------ Include the above in your HEAD tag ---------->
-<section class="view intro-2 hm-gradient">
-        <div class="">
-                <div class="col-md-1" >
-                    <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
-                    <img  src="./assets/group.png"
-                                                     srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x"
-                                                     class="img-responsive">
-                </div>
-            </div>
-            <div class="col-md-4" style="margin-left: 926px;
-            margin-top: -118px;">
-            <input type="radio" [value]="false" routerLink="/amanservices-arabic"/><font color="white"> عربى
-                 </font><input  type="radio" style="color:#ff0000;" [value]="true" checked="checked" /><font style="color:#F90E35">English</font>  &nbsp; &nbsp; 
-         
-                    <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form" class="btn Rectangle-5-Copy"><font color="white">Register</font></button>
 
-<a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
-"><font color="white">Sign out </font></a>
-</div>
+<div *ngIf="Lang">
+  <!------ Include the above in your HEAD tag ---------->
+  <section class="view intro-2 hm-gradient">
+    <div class="">
+      <div class="col-md-1">
+        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                                                             ./assets/group@3x.png 3x"
+          class="img-responsive">
+      </div>
+    </div>
+    <div class="col-md-4" style="margin-left: 850px;
+            margin-top: -130px;">
+      <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" />
+      <font color="white"> عربى
+      </font><input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang" />
+      <font style="color:#F90E35">English</font> &nbsp; &nbsp;
+
+      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
+        class="btn Rectangle-5-Copy">Register</button>
+
+      <a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
+">
+        <font color="white">Sign out </font>
+      </a>
+    </div>
     <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
     assests/lawyer-today-1@3x.png 3x"
 class="NEM mt-3"> -->
     <!-- <div class="full-bg-img"> -->
-        <!-- <div class="container flex-center"> -->
-            <!-- <div class="row flex-center pt-5 mt-3"> -->
-                <!-- <div class="col-md-6 text-center"> -->
-                  <br><br>
-                    <div class="text-center">
-                        <h1 ><font color="white">WELCOME TO SERVICES</font></h1>
-                           
-                    </div>
-                <!-- </div> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br>
+    <div class="text-center">
+      <h1>
+        <font color="white">WELCOME TO SERVICES</font>
+      </h1>
 
-                
-            <!-- </div> -->
-        <!-- </div> -->
+    </div>
     <!-- </div> -->
-</section>
-<nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); " >
-  <ul class="navigation" style="margin-right: 141px;">
-        <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
-               <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
-               <li class="menu">
-                <a >S<font style="text-transform: lowercase;">ervices</font></a>
-                <ul class="submenu" >
-                  <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man </font></a></li>
-                  <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font> </a></li>
-                  <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </section>
+  <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 141px;">
+      <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
+      <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
+      <li class="menu">
+        <a href="#">S<font style="text-transform: lowercase;">ervices</font></a>
+        <ul class="submenu">
+          <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
+              </font></a></li>
+          <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
+            </a></li>
+          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
                   <li style="background: red;"><a href="#">Link 4</a></li> -->
-                </ul>
-              </li>
-              <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
-               <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
-               <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li>
-               <li ><font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                margin-left: -43px;"></i></font></li>
-  
+        </ul>
+      </li>
+      <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
+      <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li>
+      <li>
+        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                margin-left: -43px;"></i></font>
+      </li>
 
-</ul>
+
+    </ul>
   </nav>
- <br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 
-<div class="">
+  <div class="">
     <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-   
+
     <div class="card col-md-12" style="border-radius: 18px;
    background: white;margin-top: 40px;">
-   <br>
-    <div class="row ml-4">
+      <br>
+      <div class="row ml-4">
 
         <div class="col-md-5"></div>
         <br><br>
         <div class="col-md-2">
-         
-                <img  src="/assets/002-fire-extinguisher.png"
-                srcset="/assets/002-fire-extinguisher@2x.png 2x,
+
+          <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
                         /assets/002-fire-extinguisher@3x.png 3x"
-                class="fire-extinguisher" style="margin-left: -66px;">
-                <div style="margin-left: 20px;">
-                <!-- <h5><b>AMAN</b></h5> -->
-        </div>           <br><br>
+            class="fire-extinguisher" style="margin-left: -66px;">
+          <div style="margin-left: 20px;">
+            <!-- <h5><b>AMAN</b></h5> -->
+          </div> <br><br>
         </div>
         <!-- <div class="">
         <div class="row">
@@ -377,122 +385,133 @@ class="NEM mt-3"> -->
 
 </div>
 </div> -->
-    <div>
-<!-- =====test==== -->
-<div class="row">
-  <div class="col-md-1">
-      <img src="/assets/1.png"
-      srcset="/assets/1@2x.png 2x,
-              /assets/1@3x.png 3x"
-      class="layer">
-  </div>
-    <div class="col-md-4 ml-3">
-        
-    
-    
-    <h5><b>Description</b></h5>
-    <p class="text-justify">AMAN aims to integrate all existing Fire Alarm systems at all types of properties in Sharjah with the Civil Defense Control Room, Which will improve the monitoring and speed of response to incidents in real time which is essential to save lives.
-
-      AMAN delivers the alarm signal without human intervention and with high accuracy using the existing communication infrastructure at an affordable cost. </p>
-    </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-1">
-        <img src="/assets/2.png"
-        srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x"
-        class="layer">
-    </div>
-    <div class="col-md-4" style="margin-left: -8px;">
-       
-    <h5> <b>Objectives</b> </h5>
-    <p class="text-justify">
-            AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. 
-    </p>
-    
-    </div>
-  </div>
-   
-            
-    </div>
-<!-- ====test======== -->
-
-<div class="row">
-  <div class="col-md-1">
-      <img src="/assets/3.png"
-      srcset="/assets/3@2x.png 2x,
-              /assets/3@3x.png 3x"
-      class="layer">
-  </div>
-<div class="col-md-4 ml-3">
-   
+        <div>
+          <!-- =====test==== -->
+          <div class="row">
+            <div class="col-md-1">
+              <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
+              /assets/1@3x.png 3x" class="layer">
+            </div>
+            <div class="col-md-4 ml-3">
 
 
-<h5><b>Technical Information</b></h5>
-<p class="text-justify">AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. </p>
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-1">
-    <img src="/assets/4.png"
-    srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x"
-    class="layer" style="margin-left: 11px;">
-</div>
-<div class="col-md-4" style="margin-left: -8px;">
-  
 
-<h5> <b>Commercial Information</b> </h5>
-<p class="text-justify">
-        AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty Management), a global facilities management service provider delivering world class services in the UAE. 
-</p>
+              <h5><b>Description</b></h5>
+              <p class="text-justify">AMAN is a first of its kind joint venture between Sharjah Asset Management
+                Holding (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG
+                International Facilty Management), a global facilities management service provider delivering world
+                class services in the UAE. </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+              <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                /assets/2@3x.png 3x" class="layer">
+            </div>
+            <div class="col-md-4" style="margin-left: -8px;">
 
-</div>
-<div class="col-md-5"></div>
-        <div class="col-md-7">
-         
-                <button type="submit" style="background-color: #ff0000;
+              <h5> <b>Objectives</b> </h5>
+              <p class="text-justify">
+                AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the
+                investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International
+                Facilty Management), a global facilities management service provider delivering world class services in
+                the UAE.
+              </p>
+
+            </div>
+          </div>
+
+
+        </div>
+        <!-- ====test======== -->
+
+        <div class="row">
+          <div class="col-md-1">
+            <img src="/assets/3.png" srcset="/assets/3@2x.png 2x,
+              /assets/3@3x.png 3x" class="layer">
+          </div>
+          <div class="col-md-4 ml-3">
+
+
+
+            <h5><b>Technical Information</b></h5>
+            <p class="text-justify">AMAN is a first of its kind joint venture between Sharjah Asset Management Holding
+              (SAM), the investment arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG
+              International Facilty Management), a global facilities management service provider delivering world class
+              services in the UAE. </p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-1">
+            <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
+            /assets/4@3x.png 3x" class="layer" style="margin-left: 11px;">
+          </div>
+          <div class="col-md-4" style="margin-left: -8px;">
+
+
+            <h5> <b>Commercial Information</b> </h5>
+            <p class="text-justify">
+              AMAN is a first of its kind joint venture between Sharjah Asset Management Holding (SAM), the investment
+              arm of the Government of Sharjah, and Apleona HSG (formerly Bilfinger HSG International Facilty
+              Management), a global facilities management service provider delivering world class services in the UAE.
+            </p>
+
+          </div>
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
+
+            <button type="submit" style="background-color: #ff0000;
                 width: 156px;
                 padding: 3px 10px;
                 margin-left: -27px;
                 color: white;
-                border-radius: 8px;" routerLink="/register-form">REGISTER HERE</button> 
-        
-        </div>
-        
-</div>
+                border-radius: 8px;"
+              routerLink="/register-form">REGISTER HERE</button>
 
-</div>
-
-
-<br>
- 
-
-</div>
-
-</div>
-<!-- =====footer  english start== -->
-<div class="container1 col-md-12" >
-  <br><br>
-    <div class="row">
-     
-        <div class="col-sm-2">
-            <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-            ./assests/logo-1-copy@3x.png 3x"
-  class="img-thumbnail">
-        </div>
-        
-        <div class="col-md-2">
-            <h5 class="home">Navigations</h5>
-                      <ul class="list-unstyled quick-links">
-      
-                        <li><a routerLink="/about-us" class="about"><font color="white">About Us</font></a></li>
-                        <li><a routerLink="/amanservices" class="about"><font color="white">Services</font></a></li>
-                        <li><a routerLink="/sitemap" class="about"><font color="white">Sitemap</font></a></li>
-                        <li><a routerLink="/contactus"class="about"><font color="white">Contact Us</font></a></li>
-                        <li><a routerLink="/privacy" class="about"><font color="white">Privacy Policy</font></a></li>
-                      </ul>
           </div>
-         
-          <!-- <div class="col-sm-3">
+
+        </div>
+
+      </div>
+
+
+      <br>
+
+
+    </div>
+  </div>
+  <!-- =====footer  english start== -->
+  <div class="container1 col-md-12">
+    <br><br>
+    <div class="row">
+
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+            ./assests/logo-1-copy@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+
+      <div class="col-md-2">
+        <h5 class="home">Navigations</h5>
+        <ul class="list-unstyled quick-links">
+
+          <li><a routerLink="/about-us" class="about">
+              <font color="white">About Us</font>
+            </a></li>
+          <li><a routerLink="/amanservices" class="about">
+              <font color="white">Services</font>
+            </a></li>
+          <li><a routerLink="/sitemap" class="about">
+              <font color="white">Sitemap</font>
+            </a></li>
+          <li><a routerLink="/contactus" class="about">
+              <font color="white">Contact Us</font>
+            </a></li>
+          <li><a routerLink="/privacy" class="about">
+              <font color="white">Privacy Policy</font>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-sm-3">
               <h5 class="home">Support</h5>
               <ul class="list-unstyled quick-links">
                 <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -502,65 +521,72 @@ class="NEM mt-3"> -->
    
               </ul>
             </div> -->
-            <div class="col-sm-2">
-                <h5 class="home">Company Address:</h5>
-                <ul class="list-unstyled quick-links">
-                  <li><p class="about"><font color="white">Tower 400, 12th Floor, Mina Road,</font>
-                      <br>
-                  <font color="white">Sharjah, PO Box 4638 Sharjah - UAE </font>
-                  <br>
-                  <font color="white">Tel: +971 6 597 2222</font>
-                  <br>
-                  <font color="white">Fax: +971 6 572 2331</font>
-                  <br>
-                  <font color="white">Email: helpdesk.hsg@apleona.com</font>
-                  <br>
-                  <a href="https://www.saned.ae" target="_blank"><font color="white">www.saned.ae</font></a> </p></li>
-                </ul>
-              </div>
-              <div class="col-sm-3">
-                <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+      <div class="col-sm-2">
+        <h5 class="home">Company Address:</h5>
+        <ul class="list-unstyled quick-links">
+          <li>
+            <p class="about">
+              <font color="white">Tower 400, 12th Floor, Mina Road,</font>
+              <br>
+              <font color="white">Sharjah, PO Box 4638 Sharjah - UAE </font>
+              <br>
+              <font color="white">Tel: +971 6 597 2222</font>
+              <br>
+              <font color="white">Fax: +971 6 572 2331</font>
+              <br>
+              <font color="white">Email: helpdesk.hsg@apleona.com</font>
+              <br>
+              <a href="https://www.saned.ae" target="_blank">
+                <font color="white">www.saned.ae</font>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
                 ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-      class="img-thumbnail">
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p>Follow us
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6>Subscribe Our Newsletter</h6>
+          <div class="input-group mb-3">
+
+            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                  border-color: #6c757d;"
+              class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">Subscribe</button>
             </div>
-            <div class="col-sm-3">
-              <p>Follow us
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-                <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social"   style="color:#55ACEE"></i></a>
-                <h6>Subscribe Our Newsletter</h6>
-                <div class="input-group mb-3">
-                   
-                  <input type="email" name="email_id" [(ngModel)]="model.email_id"
-                  #name="ngModel" id="email_id" style="background: black;
-                  border-color: #6c757d;" class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-
-                    <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">Subscribe</button>
-                    </div>
-                  </div>
           </div>
-              <hr class="col-md-8" style="background:white">
+      </div>
+      <hr class="col-md-8" style="background:white">
     </div>
-  
-  
-<div class="footer">
- <div>
-    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. © 2018.</p>
+
+
+    <div class="footer">
+      <div>
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+          Policies. © 2018.</p>
+      </div>
+
+    </div>
+    <br>
   </div>
-  
-</div>
-<br>
-</div>
 
 
 
-<!-- ================footer  english end== -->
+  <!-- ================footer  english end== -->
 
 </div>
 <!-- ===arabic -->
 
 
-
-        <router-outlet></router-outlet>
+<router-outlet></router-outlet>

@@ -190,8 +190,8 @@ nav ul li a{
     line-height: 50px;
 
 }
-/* ==============footer style start ========= */
-.footer {
+    /* ==============footer style start ========= */
+    .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -201,12 +201,8 @@ nav ul li a{
     text-align: center;
     /* height: 75px; */
  }
- .container1{
-   background: black;
-   color: white
- }
  .container{
-   /* background: black; */
+   background: black;
    color: white
  }
  .social:hover {
@@ -248,7 +244,12 @@ nav ul li a{
     line-height: 15px;
   letter-spacing: 0;
   }
-    /* ===========================footer style end===============*/
+  .container1{
+   background: black;
+   color: white
+ }
+
+    /* ===========================footer style end================ */
 
 </style>
 <!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
@@ -256,39 +257,47 @@ nav ul li a{
 &nbsp; -->
 
 
+
+
+
 <div>
   <!------ Include the above in your HEAD tag ---------->
   <section class="view intro-2 hm-gradient" dir="rtl">
+
     <div class="">
       <div class="col-md-1">
+
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x"
+                                                                     ./assets/group@3x.png 3x"
           class="img-responsive">
       </div>
-    </div>
-    <div class="col-md-4" style="margin-right: 859px;
-            margin-top: -130px;">
-      <input type="radio" checked>
-      <font color="#F90E35"> عربى
-      </font>
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/salamaservices"
-        [checked]="Lang" />
-      <font style="color:white">English</font> &nbsp; &nbsp;
+      <div style="margin-top:-10%">
 
-      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form-arabic"
-        class="btn Rectangle-5-Copy">
-        <font color="white">تسجيل</font>
-      </button>
 
-      <a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
-">
-        <font color="white">خروج </font>
-      </a>
+        <input type="radio" style="color:#ff0000;" checked />
+        <font color="#F90E35">عربى</font>
+        &nbsp; <input type="radio" style="color:white;" routerLink="/amanservices" />
+        <font style="color:white">English</font> &nbsp; &nbsp; &nbsp;
+        <button button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" class="btn Rectangle-5-Copy"
+          routerLink="/register-form-arabic">
+          <font color="white">تسجيل</font>
+        </button>
+        <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
+
+
+        <a class="btn mb-1" routerLink="/login-arbic" style="font-family: Roboto-Regular;font-size: 21px;
+                 ">
+          <font color="white">خروج </font>
+        </a>
+
+
+      </div>
     </div>
+
     <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-    assests/lawyer-today-1@3x.png 3x"
-class="NEM mt-3"> -->
+            assests/lawyer-today-1@3x.png 3x"
+        class="NEM mt-3"> -->
     <!-- <div class="full-bg-img"> -->
     <!-- <div class="container flex-center"> -->
     <!-- <div class="row flex-center pt-5 mt-3"> -->
@@ -317,7 +326,7 @@ class="NEM mt-3"> -->
           <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
           <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
           <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-              <li style="background: red;"><a href="#">Link 4</a></li> -->
+                      <li style="background: red;"><a href="#">Link 4</a></li> -->
         </ul>
       </li>
       <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
@@ -325,132 +334,83 @@ class="NEM mt-3"> -->
       <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li>
       <li>
         <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-            margin-right: -46px;"></i></font>
+                    margin-right: -46px;"></i></font>
       </li>
     </ul>
   </nav>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;
 
-  <div class="rtl">
+  <div class="">
     <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
-    <div class="card col-md-12" style="border-radius: 18px;
-   background: white;margin-top: 40px;">
+    <div class="card col-md-11" style="border-radius: 18px;
+           background: white;">
       <br>
       <div class="row ml-4">
+
 
         <div class="col-md-5"></div>
         <br><br>
         <div class="col-md-2">
 
           <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
-                    /assets/002-fire-extinguisher@3x.png 3x"
-            class="fire-extinguisher">
+                                /assets/002-fire-extinguisher@3x.png 3x"
+            class="fire-extinguisher" style="margin-left: -66px;">
           <div style="margin-left: 20px;">
             <!-- <h5><b>رجل</b></h5> -->
           </div> <br><br>
         </div>
-        <!-- <div class="">
+
+
+
+        <div class="col-md-5 mr-2 Who-We-Are-Aman-is-a">
+          <!-- <h4><b>Who We Are</b></h4> -->
+          <h5><b>وصف</b></h5>
+          <p>
+            AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة
+            Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم
+            خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
+          </p>
+          <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>Saned services</b></h3>
+            
+                              
+                    <select class="Input-Selector" id="power"
+                            required
+                            [(ngModel)]="model.power" name="power"
+                            #power="ngModel" style="margin-left: 15px;width: 254px;">
+                            <option  [value]="pow">Select Service</option>
+                      <option  [value]="pow">Aman Services</option>
+                      <option  [value]="pow">Salama Services</option>
+                    </select>
+                    <div [hidden]="power.valid || power.pristine" class="alert" style="color: #f54b5e;" >
+                      Coming soon
+                    </div> -->
+
+
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+
+          <h5><b>الأهداف</b></h5>
+          <p>
+            AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة
+            Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم
+            خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
+          </p>
+
+        </div>
         <div class="row">
-<div class="col-md-12">
-        <div class="mr-2 ">
-            <img src="/assets/1.png"
-            srcset="/assets/1@2x.png 2x,
-                    /assets/1@3x.png 3x"
-            class="layer">
-            <h5><b>Description</b></h5>
-        </div>
-        <div class="col-md-4">
-   
-  
-   <p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
-
-   </p>
-  </div>
-
-<div class="col-md-5">
-    <img src="/assets/2.png"
-    srcset="/assets/2@2x.png 2x,
-            /assets/2@3x.png 3x"
-    class="layer">
-<h5><b>Objectives</b></h5>
-<p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
-
-</p>
-</div>
-</div>
-
-</div>
-</div> -->
-        <div>
-          <!-- =====test==== -->
-          <div class="row" dir="rtl">
-            <div class="col-md-1">
-              <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
-              /assets/1@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4 ml-3">
-
-
-
-              <h5><b dir="rtl" style="margin-left: 318px;">وصف</b></h5>
-              <p class="text-justify">يهدف برنامج أمان إلى دمج جميع أنظمة إنذار الحريق القائمة في جميع الممتلكات في
-                الشارقة مع غرفة التحكم في الدفاع المدني والتي ستعمل على تحسين المراقبة وسرعة الاستجابة للحوادث مباشرة
-                بعد حدوث الحريق وذلك لضمان إنقاذ الأرواح.
-
-                إن الهدف من برنامج أمان هو إرسال إشارة الإنذار دون تدخل بشري وبدقة عالية باستخدام البنية التحتية
-                للاتصالات الحالية بتكلفة معقولة وميسرة
-
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4" style="margin-left: -8px;">
-
-              <h5> <b style="margin-left: 314px;">الأهداف</b> </h5>
-              <p class="text-justify">
-                AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة
-                Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية
-                تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
-              </p>
-
-            </div>
-          </div>
-
-
-        </div>
-        <!-- ====test======== -->
-
-        <div class="row" dir="rtl">
-          <div class="col-md-1">
-            <img src="/assets/3.png" srcset="/assets/3@2x.png 2x,
-              /assets/3@3x.png 3x" class="layer">
-          </div>
-          <div class="col-md-4 ml-3">
-
-
-
-            <h5><b style="margin-left: 267px;">معلومات تقنية</b></h5>
-            <p class="text-justify">AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري
-              لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management)
-              ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية
-              المتحدة. </p>
+          <div class="col-md-5 ml-3">
+            <h5><b>معلومات تقنية</b></h5>
+            <p>AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة
+              Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم
+              خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. </p>
           </div>
           <div class="col-md-1"></div>
-          <div class="col-md-1">
-            <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="layer" style="margin-left: 11px;">
-          </div>
-          <div class="col-md-4" style="margin-left: -8px;">
-
-
-            <h5> <b style="margin-left: 254px;">معلومات تجارية</b> </h5>
-            <p class="text-justify">
+          <div class="col-md-5" style="margin-left: -8px;">
+            <h5> <b>معلومات تجارية</b> </h5>
+            <p>
               AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة
               Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم
               خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة.
@@ -458,135 +418,133 @@ class="NEM mt-3"> -->
 
           </div>
           <div class="col-md-5"></div>
-          <div class="col-md-7 center">
+          <div class="col-md-7">
 
             <button type="submit" style="background-color: #ff0000;
-                width: 156px;
-                padding: 3px 10px;
-                margin-left: 697px;
-                color: white;
-                border-radius: 8px;"
-              routerLink="/register-form-arabic">سجل هنا</button>
+                        width: 156px;
+                        padding: 3px 10px;
+                        margin-left: -27px;
+                        color: white;
+                        border-radius: 8px;"
+              routerLink="/register-form">سجل هنا</button>
 
           </div>
 
         </div>
 
+
+
+        <br>
+
+      </div>
+    </div>
+    <!-- =============footer arabic start====== -->
+    <div class="container1 col-md-12" dir="rtl">
+      <br><br>
+      <div class="row">
+
+        <div class="col-sm-2">
+          <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+                  ./assests/logo-1-copy@3x.png 3x"
+            class="img-thumbnail">
+        </div>
+
+        <div class="col-md-2">
+          <h5 class="home">الملاحة</h5>
+          <ul class="list-unstyled quick-links">
+
+            <li><a routerLink="/aboutus-arabic" class="about">
+                <font color="white">معلومات عنا</font>
+              </a></li>
+            <li><a routerLink="/amanservices-arabic">
+                <font color="white">خدمات</font>
+              </a></li>
+            <li><a routerLink="/sitemap-arabic">
+                <font color="white">خريطة الموقع</font>
+              </a></li>
+            <li><a routerLink="/contactus-arabic">
+                <font color="white">اتصل بنا</font>
+              </a></li>
+            <li><a routerLink="/privacy-arabic">
+                <font color="white">سياسة خاصة</font>
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-sm-3">
+                    <h5 class="home">Support</h5>
+                    <ul class="list-unstyled quick-links">
+                      <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                      <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                      <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                      <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+         
+                    </ul>
+                  </div> -->
+        <div class="col-sm-2">
+          <h5 class="home">عنوان الشركة:</h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class="about">
+                <font color="white">برج 400, 12th أرضية, منجم الطريق,</font>
+                <br>
+                <font color="white">الشارقة, PO صندوق 4638 الشارقة - UAE </font>
+                <br>
+                <font color="white" dir="rtl"> 222 597 6 971+ :الهاتف</font>
+                <br>
+
+                <font color="white" dir="rtl"> 222 597 6 971+ :الفاكس</font>
+                <br>
+                <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+                <br>
+                <a href="https://www.saned.ae" target="_blank">
+                  <font color="white">www.saned.ae</font>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                      ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+            class="img-thumbnail">
+        </div>
+        <div class="col-sm-3">
+          <p>تابعنا
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+            <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+            <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+            <h6>اشترك في صحيفتنا الإخبارية</h6>
+            <div class="input-group mb-3">
+
+              <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                        border-color: #6c757d;"
+                class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+
+                <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+              </div>
+            </div>
+        </div>
+        <hr class="col-md-8" style="background:white">
       </div>
 
 
-      <br>
-
-
-    </div>
-  </div>
-</div>
-<!-- =============footer arabic start====== -->
-<div class="container1 col-md-12" dir="rtl">
-  <br><br>
-  <div class="row">
-
-    <div class="col-sm-2">
-      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-                ./assests/logo-1-copy@3x.png 3x"
-        class="img-thumbnail">
-    </div>
-
-    <div class="col-md-2">
-      <h5 class="home">الملاحة</h5>
-      <ul class="list-unstyled quick-links">
-
-        <li><a routerLink="/aboutus-arabic" class="about">
-            <font color="white">معلومات عنا</font>
-          </a></li>
-        <li><a routerLink="/amanservices-arabic">
-            <font color="white">خدمات</font>
-          </a></li>
-        <li><a routerLink="/sitemap-arabic">
-            <font color="white">خريطة الموقع</font>
-          </a></li>
-        <li><a routerLink="/contactus-arabic">
-            <font color="white">اتصل بنا</font>
-          </a></li>
-        <li><a routerLink="/privacy-arabic">
-            <font color="white">سياسة خاصة</font>
-          </a></li>
-      </ul>
-    </div>
-
-    <!-- <div class="col-sm-3">
-                  <h5 class="home">Support</h5>
-                  <ul class="list-unstyled quick-links">
-                    <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-                    <li><a class="about"><font color="white">Disclaimer</font></a></li>
-                    <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-                    <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-       
-                  </ul>
-                </div> -->
-    <div class="col-sm-2">
-      <h5 class="home">عنوان الشركة:</h5>
-      <ul class="list-unstyled quick-links">
-        <li>
-          <p class="about">
-            <font color="white">برج 400, 12th أرضية, منجم الطريق,</font>
-            <br>
-            <font color="white">الشارقة, PO صندوق 4638 الشارقة - UAE </font>
-            <br>
-            <font color="white" dir="rtl"> الهاتف: 222 597 6 971+ </font>
-            <br>
-            <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-            <br>
-            <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
-            <br>
-            <a href="https://www.saned.ae" target="_blank">
-              <font color="white">www.saned.ae</font>
-            </a>
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="col-sm-3">
-      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-                    ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-        class="img-thumbnail">
-    </div>
-    <div class="col-sm-3">
-      <p>تابعنا
-        <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-        <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-        <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-        <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-        <h6>اشترك في صحيفتنا الإخبارية</h6>
-        <div class="input-group mb-3">
-
-          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                      border-color: #6c757d;"
-            class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-            aria-describedby="basic-addon2">
-          <div class="input-group-append">
-
-            <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
-          </div>
+      <div class="footer">
+        <div>
+          <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
+            وسياسات المحتوى الخاصة بنا. © 2018.</p>
         </div>
-    </div>
-    <hr class="col-md-8" style="background:white">
-  </div>
 
-
-  <div class="footer">
-    <div>
-      <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
-        وسياسات المحتوى الخاصة بنا. © 2018.</p>
+      </div>
+      <br>
     </div>
 
+    <!-- ========footer arabic end====== -->
+
   </div>
-  <br>
+
 </div>
-
-
-<!-- ===arabic -->
-
-
-
 <router-outlet></router-outlet>

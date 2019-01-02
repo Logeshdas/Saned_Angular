@@ -580,8 +580,13 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/src/styles.css */"./src/styles.css");
 module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+=======
+__webpack_require__(/*! /home/logesh/Documents/safecopy/Saned-final/saned-website_ui_Demo_latest_29-12-2018/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/logesh/Documents/safecopy/Saned-final/saned-website_ui_Demo_latest_29-12-2018/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+>>>>>>> 0c5da21e44b4aec85456e17b099a17e32d20ec42
 
 
 /***/ })
