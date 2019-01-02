@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import { SimpleGlobal } from 'ng2-simple-global';
+import {NgbDateStruct, NgbCalendar} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent { 
   resolved(captchaResponse: string) {
         console.log(`Resolved captcha with response ${captchaResponse}:`);
+
     }
     constructor(private translate: TranslateService) {
       translate.setDefaultLang('en');
@@ -19,5 +21,9 @@ export class AppComponent {
     switchLanguage(language: string) {
       this.translate.use(language);
     }
+    ngOnInit() {
+      
+    }
+
     user={}
 }

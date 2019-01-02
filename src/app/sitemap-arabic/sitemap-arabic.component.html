@@ -1,0 +1,615 @@
+<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
+<button (click)="switchLanguage('en')">English</button> -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+nav{
+    width: 100%;
+    height: 50px;
+    background:rgba(0,0,0,.8);
+    border-top: 1px solid rgba(255,255);
+    border-bottom: 1px solid rgba(255,255);
+    position: sticky;
+    top:0px;
+    z-index: 99;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: #000; */
+}
+header{
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /* background-color: red; */
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  /* list-style: none; */
+}
+ul li a {
+  text-decoration: none;
+  /* color: #e74c3c; */
+  font-family: Tahoma, Arial;
+}
+.navigation {
+  background-color: #35353500;
+  width: 75%;
+  margin: 20px auto;
+  min-height: 50px;
+}
+.navigation > li {
+  float: left;
+  padding: 0 20px;
+}
+.navigation > li > a {
+  line-height: 50px;
+  color: #FFF;
+}
+.navigation .menu {
+  position: relative
+}
+.navigation .menu .submenu {
+  position: absolute;
+  /* width: 200px; */
+  -webkit-box-shadow: 0px 1px 1px #CCC;
+  box-shadow: 0px 1px 1px #CCC;
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.navigation .menu:hover .submenu {
+  display: block
+}
+.navigation .menu .submenu:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: #FFF transparent;
+  top: -6px;
+  left: 5px
+}
+.navigation .menu .submenu li {
+  padding: 5px 10px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.navigation .menu .submenu li:hover {
+  background-color: #e74c3c;
+}
+.navigation .menu .submenu li:hover a {
+  color: #FFF;
+  padding: 0 11px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+section.sec1{
+    background: url(natures-temples.png);
+    background-size: cover;
+}
+section.banner{
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+}
+section.sec2{
+   padding: 100px;
+   box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background:rgba(0,0,0,.8);
+    border-top: 1px solid rgba(255,255);
+    border-bottom: 1px solid rgba(255,255);
+    position: sticky;
+    top:0px;
+    z-index: 99
+}
+nav ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+}
+
+
+nav ul{
+    display: flex;
+   
+    padding: 0px;
+    /* float: ; */
+}
+
+nav ul li a{
+    display:block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+    /* ==============footer style start ========= */
+    .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container{
+   background: black;
+   color: white
+ }
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+  .container1{
+   background: black;
+   color: white
+ }
+
+    /* ===========================footer style end================ */
+
+                 /* ==============footer style start ========= */
+                 .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container1{
+   background: black;
+   /* color: white */
+ }
+
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+
+    /* ===========================footer style end================ */
+/* ========== sitemap input styles========== */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  margin-left: 205px;
+  background: #f1f1f1;
+  margin-left: 2px;
+}
+
+form.example button {
+  float: left;
+  width: 114px;
+  padding: 10px;
+  background: white;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: 13;
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+form.example button:hover {
+  background: whi
+  ;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ul.li.a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+
+
+a:link {
+   color: #4a4a4a;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+   color: #4a4a4a;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+   color: #4a4a4a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* ========== sitemap input styles========== */
+</style>
+<!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
+&nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
+&nbsp; -->
+
+
+<div dir="rtl">
+  <!------ Include the above in your HEAD tag ---------->
+  <section class="view intro-2 hm-gradient">
+    <div class="">
+      <div class="col-md-1">
+        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                                                             ./assets/group@3x.png 3x"
+          class="img-responsive">
+      </div>
+    </div>
+    <div class="col-md-4" style="margin-right: 859px;;
+            margin-top: -130px;" dir="rtl">
+      <input type="radio" checked>
+      <font color="#F90E35"> عربى
+      </font><input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/sitemap"
+        [checked]="Lang" />
+      <font style="color:white">English</font> &nbsp; &nbsp;
+
+      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
+        class="btn Rectangle-5-Copy">
+        <font color="white">تسجيل</font>
+      </button>
+
+      <a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
+">
+        <font color="white">خروج </font>
+      </a>
+    </div>
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+    assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+    <!-- <div class="full-bg-img"> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br>
+    <div class="text-center">
+      <h1>
+        <font color="white">مرحبا بكم في الخدمات</font>
+      </h1>
+
+    </div>
+    <!-- </div> -->
+
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </section>
+
+  <nav style="    margin-top: -79px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 200px;" dir="rtl">
+      <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
+      <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
+      <li class="menu">
+        <a>خدمات</a>
+        <ul class="submenu">
+          <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
+          <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
+          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                        <li style="background: red;"><a href="#">Link 4</a></li> -->
+        </ul>
+      </li>
+      <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
+      <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
+      <li><a class="row" routerLink="/sitemap">خريطة الموقع</a></li>
+      <li>
+        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                      margin-right: -46px;"></i></font>
+      </li>
+    </ul>
+  </nav>
+
+  <br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <div class="card col-md-12" style="border-radius: 18px;
+   background: white;margin-top: -110px;" dir="rtl">
+    <br>
+    <br>
+    <br>
+
+    <form class="example text col-md-12" dir="rtl">
+
+      <button type="submit" dir="ltr" style="margin-left:217px;">
+        <font style="color:red">بحث</font>
+      </button>
+      <input type="text" placeholder="بحث.." name="بحث">
+      <!-- style="margin-left-664" -->
+    </form>
+    <br>
+    <br>
+    <br>
+    <!-- <form>
+  <ul>
+   <h2> <li><a href="#home">Aman</a></li></h2>
+    <h2><li><a href="#news">Salama</a></li></h2>
+   
+  </ul>
+</form> -->
+    <div class="row-md-12 mr-4" dir="rtl">
+
+
+
+      <div dir="rtl">
+        <ul class="w3-ul w3-hoverable" style="margin-left: 56px;">
+          <li style="cursor:pointer" class="text-right" routerLink="/login">الصفحة الرئيسية</li>
+          <li style="cursor:pointer" class="text-right" routerLink="/about-us">معلومات عنا</li>
+          <li style="cursor:pointer" class="text-right" routerLink="/supplier-register">المورد</li>
+          <li style="cursor:pointer" class="text-right" routerLink="/contactus">اتصل بنا</li>
+          <li class="text-right">خدمات</li>
+          <!-- <h2><a >Services</h2> -->
+          <ul style="margin-left: 35px;">
+            <li style="cursor:pointer" class="text-right  mr-5" routerLink="/amanservices">خدمات أمان</li>
+            <li style="cursor:pointer" class="text-right  mr-5" routerLink="/salamaservices">خدمات سلامة</li>
+          </ul>
+        </ul>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- =============footer arabic start====== -->
+  <div class="container1 col-md-12" dir="rtl">
+    <br><br>
+    <div class="row">
+
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+              ./assests/logo-1-copy@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+
+      <div class="col-md-2">
+        <h5 class="home">الملاحة</h5>
+        <ul class="list-unstyled quick-links">
+
+          <li><a routerLink="/about-us" class="about">
+              <font color="white">معلومات عنا</font>
+            </a></li>
+          <li><a class="about">
+              <font color="white">خدمات</font>
+            </a></li>
+          <li><a class="about">
+              <font color="white">خريطة الموقع</font>
+            </a></li>
+          <li><a routerLink="/contactus" class="about">
+              <font color="white">اتصل بنا</font>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-sm-3">
+                <h5 class="home">Support</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                  <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                  <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                  <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+     
+                </ul>
+              </div> -->
+      <div class="col-sm-2">
+        <h5 class="home">عنوان الشركة:</h5>
+        <ul class="list-unstyled quick-links">
+          <li>
+            <p class="about">
+              <font color="white">برج 400, 12th أرضية, منجم الطريق,</font>
+              <br>
+              <font color="white">الشارقة, PO صندوق 4638 الشارقة - UAE </font>
+              <br>
+              <font color="white" dir="rtl"> الهاتف: 222 597 6 971+ </font>
+              <br>
+              <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+              <br>
+              <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+              <br>
+              <font color="white">www.saned.ae</font>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                  ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p>تابعنا
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6>اشترك في صحيفتنا الإخبارية</h6>
+          <div class="input-group mb-3">
+
+            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                    border-color: #6c757d;"
+              class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+            </div>
+          </div>
+      </div>
+      <hr class="col-md-8" style="background:white">
+    </div>
+
+
+    <div class="footer">
+      <div>
+        <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
+          وسياسات المحتوى الخاصة بنا. © 2018.</p>
+      </div>
+
+    </div>
+    <br>
+  </div>
+
+  <!-- ======arabic footer end==== -->
+
+  <router-outlet></router-outlet>

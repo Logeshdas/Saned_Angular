@@ -1,5 +1,5 @@
 .intro-2 {
-    background: url("/assets/lawyer-today-1.png")no-repeat center center;
+    background: url("/assets/hero_image.png")no-repeat center center;
     background-size: cover;
     height: 635px;
    }
@@ -85,3 +85,9 @@
     color:#e91e63;
     transform:rotateY(360deg);
   }
+  .element.style{
+   
+      margin-top: -13%;
+  
+  }
+  

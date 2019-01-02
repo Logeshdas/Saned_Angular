@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    nav{
+        width: 100%;
+        height: 50px;
+        background:rgba(0,0,0,.8);
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        /* background: #000; */
+    }
+    header{
+        padding: 10px 100px;
+        box-sizing: border-box;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: block;
+      position: absolute;
+      background-color: red;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #e74c3c;
+      font-family: Tahoma, Arial;
+    }
+    .navigation {
+      background-color: #35353500;
+      width: 75%;
+      margin: 20px auto;
+      min-height: 50px;
+    }
+    .navigation > li {
+      float: left;
+      padding: 0 20px;
+    }
+    .navigation > li > a {
+      line-height: 50px;
+      color: #FFF;
+    }
+    .navigation .menu {
+      position: relative
+    }
+    .navigation .menu .submenu {
+      position: absolute;
+      /* width: 200px; */
+      -webkit-box-shadow: 0px 1px 1px #CCC;
+      box-shadow: 0px 1px 1px #CCC;
+      display: none;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu:hover .submenu {
+      display: block
+    }
+    .navigation .menu .submenu:before {
+      content: "";
+      position: absolute;
+      display: block;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: #FFF transparent;
+      top: -6px;
+      left: 5px
+    }
+    .navigation .menu .submenu li {
+      padding: 5px 10px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu .submenu li:hover {
+      background-color: #e74c3c;
+    }
+    .navigation .menu .submenu li:hover a {
+      color: #FFF;
+      padding: 0 11px;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    section.sec1{
+        background: url(natures-temples.png);
+        background-size: cover;
+    }
+    section.banner{
+        background: url(Group.png);
+        background-size: cover;
+        margin-left: 15px;
+    }
+    section.sec2{
+       padding: 100px;
+       box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+         background:rgba(0,0,0,.8); 
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99
+    }
+    nav ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    
+    
+    nav ul{
+        display: flex;
+       
+        padding: 0px;
+        /* float: ; */
+    }
+    
+    nav ul li a{
+        display:block;
+        color: #fff;
+        padding: 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 50px;
+    
+    }
+    /* .switch{
+    margin-top: 0;
+    margin-bottom: -5rem;
+    margin-left: 83%;
+    color: red;
+    overflow: hidden;
+}
+.switch1{
+    margin-top: 0;
+    margin-bottom: -2rem;
+    margin-left: 0%;
+    color: red;
+} */
+ /* ==============footer style start ========= */
+ .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container1{
+   background: black;
+   color: white
+ }
+ .container{
+   /* background: black; */
+   color: white
+ }
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+
+    /* ===========================footer style end================ */
+    </style>
+
+</head>
+<!-- <div> -->
+
+<!-- <div class = "switch" id="en" >
+      <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
+      <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
+  </div> -->
+
+
+
+<div>
+  <!------ Include the above in your HEAD tag ---------->
+  <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image1.png);height: 635px;">
+
+    <div class="" dir="rtl">
+      <div class="col-md-1">
+        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                                                 ./assets/group@3x.png 3x"
+          class="img-responsive">
+
+
+
+      </div>
+      <div style="margin-left: 0px;margin-top: -150px" dir="ltl">
+        <br><br>
+        <input type="radio" [value]="false" routerLink="/register-form-arabic" checked="checked" />
+        <font color="#F90E35"> عربى
+        </font>
+        &nbsp; &nbsp; <input style="color:#ff0000;" type="radio" [value]="true" routerLink="/privacy" />
+        <font style="color:white">English</font> &nbsp; &nbsp; &nbsp;
+      </div>
+    </div>
+    <!-- <div class="full-bg-img"> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br><br><br><br><br>
+    <div class="text-center">
+      <h1>
+        <font color="white">سياسة خاصة </font>
+      </h1>
+
+    </div>
+    <!-- </div> -->
+
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+  <nav style="    margin-top: -201px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 200px;" dir="rtl">
+      <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
+      <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
+      <li class="menu">
+        <a>خدمات</a>
+        <ul class="submenu">
+          <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
+          <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
+          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+              <li style="background: red;"><a href="#">Link 4</a></li> -->
+        </ul>
+      </li>
+      <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
+      <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
+      <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li>
+      <li>
+        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+            margin-right: -46px;"></i></font>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <div class="card col-md-11" style="border-radius: 18px;
+   background: white;color:#494949;margin-top: -208px;margin-left: 64px;">
+    <br>
+    <br>
+
+    <h2 style="color:black;margin-left: 842px;">سياسة خاصة</h2>
+    <br>
+
+    <div class="An-overview-of-da " dir="rtl">
+      <div class="col-sm-10 ml-4 text-justify">
+
+        <div class="col-sm-12">
+          <h4> 1. نظرة عامة على حماية البيانات</h4>
+          <br>
+          <b style="font-family: Roboto;">جنرال لواء</b>
+          <br>
+          <br>
+          <p>يقدم ما يلي نظرة عامة بسيطة على ما يحدث لمعلوماتك الشخصية عند زيارتك لموقعنا. المعلومات الشخصية هي أي
+            بيانات يمكنك تحديد هويتك بها. يمكن العثور على معلومات تفصيلية حول موضوع حماية البيانات في سياسة الخصوصية
+            الخاصة بنا الموجودة أدناه.</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>جمع البيانات على موقعنا</b>
+          <br>
+          <br>
+          <p>من المسؤول عن جمع البيانات على هذا الموقع؟</p>
+          <p>تتم معالجة البيانات التي تم جمعها على هذا الموقع من قبل مشغل الموقع. يمكن العثور على تفاصيل الاتصال الخاصة
+            بالمشغل في الإشعار القانوني المطلوب في الموقع الإلكتروني.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> كيف نجمع بياناتك؟</b>
+          <br>
+          <br>
+          <p>Sيتم جمع البيانات عند تقديمها لنا. يمكن أن يكون هذا ، على سبيل المثال ، بيانات تقوم بإدخالها في نموذج جهة
+            اتصال.</p>
+          <p> يتم جمع البيانات الأخرى تلقائيًا من خلال أنظمة تكنولوجيا المعلومات لدينا عند زيارة الموقع. هذه البيانات
+            هي بيانات تقنية في المقام الأول مثل المتصفح ونظام التشغيل الذي تستخدمه أو عند الوصول إلى الصفحة. يتم جمع
+            هذه البيانات تلقائيا بمجرد دخولك موقعنا.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> ما الذي نستخدمه لبياناتك؟</b>
+          <br>
+          <br>
+          <p>يتم جمع جزء من البيانات لضمان حسن سير عمل الموقع. يمكن استخدام بيانات أخرى لتحليل كيفية استخدام الزائرين
+            للموقع.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <p>يحق لك دائمًا طلب معلومات حول بياناتك المخزنة ، وأصلها ، ومستلموها ، والغرض من جمعها دون مقابل. لديك أيضًا
+            الحق في طلب تصحيحه أو حظره أو حذفه. يمكنك الاتصال بنا في أي وقت باستخدام العنوان الوارد في الإشعار القانوني
+            إذا كان لديك المزيد من الأسئلة حول مسألة الخصوصية وحماية البيانات. يمكنك أيضًا ، بالطبع ، تقديم شكوى إلى
+            السلطات التنظيمية المختصة.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>التحليلات وأدوات الطرف الثالث</b>
+          <br>
+          <br>
+          <p>عند زيارة موقعنا على الإنترنت ، قد يتم إجراء التحليلات الإحصائية لسلوكك في ركوب الأمواج. هذا يحدث في
+            المقام الأول باستخدام ملفات تعريف الارتباط والتحليلات. عادةً ما يكون تحليل سلوك تصفح الإنترنت الخاص بك
+            مجهولاً ، بمعنى أننا لن نتمكن من التعرف عليك من هذه البيانات. يمكنك الاعتراض على هذا التحليل أو منعه عن
+            طريق عدم استخدام أدوات معينة. يمكن العثور على معلومات تفصيلية في سياسة الخصوصية التالية.</p>
+          <p> يمكنك الاعتراض على هذا التحليل. سوف نعلمك أدناه حول كيفية ممارسة الخيارات المتاحة أمامك في هذا الصدد.</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b> 2. معلومات عامة ومعلومات إلزامية</b>
+          <br>
+          <br>
+          <b>حماية البيانات</b>
+          <br>
+          <br>
+          <p>يأخذ مشغلي هذا الموقع حماية بياناتك الشخصية على محمل الجد. نتعامل مع بياناتك الشخصية بسرية ووفقًا للوائح
+            القانونية لحماية البيانات وسياسة الخصوصية هذه.</p>
+          <p> إذا كنت تستخدم هذا الموقع ، فسيتم جمع العديد من البيانات الشخصية. المعلومات الشخصية هي أي بيانات يمكنك
+            تحديد هويتك بها. سياسة الخصوصية هذه تشرح المعلومات التي نجمعها وما نستخدمها من أجلها. كما يشرح كيف ولأي غرض
+            يحدث هذا.</p>
+          <p>يرجى ملاحظة أن البيانات التي يتم نقلها عبر الإنترنت (على سبيل المثال عبر البريد الإلكتروني) قد تكون عرضة
+            لخروقات أمنية. الحماية الكاملة لبياناتك من الوصول إلى طرف ثالث غير ممكن.</p>
+          <p> إشعار يتعلق بالطرف المسؤول عن هذا الموقع</p>
+          <p> الطرف المسؤول عن معالجة البيانات على هذا الموقع هو:</p>
+          <p>Apleona GmbH,<br>
+            An der Gehespitz 50,<br>
+            63263 Neu-Isenburg</p>
+          <p> هاتف: +49 (0) 6102 45-3400,<br>
+            البريد الإلكتروني: gehespitz50.hsg@apleona.com</p>
+          <p>الطرف المسؤول هو الشخص الطبيعي أو الاعتباري الذي يقرر وحده أو بالاشتراك مع آخرين أغراض ووسائل معالجة
+            البيانات الشخصية (الأسماء وعناوين البريد الإلكتروني وما إلى ذلك).</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b> إلغاء موافقتك على معالجة بياناتك</b>
+          <br>
+          <br>
+          <p> لا يمكن إجراء العديد من عمليات معالجة البيانات إلا بموافقتك الصريحة. يمكنك إلغاء موافقتك في أي وقت مع
+            التأثير المستقبلي. البريد الإلكتروني غير الرسمي الذي يجعل هذا الطلب كافياً. قد تتم معالجة البيانات التي تتم
+            معالجتها قبل استلام طلبك.</p>
+          <p> الحق في تقديم الشكاوى مع السلطات التنظيمية</p>
+          <p> إذا كان هناك انتهاك لتشريع حماية البيانات ، يمكن للشخص المتضرر تقديم شكوى إلى السلطات التنظيمية المختصة.
+            السلطة التنظيمية المختصة للمسائل المتعلقة بتشريعات حماية البيانات هي مسؤول حماية البيانات في الدولة
+            الألمانية التي يوجد مقر الشركة فيها. يمكن العثور على قائمة بمسؤولي حماية البيانات وتفاصيل الاتصال بهم على
+            الرابط التالي: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> تشفير SSL أو TLS</b>
+          <br>
+          <br>
+          <p>يستخدم هذا الموقع تشفير SSL أو TLS لأسباب أمنية ولحماية نقل المحتوى السري ، مثل الاستفسارات التي ترسلها
+            إلينا كمشغل الموقع. يمكنك التعرف على اتصال مشفر في سطر العنوان بالمتصفح & الخاص بك عندما يتغير من & quot؛
+            http: // & quot؛ إلى & quot؛ https: // & quot؛ ويتم عرض رمز القفل في شريط عناوين المتصفح.</p>
+          <p>إذا تم تنشيط تشفير SSL أو TLS ، فإن البيانات التي تنقلها إلينا لا يمكن قراءتها بواسطة أطراف ثالثة.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>المعلومات ، الحظر ، الحذف</b>
+          <br>
+          <br>
+          <p> وفقًا لما يسمح به القانون ، لديك الحق في أن يتم تقديمك في أي وقت بمعلومات مجانية عن أي من بياناتك الشخصية
+            المخزنة وكذلك أصلها والمتلقي والغرض الذي تمت معالجته من أجله. لديك أيضًا الحق في تصحيح هذه البيانات أو
+            حظرها أو حذفها. يمكنك الاتصال بنا في أي وقت باستخدام العنوان الوارد في إشعارنا القانوني إذا كان لديك المزيد
+            من الأسئلة حول موضوع البيانات الشخصية.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> 3. مسؤول حماية البيانات</b>
+          <br>
+          <br>
+          <b>موظف حماية البيانات القانوني</b>
+          <br>
+          <br>
+          <p> لقد قمنا بتعيين موظف حماية بيانات لشركتنا.</p>
+          <p>
+            Apleona GmbH,<br>
+            René Raumanns,<br>
+            An der Gehespitz 50,<br>
+            63263 Neu-Isenburg.
+          </p>
+          <p>
+            هاتف: +49 (0) 6102 45-3810,<br>
+            البريد الإلكتروني: Datenschutz.FS@Apleona.com
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <b>
+            4. جمع البيانات على موقعنا على الانترنت الكوكيز
+          </b>
+          <br>
+          <br>
+          <p>
+            تستخدم بعض صفحات الويب ملفات تعريف الارتباط. ملفات تعريف الارتباط لا تضر جهاز الكمبيوتر الخاص بك ولا تحتوي
+            على أي فيروسات. تساعد ملفات تعريف الارتباط في جعل موقعنا الإلكتروني أكثر سهولة في الاستخدام وكفاءة وأمانًا.
+            ملفات تعريف الارتباط عبارة عن ملفات نصية صغيرة يتم تخزينها على جهاز الكمبيوتر الخاص بك ويتم حفظها بواسطة
+            المستعرض الخاص بك.
+          </p>
+          <p>
+            معظم ملفات تعريف الارتباط التي نستخدمها تُعرف باسم & quot؛ ملفات تعريف ارتباط الجلسة. & quot؛ يتم حذفها
+            تلقائيا بعد زيارتك. تبقى ملفات تعريف الارتباط الأخرى موجودة في ذاكرة جهازك ورسائلك حتى تقوم بحذفها. تتيح
+            ملفات تعريف الارتباط هذه التعرف على متصفحك عند زيارتك للموقع في المرة القادمة.
+          </p>
+          <p>
+            يمكنك تكوين المستعرض الخاص بك لإخبارك حول استخدام ملفات تعريف الارتباط بحيث يمكنك أن تقرر على أساس حالة
+            بحالة قبول أو رفض ملف تعريف الارتباط. بدلاً من ذلك ، يمكن تكوين المستعرض الخاص بك لقبول ملفات تعريف
+            الارتباط تلقائيًا في ظل شروط معينة أو رفضها دائمًا ، أو حذف ملفات تعريف الارتباط تلقائيًا عند إغلاق
+            المتصفح. تعطيل ملفات تعريف الارتباط قد يحد من وظائف هذا الموقع.
+          </p>
+          <p>
+            يتم تخزين ملفات تعريف الارتباط الضرورية للسماح بالاتصالات الإلكترونية أو لتوفير وظائف معينة ترغب في
+            استخدامها (مثل عربة التسوق) وفقًا للفنون. 6 الفقرة 1 ، حرف و من DSGVO. لدى مشغل موقع الويب مصلحة مشروعة في
+            تخزين ملفات تعريف الارتباط لضمان توفير خدمة محسَّنة وخالية من الأخطاء الفنية. إذا تم تخزين ملفات تعريف
+            الارتباط الأخرى (مثل تلك المستخدمة لتحليل سلوك تصفح الإنترنت الخاص بك) ، فسيتم التعامل معها بشكل منفصل في
+            سياسة الخصوصية هذه.
+          </p>
+        </div>
+
+
+
+        <div class="col-sm-12">
+          <b> ملفات سجل الخادم</b>
+          <br>
+          <br>
+          <p>
+            يقوم موفر الموقع الإلكتروني تلقائيًا بتجميع وتخزين المعلومات التي يرسلها المتصفح إليك تلقائيًا في & quot؛
+            ملفات سجل الخادم & quot ؛. هؤلاء هم:</p>
+          <p>
+            نوع المتصفح وإصدار المستعرض<br>
+            نظام التشغيل المستخدم <br>
+            عنوان الإحالة <br>
+            اسم المضيف للكمبيوتر الوصول <br>
+            وقت طلب الخادم <br>
+            عنوان IP <br>
+            لن يتم دمج هذه البيانات مع بيانات من مصادر أخرى.
+          </p>
+          <p>أساس معالجة البيانات هو الفن. 6 (1) (و) DSGVO ، الذي يسمح بمعالجة البيانات للوفاء بعقد أو للتدابير الأولية
+            للعقد.</p>
+        </div>
+        <div class="col-sm-12">
+          <b>نموذج الاتصال</b>
+          <br>
+          <br>
+          <p> إذا أرسلت إلينا أسئلة عبر نموذج الاتصال ، فسوف نجمع البيانات التي تم إدخالها في النموذج ، بما في ذلك
+            تفاصيل الاتصال التي تقدمها ، للإجابة عن سؤالك وأي أسئلة تتعلق بالمتابعة. نحن لا نشارك هذه المعلومات دون
+            إذنك.</p>
+          <p> ولذلك ، سنقوم بمعالجة أي بيانات تقوم بإدخالها في نموذج الاتصال فقط بموافقتك على كل مادة. 6 (1) (أ) DSGVO.
+            يمكنك إلغاء موافقتك في أي وقت. البريد الإلكتروني غير الرسمي الذي يجعل هذا الطلب كافياً. قد تتم معالجة
+            البيانات التي تتم معالجتها قبل استلام طلبك.</p>
+          <p>سنحتفظ بالبيانات التي تقدمها في نموذج الاتصال إلى أن تطلب حذفها ، أو تلغي موافقتك على تخزينها ، أو لم يعد
+            الغرض من سعتها التخزينية (على سبيل المثال بعد تلبية طلبك). أي أحكام قانونية إلزامية ، لا سيما تلك المتعلقة
+            بفترات الاحتفاظ الإلزامي للبيانات ، تظل غير متأثرة بهذا الحكم.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> 5. وسائل الاعلام الاجتماعية</b>
+          <br>
+          <br>
+          <b>ملحقات Facebook (مثل & amp؛ أزرار المشاركة)</b>
+          <br>
+          <br>
+          <p>
+            يتضمن موقعنا الإلكتروني مكونات إضافية للشبكة الاجتماعية Facebook ، Facebook Inc. ، 1 Hacker Way ، Menlo
+            Park ، كاليفورنيا 94025 ، الولايات المتحدة الأمريكية. يمكن التعرف على ملحقات Facebook من خلال شعار Facebook
+            أو زر Like على موقعنا. للحصول على نظرة عامة على مكونات Facebook الإضافية ، راجع
+            developers.facebook.com/docs/plugins/.
+          </p>
+          <p>
+            عند زيارتك لموقعنا ، يتم إنشاء اتصال مباشر بين متصفحك وخادم Facebook عبر المكون الإضافي. يتيح ذلك لـ
+            Facebook تلقي المعلومات التي قمت بزيارتها من عنوان IP الخاص بك. إذا نقرت على زر & quot؛ أعجبني & quot؛
+            أثناء تسجيل الدخول إلى حسابك على Facebook ، يمكنك ربط محتوى موقعنا بملفك الشخصي على Facebook. يسمح هذا لـ
+            Facebook بربط زيارات موقعنا بحساب المستخدم الخاص بك. يرجى ملاحظة أنه كمشغل لهذا الموقع ، ليس لدينا أي معرفة
+            بمحتوى البيانات المرسلة إلى Facebook أو كيفية استخدام Facebook لهذه البيانات. لمزيد من المعلومات ، يرجى
+            الاطلاع على سياسة الخصوصية الخاصة بـ Facebook & apos؛ s على https://de-de.facebook.com/policy.php.
+          </p>
+          <p>
+            إذا كنت لا ترغب في ربط Facebook بزيارتك لموقعنا باستخدام حساب Facebook الخاص بك ، فالرجاء تسجيل الخروج من
+            حساب Facebook الخاص بك.
+          </p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>البرنامج المساعد تويتر</b>
+          <br>
+          <br>
+          <p>
+            تم دمج وظائف خدمة Twitter في موقعنا على الويب وتطبيقنا. يتم تقديم هذه الميزات بواسطة Twitter Inc.، 1355
+            Market Street، Suite 900، San Francisco، CA 94103، USA. عندما تستخدم Twitter ووظيفة "Retweet" ، فإن مواقع
+            الويب التي تقوم بزيارتها مرتبطة بحساب Twitter الخاص بك ومعروفة للمستخدمين الآخرين. عند القيام بذلك ، سيتم
+            أيضًا نقل البيانات إلى Twitter. نود أن نشير إلى أنه ، بصفتنا مزود هذه الصفحات ، ليس لدينا أي معرفة بمحتوى
+            البيانات المرسلة أو كيف سيتم استخدامها من قبل Twitter. لمزيد من المعلومات حول سياسة الخصوصية في Twitter &
+            apos؛ s ، يرجى الانتقال إلى https://twitter.com/privacy.
+          </p>
+          <p>
+            يمكن تعديل تفضيلات الخصوصية الخاصة بك مع Twitter في إعدادات حسابك على https://twitter.com/account/setting.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            مكوّن + Google الإضافي
+          </b>
+          <br>
+          <br>
+          <p>
+            تستخدم صفحاتنا وظائف + Google. يتم تشغيله بواسطة Google Inc. ، 1600 Amphitheatre Parkway، Mountain View، CA
+            94043، USA.
+          </p>
+          <p>
+            جمع المعلومات والكشف عنها: يتيح لك استخدام الزر 1+ Google نشر المعلومات في جميع أنحاء العالم. من خلال زر
+            Google+ ، يمكنك أنت والمستخدمين الآخرين تلقي محتوى مخصص من Google وشركائنا. تخزن Google كلاً من حقيقة أن
+            لديك 1+ & apos؛ d جزء من المحتوى ومعلومات عن الصفحة التي كنت تشاهدها عندما نقرت على 1+. يمكن عرض +1 مع اسم
+            ملفك الشخصي وصورتك في خدمات Google ، على سبيل المثال في نتائج البحث أو في ملفك الشخصي في Google ، أو في
+            أماكن أخرى على مواقع الويب والإعلانات على الإنترنت.
+          </p>
+          <p>
+            تسجل Google معلومات حول أنشطة 1+ لتحسين خدمات Google لك ولآخرين. لاستخدام الزر Google + ، تحتاج إلى ملف
+            شخصي عام مرئي بشكل عام على Google ويجب أن يحتوي على الأقل على الاسم المختار للملف الشخصي. يتم استخدام هذا
+            الاسم بواسطة جميع خدمات Google. في بعض الحالات ، قد يستبدل هذا الاسم أيضًا اسمًا مختلفًا استخدمته لمشاركة
+            المحتوى عبر حساب Google الخاص بك. يمكن عرض هوية ملفك الشخصي في Google للمستخدمين الذين يعرفون عنوان بريدك
+            الإلكتروني أو معلومات أخرى يمكنها التعرف عليك.
+          </p>
+          <p>
+            استخدام البيانات المجمعة: بالإضافة إلى الاستخدامات المذكورة أعلاه ، يتم استخدام المعلومات التي تقدمها وفقًا
+            لسياسات حماية البيانات المعمول بها في Google. قد تنشر Google إحصاءات مختصرة حول المستخدمين & apos؛ نشاط 1+
+            أو مشاركته مع المستخدمين والشركاء ، مثل الناشرين أو المعلنين أو مواقع الويب التابعة.
+          </p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>
+            المساعد LinkedIn
+          </b>
+          <br>
+          <br>
+          <p>
+            يستخدم موقعنا وظائف من شبكة LinkedIn. الخدمة مقدمة من شركة LinkedIn Corporation ، 2029 Stierlin Court،
+            Mountain View، CA 94043، USA.
+          </p>
+          <p>
+            في كل مرة يتم الوصول إلى أحد صفحاتنا التي تحتوي على ميزات LinkedIn ، يقوم متصفحك بإنشاء اتصال مباشر بخوادم
+            LinkedIn. يتم إعلام LinkedIn بأنك قمت بزيارة صفحات الويب الخاصة بنا من عنوان IP الخاص بك. إذا كنت تستخدم زر
+            ينكدين "التوصية" وقمت بتسجيل الدخول إلى حساب LinkedIn الخاص بك ، فمن الممكن لينكدين لربط زيارتك لموقعنا على
+            شبكة الإنترنت لحساب المستخدم الخاص بك. نود أن نشير إلى أنه ، بصفتنا مزود هذه الصفحات ، ليس لدينا أي معرفة
+            بمحتوى البيانات المنقولة أو كيف سيتم استخدامها من قبل LinkedIn.
+          </p>
+          <p>
+            يمكن العثور على مزيد من المعلومات في سياسة خصوصية LinkedIn على
+            https://www.linkedin.com/legal/privacy-policy.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            شينغ البرنامج المساعد
+          </b>
+          <br>
+          <br>
+          <p>يستخدم موقعنا الإلكتروني الميزات التي توفرها شبكة XING. المزود هو XING AG، Dammtorstraße 29-32، 20354
+            Hamburg، Germany.</p>
+          <p>
+            في كل مرة يتم الوصول إلى إحدى صفحاتنا التي تحتوي على ميزات XING ، يقوم متصفحك بإنشاء اتصال مباشر بخوادم
+            XING. على حد علمنا ، لا يتم تخزين أي بيانات شخصية في هذه العملية. على وجه الخصوص ، لا يتم تخزين أي عناوين
+            IP ولا يتم تقييم سلوك الاستخدام.
+          </p>
+          <p>
+            لمزيد من المعلومات حول حماية البيانات وزر مشاركة XING ، يرجى الاطلاع على سياسة خصوصية XING على
+            https://www.xing.com/app/share؟op=data_protection.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            6. التحليلات والإعلانات
+          </b>
+          <br>
+          <br>
+          <p>
+            ماتومو (سابقًا Piwik)
+          </p>
+
+
+          <p>
+            يستخدم موقع الويب هذا خدمة تحليل الويب مفتوحة المصدر Matomo. يستخدم Matomo ما يسمى & quot؛ ملفات تعريف
+            الارتباط & quot ؛. هذه هي ملفات نصية مخزنة على جهاز الكمبيوتر الخاص بك والتي تسمح بتحليل استخدام الموقع من
+            قبلك. لهذا الغرض ، يتم تخزين المعلومات التي تم إنشاؤها بواسطة ملف تعريف الارتباط حول استخدام هذا الموقع على
+            الخادم الخاص بنا. عنوان IP مجهولة الهوية قبل تخزينها.
+          </p>
+          <p>
+            تظل ملفات تعريف الارتباط Matomo على جهازك إلى أن تحذفها.
+          </p>
+          <p>
+            ويستند تخزين ملفات تعريف الارتباط Matomo على الفن. 6 (1) (و) DSGVO. لدى مشغل موقع الويب مصلحة مشروعة في
+            تحليل سلوك المستخدم من أجل تحسين كل من موقعه على الويب وإعلانه.
+          </p>
+          <p>
+            لن يتم الكشف عن المعلومات التي تم إنشاؤها بواسطة ملفات تعريف الارتباط حول استخدامك لهذا الموقع إلى أطراف
+            ثالثة. يمكنك منع تخزين ملفات تعريف الارتباط هذه عن طريق تحديد الإعدادات المناسبة في متصفحك. ومع ذلك ، نود
+            أن نشير إلى أن القيام بذلك قد يعني أنك لن تتمكن من التمتع بالوظائف الكاملة لهذا الموقع.
+          </p>
+          <p>
+            إذا كنت لا توافق على تخزين واستخدام بياناتك ، فيمكنك تعطيل هذه الميزة هنا. في هذه الحالة ، سيتم تخزين ملف
+            تعريف ارتباط إلغاء الاشتراك في المستعرض الخاص بك لمنع Matomo من تخزين بيانات الاستخدام الخاصة بك. إذا قمت
+            بحذف ملفات تعريف الارتباط الخاصة بك ، فسيعني ذلك أيضًا حذف ملف تعريف ارتباط إلغاء الاشتراك. ستحتاج بعد ذلك
+            إلى إعادة تنشيطه عند العودة إلى موقعنا إذا كنت ترغب في عدم تتبع نشاطك.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+
+
+
+
+  <!-- =====footer  english start== -->
+  <!-- =============footer arabic start====== -->
+  <div class="container1 col-md-12" dir="rtl">
+    <br><br>
+    <div class="row">
+
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+            ./assests/logo-1-copy@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+
+      <div class="col-md-2">
+        <h5 class="home" style="color:white">الملاحة</h5>
+        <ul class="list-unstyled quick-links">
+
+          <li><a routerLink="/aboutus-arabic" class="about">
+              <font color="white">معلومات عنا</font>
+            </a></li>
+          <li><a routerLink="/amanservices-arabic">
+              <font color="white">خدمات</font>
+            </a></li>
+          <li><a routerLink="/sitemap-arabic">
+              <font color="white">خريطة الموقع</font>
+            </a></li>
+          <li><a routerLink="/contactus-arabic">
+              <font color="white">اتصل بنا</font>
+            </a></li>
+          <li><a routerLink="/privacy-arabic">
+              <font color="white">سياسة خاصة</font>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-sm-3">
+              <h5 class="home">Support</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+   
+              </ul>
+            </div> -->
+      <div class="col-sm-2">
+        <h5 class="home" style="color:white">عنوان الشركة:</h5>
+        <ul class="list-unstyled quick-links">
+          <li>
+            <p class="about">
+              <font color="white">برج 400, 12th أرضية, منجم الطريق,</font>
+              <br>
+              <font color="white">الشارقة, PO صندوق 4638 الشارقة - UAE </font>
+              <br>
+
+              <font color="white" dir="rtl"> الهاتف: 222 597 6 971+ </font>
+              <br>
+              <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+              <br>
+              <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+              <br>
+              <font color="white">www.saned.ae</font>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p style="color:white">تابعنا
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6 style="color:white">اشترك في صحيفتنا الإخبارية</h6>
+          <div class="input-group mb-3">
+
+            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                 border-color: #6c757d;"
+              class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+            </div>
+          </div>
+      </div>
+      <hr class="col-md-8" style="background:white">
+    </div>
+
+
+    <div class="footer">
+      <div>
+        <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
+          وسياسات المحتوى الخاصة بنا. © 2018.</p>
+      </div>
+
+    </div>
+    <br>
+  </div>
+
+  <!-- ========footer arabic end====== -->
+
+  <!-- ================footer  english end== -->
+</div>
+
+
+<!-- ====Arabic -->
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+<!-- </div> -->
