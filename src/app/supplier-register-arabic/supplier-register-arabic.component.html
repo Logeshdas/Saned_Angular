@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<style>
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+    nav{
+        width: 100%;
+        height: 50px;
+        background:rgba(0,0,0,.8);
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        /* background: #000; */
+    }
+    header{
+        padding: 10px 100px;
+        box-sizing: border-box;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: block;
+      position: absolute;
+      background-color: red;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #e74c3c;
+      font-family: Tahoma, Arial;
+    }
+    .navigation {
+      background-color: #35353500;
+      width: 75%;
+      margin: 20px auto;
+      min-height: 50px;
+    }
+    .navigation > li {
+      float: left;
+      padding: 0 20px;
+    }
+    .navigation > li > a {
+      line-height: 50px;
+      color: #FFF;
+    }
+    .navigation .menu {
+      position: relative
+    }
+    .navigation .menu .submenu {
+      position: absolute;
+      /* width: 200px; */
+      -webkit-box-shadow: 0px 1px 1px #CCC;
+      box-shadow: 0px 1px 1px #CCC;
+      display: none;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu:hover .submenu {
+      display: block
+    }
+    .navigation .menu .submenu:before {
+      content: "";
+      position: absolute;
+      display: block;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: #FFF transparent;
+      top: -6px;
+      left: 5px
+    }
+    .navigation .menu .submenu li {
+      padding: 5px 10px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu .submenu li:hover {
+      background-color: #e74c3c;
+    }
+    .navigation .menu .submenu li:hover a {
+      color: #FFF;
+      padding: 0 11px;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    section.sec1{
+        background: url(natures-temples.png);
+        background-size: cover;
+    }
+    section.banner{
+        background: url(Group.png);
+        background-size: cover;
+        margin-left: 15px;
+    }
+    section.sec2{
+       padding: 100px;
+       box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+         background:rgba(0,0,0,.8); 
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99
+    }
+    nav ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    
+    
+    nav ul{
+        display: flex;
+       
+        padding: 0px;
+        /* float: ; */
+    }
+    
+    nav ul li a{
+        display:block;
+        color: #fff;
+        padding: 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 50px;
+    
+    }
+    /* .switch{
+    margin-top: 0;
+    margin-bottom: -5rem;
+    margin-left: 83%;
+    color: red;
+    overflow: hidden;
+}
+.switch1{
+    margin-top: 0;
+    margin-bottom: -2rem;
+    margin-left: 0%;
+    color: red;
+} */
+    /* ==============footer style start ========= */
+    .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container{
+   /* background: black; */
+   color: white
+ }
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+  .container1{
+   background: black;
+   color: white
+ }
+
+    /* ===========================footer style end================ */
+
+    </style>
+
+
+<!-- <div> -->
+
+<!-- <div class = "switch" id="en" >
+      <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
+      <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
+  </div> -->
+
+<div class="" dir="rtl">
+
+
+  <div>
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image1.png);height: 623px;">
+
+      <div class="">
+        <div class="col-md-1">
+          <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+          <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                                                 ./assets/group@3x.png 3x"
+            class="img-responsive">
+
+
+
+        </div>
+        <div style="margin-left: 10px;margin-top: -150px">
+          <br><br>
+          <input type="radio" [value]="false" checked="checked" />
+          <font style=color:#F90E35> عربى
+          </font> &nbsp; &nbsp; <input style="color:#ff0000;" routerLink="/supplier-register" type="radio" [value]="true" />
+          <font style="color:white">English</font> &nbsp; &nbsp; &nbsp;
+        </div>
+      </div>
+      <!-- <div class="full-bg-img"> -->
+      <!-- <div class="container flex-center"> -->
+      <!-- <div class="row flex-center pt-5 mt-3"> -->
+      <!-- <div class="col-md-6 text-center"> -->
+      <br><br><br><br><br><br>
+      <div class="text-center">
+        <h1>
+          <font color="white">تسجيل المورد </font>
+        </h1>
+
+      </div>
+      <!-- </div> -->
+
+
+      <!-- </div> -->
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <nav style="margin-top: -72px;background: rgba(0, 0, 0, 0.20); ">
+      <ul class="navigation" style="margin-right: 255px;" dir="rtl">
+        <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
+        <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
+        <li class="menu">
+          <a>خدمات</a>
+          <ul class="submenu">
+            <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
+            <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
+            <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+              <li style="background: red;"><a href="#">Link 4</a></li> -->
+          </ul>
+        </li>
+        <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
+        <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
+        <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
+        <li>
+          <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+            margin-right: -46px;"></i></font>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <div id="id01" class="modal" dir="rtl">
+
+      <form class="modal-content animate col-md-4">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
+          <h4>أدخل كلمة المرور مرة واحدة</h4>
+        </div>
+
+        <div class="">
+          <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">تم إرسال كلمة السر لمرة واحدة
+            إلى عنوان بريدك الإلكتروني ورقم هاتفك المحمول</p>
+          <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
+          <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+          <input type="text" class="form-control col-md-4 inline" id="otp" required [(ngModel)]="model.otp" name="name"
+            #name="ngModel">
+
+          <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+
+          <div [hidden]="name.valid || name.pristine" class="alert" style="color: #f54b5e;">
+            كلمة المرور مرة واحدة مطلوبة
+          </div>
+          <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+        <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
+          <!-- <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required> -->
+
+          <button style="background-color: #ff0000;" (click)="emailotpverification(model)" type="submit">Submit</button>
+          <!-- <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label> -->
+        </div>
+
+        <!-- <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div> -->
+      </form>
+    </div>
+    <br><br><br><br><br>
+    <div class=" col-md-12">
+      <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>"Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal."</b></h3> -->
+
+      <div class="card col-md-12" style="border-radius: 18px;
+    background: white;color:#494949;margin-top: -338px;">
+        <br>
+        <div class="row ml-5">
+          <div class="col-md-12 Who-We-Are-Aman-is-a">
+            <!-- <h4><b>Who We Are</b></h4> -->
+            <h3 class="col-sm-12 Welcome-to-Aman-port text-right"><b>مرحبا بكم في بوابة الموردين</b></h3>
+
+            <br>
+            <br>
+            <div class="col-md-12">
+
+
+
+              <div [hidden]="submitted">
+                <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                  <div class="row col-md-12 ml-5">
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="name">رقم الرخصة التجارية الإماراتية <span class="req" style="color: #f54b5e;">*
+                        </span></label>
+                      <input type="text" class="form-control col-md-8" id="uae_trade_license_no" required [(ngModel)]="model.licensenumber"
+                        name="uae_trade_license_no" #licensenumber="ngModel">
+                      <div [hidden]="licensenumber.valid || licensenumber.pristine" class="alert text-right" style="color: #f54b5e;">
+                        رقم الترخيص مطلوب
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="name">تاريخ صلاحية الرخصة التجارية<span class="req" style="color: #f54b5e;">*
+                        </span></label>
+                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'dd-MM-yyyy' }}" class="form-control col-md-8"
+                        [(ngModel)]="model.trade_license_validity" name="trade_license_validity"
+                        #trade_license_validity="ngModel" bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_validity.invalid } "
+                        [minDate]="minDate">
+
+                      <div *ngIf="f.submitted && trade_license_validity.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_validity.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
+                      </div>
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                      class="alert alert-danger">
+                   Name is required
+                 </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
+                        </span></label>
+                      <input type="text" class="form-control col-md-8" id=" company_name" required [(ngModel)]="model.companyname"
+                        name="company_name" #companyname="ngModel">
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                        class="alert alert-danger">
+                     Name is required
+                   </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة
+                        الاقتصادية <span class="req" style="color: #f54b5e;">*
+                        </span></label>
+                      <textarea type="text" class="form-control col-md-8" id="listofservices" required [(ngModel)]="model.listofservices"
+                        name="listofservices" #listofservices="ngModel"></textarea>
+
+                      <div *ngIf="f.submitted && listofservices.invalid" class="invalid-feedback">
+                        <div *ngIf="listofservices.errors.required">يرجى إدخال قائمة الخدمات</div>
+                      </div>
+
+
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                          class="alert alert-danger">
+                       Name is required
+                     </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="address">العنوان المسجل للمكتب:</label>
+                      <input type="text" class="form-control col-md-8" id="reg_office_add" required [(ngModel)]="model.officeaddress"
+                        name="reg_office_add" #officeaddress="ngModel">
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                            class="alert alert-danger">
+                         Name is required
+                       </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="pobox">اسم شخص الاتصال<span class="req" style="color: #f54b5e;">*
+                        </span></label>
+                      <input type="text" class="form-control col-md-8" id="contact_name" required [(ngModel)]="model.contactpersonnumber"
+                        name="contact_name" #contactpersonnumber="ngModel">
+                      <div [hidden]="contactpersonnumber.valid || contactpersonnumber.pristine" class="alert text-right"
+                        style="color: #f54b5e;">
+                        مطلوب اسم
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="mobile">رقم الاتصال</label>
+                      <input type="number" class="form-control col-md-8" id="contact_no" required [(ngModel)]="model.contactnumber"
+                        name="contact_no" #contactnumber="ngModel">
+                      <!-- <div [hidden]="mobile.valid || mobile.pristine"
+                                class="alert" style="color: #f54b5e;">
+                             Mobile number is required
+                           </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="contactpersonposition">جهة الاتصال</label>
+                      <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contactpersonposition"
+                        name="contact_position" #contactpersonposition="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      <!-- <div [hidden]="email.valid || email.pristine"
+                                  class="alert" style="color: #f54b5e;">
+                       Invalid Email Address
+                             </div> -->
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="password">فاكس</label>
+                      <input type="text" class="form-control col-md-8" id="fax_no" required [(ngModel)]="model.fax"
+                        name="fax_no" #fax="ngModel">
+
+                      <!-- <div [hidden]="fax.valid || password.pristine"
+                                  class="alert" style="color: #f54b5e;">
+                               Password Should contain atleast one Uppercase,one number Min 8 characters
+                             </div>
+                             <span id="strength_message"></span> -->
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="confirmpassword">رقم الاتصال. (التليفون المحمول)<span class="req"
+                          style="color: #f54b5e;">* </span></label>
+                      <input type="password" class="form-control col-md-8" id="contactmobilenumber" passvalidator="password"
+                        required [(ngModel)]="model.contactmobilenumber" name="contactmobilenumber"
+                        #contactmobilenumber="ngModel">
+                      <div [hidden]="contactmobilenumber.valid || contactmobilenumber.pristine" class="alert text-right"
+                        style="color: #f54b5e;">
+                        رقم الاتصال. مطلوب
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label>
+                      <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
+                        required [(ngModel)]="model.companyemail" name="company_email_id" #companyemail="ngModel"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                      <!-- <div [hidden]="companyemail.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
+
+                      <!-- s -->
+                      <!-- </div> -->
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span
+                          class="req" style="color: #f54b5e;">* </span></label>
+                      <input type="email" class="form-control col-md-8" id="contact_email_id" passvalidator="password"
+                        required [(ngModel)]="model.emailcontactperson" name="contact_email_id" #emailcontactperson="ngModel"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                      <div [hidden]="emailcontactperson.valid || emailcontactperson.pristine" class="alert text-right"
+                        style="color: #f54b5e;">
+                        معرف البريد الإلكتروني غير صالح
+                      </div>
+                      <!-- <div [hidden]="emailcontactperson.touched && emailcontactperson.errors?.notequal"class="alert" style="color: #f54b5e;">
+                                   -->
+                      <!-- s -->
+                      <!-- </div> -->
+                    </div>
+
+
+                    <div class="form-group col-md-6">
+                      <label class="Name text-right" for="confirmpassword">عنوان موقع ويب</label>
+                      <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.websiteaddress"
+                        name="website_add" #websiteaddress="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                    </div>
+
+
+                    <div class="col-md-12">
+
+                      <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+                      <button type="submit" style="background-color: #ff0000;padding: 8px 20px;margin-left: 319px;"
+                        onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
+                        (click)="supplierregister(model)">
+                        <font color="white"> خضع</font>
+                      </button>
+                      <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+                    </div>
+                  </div>
+                </form>
+                <br>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- =============footer arabic start====== -->
+    <!-- =============footer arabic start====== -->
+    <div class="container1 col-md-12" dir="rtl">
+      <br><br>
+      <div class="row">
+
+        <div class="col-sm-2">
+          <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+           ./assests/logo-1-copy@3x.png 3x"
+            class="img-thumbnail">
+        </div>
+
+        <div class="col-md-2">
+          <h5 class="home" style="color:white">الملاحة</h5>
+          <ul class="list-unstyled quick-links">
+
+            <li><a routerLink="/aboutus-arabic" class="about">
+                <font color="white">معلومات عنا</font>
+              </a></li>
+            <li><a routerLink="/amanservices-arabic">
+                <font color="white">خدمات</font>
+              </a></li>
+            <li><a routerLink="/sitemap-arabic">
+                <font color="white">خريطة الموقع</font>
+              </a></li>
+            <li><a routerLink="/contactus-arabic">
+                <font color="white">اتصل بنا</font>
+              </a></li>
+            <li><a routerLink="/privacy-arabic">
+                <font color="white">سياسة خاصة</font>
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-sm-3">
+             <h5 class="home">Support</h5>
+             <ul class="list-unstyled quick-links">
+               <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+               <li><a class="about"><font color="white">Disclaimer</font></a></li>
+               <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+               <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+  
+             </ul>
+           </div> -->
+        <div class="col-md-3">
+          <h5 class="home" style="color:white">عنوان الشركة:</h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class="about">
+                <font color="white">برج 400 12th أرضية,</font>
+                <br>
+                <font color="white"> طريق الميناء الشارقة,</font>
+                <br>
+                <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
+                <br>
+
+                <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
+                <br>
+                <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+                <br>
+                <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+                <br>
+                <a routerLink="/login-arabic">
+                  <font color="white">www.saned.ae</font>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+               ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+            class="img-thumbnail">
+        </div>
+        <div class="col-sm-3">
+          <p style="color:white">تابعنا
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+            <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+            <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+            <h6 style="color:white">اشترك في صحيفتنا الإخبارية</h6>
+            <div class="input-group mb-3">
+
+              <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                border-color: #6c757d;vertical-align:9px;color:#bbb"
+                class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+
+                <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+              </div>
+            </div>
+        </div>
+        <hr class="col-md-8" style="background:white">
+      </div>
+
+
+      <div class="footer">
+        <div>
+          <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
+            وسياسات المحتوى الخاصة بنا. © 2019.</p>
+        </div>
+
+      </div>
+      <br>
+    </div>
+
+    <!-- ========footer arabic end====== -->
+
+    <!-- ===arabic -->
+  </div>
+
+  <!-- ====Arabic -->
+
+  <!-- ========footer arabic end====== -->
+
+
+
+
+  <!-- </div> -->

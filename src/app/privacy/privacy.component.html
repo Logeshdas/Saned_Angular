@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    nav{
+        width: 100%;
+        height: 50px;
+        background:rgba(0,0,0,.8);
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        /* background: #000; */
+    }
+    header{
+        padding: 10px 100px;
+        box-sizing: border-box;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    .dropdown-content {
+      display: block;
+      position: absolute;
+      background-color: red;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #e74c3c;
+      font-family: Tahoma, Arial;
+    }
+    .navigation {
+      background-color: #35353500;
+      width: 75%;
+      margin: 20px auto;
+      min-height: 50px;
+    }
+    .navigation > li {
+      float: left;
+      padding: 0 20px;
+    }
+    .navigation > li > a {
+      line-height: 50px;
+      color: #FFF;
+    }
+    .navigation .menu {
+      position: relative
+    }
+    .navigation .menu .submenu {
+      position: absolute;
+      /* width: 200px; */
+      -webkit-box-shadow: 0px 1px 1px #CCC;
+      box-shadow: 0px 1px 1px #CCC;
+      display: none;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu:hover .submenu {
+      display: block
+    }
+    .navigation .menu .submenu:before {
+      content: "";
+      position: absolute;
+      display: block;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: #FFF transparent;
+      top: -6px;
+      left: 5px
+    }
+    .navigation .menu .submenu li {
+      padding: 5px 10px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+    }
+    .navigation .menu .submenu li:hover {
+      background-color: #e74c3c;
+    }
+    .navigation .menu .submenu li:hover a {
+      color: #FFF;
+      padding: 0 11px;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    section.sec1{
+        background: url(natures-temples.png);
+        background-size: cover;
+    }
+    section.banner{
+        background: url(Group.png);
+        background-size: cover;
+        margin-left: 15px;
+    }
+    section.sec2{
+       padding: 100px;
+       box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+         background:rgba(0,0,0,.8); 
+        border-top: 1px solid rgba(255,255);
+        border-bottom: 1px solid rgba(255,255);
+        position: sticky;
+        top:0px;
+        z-index: 99
+    }
+    nav ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+    }
+    nav ul li{
+        list-style: none;
+    }
+    
+    
+    nav ul{
+        display: flex;
+       
+        padding: 0px;
+        /* float: ; */
+    }
+    
+    nav ul li a{
+        display:block;
+        color: #fff;
+        padding: 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 50px;
+    
+    }
+    /* .switch{
+    margin-top: 0;
+    margin-bottom: -5rem;
+    margin-left: 83%;
+    color: red;
+    overflow: hidden;
+}
+.switch1{
+    margin-top: 0;
+    margin-bottom: -2rem;
+    margin-left: 0%;
+    color: red;
+} */
+ /* ==============footer style start ========= */
+ .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+ }
+ .container1{
+   background: black;
+   color: white
+ }
+ .container{
+   /* background: black; */
+   color: white
+ }
+ .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.img-thumbnail{
+  background: black;
+  border-color: black
+}
+.intro-2 {
+    background: url("/assets/hero_image.png")no-repeat center center;
+    background-size: cover;
+    height: 623px;
+ }
+
+ .home{
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+  letter-spacing: 0;
+  }
+  .about{
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 15px;
+  letter-spacing: 0;
+  }
+
+    /* ===========================footer style end================ */
+    </style>
+
+</head>
+<!-- <div> -->
+
+<!-- <div class = "switch" id="en" >
+      <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
+      <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
+  </div> -->
+
+
+
+<div>
+  <!------ Include the above in your HEAD tag ---------->
+  <section class="view intro-2 hm-gradient">
+
+    <div class="">
+      <div class="col-md-1">
+        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                                                 ./assets/group@3x.png 3x"
+          class="img-responsive">
+
+
+
+      </div>
+      <div style="margin-left: 926px;margin-top: -150px">
+        <br><br>
+        <input type="radio" [value]="false" routerLink="/privacy-arabic" />
+        <font color="white"> عربى
+        </font>
+        &nbsp; &nbsp; <input style="color:#ff0000;" type="radio" [value]="true" checked="checked" />
+        <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
+          class="btn Rectangle-5-Copy">
+          <font style="color:white">Register</font>
+        </button>
+      </div>
+    </div>
+    <!-- <div class="full-bg-img"> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br><br><br><br><br>
+    <div class="text-center">
+      <h1>
+        <font color="white">PRIVACY POLICY </font>
+      </h1>
+
+    </div>
+    <!-- </div> -->
+
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </section>
+  <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 79px;">
+      <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
+      <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
+      <li class="menu">
+        <a>S<font style="text-transform: lowercase;">ervices</font></a>
+        <ul class="submenu">
+          <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
+              </font></a></li>
+          <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
+            </a></li>
+          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
+                  <li style="background: red;"><a href="#">Link 4</a></li> -->
+        </ul>
+      </li>
+      <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
+      <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
+      <!-- <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li> -->
+      <li>
+        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
+                margin-left: -43px;"></i></font>
+      </li>
+
+
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <div class="card col-md-11" style="border-radius: 18px;
+   background: white;color:#494949;margin-top: -208px;margin-left: 64px;">
+    <br>
+    <br>
+
+    <h2 style="color:black;margin-left: 56px;">Privacy Policy</h2>
+    <br>
+
+    <div class="An-overview-of-da ">
+      <div class="col-sm-12 ml-4 text-justify">
+
+        <div class="col-sm-12">
+          <h4> 1. An overview of data protection</h4>
+          <br>
+          <b style="font-family: Roboto;">General</b>
+          <br>
+          <br>
+          <p>The following gives a simple overview of what happens to your personal information when you visit our
+            website. Personal information is any data with which you could be personally identified. Detailed
+            information on the subject of data protection can be found in our privacy policy found below.</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>Data collection on our website</b>
+          <br>
+          <br>
+          <p>Who is responsible for the data collection on this website?</p>
+          <p>The data collected on this website are processed by the website operator. The operator&apos;s contact
+            details can be found in the website&apos;s required legal notice.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> How do we collect your data?</b>
+          <br>
+          <br>
+          <p>Some data are collected when you provide it to us. This could, for example, be data you enter on a contact
+            form.</p>
+          <p> Other data are collected automatically by our IT systems when you visit the website. These data are
+            primarily technical data such as the browser and operating system you are using or when you accessed the
+            page. These data are collected automatically as soon as you enter our website.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> What do we use your data for?</b>
+          <br>
+          <br>
+          <p>Part of the data is collected to ensure the proper functioning of the website. Other data can be used to
+            analyze how visitors use the site.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <p>You always have the right to request information about your stored data, its origin, its recipients, and
+            the purpose of its collection at no charge. You also have the right to request that it be corrected,
+            blocked, or deleted. You can contact us at any time using the address given in the legal notice if you have
+            further questions about the issue of privacy and data protection. You may also, of course, file a complaint
+            with the competent regulatory authorities.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>Analytics and third-party tools</b>
+          <br>
+          <br>
+          <p>When visiting our website, statistical analyses may be made of your surfing behavior. This happens
+            primarily using cookies and analytics. The analysis of your surfing behavior is usually anonymous, i.e. we
+            will not be able to identify you from this data. You can object to this analysis or prevent it by not using
+            certain tools. Detailed information can be found in the following privacy policy.</p>
+          <p> You can object to this analysis. We will inform you below about how to exercise your options in this
+            regard.</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b> 2. General information and mandatory information</b>
+          <br>
+          <br>
+          <b>Data protection</b>
+          <br>
+          <br>
+          <p>The operators of this website take the protection of your personal data very seriously. We treat your
+            personal data as confidential and in accordance with the statutory data protection regulations and this
+            privacy policy.</p>
+          <p> If you use this website, various pieces of personal data will be collected. Personal information is any
+            data with which you could be personally identified. This privacy policy explains what information we
+            collect and what we use it for. It also explains how and for what purpose this happens.</p>
+          <p>Please note that data transmitted via the internet (e.g. via email communication) may be subject to
+            security breaches. Complete protection of your data from third-party access is not possible.</p>
+          <p> Notice concerning the party responsible for this website</p>
+          <p> The party responsible for processing data on this website is:</p>
+          <p>Apleona GmbH,<br>
+            An der Gehespitz 50,<br>
+            63263 Neu-Isenburg</p>
+          <p> Telephone: +49 (0) 6102 45-3400,<br>
+            Email: gehespitz50.hsg@apleona.com</p>
+          <p>The responsible party is the natural or legal person who alone or jointly with others decides on the
+            purposes and means of processing personal data (names, email addresses, etc.).</p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b> Revocation of your consent to the processing of your data</b>
+          <br>
+          <br>
+          <p> Many data processing operations are only possible with your express consent. You may revoke your consent
+            at any time with future effect. An informal email making this request is sufficient. The data processed
+            before we receive your request may still be legally processed.</p>
+          <p> Right to file complaints with regulatory authorities</p>
+          <p> If there has been a breach of data protection legislation, the person affected may file a complaint with
+            the competent regulatory authorities. The competent regulatory authority for matters related to data
+            protection legislation is the data protection officer of the German state in which our company is
+            headquartered. A list of data protection officers and their contact details can be found at the following
+            link: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> SSL or TLS encryption</b>
+          <br>
+          <br>
+          <p>This site uses SSL or TLS encryption for security reasons and for the protection of the transmission of
+            confidential content, such as the inquiries you send to us as the site operator. You can recognize an
+            encrypted connection in your browser&apos;s address line when it changes from &quot;http://&quot; to
+            &quot;https://&quot; and the lock icon is displayed in your browser&apos;s address bar.</p>
+          <p>If SSL or TLS encryption is activated, the data you transfer to us cannot be read by third parties.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>Information, blocking, deletion</b>
+          <br>
+          <br>
+          <p> As permitted by law, you have the right to be provided at any time with information free of charge about
+            any of your personal data that is stored as well as its origin, the recipient and the purpose for which it
+            has been processed. You also have the right to have this data corrected, blocked or deleted. You can
+            contact us at any time using the address given in our legal notice if you have further questions on the
+            topic of personal data.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> 3. Data protection officer</b>
+          <br>
+          <br>
+          <b>Statutory data protection officer</b>
+          <br>
+          <br>
+          <p> We have appointed a data protection officer for our company.</p>
+          <p>
+            Apleona GmbH,<br>
+            René Raumanns,<br>
+            An der Gehespitz 50,<br>
+            63263 Neu-Isenburg.
+          </p>
+          <p>
+            Telephone: +49 (0) 6102 45-3810,<br>
+            Email: Datenschutz.FS@Apleona.com
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <b>
+            4.Data collection on our website Cookies
+          </b>
+          <br>
+          <br>
+          <p>
+            Some of our web pages use cookies. Cookies do not harm your computer and do not contain any viruses.
+            Cookies help make our website more user-friendly, efficient, and secure. Cookies are small text files that
+            are stored on your computer and saved by your browser.
+          </p>
+          <p>
+            Most of the cookies we use are so-called &quot;session cookies.&quot; They are automatically deleted after
+            your visit. Other cookies remain in your device&apos;s memory until you delete them. These cookies make it
+            possible to recognize your browser when you next visit the site.
+          </p>
+          <p>
+            You can configure your browser to inform you about the use of cookies so that you can decide on a
+            case-by-case basis whether to accept or reject a cookie. Alternatively, your browser can be configured to
+            automatically accept cookies under certain conditions or to always reject them, or to automatically delete
+            cookies when closing your browser. Disabling cookies may limit the functionality of this website.
+          </p>
+          <p>
+            Cookies which are necessary to allow electronic communications or to provide certain functions you wish to
+            use (such as the shopping cart) are stored pursuant to Art. 6 paragraph 1, letter f of DSGVO. The website
+            operator has a legitimate interest in the storage of cookies to ensure an optimized service provided free
+            of technical errors. If other cookies (such as those used to analyze your surfing behavior) are also
+            stored, they will be treated separately in this privacy policy.
+          </p>
+        </div>
+
+
+
+        <div class="col-sm-12">
+          <b> Server log files</b>
+          <br>
+          <br>
+          <p>
+            The website provider automatically collects and stores information that your browser automatically
+            transmits to us in &quot;server log files&quot;. These are:</p>
+          <p>
+            Browser type and browser version<br>
+            Operating system used <br>
+            Referrer URL <br>
+            Host name of the accessing computer <br>
+            Time of the server request <br>
+            IP address <br>
+            These data will not be combined with data from other sources.
+          </p>
+          <p>The basis for data processing is Art. 6 (1) (f) DSGVO, which allows the processing of data to fulfill a
+            contract or for measures preliminary to a contract.</p>
+        </div>
+        <div class="col-sm-12">
+          <b>Contact form</b>
+          <br>
+          <br>
+          <p> Should you send us questions via the contact form, we will collect the data entered on the form,
+            including the contact details you provide, to answer your question and any follow-up questions. We do not
+            share this information without your permission.</p>
+          <p> We will, therefore, process any data you enter onto the contact form only with your consent per Art. 6
+            (1)(a) DSGVO. You may revoke your consent at any time. An informal email making this request is sufficient.
+            The data processed before we receive your request may still be legally processed.</p>
+          <p>We will retain the data you provide on the contact form until you request its deletion, revoke your
+            consent for its storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your
+            request). Any mandatory statutory provisions, especially those regarding mandatory data retention periods,
+            remain unaffected by this provision.</p>
+        </div>
+
+        <div class="col-sm-12">
+          <b> 5. Social media</b>
+          <br>
+          <br>
+          <b>Facebook plugins (Like &amp; Share buttons)</b>
+          <br>
+          <br>
+          <p>
+            Our website includes plugins for the social network Facebook, Facebook Inc., 1 Hacker Way, Menlo Park,
+            California 94025, USA. The Facebook plugins can be recognized by the Facebook logo or the Like button on
+            our site. For an overview of Facebook plugins, see developers.facebook.com/docs/plugins/.
+          </p>
+          <p>
+            When you visit our site, a direct connection between your browser and the Facebook server is established
+            via the plugin. This enables Facebook to receive information that you have visited our site from your IP
+            address. If you click on the Facebook &quot;Like button&quot; while you are logged into your Facebook
+            account, you can link the content of our site to your Facebook profile. This allows Facebook to associate
+            visits to our site with your user account. Please note that, as the operator of this site, we have no
+            knowledge of the content of the data transmitted to Facebook or of how Facebook uses these data. For more
+            information, please see Facebook&apos;s privacy policy at https://de-de.facebook.com/policy.php.
+          </p>
+          <p>
+            If you do not want Facebook to associate your visit to our site with your Facebook account, please log out
+            of your Facebook account.
+          </p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>Twitter plugin</b>
+          <br>
+          <br>
+          <p>
+            Functions of the Twitter service have been integrated into our website and app. These features are offered
+            by Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. When you use Twitter and the
+            “Retweet” function, the websites you visit are connected to your Twitter account and made known to other
+            users. In doing so, data will also be transferred to Twitter. We would like to point out that, as the
+            provider of these pages, we have no knowledge of the content of the data transmitted or how it will be used
+            by Twitter. For more information on Twitter&apos;s privacy policy, please go to
+            https://twitter.com/privacy.
+          </p>
+          <p>
+            Your privacy preferences with Twitter can be modified in your account settings at
+            https://twitter.com/account/setting.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            Google+ plugin
+          </b>
+          <br>
+          <br>
+          <p>
+            Our pages use Google+ functions. It is operated by Google Inc., 1600 Amphitheatre Parkway, Mountain View,
+            CA 94043, USA.
+          </p>
+          <p>
+            Collection and disclosure of information: Using the Google +1 button allows you to publish information
+            worldwide. By means of the Google+ button, you and other users can receive custom content from Google and
+            our partners. Google stores both the fact that you have +1&apos;d a piece of content and information about
+            the page you were viewing when you clicked +1. Your +1 can be displayed together with your profile name and
+            photo in Google services, for example in search results or in your Google profile, or in other places on
+            websites and advertisements on the Internet.
+          </p>
+          <p>
+            Google records information about your +1 activities to improve Google services for you and others. To use
+            the Google + button, you need a globally visible, public Google profile that must contain at least the name
+            chosen for the profile. This name is used by all Google services. In some cases, this name may also replace
+            a different name that you have used to share content via your Google account. The identity of your Google
+            profile can be shown to users who know your email address or other information that can identify you.
+          </p>
+          <p>
+            Use of collected data: In addition to the uses mentioned above, the information you provide is used in
+            accordance with the applicable Google data protection policies. Google may publish summary statistics about
+            users&apos; +1 activity or share it with users and partners, such as publishers, advertisers, or affiliate
+            websites.
+          </p>
+        </div>
+
+
+        <div class="col-sm-12">
+          <b>
+            LinkedIn plugin
+          </b>
+          <br>
+          <br>
+          <p>
+            Our site uses functions from the LinkedIn network. The service is provided by LinkedIn Corporation, 2029
+            Stierlin Court, Mountain View, CA 94043, USA.
+          </p>
+          <p>
+            Each time one of our pages containing LinkedIn features is accessed, your browser establishes a direct
+            connection to the LinkedIn servers. LinkedIn is informed that you have visited our web pages from your IP
+            address. If you use the LinkedIn “Recommend” button and are logged into your LinkedIn account, it is
+            possible for LinkedIn to associate your visit to our website to your user account. We would like to point
+            out that, as the provider of these pages, we have no knowledge of the content of the data transmitted or
+            how it will be used by LinkedIn.
+          </p>
+          <p>
+            More information can be found in the LinkedIn privacy policy at
+            https://www.linkedin.com/legal/privacy-policy.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            XING Plugin
+          </b>
+          <br>
+          <br>
+          <p>Our website uses features provided by the XING network. The provider is XING AG, Dammtorstraße 29-32,
+            20354 Hamburg, Germany.</p>
+          <p>
+            Each time one of our pages containing XING features is accessed, your browser establishes a direct
+            connection to the XING servers. To the best of our knowledge, no personal data is stored in the process. In
+            particular, no IP addresses are stored nor is usage behavior evaluated.
+          </p>
+          <p>
+            For more information about data protection and the XING Share button, please see the XING privacy policy at
+            https://www.xing.com/app/share?op=data_protection.
+          </p>
+        </div>
+
+        <div class="col-sm-12">
+          <b>
+            6. Analytics and advertising
+          </b>
+          <br>
+          <br>
+          <p>
+            Matomo (formerly Piwik)
+          </p>
+
+
+          <p>
+            This website uses the open source web analytics service Matomo. Matomo uses so-called &quot;cookies&quot;.
+            These are text files that are stored on your computer and that allow an analysis of the use of the website
+            by you. For this purpose, the information generated by the cookie about the use of this website is stored
+            on our server. The IP address is anonymized before it is stored.
+          </p>
+          <p>
+            Matomo cookies remain on your device until you delete them.
+          </p>
+          <p>
+            The storage of Matomo cookies is based on Art. 6 (1) (f) DSGVO. The website operator has a legitimate
+            interest in analyzing user behavior in order to optimize both its website and its advertising.
+          </p>
+          <p>
+            The information generated by the cookies about your use of this website will not be disclosed to third
+            parties. You can prevent these cookies being stored by selecting the appropriate settings in your browser.
+            However, we wish to point out that doing so may mean you will not be able to enjoy the full functionality
+            of this website.
+          </p>
+          <p>
+            If you do not agree with the storage and use of your data, you can disable this feature here. In this case,
+            an opt-out cookie will be stored in your browser to prevent Matomo from storing your usage data. If you
+            delete your cookies, this will mean that the opt-out cookie will also be deleted. You will then need to
+            reactivate it when you return to our site if you wish your activity not to be tracked.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+
+
+
+
+
+
+  <!-- =====footer  english start== -->
+  <!-- =====footer  english start== -->
+  <div class="container1 col-md-12">
+    <br><br>
+    <div class="row">
+
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+         ./assests/logo-1-copy@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+
+      <div class="col-md-2">
+        <h5 class="home" style="color:white">Navigations</h5>
+        <ul class="list-unstyled quick-links">
+
+          <li><a routerLink="/about-us" class="about">
+              <font color="white">About Us</font>
+            </a></li>
+          <li><a routerLink="/amanservices" class="about">
+              <font color="white">Services</font>
+            </a></li>
+          <li><a routerLink="/sitemap" class="about">
+              <font color="white">Sitemap</font>
+            </a></li>
+          <li><a routerLink="/contactus" class="about">
+              <font color="white">Contact Us</font>
+            </a></li>
+          <li><a routerLink="/privacy" class="about">
+              <font color="white">Privacy Policy</font>
+            </a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-sm-3">
+           <h5 class="home">Support</h5>
+           <ul class="list-unstyled quick-links">
+             <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+             <li><a class="about"><font color="white">Disclaimer</font></a></li>
+             <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+             <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+
+           </ul>
+         </div> -->
+      <div class="col-sm-2">
+        <h5 class="home" style="color:white">Company Address:</h5>
+        <ul class="list-unstyled quick-links">
+          <li>
+            <p class="about">
+              <font color="white">Tower 400 12th Floor,</font>
+              <br>
+              <font color="white"> Mina Road Sharjah,</font>
+              <br>
+              <font color="white"> PO Box 4638 Sharjah - UAE </font>
+              <br>
+              <font color="white">Tel: +971 6 597 2222</font>
+              <br>
+              <font color="white">Fax: +971 6 572 2331</font>
+              <br>
+              <font color="white">Email: helpdesk.hsg@apleona.com</font>
+              <br>
+              <a routerLink="/login">
+                <font color="white">www.saned.ae</font>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+             ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p style="color:white">Follow us
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6 style="color:white">Subscribe to Our Newsletter</h6>
+          <div class="input-group mb-3">
+
+            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+              border-color: #6c757d;vertical-align:9px;color:#bbb"
+              class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">Subscribe</button>
+            </div>
+          </div>
+      </div>
+      <hr class="col-md-8" style="background:white">
+    </div>
+
+
+    <div class="footer">
+      <div>
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+          Content Policies. © 2019.</p>
+      </div>
+
+    </div>
+    <br>
+  </div>
+  <!-- ================footer  english end== -->
+  <!-- ================footer  english end== -->
+</div>
+
+
+<!-- ====Arabic -->
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+<!-- </div> -->
