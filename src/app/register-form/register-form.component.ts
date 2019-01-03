@@ -24,7 +24,6 @@ export class RegisterFormComponent implements OnInit {
   model: any = {};
   data: any = {};
 
-
   constructor(private apiService: APIService, private router: Router) { }
 
   ngOnInit() {
@@ -90,7 +89,6 @@ export class RegisterFormComponent implements OnInit {
   };
 
   sendotp(model) {
-
     this.apiService.sendotp(model).subscribe((response) => {
       this.data = response;
       if (this.data.code = '200') {

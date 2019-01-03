@@ -12,11 +12,7 @@ export class SupplierRegisterArabicComponent implements OnInit {
 
   model: any = {};
   data: any = {};
-  minDate: Date;
-  constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
-    this.minDate = new Date();
-    this.minDate.setDate(this.minDate.getDate() - 1);
-  }
+  constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) { }
 
   ngOnInit() {
   }

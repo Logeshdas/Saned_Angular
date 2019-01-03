@@ -7,264 +7,264 @@
          -->
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-                  body {
-         margin: 0;
-         margin-top: -58px;
-         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-         font-size: 1rem;
-         margin-top: -20px;
-         font-weight: 400;
-         line-height: 1.5;
-         color: #212529;
-         text-align: right;
-         background-color: #fff;
-        }
-                     body {font-family: Arial, Helvetica, sans-serif;}
-                     nav{
-                         width: 100%;
-                         height: 50px;
-                         background:rgba(0,0,0,.8);
-                         border-top: 1px solid rgba(255,255);
-                         border-bottom: 1px solid rgba(255,255);
-                         position: sticky;
-                         top:0px;
-                         z-index: 99;
-                     }
-                     
-                     header{
-                         padding: 10px 100px;
-                         box-sizing: border-box;
-                     }
-                     section{
-                         width: 100%;
-                         height: 100vh;
-                     }
-                     .dropdown {
-                       float: left;
-                       overflow: hidden;
-                     }
-                     
-                     .dropdown .dropbtn {
-                       font-size: 16px;  
-                       border: none;
-                       outline: none;
-                       color: white;
-                       padding: 14px 16px;
-                       background-color: inherit;
-                       font-family: inherit;
-                       margin: 0;
-                     }
-                     
-                     .navbar a:hover, .dropdown:hover .dropbtn {
-                       background-color: red;
-                     }
-                     
-                     .dropdown-content {
-                       display: block;
-                       position: absolute;
-                       background-color: red;
-                       min-width: 160px;
-                       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                       z-index: 1;
-                     }
-                     
-                     .dropdown-content a {
-                       float: none;
-                       color: black;
-                       padding: 12px 16px;
-                       text-decoration: none;
-                       display: block;
-                       text-align: left;
-                     }
-                     
-                     .dropdown-content a:hover {
-                       background-color: #ddd;
-                     }
-                     ul {
-                       padding: 0;
-                       margin: 0;
-                       list-style: none;
-                     }
-                     ul li a {
-                       text-decoration: none;
-                       color: #e74c3c;
-                       font-family: Tahoma, Arial;
-                     }
-                     .navigation {
-                       background-color: #35353500;
-                       width: 75%;
-                       margin: 20px auto;
-                       min-height: 50px;
-                     }
-                     .navigation > li {
-                       float: left;
-                       padding: 0 20px;
-                     }
-                     .navigation > li > a {
-                       line-height: 50px;
-                       color: #FFF;
-                     }
-                     .navigation .menu {
-                       position: relative
-                     }
-                     .navigation .menu .submenu {
-                       position: absolute;
-                       /* width: 200px; */
-                       -webkit-box-shadow: 0px 1px 1px #CCC;
-                       box-shadow: 0px 1px 1px #CCC;
-                       display: none;
-                       -webkit-transition: all .5s ease-in-out;
-                       -moz-transition: all .5s ease-in-out;
-                       transition: all .5s ease-in-out;
-                     }
-                     .navigation .menu:hover .submenu {
-                       display: block
-                     }
-                     .navigation .menu .submenu:before {
-                       content: "";
-                       position: absolute;
-                       display: block;
-                       border-width: 0 6px 6px 6px;
-                       border-style: solid;
-                       border-color: #FFF transparent;
-                       top: -6px;
-                       left: 5px
-                     }
-                     .navigation .menu .submenu li {
-                       padding: 5px 10px;
-                       -webkit-transition: all .5s ease-in-out;
-                       -moz-transition: all .5s ease-in-out;
-                       transition: all .5s ease-in-out;
-                     }
-                     .navigation .menu .submenu li:hover {
-                       background-color: #e74c3c;
-                     }
-                     .navigation .menu .submenu li:hover a {
-                       color: #FFF;
-                       padding: 0 11px;
-                     }
-                     
-                     
-                     .dropdown:hover .dropdown-content {
-                       display: block;
-                     }
-                     section.sec1{
-                         background: url(natures-temples.png);
-                         background-size: cover;
-                     }
-                     section.banner{
-                         background: url(Group.png);
-                         background-size: cover;
-                         margin-left: 15px;
-                     }
-                     section.sec2{
-                        padding: 100px;
-                        box-sizing: border-box;
-                     }
-                     nav{
-                         width: 100%;
-                         height: 50px;
-                         background:rgba(0,0,0,.8);
-                         border-top: 1px solid rgba(255,255);
-                         border-bottom: 1px solid rgba(255,255);
-                         position: sticky;
-                         top:0px;
-                         z-index: 99
-                     }
-                     nav ul{
-                         display: flex;
-                         margin: 0px;
-                         padding: 0px;
-                         float: right;
-                     }
-                     nav ul li{
-                         list-style: none;
-                     }
-                     
-                     
-                     nav ul{
-                         display: flex;
-                        
-                         padding: 0px;
-                         /* float: ; */
-                     }
-                     
-                     nav ul li a{
-                         display:block;
-                         color: #fff;
-                         padding: 0 20px;
-                         text-decoration: none;
-                         text-transform: uppercase;
-                         font-weight: bold;
-                         line-height: 50px;
-                     
-                     }
-        
-                      /* ==============footer style start ========= */
-         .footer {
-         /* position: fixed; */
-         left: 0;
-         bottom: 0;
-         width: 100%;
-         background-color: black;
-         color: white;
-         text-align: center;
-         /* height: 75px; */
-        }
-        .container1{
-        background: black;
-        /* color: white */
-        }
-        
-        .social:hover {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        }
-        .social {
-        -webkit-transform: scale(0.8);
-        /* Browser Variations: */
-        
-        -moz-transform: scale(0.8);
-        -o-transform: scale(0.8);
-        -webkit-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        }
-        .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-        }
-        .img-thumbnail{
-        background: black;
-        border-color: black
-        }
-        
-        .home{
-         font-family: Roboto-Bold;
-         font-size: 16px;
-         line-height: 14px;
-        letter-spacing: 0;
-        }
-        .about{
-         font-family: Roboto-Regular;
-         font-size: 13px;
-         line-height: 15px;
-        letter-spacing: 0;
-        }
-        
-         /* ===========================footer style end================ */
-                    
-                     
-                     </style>
+                          body {
+                 margin: 0;
+                 margin-top: -58px;
+                 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                 font-size: 1rem;
+                 margin-top: -20px;
+                 font-weight: 400;
+                 line-height: 1.5;
+                 color: #212529;
+                 text-align: right;
+                 background-color: #fff;
+                }
+                             body {font-family: Arial, Helvetica, sans-serif;}
+                             nav{
+                                 width: 100%;
+                                 height: 50px;
+                                 background:rgba(0,0,0,.8);
+                                 border-top: 1px solid rgba(255,255);
+                                 border-bottom: 1px solid rgba(255,255);
+                                 position: sticky;
+                                 top:0px;
+                                 z-index: 99;
+                             }
+                             
+                             header{
+                                 padding: 10px 100px;
+                                 box-sizing: border-box;
+                             }
+                             section{
+                                 width: 100%;
+                                 height: 100vh;
+                             }
+                             .dropdown {
+                               float: left;
+                               overflow: hidden;
+                             }
+                             
+                             .dropdown .dropbtn {
+                               font-size: 16px;  
+                               border: none;
+                               outline: none;
+                               color: white;
+                               padding: 14px 16px;
+                               background-color: inherit;
+                               font-family: inherit;
+                               margin: 0;
+                             }
+                             
+                             .navbar a:hover, .dropdown:hover .dropbtn {
+                               background-color: red;
+                             }
+                             
+                             .dropdown-content {
+                               display: block;
+                               position: absolute;
+                               background-color: red;
+                               min-width: 160px;
+                               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                               z-index: 1;
+                             }
+                             
+                             .dropdown-content a {
+                               float: none;
+                               color: black;
+                               padding: 12px 16px;
+                               text-decoration: none;
+                               display: block;
+                               text-align: left;
+                             }
+                             
+                             .dropdown-content a:hover {
+                               background-color: #ddd;
+                             }
+                             ul {
+                               padding: 0;
+                               margin: 0;
+                               list-style: none;
+                             }
+                             ul li a {
+                               text-decoration: none;
+                               color: #e74c3c;
+                               font-family: Tahoma, Arial;
+                             }
+                             .navigation {
+                               background-color: #35353500;
+                               width: 75%;
+                               margin: 20px auto;
+                               min-height: 50px;
+                             }
+                             .navigation > li {
+                               float: left;
+                               padding: 0 20px;
+                             }
+                             .navigation > li > a {
+                               line-height: 50px;
+                               color: #FFF;
+                             }
+                             .navigation .menu {
+                               position: relative
+                             }
+                             .navigation .menu .submenu {
+                               position: absolute;
+                               /* width: 200px; */
+                               -webkit-box-shadow: 0px 1px 1px #CCC;
+                               box-shadow: 0px 1px 1px #CCC;
+                               display: none;
+                               -webkit-transition: all .5s ease-in-out;
+                               -moz-transition: all .5s ease-in-out;
+                               transition: all .5s ease-in-out;
+                             }
+                             .navigation .menu:hover .submenu {
+                               display: block
+                             }
+                             .navigation .menu .submenu:before {
+                               content: "";
+                               position: absolute;
+                               display: block;
+                               border-width: 0 6px 6px 6px;
+                               border-style: solid;
+                               border-color: #FFF transparent;
+                               top: -6px;
+                               left: 5px
+                             }
+                             .navigation .menu .submenu li {
+                               padding: 5px 10px;
+                               -webkit-transition: all .5s ease-in-out;
+                               -moz-transition: all .5s ease-in-out;
+                               transition: all .5s ease-in-out;
+                             }
+                             .navigation .menu .submenu li:hover {
+                               background-color: #e74c3c;
+                             }
+                             .navigation .menu .submenu li:hover a {
+                               color: #FFF;
+                               padding: 0 11px;
+                             }
+                             
+                             
+                             .dropdown:hover .dropdown-content {
+                               display: block;
+                             }
+                             section.sec1{
+                                 background: url(natures-temples.png);
+                                 background-size: cover;
+                             }
+                             section.banner{
+                                 background: url(Group.png);
+                                 background-size: cover;
+                                 margin-left: 15px;
+                             }
+                             section.sec2{
+                                padding: 100px;
+                                box-sizing: border-box;
+                             }
+                             nav{
+                                 width: 100%;
+                                 height: 50px;
+                                 background:rgba(0,0,0,.8);
+                                 border-top: 1px solid rgba(255,255);
+                                 border-bottom: 1px solid rgba(255,255);
+                                 position: sticky;
+                                 top:0px;
+                                 z-index: 99
+                             }
+                             nav ul{
+                                 display: flex;
+                                 margin: 0px;
+                                 padding: 0px;
+                                 float: right;
+                             }
+                             nav ul li{
+                                 list-style: none;
+                             }
+                             
+                             
+                             nav ul{
+                                 display: flex;
+                                
+                                 padding: 0px;
+                                 /* float: ; */
+                             }
+                             
+                             nav ul li a{
+                                 display:block;
+                                 color: #fff;
+                                 padding: 0 20px;
+                                 text-decoration: none;
+                                 text-transform: uppercase;
+                                 font-weight: bold;
+                                 line-height: 50px;
+                             
+                             }
+                
+                              /* ==============footer style start ========= */
+                 .footer {
+                 /* position: fixed; */
+                 left: 0;
+                 bottom: 0;
+                 width: 100%;
+                 background-color: black;
+                 color: white;
+                 text-align: center;
+                 /* height: 75px; */
+                }
+                .container1{
+                background: black;
+                /* color: white */
+                }
+                
+                .social:hover {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                }
+                .social {
+                -webkit-transform: scale(0.8);
+                /* Browser Variations: */
+                
+                -moz-transform: scale(0.8);
+                -o-transform: scale(0.8);
+                -webkit-transition-duration: 0.5s;
+                -moz-transition-duration: 0.5s;
+                -o-transition-duration: 0.5s;
+                }
+                .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                }
+                .img-thumbnail{
+                background: black;
+                border-color: black
+                }
+                
+                .home{
+                 font-family: Roboto-Bold;
+                 font-size: 16px;
+                 line-height: 14px;
+                letter-spacing: 0;
+                }
+                .about{
+                 font-family: Roboto-Regular;
+                 font-size: 13px;
+                 line-height: 15px;
+                letter-spacing: 0;
+                }
+                
+                 /* ===========================footer style end================ */
+                            
+                             
+                             </style>
 
 <!-- <header>
-                 <img src="Group.png" style="flex:left">
-                 </header> -->
+                         <img src="Group.png" style="flex:left">
+                         </header> -->
 <div>
 
 
@@ -274,13 +274,13 @@
   <!-- ==================Arabic -->
   <div>
     <!-- <div class="row ">
-             <div class="col-md-12 ft_right pt_absolute">
-                 <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
-                 <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
-             </div>
-        
-        
-         </div> -->
+                     <div class="col-md-12 ft_right pt_absolute">
+                         <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
+                         <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
+                     </div>
+                
+                
+                 </div> -->
     <div class="row">
       <!--<h1>Arabic</h1>-->
       <!--Main Navigation-->
@@ -293,8 +293,8 @@
       <section dir="rtl" class=" bb hm-gradient">
 
         <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-                 assests/lawyer-today-1@3x.png 3x"
-        class="NEM mt-3"> -->
+                         assests/lawyer-today-1@3x.png 3x"
+                class="NEM mt-3"> -->
         <div dir="rtl" class="row">
           <div class="col-md-8">
             <img src="./assets/group.png" class="img-responsive" style="margin-left: 510px;">
@@ -318,7 +318,7 @@
 
 
               <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
-        ">
+                ">
                 <font color="white">تسجيل الدخول </font>
               </a>
             </div>
@@ -336,7 +336,7 @@
 
               <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
                 routerLink="/login-arbic" style="font-family: Roboto-Regular;font-size: 21px;
-          ">
+                  ">
                 <font color="white">خروج </font>
               </a>
 
@@ -368,11 +368,11 @@
                         <a onclick="document.getElementById('id02').style.display='block'" class="ml-5">هل نسيت كلمة
                           المرور؟</a></label>
                       <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
-                       color: white;
-                       height: 47px;"><a
+                               color: white;
+                               height: 47px;"><a
                           class="">خضع</a></button>
                       <p>جديد في أمان؟<a routerLink="/register-form" class="Mask ml-2">
-                          <font color="#f34235">Register Here</font>
+                          <font color="#f34235">سجل هنا</font>
                         </a></p>
                     </div>
                   </div>
@@ -409,8 +409,8 @@
 
                       <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
                         (click)="forgetpassword(model)" style="background: red;
-                 color: white;
-                 height: 47px;"><a
+                         color: white;
+                         height: 47px;"><a
                           class="">خضع</a></button>
 
                     </div>
@@ -424,7 +424,7 @@
             <!-- ===========otp start========= -->
             <div id="id03" class="modal">
 
-              <form class="modal-content animate col-md-4" action="/action_page.php">
+              <form class="modal-content animate col-md-4">
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id03').style.display='none'" class="ml-4 close" title="close">&times;</span>
                   <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
@@ -434,38 +434,47 @@
                 </div>
 
                 <div class="">
-                  <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">تم إرسال كلمة السر لمرة
+                  <p for="uname" style="font-size: 18px;text-align:center" class="text-center">تم إرسال كلمة السر لمرة
                     واحدة إلى عنوان بريدك الإلكتروني ورقم هاتفك المحمول</p>
                   <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
                   <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
                   <!-- <input type="text" class="form-control col-md-4 inline" id="otp"
-                                                    required
-                                                    [(ngModel)]="model.otp" name="name"
-                                                    #name="ngModel"> -->
+                                                            required
+                                                            [(ngModel)]="model.otp" name="name"
+                                                            #name="ngModel"> -->
 
                   <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
 
-                  <div id="divOuter">
-                    <div id="divInner">
+                  <div id="divOuter" style="align:center">
+                    <div id="divInner" class="col-md-12" style="text-align:center">
                       <input id="partitioned" type="text" maxlength="4" />
                     </div>
                   </div>
+                  <br>
                   <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                         <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                         <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
+                                 <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+                                 <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
                   <!-- <label for="psw"><b>Password</b></label>
-                         <input type="password" placeholder="Enter Password" name="psw" required> -->
+                                 <input type="password" placeholder="Enter Password" name="psw" required> -->
 
-                  <button style="background-color: #ff0000;" (click)="forgetotpverification(model)" type="submit">خضع</button>
+                  <button style="background-color: #ff0000;margin-left: 175px" (click)="forgetotpverification(model)"
+                    type="submit">
+                    <font style="color:white">خضع</font>
+                  </button>
+                  <br>
+                  <br>
+
+
+
                   <!-- <label>
-                           <input type="checkbox" checked="checked" name="remember"> Remember me
-                         </label> -->
+                                   <input type="checkbox" checked="checked" name="remember"> Remember me
+                                 </label> -->
                 </div>
 
                 <!-- <div class="container" style="background-color:#f1f1f1">
-                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                         <span class="psw">Forgot <a href="#">password?</a></span>
-                       </div> -->
+                                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                 <span class="psw">Forgot <a href="#">password?</a></span>
+                               </div> -->
               </form>
             </div>
             <!-- ======otp end========== -->
@@ -525,7 +534,7 @@
               <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
               <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
               <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                      <li style="background: red;"><a href="#">Link 4</a></li> -->
+                              <li style="background: red;"><a href="#">Link 4</a></li> -->
             </ul>
           </li>
           <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
@@ -533,7 +542,7 @@
           <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
           <li>
             <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                    margin-right: -46px;"></i></font>
+                            margin-right: -46px;"></i></font>
           </li>
         </ul>
       </nav>
@@ -544,7 +553,7 @@
 
       <div class="container col-md-12" dir="rtl">
         <div class="card col-md-12" style="border-radius: 18px;margin-top: -79px;
-        background: white;margin-top: -91px;">
+                background: white;margin-top: -91px;">
           <div class="">
             <div class="row" dir="rtl">
               <div class="col-sm-6">
@@ -552,7 +561,7 @@
                 <div class="col-sm-7 ">
                   <a routerLink="/amanservices-arabic">
                     <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
-                           /assets/002-fire-extinguisher@3x.png 3x"
+                                   /assets/002-fire-extinguisher@3x.png 3x"
                       class="fire-extinguisher" style="margin-left: 237px;"></a>
                   <br>
                   <br>
@@ -565,9 +574,9 @@
                   <br>
                   <!-- <a routerLink=""/><font color="red" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
                   <!-- <a routerLink=""/> <img  src="./assets/tail-left-copy.png"
-              srcset="./assets/tail-left-copy@2x.png 2x,
-                      ./assets/tail-left-copy@3x.png 3x"
-              class="tail-left-copy" style="margin-left: 85px;"></a> -->
+                      srcset="./assets/tail-left-copy@2x.png 2x,
+                              ./assets/tail-left-copy@3x.png 3x"
+                      class="tail-left-copy" style="margin-left: 85px;"></a> -->
                 </p>
               </div>
               <br>
@@ -577,7 +586,7 @@
                 <!-- <div class="col-sm-5"> -->
                 <a routerLink="/salamaservices-arabic">
                   <img src="./assets/salama-logo.png" srcset="./assets/salama-logo@2x.png 2x,
-                           ./assets/salama-logo@3x.png 3x"
+                                   ./assets/salama-logo@3x.png 3x"
                     class="salama-logo" style="margin-left: 509px;"></a>
                 <br>
                 <br>
@@ -594,9 +603,9 @@
                   <br>
                   <!-- <a href=""><font color="#f34235" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
                   <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                        srcset="./assets/tail-left-copy@2x.png 2x,
-                                ./assets/tail-left-copy@3x.png 3x"
-                        class="tail-left-copy"></a> -->
+                                srcset="./assets/tail-left-copy@2x.png 2x,
+                                        ./assets/tail-left-copy@3x.png 3x"
+                                class="tail-left-copy"></a> -->
                 </p>
                 <!-- </div> -->
               </div>
@@ -611,15 +620,15 @@
                   <div class="card-content">
                     <div class="card-img">
                       <img src="/assets/shutterstock-220781335.png" srcset="./assets/shutterstock-220781335@2x.png 2x,
-                                 ./assets/shutterstock-220781335@3x.png 3x"
+                                         ./assets/shutterstock-220781335@3x.png 3x"
                         alt="">
                       <a href="#" class="btn-card1" style="">مدونة</a>
                     </div>
                     <div class="card-desc text-justify" dir="rtl">
                       <!-- <span class="blog"><h4>Blog</h4></span> -->
                       <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                من 120 ثانية.'|translate:user}}</p> -->
+                                        مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
+                                        من 120 ثانية.'|translate:user}}</p> -->
                       <!-- <a href="#" class="btn-card">blog</a>    -->
                     </div>
                   </div>
@@ -629,7 +638,7 @@
                     <div class="card-img">
 
                       <img src="/assets/shutterstock-775043446.png" srcset="./assets/shutterstock-775043446@2x.png 2x,
-                                 ./assets/shutterstock-775043446@3x.png 3x"
+                                         ./assets/shutterstock-775043446@3x.png 3x"
                         alt="">
                       <!-- <span><h4>News</h4></span> -->
                       <a href="#" class="btn-card2" style="">أخبار</a>
@@ -637,8 +646,8 @@
                     <div class="card-desc text-justify">
 
                       <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                من 120 ثانية.'|translate:user}}</p> -->
+                                        مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
+                                        من 120 ثانية.'|translate:user}}</p> -->
                       <!-- <a href="#" class="btn-card">Read</a>    -->
                     </div>
                   </div>
@@ -647,7 +656,7 @@
                   <div class="card-content">
                     <div class="card-img">
                       <img src="/assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
-                                 ./assets/shutterstock-772324159@3x.png 3x"
+                                         ./assets/shutterstock-772324159@3x.png 3x"
                         alt="">
                       <!-- <span><h4>Linkedln</h4></span> -->
                       <a href="#" class="btn-card3" style="">ينكدين</a>
@@ -655,8 +664,8 @@
                     <div class="card-desc">
 
                       <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                من 120 ثانية.'|translate:user}}</p> -->
+                                        مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
+                                        من 120 ثانية.'|translate:user}}</p> -->
                       <!-- <a href="#" class="btn-card">Read</a>    -->
                     </div>
                   </div>
@@ -677,7 +686,7 @@
 
         <div class="col-sm-2">
           <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-                   ./assests/logo-1-copy@3x.png 3x"
+                           ./assests/logo-1-copy@3x.png 3x"
             class="img-thumbnail">
         </div>
 
@@ -704,15 +713,15 @@
         </div>
 
         <!-- <div class="col-sm-3">
-                     <h5 class="home">Support</h5>
-                     <ul class="list-unstyled quick-links">
-                       <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-                       <li><a class="about"><font color="white">Disclaimer</font></a></li>
-                       <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-                       <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-          
-                     </ul>
-                   </div> -->
+                             <h5 class="home">Support</h5>
+                             <ul class="list-unstyled quick-links">
+                               <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                               <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                               <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                               <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+                  
+                             </ul>
+                           </div> -->
         <div class="col-md-3">
           <h5 class="home" style="color:white">عنوان الشركة:</h5>
           <ul class="list-unstyled quick-links">
@@ -740,7 +749,7 @@
         </div>
         <div class="col-sm-2">
           <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-                       ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+                               ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
             class="img-thumbnail">
         </div>
         <div class="col-sm-3">
@@ -753,7 +762,7 @@
             <div class="input-group mb-3">
 
               <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                        border-color: #6c757d;vertical-align:9px;color:#bbb"
+                                border-color: #6c757d;vertical-align:9px;color:#bbb"
                 class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
