@@ -127,4 +127,71 @@ span.psw {
      width: 100%;
   }
 }
+/* =====align start-=========== */
+  /* ===========navbar start========= */
+  .Contact-Us {
+    width: 90px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Suppliers {
+    width: 77px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Services {
+    width: 70px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .About-Us-Copy {
+    width: 75px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Home-Copy {
+    width: 49px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  
+  
+  /* ======navbar end===== */
+
+/* =============allign end============= */
 

@@ -5,6 +5,7 @@
       
 <input type="radio" class="btn ml-2" routerLink="login" name="arabic"> <font color="white"> English</font>
          -->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
                   body {
@@ -245,13 +246,13 @@
         }
         
         .home{
-         font-family: Roboto-Bold;
-         font-size: 16px;
+         font-family: sans-serif;
+         font-size: 14px;
          line-height: 14px;
         letter-spacing: 0;
         }
         .about{
-         font-family: Roboto-Regular;
+         font-family:  sans-serif;
          font-size: 13px;
          line-height: 15px;
         letter-spacing: 0;
@@ -294,18 +295,20 @@
 
                 <div id="login">
                   <br><br>
-                  <input type="radio" routerLink="/login-arbic" />
-                  <font color="white">عربى</font>
+                  <input type="radio" checked />
+                  <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp; &nbsp; &nbsp;
+                  &nbsp;
+                  <input type="radio" style="margin-left: -9px;" routerLink="/login-arbic" />
+                  <font color="white" style="font-size: 14px;">عربى</font>
 
-                  &nbsp; &nbsp; <input type="radio" checked />
-                  <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
-                  &nbsp; <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;"
+                  &nbsp; &nbsp;
+                  <button type="submit" style="background-color: #ff0000; height: 41px;
+                  width: 123px;"
                     routerLink="/register-form" class="btn Rectangle-5-Copy">
                     <font color="white">Register</font>
                   </button>
 
-                  <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular;font-size: 21px;
-           ">
+                  <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-size: 18px; ">
                     <font color="white" style="font-family: sans-serif;">Sign in </font>
                   </a>
 
@@ -491,10 +494,10 @@
 
                           <div class="white-text mt-2">
                             <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
-                              <font color="white">{{'"Welcome to SANED - We manage and run
+                              <font color="white">'<b>Welcome to SANED</b> - We manage and run
                                 your real estate and technical facilities and
                                 support you in your core business with our
-                                wide range of services.”' | translate:user}}</font>
+                                wide range of services.”</font>
                             </a>
                             <br>
                             <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
@@ -519,7 +522,7 @@
 
           </section>
           <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20);">
-            <ul class="navigation" style=" font-family: sans-serif;">
+            <ul class="navigation" style=" font-family: sans-serif;margin-right: 33px;">
               <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
               <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
               <li class="menu">
@@ -569,7 +572,8 @@
                       <a class="WHAT-IS-Aman-">{{'WHAT IS AMAN ?'|translate:user}}</a>
 
 
-                      <p style="margin-left:-11px" class="col-sm-12 text-justify "> {{'AMAN aims to integrate all
+                      <p style="margin-left:-11px;font-size: 18px;" class="col-sm-12 text-justify "> {{'AMAN aims to
+                        integrate all
                         existing
                         Fire Alarm systems at all types of properties in Sharjah with the Civil Defense Control
                         Room.'|translate:user}}
@@ -595,7 +599,8 @@
                     <br>
                     <a class="benefits">{{'WHAT IS SALAMA ?'| translate:user}}</a>
 
-                    <p style="margin-left:-11px" class="col-md-12 text-justify "> {{'SALAMA is a first of its kind
+                    <p style="margin-left:-11px;font-size: 18px;" class="col-md-12 text-justify "> {{'SALAMA is a first
+                      of its kind
                       Training
                       Centre aiming to serve various segments in the Emirate of Sharjah' | translate:user }}.
 
@@ -680,114 +685,118 @@
             </div>
           </div>
         </div>
-        <!-- =====footer  english start== -->
-        <!-- =====footer  english start== -->
-        <div class="container1 col-md-12">
-          <br><br>
-          <div class="row">
+           <!-- =====footer  english start== -->
+   <div class="container1 col-md-12">
+      <br><br>
+      <div class="row">
 
-            <div class="col-sm-2">
-              <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-                     ./assests/logo-1-copy@3x.png 3x"
-                class="img-thumbnail">
-            </div>
-
-            <div class="col-md-2">
-              <h5 class="home" style="color:white">Navigations</h5>
-              <ul class="list-unstyled quick-links">
-
-                <li><a routerLink="/about-us" class="about">
-                    <font color="white">About Us</font>
-                  </a></li>
-                <li><a routerLink="/amanservices" class="about">
-                    <font color="white">Services</font>
-                  </a></li>
-                <li><a routerLink="/sitemap" class="about">
-                    <font color="white">Sitemap</font>
-                  </a></li>
-                <li><a routerLink="/contactus" class="about">
-                    <font color="white">Contact Us</font>
-                  </a></li>
-                <li><a routerLink="/privacy" class="about">
-                    <font color="white">Privacy Policy</font>
-                  </a></li>
-              </ul>
-            </div>
-
-            <!-- <div class="col-sm-3">
-                       <h5 class="home">Support</h5>
-                       <ul class="list-unstyled quick-links">
-                         <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-                         <li><a class="about"><font color="white">Disclaimer</font></a></li>
-                         <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-                         <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-            
-                       </ul>
-                     </div> -->
-            <div class="col-sm-2">
-              <h5 class="home" style="color:white">Company Address:</h5>
-              <ul class="list-unstyled quick-links">
-                <li>
-                  <p class="about">
-                    <font color="white">Tower 400 12th Floor,</font>
-                    <br>
-                    <font color="white"> Mina Road Sharjah,</font>
-                    <br>
-                    <font color="white"> PO Box 4638 Sharjah - UAE </font>
-                    <br>
-                    <font color="white">Tel: +971 6 597 2222</font>
-                    <br>
-                    <font color="white">Fax: +971 6 572 2331</font>
-                    <br>
-                    <font color="white">Email: helpdesk.hsg@apleona.com</font>
-                    <br>
-                    <a routerLink="/login">
-                      <font color="white">www.saned.ae</font>
-                    </a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-3">
-              <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-                         ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-                class="img-thumbnail">
-            </div>
-            <div class="col-sm-3">
-              <p style="color:white">Follow us
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-                <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-                <h6 style="color:white">Subscribe to Our Newsletter</h6>
-                <div class="input-group mb-3">
-
-                  <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                          border-color: #6c757d;vertical-align:9px;color:#bbb"
-                    class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2">
-
-                  <div class="input-group-append">
-
-                    <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">Subscribe</button>
-                  </div>
-                </div>
-            </div>
-            <hr class="col-md-8" style="background:white">
-          </div>
-
-
-          <div class="footer">
-            <div>
-              <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
-                Content Policies. © 2019.</p>
-            </div>
-
-          </div>
-          <br>
+        <div class="col-sm-2">
+          <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+           ./assests/logo-1-copy@3x.png 3x"
+            class="img-thumbnail">
         </div>
-        <!-- ================footer  english end== -->
-        <!-- ================footer  english end== -->
+
+        <div class="col-md-2">
+          <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
+          <ul class="list-unstyled quick-links">
+
+            <li><a routerLink="/about-us" class="about">
+                <font color="white">About Us</font>
+              </a></li>
+            <li><a routerLink="/amanservices" class="about">
+                <font color="white">Services</font>
+              </a></li>
+            <li><a routerLink="/sitemap" class="about">
+                <font color="white">Sitemap</font>
+              </a></li>
+            <li><a routerLink="/contactus" class="about">
+                <font color="white">Contact Us</font>
+              </a></li>
+            <li><a routerLink="/privacy" class="about">
+                <font color="white">Privacy Policy</font>
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-sm-3">
+             <h5 class="home">Support</h5>
+             <ul class="list-unstyled quick-links">
+               <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+               <li><a class="about"><font color="white">Disclaimer</font></a></li>
+               <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+               <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+  
+             </ul>
+           </div> -->
+        <div class="col-sm-2">
+          <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <p class="about">
+                <font color="white">Tower 400 12th Floor,</font>
+                <br>
+                <font color="white"> Mina Road Sharjah,</font>
+                <br>
+                <font color="white"> PO Box 4638 Sharjah - UAE </font>
+                <br>
+                <font color="white">Tel: +971 6 597 2222</font>
+                <br>
+                <font color="white">Fax: +971 6 572 2331</font>
+                <br>
+                <font color="white">Email: helpdesk.hsg@apleona.com</font>
+                <br>
+                <a routerLink="/login">
+                  <font color="white">www.saned.ae</font>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+               ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+            class="img-thumbnail">
+        </div>
+        <div class="col-sm-3">
+          <p style="color:white; font-family: Roboto;
+          font-size: 14px;">Follow us
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+            <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+            <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+            <h6 style="color:white;font-family: Roboto;
+            font-size: 14px;">Subscribe to Our Newsletter</h6>
+            <div class="input-group mb-3">
+
+              <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
+                class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+
+              <div class="input-group-append">
+
+                <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">
+                  <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+                </button>
+              </div>
+            </div>
+        </div>
+        <hr class="col-md-8" style="background:white">
+      </div>
+
+
+      <div class="footer">
+        <div>
+          <p style=" font-family: Roboto;
+          font-size: 12px;">By continuing past this page, you agree to our
+            Terms of Service, Cookie Policy, Privacy Policy and
+            Content Policies. © 2019.</p>
+        </div>
+
+      </div>
+      <br>
+    </div>
+    <!-- ================footer  english end== -->
 
 
 

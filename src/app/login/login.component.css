@@ -368,7 +368,7 @@ color: var(--black);
 letter-spacing: 0;
 }
 .about{
-  font-family: Roboto-Regular;
+  font-family: Roboto;
   font-size: 13px;
   line-height: 15px;
 letter-spacing: 0;
@@ -409,14 +409,14 @@ letter-spacing: 0;
   margin-left: 3px;
 }
 .top-nav-collapse {
-  background-color: #424f95 !important;
+  background-color: #402f2fad !important;
 }
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+  background: #402f2fad !important;
 }
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-      background: #424f95 !important;
+      background: #402f2fad !important;
   }
 }
 h6 {
@@ -742,3 +742,73 @@ a.btn-card {
   background-size: cover;
   
   }
+  /* ===========navbar start========= */
+.Rectangle-2 {
+  width: 123px;
+  height: 41px;
+  border-radius: 5px;
+  background-color: #ff0000;
+}
+ .Contact-Us {
+  width: 90px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Suppliers {
+  width: 77px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Services {
+  width: 70px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .About-Us-Copy {
+  width: 75px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Home-Copy {
+  width: 49px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+
+/* ======navbar end===== */

@@ -11,6 +11,11 @@ import { SimpleGlobal } from 'ng2-simple-global';
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+    navbarOpen = false;
+
+    toggleNavbar() {
+        this.navbarOpen = !this.navbarOpen;
+    }
     localVar;
 
 

@@ -2,9 +2,9 @@
 
 .intro-2 {
 
-    background: url("/assets/hero_image.png")no-repeat center center;
+    /* background: url("/assets/aboutus1.png")no-repeat center center; */
 
-    background: url("/assets/lawyer-today-1.png")no-repeat center center;
+    background: url("/assets/aboutus1.png")no-repeat center center;
 
     background-size: cover;
     height: 635px;
@@ -91,3 +91,156 @@
     color:#e91e63;
     transform:rotateY(360deg);
 }
+/* =============align start========== */
+.Register {
+    width: 68px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .Rectangle-2 {
+    width: 123px;
+    height: 41px;
+    border-radius: 5px;
+    background-color: #ff0000;
+  }
+  .Sign-Out {
+    width: 70px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .Aman {
+    width: 170px;
+    height: 71px;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  /* ===========navbar start========= */
+ .Contact-Us {
+    width: 90px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Suppliers {
+    width: 77px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Services {
+    width: 70px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .About-Us-Copy {
+    width: 75px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Home-Copy {
+    width: 49px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  
+  
+  /* ======navbar end===== */
+  .Description {
+    width: 123px;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+  .AMAN-is-a-first-of-i {
+    width: 496px;
+    height: 169px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+  
+  .Register-Here {
+    width: 112px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .Rectangle-5-Copy {
+    width: 292px;
+    height: 59px;
+    border-radius: 8px;
+    background-color: #f34235;
+  }
+  
+/* ======= align end=========== */

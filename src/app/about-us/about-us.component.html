@@ -6,6 +6,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   /* ==============footer style start ========= */
     .container1{
    background: black;
@@ -60,7 +61,7 @@
   letter-spacing: 0;
   }
   .about{
-    font-family: Roboto-Regular;
+    font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
   letter-spacing: 0;
@@ -103,7 +104,7 @@ section{
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: Roboto;
   margin: 0;
 }
 
@@ -140,7 +141,8 @@ ul {
 ul li a {
   text-decoration: none;
   color: #e74c3c;
-  font-family: Tahoma, Arial;
+  font-family: Roboto;
+  /* font-size: 18px; */
 }
 .navigation {
   background-color: #35353500;
@@ -262,31 +264,46 @@ nav ul li a{
 
     <!------ Include the above in your HEAD tag ---------->
     <section class="view intro-2 hm-gradient">
+      <div class="">
+        <div class="row">
+          <div class="col-md-8">
 
-      <div class="col-md-4">
-
-        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+            <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
                     ./assets/group@3x.png 3x"
-          class="img-responsive">
-        <br><br>
-        <div class="col-md-4" style="margin-left: 972px;margin-top: -118px;display: flex">
-          <br><br>
-          <input type="radio" style="color:white" [value]="false" routerLink="/aboutus-arabic" />
-          <font color="white">عربى</font>
-          &nbsp; &nbsp; <input type="radio" style="color:#ff0000;" [value]="true" checked="checked" />
-          <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
-          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;margin-left:14px;margin-top: -10px;"
-            routerLink="/register-form" class="btn Rectangle-5-Copy">
-            <font color="white">Register</font>
-          </button> &nbsp;
-          <!-- <a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;margin-top: -10px;
-       "><font color="white">Sign in </font></a>
-        -->
+              class="img-responsive">
+          </div>
+          <br>
+          <div class="col-md-4 mt-4">
+
+
+            &nbsp; &nbsp;
+            <input type="radio" style="color:white" [value]="true" checked="checked" />
+            <font class="English">English</font> &nbsp; &nbsp; &nbsp;
+
+            <input type="radio" style="color:white" [value]="false" routerLink="/aboutus-arabic" />
+            <font color="white" class="arabic">عربى</font> &nbsp; &nbsp;
+
+
+
+            <a class="btn mb-1" routerLink="/login" class="Sign-In">
+              <font color="white">Sign in </font> &nbsp;
+            </a>
+            <button type="submit" style="" routerLink="/register-form" class="btn Rectangle-2">
+              <font color="white">Register</font>
+            </button> &nbsp;
+
+
+
+          </div>
+
 
 
         </div>
-
       </div>
+
+
+
+
       <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
     assests/lawyer-today-1@3x.png 3x"
 class="NEM mt-3"> -->
@@ -297,7 +314,7 @@ class="NEM mt-3"> -->
       <br><br><br><br><br>
       <div class="text-center">
         <h1>
-          <font color="white">ABOUT US</font>
+          <font color="white" style="font-family:Roboto;font-size: 60px;">ABOUT US</font>
         </h1>
 
       </div>
@@ -306,14 +323,15 @@ class="NEM mt-3"> -->
 
       <!-- </div> -->
       <!-- </div> -->
+
       <!-- </div> -->
     </section>
-    <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); ">
+    <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); font-family: Roboto; ">
       <ul class="navigation" style="margin-right: 79px;">
-        <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
-        <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
+        <li><a routerLink="/login">H<font style="text-transform: lowercase;" class="Home-Copy">ome</font></a></li>
+        <li><a routerLink="/about-us">A<font style="text-transform: lowercase;" class="About-Us-Copy">bout Us</font></a></li>
         <li class="menu">
-          <a>S<font style="text-transform: lowercase;">ervices</font></a>
+          <a>S<font style="text-transform: lowercase;" class="Services">ervices</font></a>
           <ul class="submenu">
             <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
                 </font></a></li>
@@ -323,12 +341,11 @@ class="NEM mt-3"> -->
                   <li style="background: red;"><a href="#">Link 4</a></li> -->
           </ul>
         </li>
-        <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
-        <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
+        <li><a routerLink="/supplier-register">S<font style="text-transform: lowercase;" class="Suppliers">uppliers</font></a></li>
+        <li><a routerLink="/contactus">C<font style="text-transform: lowercase;" class="Contact-Us">ontact Us</font></a></li>
         <!-- <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li> -->
         <li>
-          <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                margin-left: -43px;"></i></font>
+          <font style="color:white"><i class="fa fa-search" class="Shape"></i></font>
         </li>
 
 
@@ -355,29 +372,33 @@ class="NEM mt-3"> -->
           <div class="col-md-5 ml-2 Who-We-Are-Aman-is-a">
             <!-- <h4><b>Who We Are</b></h4> -->
             <br>
-            <p>
-              Sharjah Asset Management Holding (SAMH), the investment arm of the government of Sharjah, and Apleona HSG
-              Facility Management, a German leading company in FM and Technical Services have founded a joint venture
-              in 2016 to provide various technical related services to all types of properties within the public and
-              private sectors in the Emirate of Sharjah.
+            <div class="Sharjah-Asset-Manage">
+              <p>
+                Sharjah Asset Management Holding (SAMH), the investment arm of the government of Sharjah, and Apleona
+                HSG
+                Facility Management, a German leading company in FM and Technical Services have founded a joint venture
+                in 2016 to provide various technical related services to all types of properties within the public and
+                private sectors in the Emirate of Sharjah.
 
-            </p>
-            <!-- <h4><b>What We Do</b></h4> -->
-            <br>
-            <p>
+              </p>
+              <!-- <h4><b>What We Do</b></h4> -->
 
-              The scope of the JV includes Integrated Facility Management, Small and Medium construction project
-              management, HSE related scopes such as Fire Prevention strategies, HSE inspection and Training, Security
-              Systems integration, landscaping, etc.
+              <p>
 
-            </p>
-            <h3>Vision</h3>
-            <p>
+                The scope of the JV includes Integrated Facility Management, Small and Medium construction project
+                management, HSE related scopes such as Fire Prevention strategies, HSE inspection and Training,
+                Security
+                Systems integration, landscaping, etc.
+
+              </p>
+            </div>
+            <h3 class="Vision">Vision</h3>
+            <p class="To-be-among-the-best">
               To be among the best facility management service providers in the Middle East, influencing the over all
               FM industry in high quality and modern practices.
             </p>
-            <h3>Mission</h3>
-            <p>
+            <h3 class="Mission">Mission</h3>
+            <p class="Utilizing-the-latest">
               Utilizing the latest worldwide technologies and the best human resources to achieve sustainable business
               and an enviable reputation in the local and regional markets.
 
@@ -390,6 +411,9 @@ class="NEM mt-3"> -->
 
         </div>
         <br><br><br>
+        <br><br><br>
+
+
 
         <div class=" col-md-12">
           <div class="row">
@@ -397,15 +421,7 @@ class="NEM mt-3"> -->
 
             <div class="col-md-7">
 
-              <button type="submit" style="background-color: #ff0000;
-         width: 237px;
-         padding: 3px 10px;
-         margin-left: -12px;
-         color: white;
-         margin-top: 99px;
-         border-radius: 8px;
-         height: 54px;"
-                routerLink="/register-form">REGISTER HERE</button>
+              <button type="submit" class="Rectangle-5-Copy" routerLink="/register-form">Register Here</button>
               <br><br><br>
             </div>
           </div>
@@ -426,7 +442,7 @@ class="NEM mt-3"> -->
         </div>
 
         <div class="col-md-2">
-          <h5 class="home" style="color:white">Navigations</h5>
+          <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
           <ul class="list-unstyled quick-links">
 
             <li><a routerLink="/about-us" class="about">
@@ -458,7 +474,7 @@ class="NEM mt-3"> -->
              </ul>
            </div> -->
         <div class="col-sm-2">
-          <h5 class="home" style="color:white">Company Address:</h5>
+          <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
           <ul class="list-unstyled quick-links">
             <li>
               <p class="about">
@@ -487,22 +503,26 @@ class="NEM mt-3"> -->
             class="img-thumbnail">
         </div>
         <div class="col-sm-3">
-          <p style="color:white">Follow us
+          <p style="color:white; font-family: Roboto;
+          font-size: 14px;">Follow us
             <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
             <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
             <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
             <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-            <h6 style="color:white">Subscribe to Our Newsletter</h6>
+            <h6 style="color:white;font-family: Roboto;
+            font-size: 14px;">Subscribe to Our Newsletter</h6>
             <div class="input-group mb-3">
 
               <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                border-color: #6c757d;vertical-align:9px;color:#bbb"
+                border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
                 class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
 
               <div class="input-group-append">
 
-                <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">Subscribe</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">
+                  <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+                </button>
               </div>
             </div>
         </div>
@@ -512,7 +532,9 @@ class="NEM mt-3"> -->
 
       <div class="footer">
         <div>
-          <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+          <p style=" font-family: Roboto;
+          font-size: 12px;">By continuing past this page, you agree to our
+            Terms of Service, Cookie Policy, Privacy Policy and
             Content Policies. © 2019.</p>
         </div>
 

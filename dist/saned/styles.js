@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.2.1 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n/* @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css'); */\nbody {\n    padding-top:0px;\n\n}\nfieldset {\n    border: thin solid #ccc; \n    border-radius: 4px;\n    padding: 20px;\n    padding-left: 40px;\n    background: #fbfbfb;\n}\nlegend {\n   color: #678;\n}\n.form-control {\n    width: 95%;\n    \n}\nlabel small {\n    color: #678 !important;\n}\nspan.req {\n    color:maroon;\n    font-size: 112%;\n}\n.Welcome-to-Aman-port {\n    width: 1210px;\n    /* height: 32px; */\n    font-family: Roboto;\n    font-size: 22px;\n    font-weight: normal;\n    font-style: normal;\n    font-stretch: normal;\n    line-height: normal;\n    letter-spacing: normal;\n    color: var(--black);\n    text-align: justify;\n  }\n.alert {\n    position: relative;\n    /* padding: .75rem 1.25rem; */\n    margin-bottom: 1rem;\n    border: 1px solid transparent;\n    border-radius: .25rem;\n  }\n.Rectangle-5-Copy {\n    width: 268px;\n    height: 39px;\n    border-radius: 8px;\n    background-color: #f34235;\n    color: #fbfbfb\n  }\n.Name {\n    width: 100%;\n    height: 19px;\n    font-family: Roboto;\n    font-size: 14px;\n    font-weight: normal;\n    font-style: normal;\n    font-stretch: normal;\n    line-height: normal;\n    letter-spacing: normal;\n    color: #494949;\n  }\n.Name .text-style-1 {\n    color: #fc4825;\n  }\n.Input-Selector {\n    width: 300px;\n    height: 32px;\n    border-radius: 4px;\n    background-color: #ffffff;\n  }\n.ntext{\n   text-transform: lowercase; \n  }"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n/* @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css'); */\nbody {\n  padding-top:0px;\n\n}\nfieldset {\n  border: thin solid #ccc; \n  border-radius: 4px;\n  padding: 20px;\n  padding-left: 40px;\n  background: #fbfbfb;\n}\nlegend {\n color: #678;\n}\n.form-control {\n  width: 95%;\n  \n}\nlabel small {\n  color: #678 !important;\n}\nspan.req {\n  color:maroon;\n  font-size: 112%;\n}\n.Welcome-to-Aman-port {\n  width: 1210px;\n  /* height: 32px; */\n  font-family: Roboto;\n  font-size: 22px;\n  font-weight: normal;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  color: var(--black);\n  text-align: justify;\n}\n.alert {\n  position: relative;\n  /* padding: .75rem 1.25rem; */\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: .25rem;\n}\n.Rectangle-5-Copy {\n  width: 268px;\n  height: 39px;\n  border-radius: 8px;\n  background-color: #f34235;\n  color: #fbfbfb\n}\n.Name {\n  width: 100%;\n  height: 19px;\n  font-family: \"Roboto\";\n  font-size: 14px;\n  font-weight: normal;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  color: black;\n}\n.Name1 {\n  width: 100%;\n  height: 19px;\n  font-family: \"Geezapro\";\n  font-size: 14px;\n  font-weight: normal;\n  font-style: normal;\n  font-stretch: normal;\n  line-height: normal;\n  letter-spacing: normal;\n  color: black;\n}\n.Name .text-style-1 {\n  color: #fc4825;\n}\n.Input-Selector {\n  width: 300px;\n  height: 32px;\n  border-radius: 4px;\n  background-color: #ffffff;\n}\n.ntext{\n text-transform: lowercase; \n}"
 
 /***/ }),
 
@@ -580,18 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-=======
-<<<<<<< HEAD
-__webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-=======
-__webpack_require__(/*! /home/logesh/Documents/safecopy/Saned-final/saned-website_ui_Demo_latest_29-12-2018/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /home/logesh/Documents/safecopy/Saned-final/saned-website_ui_Demo_latest_29-12-2018/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
->>>>>>> 0c5da21e44b4aec85456e17b099a17e32d20ec42
->>>>>>> 623195b305a4f7dd8c1a7cc585ecbfcc0ff70ecc
+__webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/testing/saned-website_ui/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/testing/saned-website_ui/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })

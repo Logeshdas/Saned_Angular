@@ -5,6 +5,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   body {font-family: Arial, Helvetica, sans-serif;}
 nav{
     width: 100%;
@@ -269,22 +270,35 @@ nav ul li a{
     </div>
     <div class="col-md-4" style="margin-right: 859px;
             margin-top: -130px;">
-      <input type="radio" checked>
-      <font color="#F90E35"> عربى
-      </font>
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/salamaservices"
-        [checked]="Lang" />
-      <font style="color:white">English</font> &nbsp; &nbsp;
+
+
 
       <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form-arabic"
-        class="btn Rectangle-5-Copy">
+        class="btn Rectangle">
         <font color="white">تسجيل</font>
-      </button>
+      </button> &nbsp; &nbsp;
 
-      <a class="btn mb-1" routerLink="/login-arbic" style="font-family: Roboto-Regular;font-size: 21px;
+
+      <font style="color:white">English</font>
+      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/salamaservices"
+        [checked]="Lang" />
+      &nbsp; &nbsp;
+
+      <font color="#F90E35"> عربى
+      </font>
+      <input type="radio" checked> &nbsp; &nbsp;
+
+
+
+
+
+
+
+
+      <!-- <a class="btn mb-1" routerLink="/login-arbic" style="font-family: Roboto-Regular;font-size: 21px;
 ">
         <font color="white">خروج </font>
-      </a>
+      </a> -->
     </div>
     <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
     assests/lawyer-today-1@3x.png 3x"
@@ -296,7 +310,7 @@ class="NEM mt-3"> -->
     <br><br><br><br><br>
     <div class="text-center">
       <h1>
-        <font color="white">مرحبا بكم في الخدمات</font>
+        <font color="white" class="title">سلامة</font>
       </h1>
 
     </div>
@@ -307,25 +321,25 @@ class="NEM mt-3"> -->
     <!-- </div> -->
     <!-- </div> -->
   </section>
-  <nav style="    margin-top: -120px;background: rgba(0, 0, 0, 0.20); ">
-    <ul class="navigation" style="margin-right: 255px;" dir="rtl">
-      <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
-      <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
+  <nav style="    margin-top: -115px;background: rgba(0, 0, 0, 0.20); ">
+    <ul class="navigation" style="margin-right: 194px;" dir="rtl">
+      <li><a routerLink="/login-arbic" class="homeservice">الصفحة الرئيسية</a></li>
+      <li><a routerLink="/aboutus-arabic" class="about-us1">معلومات عنا</a></li>
       <li class="menu">
-        <a>خدمات</a>
+        <a class="services">خدمات</a>
         <ul class="submenu">
           <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
           <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
           <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-              <li style="background: red;"><a href="#">Link 4</a></li> -->
+                        <li style="background: red;"><a href="#">Link 4</a></li> -->
         </ul>
       </li>
-      <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
-      <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
+      <li><a routerLink="/supplier-register-arabic" class="supplier">الموردين</a></li>
+      <li><a routerLink="/contactus-arabic" class="contactus">اتصل بنا</a></li>
       <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
       <li>
         <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-            margin-right: -46px;"></i></font>
+                      margin-right: -46px;"></i></font>
       </li>
     </ul>
   </nav>
@@ -335,7 +349,7 @@ class="NEM mt-3"> -->
     <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
     <div class="card col-md-12" style="border-radius: 18px;
-   background: white;margin-top: 40px;">
+   background: white;margin-top: 55px;">
       <br>
       <div class="row ml-4">
 
@@ -396,7 +410,8 @@ class="NEM mt-3"> -->
 
 
               <h5><b dir="rtl" style="margin-left: 320px;">وصف</b></h5>
-              <p class="text-justify">"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في إمارة الشارقة ،
+              <p class="text-justify" class="salama">"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في
+                إمارة الشارقة ،
                 حيث يوفر برامج تدريبية متخصصة في مجال الوقاية والسلامة للعاملين في القطاعين العام والخاص. يقد مركز
                 سلامة دورات أساسية في البداية على أن يتم تطويرها لاحقا لتوفير دورات تدريبية وبرامج تدريبية متقدمة
                 لتتوافق مع المتطلبات في مختلف المجالات. تم اعتماد هذه الفكرة من قبل هيئة الشارقة للوقاية والسلامة
@@ -413,7 +428,7 @@ class="NEM mt-3"> -->
             <div class="col-md-4" style="margin-left: -8px;">
 
               <h5> <b style="margin-left: 320px;">الأهداف</b> </h5>
-              <p class="text-justify">
+              <p class="text-justify" class="salama">
                 "سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في إمارة الشارقة ، حيث يوفر برامج
                 تدريبية متخصصة في مجال الوقاية والسلامة للعاملين في القطاعين العام والخاص. يقد مركز سلامة دورات أساسية
                 في البداية على أن يتم تطويرها لاحقا لتوفير دورات تدريبية وبرامج تدريبية متقدمة لتتوافق مع المتطلبات في
@@ -431,25 +446,29 @@ class="NEM mt-3"> -->
         <div class="row" dir="rtl">
           <div class="col-md-1">
             <img src="/assets/3.png" srcset="/assets/3@2x.png 2x,
-              /assets/3@3x.png 3x" class="layer">
+              /assets/3@3x.png 3x" class="layer"
+              style="margin-top: 57px;">
           </div>
-          <div class="col-md-4 ml-3">
+          <div class="col-md-4 ml-3" style="margin-top:52px">
 
 
 
             <h5><b style="margin-left: 256px;">معلومات تقنية</b></h5>
-            <p class="text-justify">"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في إمارة الشارقة ،
+            <p class="text-justify" class="salama">"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في
+              إمارة الشارقة ،
               حيث يوفر برامج تدريبية متخصصة في مجال الوقاية والسلامة للعاملين في القطاعين العام والخاص. يقد مركز سلامة
               دورات أساسية في البداية على أن يتم تطويرها لاحقا لتوفير دورات تدريبية وبرامج تدريبية متقدمة لتتوافق مع
               المتطلبات في مختلف المجالات. تم اعتماد هذه الفكرة من قبل هيئة الشارقة للوقاية والسلامة بالتعاون مع شركة
               ســـاند للمساعدة في الحد من الإصابات والحوادث بسبب عدم معرفة احتياطات السلامة الأساسية عند العاملين. </p>
           </div>
+          <br>
+          <br>
           <div class="col-md-1"></div>
           <div class="col-md-1">
             <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="layer" style="margin-left: 11px;">
+            /assets/4@3x.png 3x" class="layer" style="margin-left: 11px;margin-top: 64px;margin-top: 46px;">
           </div>
-          <div class="col-md-4" style="margin-left: -8px;">
+          <div class="col-md-4" style="margin-left: -8px;margin-top: 64px;">
 
 
             <h5> <b style="margin-left: 256px;">معلومات تجارية</b> </h5>
@@ -463,13 +482,7 @@ class="NEM mt-3"> -->
           <div class="col-md-5"></div>
           <div class="col-md-7 center">
 
-            <button type="submit" style="background-color: #ff0000;
-                width: 156px;
-                padding: 3px 10px;
-                margin-left: 505px;
-                color: white;
-                border-radius: 8px;"
-              routerLink="/register-form-arabic">سجل هنا</button>
+            <button type="submit" class="Rectangle-5-Copy" routerLink="/register-form-arabic">سجل هنا</button>
 
           </div>
 
@@ -573,7 +586,11 @@ class="NEM mt-3"> -->
             aria-describedby="basic-addon2">
           <div class="input-group-append">
 
-            <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+
+            <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">
+              <font style="color:#ff0000">الاشتراك</font>
+            </button>
+
           </div>
         </div>
     </div>

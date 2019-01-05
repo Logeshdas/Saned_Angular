@@ -5473,15 +5473,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/src/polyfills.ts */"./src/polyfills.ts");
-=======
-<<<<<<< HEAD
-module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/sanedUI/saneduifinal01/src/polyfills.ts */"./src/polyfills.ts");
-=======
-module.exports = __webpack_require__(/*! /home/logesh/Documents/safecopy/Saned-final/saned-website_ui_Demo_latest_29-12-2018/src/polyfills.ts */"./src/polyfills.ts");
->>>>>>> 0c5da21e44b4aec85456e17b099a17e32d20ec42
->>>>>>> 623195b305a4f7dd8c1a7cc585ecbfcc0ff70ecc
+module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/testing/saned-website_ui/src/polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
