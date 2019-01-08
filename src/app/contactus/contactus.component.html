@@ -121,7 +121,7 @@
     }
     .navigation .menu .submenu li:hover a {
       color: #FFF;
-      padding: 0 11px;
+      /* padding: 0 11px; */
     }
     .dropdown:hover .dropdown-content {
       display: block;
@@ -260,11 +260,12 @@
   </div>
   <div class="" style="margin-left: 926px;
     margin-top: -118px;">
-    <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" routerLink="/contactus-arabic" />
-    <font color="white"> عربى
-    </font>
     <input type="radio" checked>
     <font style="color:#F90E35">English</font> &nbsp; &nbsp;
+    <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" routerLink="/contactus-arabic" />
+    <font color="white"> عربى
+    </font>&nbsp; &nbsp;
+
 
     <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
       class="btn Rectangle-5-Copy">
@@ -289,7 +290,7 @@
   <!-- </div> -->
   <!-- </div> -->
 </section>
-<nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20); ">
+<nav style="    margin-top: -53px;background: rgba(0, 0, 0, 0.20); ">
   <ul class="navigation" style="margin-right: 79px;">
     <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
     <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>

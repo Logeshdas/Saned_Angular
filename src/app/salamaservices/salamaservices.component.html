@@ -133,7 +133,7 @@ ul li a {
 }
 .navigation .menu .submenu li:hover a {
   color: #FFF;
-  padding: 0 11px;
+  /* padding: 0 11px; */
 }
 
 
@@ -270,11 +270,14 @@ nav ul li a{
     </div>
     <div class="" style="margin-left: 926px;
             margin-top: -118px;">
+
+      <input type="radio" checked />
+      <font style="color:#F90E35">English</font> &nbsp; &nbsp;
+
       <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" routerLink="/salamaservices-arabic" />
       <font color="white"> عربى
       </font>
-      <input type="radio" checked />
-      <font style="color:#F90E35">English</font> &nbsp; &nbsp;
+
 
       <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;margin-top: -2px;"
         routerLink="/register-form" class="btn Rectangle-2">

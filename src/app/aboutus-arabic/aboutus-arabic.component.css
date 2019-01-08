@@ -48,7 +48,7 @@
   }
   /* ============Navbar start======= */
   .homeservice{
-    width: 174px;
+    width: 220px;
     height: 52px;
     font-family: GeezaPro;
     font-size: 18px;
@@ -71,6 +71,7 @@
       line-height: normal;
       letter-spacing: normal;
       color: #ffffff;
+      margin-right: -39px;
     
   }
   .services{
@@ -98,7 +99,7 @@
     color: #ffffff;
   }
   .contactus{
-  width: 102px;
+  width: 224px;
   height: 76px;
   font-family: GeezaPro;
   font-size: 18px;
@@ -108,6 +109,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
+  margin-right: -137px
 }
 .Rectangle-2 {
   width: 123px;

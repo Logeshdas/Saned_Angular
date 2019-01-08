@@ -141,7 +141,7 @@
                                        }
                                        .navigation .menu .submenu li:hover a {
                                          color: #FFF;
-                                         padding: 0 11px;
+                                         /* padding: 0 11px; */
                                        }
                                        
                                        
@@ -304,35 +304,42 @@
 
             <div id="login" style="margin-left: 17px;">
               <br><br>
+              <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: GeezaPro">
+                <font color="white">تسجيل الدخول </font>
+              </a>
               <button button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;"
                 routerLink="/register-form" class="btn Rectangle-5-Copy" routerLink="/register-form-arabic">
                 <font color="white">تسجيل</font>
               </button>
               <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
 
-
-              <a class="btn mb-1" onclick="document.getElementById('id01').style.display='block'" style="font-family: GeezaPro">
-                <font color="white">تسجيل الدخول </font>
-              </a>
+              &nbsp; &nbsp; &nbsp;
+              <font style="color:white;font-size: 14px;">English</font>
               <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/login"
                 [checked]="Lang" />
-              <font style="color:white;font-size: 14px;">English</font> &nbsp; &nbsp; &nbsp;
-              <input type="radio" checked />
+              &nbsp; &nbsp; &nbsp;
               <font style="color:#ff0000;font-size: 14px;">عربى</font>
+              <input type="radio" checked />
+
               &nbsp;
 
 
             </div>
             <div id="logout" style="display:none">
               <br><br>
+
               <input type="radio" routerLink="/login-arbic" />
               <font color="white">عربى</font>
+              &nbsp; &nbsp;
+              <font style="color:#F90E35">English</font>
+              <input type="radio" checked />
+              &nbsp; &nbsp; &nbsp;
 
-              &nbsp; &nbsp; <input type="radio" checked />
-              <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
-              &nbsp; <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;"
-                routerLink="/register-form-arabic" class="btn Rectangle-5-Copy">
-                <font color="white">تسجيل</font>
+              &nbsp;
+              <font color="white">تسجيل</font>
+              <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form-arabic"
+                class="btn Rectangle-5-Copy">
+
               </button>
 
               <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
@@ -503,9 +510,9 @@
 
                       <div class="white-text mt-2">
                         <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
-                          <font color="white"><b>'مرحباً بك في SANED</b> - نحن ندير وندير منشآتك العقارية والتقنية
+                          <font color="white"><b>"مرحباً بك في SANED</b> - نحن ندير وندير منشآتك العقارية والتقنية
                             ونساندك
-                            في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات"</font>
+                            في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات."</font>
                         </a>
                         <br>
                         <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
@@ -527,7 +534,7 @@
 
       </section>
       <nav style="    margin-top: -79px;background: rgba(0, 0, 0, 0.20); ">
-        <ul class="navigation" style="margin-right: 505px;font-size: 18px;" dir="rtl">
+        <ul class="navigation" style="margin-right: 455px;font-size: 18px;" dir="rtl">
           <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
           <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
           <li class="menu">
@@ -567,7 +574,7 @@
                       class="fire-extinguisher" style="margin-left: 237px;"></a>
                   <br>
                   <br>
-                  <a class="WHAT-IS-Aman-" style="margin-left: 135px;">{{'ما هو أمان؟'|translate:user}}</a>
+                  <a class="WHAT-IS-Aman-" >ما هو أمان؟</a>
                 </div>
 
                 <p class="col-sm-12 text-justify " style="font-size:18px"> {{'تهدف أمان إلى دمج جميع أنظمة إنذار الحريق
@@ -593,7 +600,7 @@
                     class="salama-logo" style="margin-left: 509px;"></a>
                 <br>
                 <br>
-                <a class="benefits" style="margin-left: 376px;">{{'ما هو السلام؟'| translate:user}}</a>
+                <a class="benefits">ما هو السلام؟</a>
 
                 <p class="col-md-12 text-justify "> {{'"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات
                   في إمارة الشارقة.' |

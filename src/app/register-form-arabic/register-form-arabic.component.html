@@ -136,7 +136,7 @@
     }
     .navigation .menu .submenu li:hover a {
       color: #FFF;
-      padding: 0 11px;
+      /* padding: 0 11px; */
     }
     
     
@@ -308,11 +308,13 @@
         </div>
         <div style="margin-top: -150px">
           <br><br>
-          <input name="Lang" type="radio" [value]="false" checked="checked" />
+          <font style="color:#F90E35">English</font>
+          <input name="Lang" style="color:white;" type="radio" [value]="true" routerLink="/register-form" />
+          &nbsp; &nbsp;
           <font color="white"> عربى
           </font>
-          &nbsp; &nbsp; <input name="Lang" style="color:white;" type="radio" [value]="true" routerLink="/register-form" />
-          <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
+          <input name="Lang" type="radio" [value]="false" checked="checked" />
+          &nbsp; &nbsp;
         </div>
       </div>
       <!-- <div class="full-bg-img"> -->
