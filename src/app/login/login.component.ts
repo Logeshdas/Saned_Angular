@@ -39,18 +39,17 @@ export class LoginComponent implements OnInit {
     // }
 
     login(model) {
+        console.log("Enter in to the login-UI")
         this.apiService.login(model).subscribe((response) => {
             this.data = response;
-            if (this.data.Message == "Login Successful") {
+            if (this.data.Message == "Login Successfull") {
                 console.log("data=====>", this.data);
                 //   alert('Login Successful' );
+
                 document.getElementById('login').style.display = 'none'
                 document.getElementById('id01').style.display = 'none'
 
                 document.getElementById('logout').style.display = 'block'
-
-
-
 
 
                 this.router.navigate(['/login']);
@@ -59,7 +58,9 @@ export class LoginComponent implements OnInit {
                 swal("Invalid User name");
             }
             else if (this.data.Message == "Password is Incorrect") {
+                console.log("hello")
                 swal("Password is Incorrect");
+
             }
             else if (this.data.Message == "One Time Password is not verified.Please register Again") {
                 swal("One Time Password is not verified.Please register Again");
