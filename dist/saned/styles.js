@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/testing/saned-website_ui/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/Projects-2018/saned/testing/saned-website_ui/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+__webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/project2019/saned_latest_code/saned_latest/saned-static.tar (1)/saned-static/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/rpqb-desk-003/Documents/arjun/project2019/saned_latest_code/saned_latest/saned-static.tar (1)/saned-static/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 
 /***/ })

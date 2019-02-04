@@ -1,49 +1,139 @@
 .intro-2 {
-    background: url("/assets/hero_image1.png")no-repeat center center;
-    background-size: cover;
-    height: 635px;
- }
- 
- .aboutus {
-    background: url("/assets/group-4.png")no-repeat center center;
-    /* background-size: cover; */
-    height: 330px;
-    border-radius: 18px;
-    
- }
-
-
- .spacer {
-  height: 100px;
+  background: url("/assets/hero_image1.png")no-repeat center center;
+  background-size: cover;
+  /* height: 635px; */
 }
- .Who-We-Are-Aman-is-a {
-    width: 733px;
-    height: 459px;
-    font-family: Roboto;
-    font-size: 18px;
-    text-align: justify;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-  }
+
+.aboutus {
+  background: url("/assets/group-4.png")no-repeat center center;
+  /* background-size: cover; */
+  height: 330px;
+  border-radius: 18px;
   
-  .Who-We-Are-Aman-is-a .text-style-1 {
-    font-size: 24px;
-  }
-  .An-overview-of-da {
-    width: 1188px;
-    height: 100%;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-    margin-left: -135px;
-  }
+}
+
+
+.spacer {
+height: 100px;
+}
+.Who-We-Are-Aman-is-a {
   
+  height: 459px;
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.Who-We-Are-Aman-is-a .text-style-1 {
+  font-size: 24px;
+}
+.An-overview-of-da {
+  
+  height: 100%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+
+}
+/* ===Mobile navbar start=========== */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+
+
+  
+  .pt-120{
+    position: relative !important;
+    left: 207px !important;
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+.pad_12{
+  padding: 0 12px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+
+
+  .pt-120{
+    position: relative !important;
+    left: 232px 
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 5rem!important;
+}
+
+
+
+
+li[_ngcontent-c1] {
+  float: left;
+  padding: 0 12px !important;
+}
+
+
+}
+
+@media screen and (max-width: 1024px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+
+
+  .pt-120{
+    position: relative !important;
+    left: 232px 
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+
+
+
+li[_ngcontent-c1] {
+  float: left;
+  padding: 0 12px !important;
+}
+
+
+}
+/* =========Mobile navbar End========== */
