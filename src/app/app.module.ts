@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { HeroFormComponent } from './hero-form/hero-form.component';
+import { facilitymanagementarabicComponent } from './facilitymanagementarabic/facilitymanagementarabic.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { RECAPTCHA_SETTINGS, RecaptchaSettings } from 'ng-recaptcha';
 import { RECAPTCHA_LANGUAGE } from 'ng-recaptcha';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { GovernmentServicesComponent } from './government-services/government-services.component';
+import { facilitymanagementComponent } from './facilitymanagement/facilitymanagement.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClient } from '@angular/common/http';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
@@ -43,13 +43,15 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PrivacyArabicComponent } from './privacy-arabic/privacy-arabic.component';
 import { NavbararabicComponent } from './navbararabic/navbararabic.component';
+import { FacilityarabicComponent } from './facilityarabic/facilityarabic.component';
+
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'register-form', component: RegisterFormComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'government-services', component: GovernmentServicesComponent },
+  { path: 'facilitymanagement', component: facilitymanagementComponent },
   { path: 'home', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contactus', component: ContactusComponent },
@@ -68,9 +70,10 @@ const routes: Routes = [
   { path: 'supplier-register-arabic', component: SupplierRegisterArabicComponent },
   { path: 'privacy-arabic', component: PrivacyArabicComponent },
   { path: 'navbararabic', component: NavbararabicComponent },
+ 
+  { path: 'facility', component: facilitymanagementarabicComponent },
 
-
-
+  
 
 
 
@@ -99,11 +102,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   declarations: [
     AppComponent,
-    HeroFormComponent,
+    facilitymanagementarabicComponent,
     RegisterFormComponent,
     NavbarComponent,
     AboutUsComponent,
-    GovernmentServicesComponent,
+    facilitymanagementComponent,
     FooterComponent,
     LoginComponent,
     RecaptchaDirective,
@@ -126,7 +129,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     PrivacyArabicComponent,
     NavbararabicComponent,
+    FacilityarabicComponent,
     
+
 
   ],
   providers: [
