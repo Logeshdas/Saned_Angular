@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { facilitymanagementarabicComponent } from './facilitymanagementarabic/facilitymanagementarabic.component';
+
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RecaptchaModule } from 'ng-recaptcha';
@@ -70,10 +70,9 @@ const routes: Routes = [
   { path: 'supplier-register-arabic', component: SupplierRegisterArabicComponent },
   { path: 'privacy-arabic', component: PrivacyArabicComponent },
   { path: 'navbararabic', component: NavbararabicComponent },
- 
-  { path: 'facility', component: facilitymanagementarabicComponent },
 
   
+  { path: 'facilityarabic', component: FacilityarabicComponent },
 
 
 
@@ -102,7 +101,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   declarations: [
     AppComponent,
-    facilitymanagementarabicComponent,
+   
     RegisterFormComponent,
     NavbarComponent,
     AboutUsComponent,
@@ -130,7 +129,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyArabicComponent,
     NavbararabicComponent,
     FacilityarabicComponent,
-    
+
 
 
   ],
