@@ -6,38 +6,46 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-    body {font-family: Arial, Helvetica, sans-serif;}
-  nav{
-      width: 100%;
-      height: 50px;
-      background:rgba(0,0,0,.8);
-      border-top: 1px solid rgba(255,255);
-      border-bottom: 1px solid rgba(255,255);
-      position: sticky;
-      top:0px;
-      z-index: 99;
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
   }
-  body{
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      /* background: #000; */
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
   }
-  header{
-      padding: 10px 100px;
-      box-sizing: border-box;
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: #000; */
   }
-  section{
-      width: 100%;
-      height: 100vh;
+
+  header {
+    padding: 10px 100px;
+    box-sizing: border-box;
   }
+
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
   .dropdown {
     float: left;
     overflow: hidden;
   }
-  
+
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -46,20 +54,21 @@
     font-family: inherit;
     margin: 0;
   }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
     /* background-color: red; */
   }
-  
+
   .dropdown-content {
     display: block;
     position: absolute;
     background-color: red;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-  
+
   .dropdown-content a {
     float: none;
     color: black;
@@ -68,37 +77,44 @@
     display: block;
     text-align: left;
   }
-  
+
   .dropdown-content a:hover {
     background-color: #ddd;
   }
+
   ul {
     padding: 0;
     margin: 0;
     list-style: none;
   }
+
   ul li a {
     text-decoration: none;
     color: #e74c3c;
     font-family: Tahoma, Arial;
   }
+
   .navigation {
     background-color: #35353500;
     /* width: 75%; */
     margin: 20px auto;
     min-height: 50px;
   }
-  .navigation > li {
+
+  .navigation>li {
     justify-content: center;
     padding: 0 20px;
   }
-  .navigation > li > a {
+
+  .navigation>li>a {
     line-height: 50px;
     color: #FFF;
   }
+
   .navigation .menu {
     position: relative
   }
+
   .navigation .menu .submenu {
     position: absolute;
     /* width: 200px; */
@@ -109,9 +125,11 @@
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
+
   .navigation .menu:hover .submenu {
     display: block
   }
+
   .navigation .menu .submenu:before {
     content: "";
     position: absolute;
@@ -122,105 +140,119 @@
     top: -6px;
     left: 5px
   }
+
   .navigation .menu .submenu li {
     padding: 5px 10px;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
+
   .navigation .menu .submenu li:hover {
     background-color: #e74c3c;
   }
+
   .navigation .menu .submenu li:hover a {
     color: #FFF;
     /* padding: 0 11px; */
   }
-  
-  
+
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  section.sec1{
-      background: url(natures-temples.png);
-      background-size: cover;
+
+  section.sec1 {
+    background: url(natures-temples.png);
+    background-size: cover;
   }
-  section.banner{
-      background: url(Group.png);
-      background-size: cover;
-      margin-left: 15px;
+
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
   }
-  section.sec2{
-     padding: 100px;
-     box-sizing: border-box;
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
   }
-  nav{
-      width: 100%;
-      height: 50px;
-      background:rgba(0,0,0,.8);
-      border-top: 1px solid rgba(255,255);
-      border-bottom: 1px solid rgba(255,255);
-      position: sticky;
-      top:0px;
-      z-index: 99
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99
   }
-  nav ul{
-      display: flex;
-      margin: 0px;
-      padding: 0px;
-      justify-content: center;
+
+  nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
   }
-  nav ul li{
-      list-style: none;
+
+  nav ul li {
+    list-style: none;
   }
-  
-  
-  nav ul{
-      display: flex;
-     
-      padding: 0px;
-      /* float: ; */
+
+
+  nav ul {
+    display: flex;
+
+    padding: 0px;
+    /* float: ; */
   }
-  
-  nav ul li a{
-      display:block;
-      color: #fff;
-      padding: 0 17px;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
-      line-height: 50px;
-  
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+
   }
-      /* ==============footer style start ========= */
-      .footer {
-      /* position: fixed; */
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: black;
-      color: white;
-      text-align: center;
-      /* height: 75px; */
-   }
-   .container{
-     background: black;
-     color: white
-   }
-   .social:hover {
+
+  /* ==============footer style start ========= */
+  .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+  }
+
+  .container {
+    background: black;
+    color: white
+  }
+
+  .social:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
   }
+
   .social {
     -webkit-transform: scale(0.8);
     /* Browser Variations: */
-    
+
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
   }
+
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -229,31 +261,33 @@
     text-decoration: none;
     border-radius: 50%;
   }
-  .img-thumbnail{
+
+  .img-thumbnail {
     background: black;
     border-color: black
   }
-  
-   .home{
-      font-family: Roboto-Bold;
-      font-size: 16px;
-      line-height: 14px;
+
+  .home {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
     letter-spacing: 0;
-    }
-    .about{
-      font-family: Roboto;
-      font-size: 13px;
-      line-height: 15px;
+  }
+
+  .about {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 15px;
     letter-spacing: 0;
-    }
-    .container1{
-     background: black;
-     color: white
-   }
-  
-      /* ===========================footer style end================ */
-  
-  </style>
+  }
+
+  .container1 {
+    background: black;
+    color: white
+  }
+
+  /* ===========================footer style end================ */
+</style>
 
 
 
@@ -264,28 +298,26 @@
     <div class="col-md-1">
       <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
       <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x"
-        class="img-responsive">
+                                                             ./assets/group@3x.png 3x" class="img-responsive">
     </div>
     <div class="col-md-5"></div>
     <div class="col-md-6 mt-5" dir="ltr">
       &nbsp; &nbsp;
-      <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-      margin-left: -18px;">
-        <font color="white">تسجيل الدخول </font>
-      </a>&nbsp;&nbsp;
-      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-          width: 100px;margin-left: -17px"
-        routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-        <font color="white">تسجيل</font>
-      </button>&nbsp;
+      <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+        margin-left: -18px;">
+          <font color="white">تسجيل الدخول </font>
+        </a>&nbsp;&nbsp;
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+            width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+          <font color="white">تسجيل</font>
+        </button>&nbsp; -->
 
 
 
       <font style="color:white">English</font>&nbsp;
 
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/amanservices"
-        [checked]="Lang" />&nbsp;
+      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
+        routerLink="/amanservices" [checked]="Lang" />&nbsp;
 
       <font color="#F90E35"> عربى </font>
       <input type="radio" checked>&nbsp;
@@ -316,6 +348,7 @@
 <br>
 <br><br><br><br><br><br><br>
 <br><br><br>
+<br><br><br>
 <div class="" dir="rtl">
   <!-- <h3 class="col-sm-12 Welcome-to-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
@@ -336,14 +369,13 @@
 
 
 
-        <p class="text-justify" style="font-size: 24px;"><b>وصف</b></p>
-        <p class="text-justify  ">إن التطور العمراني - بكافة فئاته السكنية والتجارية والتعليمية - المستمر بالدولة،
-          يتطلب رفع مستوى معايير وإجراءات السلامة في المباني، لحماية الأفراد والممتلكات من مخاطر الحريق، وبناء على
-          الحاجة الملحة لتفادي هذه المخاطر و سعياً منا للوصول لمجتمع آمن خالي من الأخطار، توجب علينا إطلاق مشروع "أمان"
-          الذي يضمن الاستجابة السريعة في حالات الحريق، من خلال إنشاء اتصال آمن وموثوق بين أي نوع من أنواع أنظمة مكافحة
-          الحرائق في جميع منشآت إمارة الشارقة ومركز العمليات التابع للإدارة العامة للدفاع المدني بإمارة الشارقة، بهدف
-          مراقبة هذه الأنظمة بشكل مستمر والتعرف على البلاغات وتحديد حالات الطوارئ والاستجابة لها على الفور، بما يضمن
-          أمن و سلامة القاطنين.
+        <p class="text-justify" style="font-size: 24px;"><b>نبذة عن أمان
+
+          </b></p>
+        <p class="text-justify  ">إن التطور العمراني - بكافة فئاته السكنية والتجارية والتعليمية - المستمر بالدولأمان هو
+          عبارة عن منصة ربط آمن وموثوق بين جميع أنظمة إنذار الحريق في العقارات وغرف التحكم في الدفاع المدني ومن ينوب
+          عنها في إمارة الشارقة صممت لضمان الإستجابة السريعة لحالات الطوارئ المتعلقة بالحرائق، أمان هو نتاج شراكة بين
+          هيئة الوقاية والسلامة و شركة ساند، ويهدف لحماية الأرواح والممتلكات.
         </p>
       </div>
       <div class="col-md-1"></div>
@@ -353,8 +385,14 @@
       </div>
       <div class="col-md-4">
 
-        <p class="text-justify" style="font-size: 24px;"><b>الأهداف</b> </p>
-        <p class="text-justify ">قريبا...
+        <p class="text-justify" style="font-size: 24px;"><b>الأهداف المرجوة من أمان
+
+          </b> </p>
+        <p class="text-justify ">من أهم الأهداف المرجوه من أمان تعزيز جودة الحياة في إمارة الشارقة من خلال تطبيق أعلى
+          المعايير المعترف بها دوليًا لضمان حماية وسلامة الأفراد والممتلكات وتقليل فترة الإستجابة للحرائق والتقليل من
+          الإعتماد على العامل البشري.
+
+
         </p>
 
       </div>
@@ -366,26 +404,60 @@
 
     <div class="row" dir="rtl">
       <div class="col-md-1">
-        <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
-              /assets/1@3x.png 3x" class="layer">
+        <img src="./assets/3.png" srcset="./assets/3@2x.png 2x,
+          ./assets/3@3x.png 3x" class="img-responsive">
       </div>
       <div class="col-md-4 ml-3">
 
 
 
-        <p class="text-justify" style="font-size: 24px;"><b>معلومات تقنية</b></p>
-        <p class="text-justify  ">قريبا...
+        <p class="text-justify" style="font-size: 24px;"><b>المعلومات التقنية عن أمان
+
+          </b></p>
+        <p class="text-justify  ">أمان هو نظام الاتصالات يعمل على مدار الساعة بلا توقف وهو قادر على الآتي:
+
+          <li> الربط مع جميع أنظمة الحرائق المتوافرة في المنشآت.</li>
+          <li> يمكن تثبيته في العديد من الأنظمة في مختلف تطبيقات المنشأت.</li>
+          <li> يمكن استخدامها بسهولة وصيانتها في ظروف مختلفة.</li>
+          <li> يمكن دمجها مع غرف التحكم المركزية لمحطة المراقبة من خلال النظام الموحد للاتصالات المتنقلة والشبكة
+            الهاتفية العمومية.</li>
+          <li> التوسع المستقبلي لتشمل تطبيقا المصاعد وغيرها.</li>
+          <br>
+          <br>
+          يسهّل تطبيق أمان الإلكتروني التابع لهيئة الوقاية والسلامة على ملاك ومدراء المباني التسجيل في النظام وطلب
+          الحصول على الخدمات
+          <br>
+
+          يمكن التواصل مع الجهات المعنية عن طريق الاتصال التابع لنا على مدار اليوم طوال أيام الأسبوع والإجابة عن أي
+          استفسارات على الرقم التالي: 600 515152.
+
+          <br>
+          <br>
+
+          الموقع الإلكتروني و تطبيق الجوال قيد التنفيذ وسيتم إنجازها قريبا.
+
+
+
         </p>
       </div>
       <div class="col-md-1"></div>
       <div class="col-md-1">
-        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x" class="layer">
+        <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
+          /assets/4@3x.png 3x" class="img-responsive">
       </div>
       <div class="col-md-4">
 
-        <p class="text-justify" style="font-size: 24px;"><b>معلومات تجارية</b> </p>
-        <p class="text-justify ">قريبا...
+        <p class="text-justify" style="font-size: 24px;"><b>الرسوم</b> </p>
+        <p class="text-justify ">تشمل الرسوم الثابتة لملاك المباني ما يلي:
+
+          <li> تقييمان للمباني مع تقارير مخصصة يقدمها فنيو أمان.</li>
+          <li> جهاز الاتصال مع صندوق يركب على الحائط للحماية.</li>
+          <li> تركيب جهاز الاتصال.</li>
+          <li>بطاقة SIM ورسوم خدمة لمدة سنة واحدة من تاريخ التركيب.</li>
+          <li> إغلاق التقرير بعد التثبيت الناجح.</li>
+          <li>عامين من الصيانة على الجهاز.</li>
+          <li>تسجيل مجاني ودخول غير محدود إلى التطبيق والبرامج المتعلقة بالنظام.</li>
+
         </p>
 
       </div>

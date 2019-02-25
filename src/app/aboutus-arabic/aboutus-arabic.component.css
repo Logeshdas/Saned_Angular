@@ -11,8 +11,20 @@
     border-radius: 18px;
     
  }
+ .Sharjah-Asset-Manage {
+  /* width: 535px; */
+  /* height: 283px; */
+  font-family: GeezaPro;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333
 
-
+}
+ 
  .spacer {
   height: 100px;
 }
@@ -122,7 +134,7 @@
 
 .content{
   /* width: 535px; */
-  height: 127px;
+  /* height: 127px; */
   font-family: GeezaPro;
   font-size: 18px;
   font-weight: normal;
@@ -135,7 +147,7 @@
 }
 .vision{
   /* width: 535px; */
-  height: 26px;
+  /* height: 26px; */
   font-family: GeezaPro;
   font-size: 18px;
   font-weight: bold;
@@ -144,11 +156,11 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: right;
-  color: var(--black);
+  /* color: var(--black); */
 }
 .vision-content{
   /* width: 519px; */
-  height: 61px;
+  /* height: 61px; */
   font-family: GeezaPro;
   font-size: 18px;
   font-weight: normal;
@@ -157,7 +169,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: right;
-  color: var(--black);
+  /* color: var(--black); */
 }
 .mission {
   /* width: 56px; */

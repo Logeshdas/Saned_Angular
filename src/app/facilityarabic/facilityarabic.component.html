@@ -7,12 +7,14 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
   /* ==============footer style start ========= */
-    .container1{
-   background: black;
-   color: white
- }
-    .footer {
+  .container1 {
+    background: black;
+    color: white
+  }
+
+  .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -21,230 +23,259 @@
     color: white;
     text-align: center;
     /* height: 75px; */
- }
- .container{
-   background: black;
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-  
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
+  }
 
- .home{
+  .container {
+    background: black;
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .about{
+
+  .about {
     font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
 
-    /* ===========================footer style end================ */
-nav{
+  /* ===========================footer style end================ */
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99;
-}
-body{
+  }
+
+  body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     /* background: #000; */
-}
-header{
+  }
+
+  header {
     padding: 10px 100px;
     box-sizing: border-box;
-}
-section{
+  }
+
+  section {
     width: 100%;
     height: 100vh;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: Roboto;
-  margin: 0;
-}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  /* background-color: red; */
-}
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Roboto;
+    margin: 0;
+  }
 
-.dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  color: #e74c3c;
-  font-family: Roboto;
-  /* font-size: 18px; */
-}
-.navigation {
-  background-color: #35353500;
-  /* width: 75%; */
-  margin: 20px auto;
-  min-height: 50px;
-}
-.navigation > li {
-  float: left;
-  padding: 4 10px;
-}
-.navigation > li > a {
-  line-height: 50px;
-  color: #FFF;
-}
-.navigation .menu {
-  position: relative
-}
-.navigation .menu .submenu {
-  position: absolute;
-  /* width: 200px; */
-  -webkit-box-shadow: 0px 1px 1px #CCC;
-  box-shadow: 0px 1px 1px #CCC;
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu:hover .submenu {
-  display: block
-}
-.navigation .menu .submenu:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-width: 0 6px 6px 6px;
-  border-style: solid;
-  border-color: #FFF transparent;
-  top: -6px;
-  left: 5px
-}
-.navigation .menu .submenu li {
-  padding: 5px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu .submenu li:hover {
-  background-color: #e74c3c;
-}
-.navigation .menu .submenu li:hover a {
-  color: #FFF;
-  /* padding: 0 11px; */
-}
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Roboto;
+    /* font-size: 18px; */
+  }
+
+  .navigation {
+    background-color: #35353500;
+    /* width: 75%; */
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    float: left;
+    padding: 4 10px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px
+  }
+
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-section.sec1{
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
     background: url(natures-temples.png);
     background-size: cover;
-}
-section.banner{
+  }
+
+  section.banner {
     background: url(Group.png);
     background-size: cover;
     margin-left: 15px;
-}
-section.sec2{
-   padding: 100px;
-   box-sizing: border-box;
-}
-nav{
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99
-}
-nav ul{
+  }
+
+  nav ul {
     display: flex;
     margin: 0px;
     padding: 0px;
     float: right;
-}
-nav ul li{
+  }
+
+  nav ul li {
     list-style: none;
-}
+  }
 
 
-nav ul{
+  nav ul {
     display: flex;
-   
+
     padding: 0px;
     /* float: ; */
-}
+  }
 
-nav ul li a{
-    display:block;
+  nav ul li a {
+    display: block;
     color: #fff;
     padding: 0 35px;
     text-decoration: none;
@@ -252,8 +283,7 @@ nav ul li a{
     font-weight: bold;
     line-height: 50px;
 
-}
-
+  }
 </style>
 
 <!-- <p>
@@ -268,8 +298,7 @@ nav ul li a{
       <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                                   ./assets/group@3x.png 3x"
-          class="img-responsive">
+                                                                   ./assets/group@3x.png 3x" class="img-responsive">
         <!-- <button><a routerLink="aboutusarabic">arabic</a></button>
                                                            <button><a routerLink="about-us">English</a></button> -->
         <!-- <input type="radio" class="btn ml-2" routerLink="aboutusarabic" name="arabic"> <font color="white">عربى</font>
@@ -279,24 +308,25 @@ nav ul li a{
       </div>
       <div class="col-md-5"></div>
       <div class="col-md-6 mt-5" dir="ltr">
-        &nbsp;
-        <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;margin-left: -15px;">
-          <font color="white">تسجيل الدخول </font>
-        </a>&nbsp;
-        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-              width: 100px;"
-          routerLink="register-form-arabic" class="btn Rectangle">
-          <font color="white">تسجيل</font>
-        </button>&nbsp;
+        &nbsp; &nbsp;
+        <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+          margin-left: -18px;">
+            <font color="white">تسجيل الدخول </font>
+          </a>&nbsp;&nbsp;
+          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+              width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+            <font color="white">تسجيل</font>
+          </button>&nbsp; -->
 
 
 
         <font style="color:white">English</font>&nbsp;
-        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/facilitymanagement"
-          [checked]="Lang" />&nbsp;
+
+        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
+          routerLink="/facilitymanagement" [checked]="Lang" />&nbsp;
 
         <font color="#F90E35"> عربى </font>
-        <input type="radio" checked>&nbsp; &nbsp;
+        <input type="radio" checked>&nbsp;
 
 
       </div>
@@ -316,12 +346,7 @@ nav ul li a{
       </h1>
 
     </div>
-    <!-- </div> -->
 
-
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
   </section>
 
 </div>
@@ -350,9 +375,196 @@ nav ul li a{
     <br>
     <br>
     <br>
-    <div class="text-center" dir="rtl">
-      <b>قريبا...</b>
+    <div class="" dir="rtl">
+      <div class="col-sm-12 text-justify">
+        <div class="col-md-12">
+          <!-- <h3 style="font-family: GeezaPro;"><b>خدمات إدارة المرافق المتكاملة</b></h3> -->
+          <h4 style="font-family: GeezaPro;"><b>المقدمة</b></h4>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">تقدم شركة ساند أفضل الخدمات في فئتها في جميع
+            الصناعات والمواقع المتعددة التي تتميز بنموذج تقديم خدمة ذات
+            جودة
+            عالية، يقوم مبدأ عمل الشركة على أن يكون مكملا للأهداف الإستراتيجية والتشغيلية لأي مؤسسة. وعليه فإننا في ساند
+            نقوم بدمج الوظائف الأساسية مثل العمليات والتقنيات مع الأفراد لضمان المرونة والتكامل المستقبلي ودعمها من خلال
+            أحدث الأنظمة الحاسوبية. تقوم ساند بالمشاركة مع العملاء بتحديث وتطوير مستوى الخدمة بشكل مستمر وزيادة الكفاءة
+            التشغيلية للأنظمة المراد صيانتها، مما ينتج عنه تقليل الوقت اللازم للصيانة وزيادة الإيرادات بخفض تكاليف
+            التشغيل،
+            والقضاء على الازدواجية بين العميل وشركة التشغيل.</p>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <h3 style="font-family: GeezaPro"><b>الخدمات الأساسية</b></h3>
+          <h4 style="font-family: GeezaPro"><b>خدمات إدارة المرافق</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li> الخدمات التقنية والفنية التخصصية</li>
+
+              <li> خدمات غير التقنية</li>
+
+              <li> خدمات العملاء</li>
+
+              <li> خدمات إدارة وتوفير استهلاك الطاقة</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+
+          <h4 style="font-family: GeezaPro"><b>الخدمات الإستشارية</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li> التصميم والاستشارات</li>
+
+              <li> إدارة المشارويع</li>
+
+              <li> الأعمال الداخلية والديكور</li>
+
+              <li> إدارة مشتريات</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+
+          <h4 style="font-family: GeezaPro"><b>خدمات الصيانة الصناعية</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li> خدمات دعم الإنتاج عبر الإنترنت</li>
+
+              <li> خدمات دعم الإنتاج دون اتصال</li>
+
+              <li> إدارة المستودعات</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <h3 style="font-family: GeezaPro"><b>خدمات إدارة المرافق</b></h3>
+          <h4 style="font-family: GeezaPro"><b>الخدمات التقنية والفنية التخصصية</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li>الصيانة الميكانيكية والكهربائية</li>
+
+              <li> إدارة أنظمة المباني</li>
+
+              <li> صيانة المحطات</li>
+
+              <li> نظام التبريد (التشغيل والصيانة)</li>
+
+              <li> السباكة وإدارة المياه</li>
+
+              <li> إدارة الطاقة</li>
+
+              <li> تنظيف واجهة المباني</li>
+
+              <li> تنظيف السجاد والتنجيد</li>
+
+              <li> تنظيف و بلورة الرخام</li>
+              <li> إدارة الطاقة</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro"><b>خدمات غير تخصصية</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+
+              <li> خدمات النظافة</li>
+
+              <li> خدمات الحراسة</li>
+
+              <li> عمليات البستنة وصياننتها</li>
+
+              <li> مكافحة الحشرات</li>
+
+              <li> توريد العمالة</li>
+
+            </ul>
+          </div>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">ويتم تفصيل هذه الخدمات لملاءمة كل عميل كل حسب
+            حاجته.</p>
+        </div>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro"><b>الخدمات الإستشارية</b></h4>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">تقدم شركة ساند شراكات مع مالكي المباني
+            والمستخدمين لتسهيل الانتقال الفعال، وتحقيق أقصى عائد بخفض تكاليف
+            التشغيل مع الحفاظ على مستويات خدمة عالية.</p>
+          <p>بالإضافة إلى توفير خدمات إدارة المرافق الأساسية ، فإن ساند تقدم حلولًا لعملائنا حول:</p>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li>الحسابات والإدارة</li>
+
+              <li> صيانة كاملة للممتلكات</li>
+
+              <li> الاتصال والعلاقات العامة مع الوكالات الحكومية</li>
+
+              <li> الإشراف المدني</li>
+
+              <li> إدارة المقاولين</li>
+
+              <li> الصحة والسلامة والأمن والبيئة</li>
+
+              <li> الأمور القانونية والتراخيص</li>
+
+              <li> إدارة الإتصال والتعامل مع العملاء</li>
+
+              <li> إدارة الزوار</li>
+
+              <li> إدارة مواقف السيارات</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro;">الخدمات الصناعية</h4>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">تقدم شركة ساند خدمات صناعية ذات مستوى عالمي مع
+            خبرة لا مثيل لها ونتائج تشمل جميع الأنشطة ذات الصلة في
+            الصناعات المختلفة ، ومشاريع البنية التحتية ، ومحطات التبريد العملاقة، والمحلات بما في ذلك التجميع والتعبئة
+            والتخزين والدعم اللوجستي وخدمات الإرسال. يتم توسيع خدماتنا لتشمل العديد من وحدات التصنيع الرائدة ومجموعة من
+            الصناعات مثل السيارات، الزجاج ، الفولاذ ، المكونات الكهربائية والإلكترونية ، الآلات الثقيلة ، المسابك ،
+            الإطارات ، الكيماويات المتخصصة ، البنزين بالمنتجات الخ...</p>
+
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">بدعم من مجموعة كبيرة من الموارد مع مجموعات
+            متنوعة من المهارات لتتناسب مع متطلبات وحدات التصنيع ، نستطيع
+            زيادة أو خفض الأنشطة بفعالية، في إطار زمني محدد، مع تطوير وصيانة قاعدة بيانات من القوى العاملة المدربة
+            كإجراء احترازي لجميع الأوقات.</p>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">يتم تقديم نماذج عقود مختلفة مثل نماذج التوظيف
+            المخصصة أو نماذج تقديم الخدمات على أساس الإنتاج.</p>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">إن التزامنا تجاه الأشخاص والعمليات والجودة
+            المتسقة هي أهم ثلاثة جوانب من أعمالنا.</p>
+
+        </div>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro;"><b>عمليات الجودة لدينا:</b></h4>
+          <div class="col-md-12" style="font-size: 18px;font-family: GeezaPro;color: #333;">
+            <ul>
+              <li> تحقيق أعلى مستوى من الجودة</li>
+
+              <li> تعزيز رضا العملاء برفع الأداء والتحسين المستمر في معايير الجودة</li>
+
+              <li> المساهمة في الصناعة مع الابتكارات المستمرة والتحسينات على الجودة والعمليات في أنظمة إدارة الجودة
+                لدينا</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro;"><b>الكادر الفني والعملي</b></h4>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">إن صناعتنا موجهة للناس ولذلك نولي أهمية كبيرة
+            لتعزيز المهارات المهنية المبرمجة للقوى العاملة. ولضمان ذلك
+            نولي أهمية كبيرة للتدريب المستمر والمشاركة في المعرفة التميز في إنتاج العمل في جميع المجالات</p>
+        </div>
+        <div class="col-md-12">
+          <h4 style="font-family: GeezaPro;"><b>العمليات</b></h4>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">تضمن خدمات المراقبة المجدولة الدورية والجودة مع
+            التحسين المستمر تدفق العملية مما يؤدي إلى ثقافة مكان أفضل
+            للعمل عبر مرافق التصنيع الخاصة بالعملاء.</p>
+          <p style="font-size: 18px;font-family: GeezaPro;color: #333;">تدرك شركة ساند مدى حساسية جميع الأعمال التجارية
+            وسريتها ، كما أن خدماتنا مصممة لدعم أعمال العملاء وتمكين
+            موظفيهم من العمل في المستويات المثلى. من الضروري أن تعمل المرافق بسلاسة لضمان هدر أقل للوقت</p>
+        </div>
+
+      </div>
     </div>
+
     <br>
     <br>
     <br>

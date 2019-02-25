@@ -6,185 +6,212 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  body {font-family: Arial, Helvetica, sans-serif;}
-nav{
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99;
-}
-body{
+  }
+
+  body {
 
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     /* background: #000; */
-}
-header{
+  }
+
+  header {
     padding: 10px 100px;
     box-sizing: border-box;
-}
-section{
+  }
+
+  section {
     width: 100%;
     height: 100vh;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  /* background-color: red; */
-}
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 
-.dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  color: #e74c3c;
-  font-family: Tahoma, Arial;
-}
-.navigation {
-  background-color: #35353500;
-  /* width: 75%; */
-  margin: 20px auto;
-  min-height: 50px;
-}
-.navigation > li {
-  justify-content: center;
-  padding: 0 20px;
-}
-.navigation > li > a {
-  line-height: 50px;
-  color: #FFF;
-}
-.navigation .menu {
-  position: relative
-}
-.navigation .menu .submenu {
-  position: absolute;
-  /* width: 200px; */
-  -webkit-box-shadow: 0px 1px 1px #CCC;
-  box-shadow: 0px 1px 1px #CCC;
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu:hover .submenu {
-  display: block
-}
-.navigation .menu .submenu:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-width: 0 6px 6px 6px;
-  border-style: solid;
-  border-color: #FFF transparent;
-  top: -6px;
-  left: 5px;
-  /* font-weight:bold */
-}
-.navigation .menu .submenu li {
-  padding: 5px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu .submenu li:hover {
-  background-color: #e74c3c;
-}
-.navigation .menu .submenu li:hover a {
-  color: #FFF;
-  /* padding: 0 11px; */
-}
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Tahoma, Arial;
+  }
+
+  .navigation {
+    background-color: #35353500;
+    /* width: 75%; */
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px;
+    /* font-weight:bold */
+  }
+
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-section.sec1{
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
     background: url(natures-temples.png);
     background-size: cover;
-}
-section.banner{
+  }
+
+  section.banner {
     background: url(Group.png);
     background-size: cover;
     margin-left: 15px;
-}
-section.sec2{
-   padding: 100px;
-   box-sizing: border-box;
-}
-nav{
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99
-}
-nav ul{
+  }
+
+  nav ul {
     display: flex;
     margin: 0px;
     padding: 0px;
     justify-content: center;
-}
-nav ul li{
+  }
+
+  nav ul li {
     list-style: none;
-}
+  }
 
 
-nav ul{
+  nav ul {
     display: flex;
-   
+
     padding: 0px;
     /* float: ; */
-}
+  }
 
-nav ul li a{
-    display:block;
+  nav ul li a {
+    display: block;
     color: #fff;
     padding: 0 20px;
     text-decoration: none;
@@ -192,9 +219,10 @@ nav ul li a{
     font-weight: bold;
     line-height: 50px;
 
-}
-    /* ==============footer style start ========= */
-    .footer {
+  }
+
+  /* ==============footer style start ========= */
+  .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -203,58 +231,64 @@ nav ul li a{
     color: white;
     text-align: center;
     /* height: 75px; */
- }
- .container{
-   background: black;
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-  
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
+  }
 
- .home{
+  .container {
+    background: black;
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .about{
+
+  .about {
     font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .container1{
-   background: black;
-   color: white
- }
 
-    /* ===========================footer style end================ */
+  .container1 {
+    background: black;
+    color: white
+  }
 
+  /* ===========================footer style end================ */
 </style>
 <!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
 &nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
@@ -268,30 +302,28 @@ nav ul li a{
       <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x"
-          class="img-responsive">
+                                                             ./assets/group@3x.png 3x" class="img-responsive">
       </div>
-      <div class="col-md-5"></div>
-      <div class="col-md-6 mt-5 text-right">
+      <div class="col-md-4"></div>
+      <div class="col-md-6   text-right">
 
+
+        <br><br>
         <input type="radio" checked />&nbsp;
         <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
         &nbsp;
         <input type="radio" style="margin-left: -9px;" routerLink="/amanservices-arabic" />&nbsp;
         <font color="white" style="font-size: 14px;">عربى</font>
 
-        &nbsp; &nbsp;
-        <button button type="submit" style="background-color: #ff0000;height: 35px;
-          width: 100px;
-          padding: 0;
-        "
-          class="btn Rectangle-2">
-          <font style="color:white">Register</font>
-        </button>
-
-        <a class="btn mb-1">
-          <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
-        </a>
+        &nbsp;
+        <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
+                                        width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
+            <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
+          </button>
+    
+          <a class="btn mb-1">
+            <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
+          </a> -->
 
       </div>
 
@@ -327,13 +359,15 @@ class="NEM mt-3"> -->
 
 
   <app-navbar></app-navbar>
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
 
   <br><br>
-  <br>
-  <br>
 
-  <div class="card col-md-12 mt-5" style="border-radius: 18px;
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="card col-md-12 mt-4" style="border-radius: 18px;
    background: white;">
     <br>
 
@@ -349,14 +383,11 @@ class="NEM mt-3"> -->
         </div>
         <div class="col-md-5">
           <h5><b>Description</b></h5>
-          <p class="AMAN-is-a-first-of-i text-justify">As part of our endeavors to reach a safe and risk-free society,
-            and to meet the needs of the rapid and continuous structural development in the UAE specially in
-            residential, commercial, and industrial sectors, we have found that upgraded and advanced safety procedures
-            must be implemented to ensure the safety of people and properties.To ensure fast response to fire
-            emergencies, we have initiated “AMAN” project. AMAN, aims to protect lives and properties by establishing a
-            safe and reliable connection between all firefighting systems in all properties in Sharjah, with the
-            central monitoring station that is continuously monitored to identify and respond to emergencies instantly
-            ensuring the safety of people and assets.. </p>
+          <p class="AMAN-is-a-first-of-i text-justify">To ensure fast response to fire emergencies, SPSA partnered with
+            SANED have initiated “AMAN” project. AMAN, aims to protect lives and properties by establishing a safe and
+            reliable connection between all firefighting systems in all properties in Sharjah, with the central
+            monitoring station that is continuously monitored to identify and respond to emergencies instantly ensuring
+            the safety of people and assets.</p>
         </div>
 
         <div class="col-md-1">
@@ -368,8 +399,10 @@ class="NEM mt-3"> -->
 
           <h5> <b>Objectives</b></h5>
 
-          <p class="text-justify AMAN-is-a-first-of-i">
-            Coming soon...
+          <p class="AMAN-is-a-first-of-i text-justify">
+            Enhance the quality of life in the Emirate of Sharjah by applying the highest internationally recognized
+            standards to ensure the protection and safety of individuals and properties. The mission is a <b>Zero Harm
+              Environment</b>.
           </p>
 
         </div>
@@ -395,7 +428,24 @@ class="NEM mt-3"> -->
         </div>
         <div class="col-md-5">
           <h5><b>Technical Information</b></h5>
-          <p class="text AMAN-is-a-first-of-i">Coming soon... </p>
+          <p class="AMAN-is-a-first-of-i text-justify">The 24/7 communication system is:
+            <br>
+            <li>able to be integrated into a standard FACP of the building.</li>
+            <li>able to be installed in several configurations throughout various building type applications.</li>
+            <li>able to be readily used and maintained in varying conditions by operating property owners.</li>
+            <li>able to be integrated in to the central monitoring station communication system through GSM and PSTN
+            </li>
+            <li>able to be scalable for future expansion</li>
+            <br>
+            The user friendly SPSA Mobile App and AMAN online registration portal make it easy to register for your
+            service and will walk you through all the requirements.
+            <br>
+            <br>
+            Our 24x7 call centre is happy to answer any questions: 600 515152
+            <br>
+            <br>
+            Website and Mobile App coming soon.
+          </p>
         </div>
         <!-- <div class="col-md-1"></div> -->
         <div class="mr-4"></div>
@@ -409,8 +459,17 @@ class="NEM mt-3"> -->
 
           <h5> <b>Commercial Information</b></h5>
 
-          <p class="text-justify AMAN-is-a-first-of-i">
-            Coming soon...
+          <p class=" AMAN-is-a-first-of-i text-justify">
+            Included in the fixed fee for Building Owners are the following:
+
+            <li>Two building assessments with custom reports provided by AMAN technicians</li>
+            <li>The communicator device with a surface mount enclosure</li>
+            <li>Installation of the communicator</li>
+            <li>SIM card</li>
+            <li>Close out report after successful installation</li>
+            <li>Two years of maintenance on the communicator</li>
+            <li> One year service fee of SIM card</li>
+            <li>Free registration & unlimited access to the application and software</li>
           </p>
 
         </div>
@@ -421,9 +480,7 @@ class="NEM mt-3"> -->
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
+
       <div class="col-md-4"></div>
       <div class="col-md-7 center">
 
@@ -445,8 +502,7 @@ class="NEM mt-3"> -->
 
       <div class="col-sm-2">
         <img src="./assets/footersanedlogo.png" srcset="./assets/footersanedlogo@2x.png 2x,
-              ./assets/footersanedlogo@3x.png 3x"
-          class="img-responsive">
+              ./assets/footersanedlogo@3x.png 3x" class="img-responsive">
 
       </div>
 
@@ -455,7 +511,7 @@ class="NEM mt-3"> -->
         <ul class="list-unstyled quick-links">
 
           <li><a routerLink="/about-us" class="about">
-              <font color="white">AboutUs</font>
+              <font color="white">About Us</font>
             </a></li>
           <li><a routerLink="/amanservices" class="about">
               <font color="white">Services</font>
@@ -464,7 +520,7 @@ class="NEM mt-3"> -->
               <font color="white">Sitemap</font>
             </a></li>
           <li><a routerLink="/contactus" class="about">
-              <font color="white">ContactUs</font>
+              <font color="white">Contact Us</font>
             </a></li>
           <li><a routerLink="/privacy" class="about">
               <font color="white">Privacy Policy</font>
@@ -497,10 +553,10 @@ class="NEM mt-3"> -->
               <br>
               <font color="white">Fax: +971 6 572 2331</font>
               <br>
-              <font color="white">Email:helpdesk@saned.ae</font>
+              <font color="white">Email: helpdesk@saned.ae</font>
               <br>
               <a routerLink="login">
-                <font color="white">Website:www.saned.ae</font>
+                <font color="white">Website: www.saned.ae</font>
               </a>
             </p>
           </li>

@@ -7,12 +7,14 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
   /* ==============footer style start ========= */
-    .container1{
-   background: black;
-   color: white
- }
-    .footer {
+  .container1 {
+    background: black;
+    color: white
+  }
+
+  .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -21,230 +23,259 @@
     color: white;
     text-align: center;
     /* height: 75px; */
- }
- .container{
-   background: black;
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-  
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
+  }
 
- .home{
+  .container {
+    background: black;
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .about{
+
+  .about {
     font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
 
-    /* ===========================footer style end================ */
-nav{
+  /* ===========================footer style end================ */
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99;
-}
-body{
+  }
+
+  body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     /* background: #000; */
-}
-header{
+  }
+
+  header {
     padding: 10px 100px;
     box-sizing: border-box;
-}
-section{
+  }
+
+  section {
     width: 100%;
     height: 100vh;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: Roboto;
-  margin: 0;
-}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  /* background-color: red; */
-}
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Roboto;
+    margin: 0;
+  }
 
-.dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  color: #e74c3c;
-  font-family: Roboto;
-  /* font-size: 18px; */
-}
-.navigation {
-  background-color: #35353500;
-  width: 100%;
-  margin: 20px auto;
-  min-height: 50px;
-}
-.navigation > li {
-  float: left;
-  padding: 0 20px;
-}
-.navigation > li > a {
-  line-height: 50px;
-  color: #FFF;
-}
-.navigation .menu {
-  position: relative
-}
-.navigation .menu .submenu {
-  position: absolute;
-  /* width: 200px; */
-  -webkit-box-shadow: 0px 1px 1px #CCC;
-  box-shadow: 0px 1px 1px #CCC;
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu:hover .submenu {
-  display: block
-}
-.navigation .menu .submenu:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-width: 0 6px 6px 6px;
-  border-style: solid;
-  border-color: #FFF transparent;
-  top: -6px;
-  left: 5px
-}
-.navigation .menu .submenu li {
-  padding: 5px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu .submenu li:hover {
-  background-color: #e74c3c;
-}
-.navigation .menu .submenu li:hover a {
-  color: #FFF;
-  /* padding: 0 11px; */
-}
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Roboto;
+    /* font-size: 18px; */
+  }
+
+  .navigation {
+    background-color: #35353500;
+    width: 100%;
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    float: left;
+    padding: 0 20px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px
+  }
+
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-section.sec1{
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
     background: url(natures-temples.png);
     background-size: cover;
-}
-section.banner{
+  }
+
+  section.banner {
     background: url(Group.png);
     background-size: cover;
     margin-left: 15px;
-}
-section.sec2{
-   padding: 100px;
-   box-sizing: border-box;
-}
-nav{
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
     width: 100%;
     height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 99
-}
-nav ul{
+  }
+
+  nav ul {
     display: flex;
     margin: 0px;
     padding: 0px;
     float: right;
-}
-nav ul li{
+  }
+
+  nav ul li {
     list-style: none;
-}
+  }
 
 
-nav ul{
+  nav ul {
     display: flex;
-   
-    padding:22px;
-    /* float: ; */
-}
 
-nav ul li a{
-    display:block;
+    padding: 22px;
+    /* float: ; */
+  }
+
+  nav ul li a {
+    display: block;
     color: #fff;
     padding: 0 0px;
     text-decoration: none;
@@ -252,8 +283,7 @@ nav ul li a{
     font-weight: bold;
     line-height: 50px;
 
-}
-
+  }
 </style>
 
 <!-- <p>
@@ -269,34 +299,31 @@ nav ul li a{
     <div class="col-md-1">
 
       <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                    ./assets/group@3x.png 3x"
-        class="img-responsive">
+                    ./assets/group@3x.png 3x" class="img-responsive">
     </div>
     <br>
     <div class="col-md-5"></div>
     <div class="col-md-6 mt-5" dir="ltr">
+      &nbsp; &nbsp;
+      <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+          margin-left: -18px;">
+            <font color="white">تسجيل الدخول </font>
+          </a>&nbsp;&nbsp;
+          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+              width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+            <font color="white">تسجيل</font>
+          </button>&nbsp; -->
 
-      <a class="btn " routerLink="login" style="font-family: GeezaPro;font-size: 14px;
-  ">
-        <font color="white" class="Sign-Out">تسجيل الدخول</font>
-      </a>
-
-      <button type="submit" style="background-color: #ff0000; width: 100px;
-        height: 32px;
-        padding: 2px 20px;"
-        routerLink="register-form-arabic" class="btn Rectangle">
-        <font color="white">تسجيل</font>
-      </button>&nbsp;
 
 
       <font style="color:white">English</font>&nbsp;
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/sitemap"
-        [checked]="Lang" />
-      &nbsp;
 
-      <font color="#F90E35"> عربى
-      </font>
-      <input type="radio" checked> &nbsp; &nbsp;
+      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/sitemap"
+        [checked]="Lang" />&nbsp;
+
+      <font color="#F90E35"> عربى </font>
+      <input type="radio" checked>&nbsp;
+
 
     </div>
 
@@ -364,22 +391,30 @@ nav ul li a{
 
     <div dir="rtl">
       <ul class="w3-ul w3-hoverable">
-        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right" routerLink="/login-arbic">الصفحة
+        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right"
+          routerLink="/login-arbic">الصفحة
           الرئيسية</li><br>
-        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right" routerLink="/aboutus-arabic">معلومات
+        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right"
+          routerLink="/aboutus-arabic">معلومات
           عنا</li><br>
-        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right" routerLink="/supplier-register-arabic">المورد</li><br>
-        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right" routerLink="/contactus-arabic">اتصل
+        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right"
+          routerLink="/supplier-register-arabic">المورد</li><br>
+        <li style="cursor:pointer" style="font-size: 18px;font-family: GeezaPro" class="text-right"
+          routerLink="/contactus-arabic">اتصل
           بنا</li><br>
         <li class="text-right">خدمات</li><br>
         <!-- <h2><a >Services</h2> -->
         <ul style="margin-left: 35px;">
-          <li style="cursor:pointer" style="font-size: 16px;font-family: GeezaPro" class="text-right  mr-5" routerLink="/amanservices-arabic">رجل</li><br>
-          <li style="cursor:pointer" style="font-size: 16px;font-family: GeezaPro" class="text-right  mr-5" routerLink="/salamaservices-arabic">سلامة</li>
+          <li style="cursor:pointer" style="font-size: 16px;font-family: GeezaPro" class="text-right  mr-5"
+            routerLink="/amanservices-arabic">رجل</li><br>
+          <li style="cursor:pointer" style="font-size: 16px;font-family: GeezaPro" class="text-right  mr-5"
+            routerLink="/salamaservices-arabic">سلامة</li><br>
+          <li style="cursor:pointer" style="font-size: 16px;font-family: GeezaPro" class="text-right  mr-5"
+            routerLink="/facilityarabic">إدارة المرافق المتكاملة</li>
         </ul>
       </ul>
     </div>
-
+    <br>
 
 
 
@@ -387,127 +422,9 @@ nav ul li a{
 </div>
 <br>
 <br>
-<!-- =====footer  english start== -->
 <!-- =============footer arabic start====== -->
-<div class="container1 col-md-12" dir="rtl">
-  <br><br>
-  <div class="row">
-
-    <div class="col-sm-2">
-      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-         ./assests/logo-1-copy@3x.png 3x"
-        class="img-thumbnail">
-    </div>
-
-    <div class="col-md-2">
-      <h5 class="" style="color:white"><b>الملاحة</b></h5>
-      <ul class="list-unstyled quick-links">
-
-        <li><a routerLink="/aboutus-arabic" class="about">
-            <font color="white">معلومات عنا</font>
-          </a></li>
-        <li><a routerLink="/amanservices-arabic">
-            <font color="white">خدمات</font>
-          </a></li>
-        <li><a routerLink="/sitemap-arabic">
-            <font color="white">خريطة الموقع</font>
-          </a></li>
-        <li><a routerLink="/contactus-arabic">
-            <font color="white">اتصل بنا</font>
-          </a></li>
-        <li><a routerLink="/privacy-arabic">
-            <font color="white">سياسة خاصة</font>
-          </a></li>
-      </ul>
-    </div>
-
-    <!-- <div class="col-sm-3">
-           <h5 class="home">Support</h5>
-           <ul class="list-unstyled quick-links">
-             <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-             <li><a class="about"><font color="white">Disclaimer</font></a></li>
-             <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-             <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-
-           </ul>
-         </div> -->
-    <div class="col-md-3">
-      <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
-      <ul class="">
-        <li>
-          <p class="about">
-            <font color="white">برج 400 18 أرضية,</font>
-            <br>
-            <font color="white"> طريق الميناء الشارقة,</font>
-            <br>
-            <font color="white">صندوق بريد 4648 الشارقة - الإمارات العربية المتحدة</font>
-            <br>
-
-            <font color="white" dir="rtl"> رقم الهاتف: 6555 506 6 971+ </font>
-            <br>
-            <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-            <br>
-            <font color="white">البريد الإلكتروني: helpdesk@saned.ae</font>
-            <br>
-            <a routerLink="login-arabic">
-              <font color="white">www.saned.ae</font>
-            </a>
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="col-sm-2">
-      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-             ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-        class="img-thumbnail">
-    </div>
-    <div class="col-sm-3">
-      <p style="color:white;font-family: GeezaPro;">تابعنا
-        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-        <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
-        <div class="input-group mb-3">
-
-          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-              border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
-            class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-            aria-describedby="basic-addon2">
-          <div class="input-group-append">
-
-            <button class="btn btn-outline" style="border-color: white;" type="button">
-              <font style="color:#ff0000;">الاشتراك</font>
-            </button>
-          </div>
-        </div>
-    </div>
-    <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div>
-    <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
-  </div>
-
-
-  <div class="lastfoot text-center">
-    <div>
-      <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
-        فإنك توافق على
-        بنود الخدمة وسياسة
-        ملفات تعريف الارتباط وسياسة
-        الخصوصية
-        وسياسات المحتوى الخاصة بنا. © 2019.</p>
-    </div>
-
-  </div>
-  <br>
-</div>
+<app-footer></app-footer>
 
 <!-- ========footer arabic end====== -->
-
-
-
-<!-- ================footer  english end== -->
-
-<!-- =======eng -->
-<!-- ========ara -->
 
 <router-outlet></router-outlet>
