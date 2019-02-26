@@ -308,7 +308,7 @@ padding:1 22px !important;
 .dropdown-item:focus, .dropdown-item:hover {
   color: #16181b;
   text-decoration: none;
-  background-color: grey !important;
+  background-color:#8080808c !important
 }
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/

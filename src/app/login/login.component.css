@@ -977,7 +977,12 @@ padding:0 0px !important;
   .wt_106{
     width: 106% !important;
   }
-
+.img_res{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 }
 
