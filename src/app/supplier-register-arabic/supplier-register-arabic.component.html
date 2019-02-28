@@ -3,192 +3,219 @@
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-    body {font-family: Arial, Helvetica, sans-serif;}
-    nav{
-        width: 100%;
-        height: 50px;
-        background:rgba(0,0,0,.8);
-        border-top: 1px solid rgba(255,255);
-        border-bottom: 1px solid rgba(255,255);
-        position: sticky;
-        top:0px;
-        z-index: 99;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        /* background: #000; */
-    }
-    header{
-        padding: 10px 100px;
-        box-sizing: border-box;
-    }
-    section{
-        width: 100%;
-        height: 100vh;
-    }
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-    
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      /* background-color: red; */
-    }
-    
-    .dropdown-content {
-      display: block;
-      position: absolute;
-      background-color: red;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    ul li a {
-      text-decoration: none;
-      color: #e74c3c;
-      font-family: Tahoma, Arial;
-    }
-    .navigation {
-      background-color: #35353500;
-      width: 100%;
-      margin: 20px auto;
-      min-height: 50px;
-    }
-    .navigation > li {
-      float: left;
-      padding: 0 20px;
-    }
-    .navigation > li > a {
-      line-height: 50px;
-      color: #FFF;
-    }
-    .navigation .menu {
-      position: relative
-    }
-    .navigation .menu .submenu {
-      position: absolute;
-      /* width: 200px; */
-      -webkit-box-shadow: 0px 1px 1px #CCC;
-      box-shadow: 0px 1px 1px #CCC;
-      display: none;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu:hover .submenu {
-      display: block
-    }
-    .navigation .menu .submenu:before {
-      content: "";
-      position: absolute;
-      display: block;
-      border-width: 0 6px 6px 6px;
-      border-style: solid;
-      border-color: #FFF transparent;
-      top: -6px;
-      left: 5px
-    }
-    .navigation .menu .submenu li {
-      padding: 5px 10px;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu .submenu li:hover {
-      background-color: #e74c3c;
-    }
-    .navigation .menu .submenu li:hover a {
-      color: #FFF;
-      /* padding: 0 11px; */
-    }
-    
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    section.sec1{
-        background: url(natures-temples.png);
-        background-size: cover;
-    }
-    section.banner{
-        background: url(Group.png);
-        background-size: cover;
-        margin-left: 15px;
-    }
-    section.sec2{
-       padding: 100px;
-       box-sizing: border-box;
-    }
-    nav{
-        width: 100%;
-        height: 50px;
-         background:rgba(0,0,0,.8); 
-        border-top: 1px solid rgba(255,255);
-        border-bottom: 1px solid rgba(255,255);
-        position: sticky;
-        top:0px;
-        z-index: 99
-    }
-    nav ul{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-        float: right;
-    }
-    nav ul li{
-        list-style: none;
-    }
-    
-    
-    nav ul{
-        display: flex;
-       
-        padding: 0px;
-        /* float: ; */
-    }
-    
-    nav ul li a{
-        display:block;
-        color: #fff;
-        padding: 0 13px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 50px;
-    
-    }
-    /* .switch{
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: #000; */
+  }
+
+  header {
+    padding: 10px 100px;
+    box-sizing: border-box;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
+
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Tahoma, Arial;
+  }
+
+  .navigation {
+    background-color: #35353500;
+    width: 100%;
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    float: left;
+    padding: 0 20px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px
+  }
+
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
+
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
+    background: url(natures-temples.png);
+    background-size: cover;
+  }
+
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+
+  nav ul {
+    display: flex;
+
+    padding: 0px;
+    /* float: ; */
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+
+  }
+
+  /* .switch{
     margin-top: 0;
     margin-bottom: -5rem;
     margin-left: 83%;
@@ -201,8 +228,8 @@
     margin-left: 0%;
     color: red;
 } */
-    /* ==============footer style start ========= */
-    .footer {
+  /* ==============footer style start ========= */
+  .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -211,59 +238,65 @@
     color: white;
     text-align: center;
     /* height: 75px; */
- }
- .container{
-   /* background: black; */
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-  
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
+  }
 
- .home{
+  .container {
+    /* background: black; */
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .about{
+
+  .about {
     font-family: Roboto-Regular;
     font-size: 13px;
     line-height: 15px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .container1{
-   background: black;
-   color: white
- }
 
-    /* ===========================footer style end================ */
+  .container1 {
+    background: black;
+    color: white
+  }
 
-    </style>
+  /* ===========================footer style end================ */
+</style>
 
 
 
@@ -278,30 +311,26 @@
         <div class="col-md-1">
           <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
           <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                                 ./assets/group@3x.png 3x"
-            class="img-responsive">
+                                                                 ./assets/group@3x.png 3x" class="img-responsive">
         </div>
-        <div class="col-md-5"></div>
+        <div class="col-md-4"></div>
         <div class="col-md-6 mt-5" dir="ltr">
           &nbsp; &nbsp;
-          <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-          margin-left: -18px;">
-            <font color="white">تسجيل الدخول </font>
-          </a>&nbsp;&nbsp;
-
-
-          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-              width: 100px;margin-left: -17px"
-            routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-            <font color="white">تسجيل</font>
-          </button>&nbsp;
+          <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+            margin-left: -18px;">
+              <font color="white">تسجيل الدخول </font>
+            </a>&nbsp;&nbsp;
+            <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+                width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+              <font color="white">تسجيل</font>
+            </button>&nbsp; -->
 
 
 
           <font style="color:white">English</font>&nbsp;
 
-          <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/supplier-register"
-            [checked]="Lang" />&nbsp;
+          <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
+            routerLink="/supplier-register" [checked]="Lang" />&nbsp;
 
           <font color="#F90E35"> عربى </font>
           <input type="radio" checked>&nbsp;
@@ -339,7 +368,8 @@
 
       <form class="modal-content animate col-md-4">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="close">&times;</span>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>أدخل كلمة المرور مرة واحدة</h4>
         </div>
@@ -397,26 +427,33 @@
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                   <div class="row col-md-12 ml-5">
                     <div class="form-group col-md-6">
-                      <label class="Name text-right" for="name">رقم الرخصة التجارية الإماراتية <span class="req" style="color: #f54b5e;">*
+                      <label class="Name text-right" for="name">رقم الرخصة التجارية الإماراتية <span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id="uae_trade_license_no" required [(ngModel)]="model.licensenumber"
-                        name="uae_trade_license_no" #licensenumber="ngModel">
-                      <div [hidden]="licensenumber.valid || licensenumber.pristine" class="alert text-right" style="color: #f54b5e;">
+                      <input type="text" class="form-control col-md-8" id="uae_trade_license_no" required
+                        [(ngModel)]="model.trade_license_no" name="uae_trade_license_no" #trade_license_no="ngModel">
+                      <div [hidden]="trade_license_no.valid || trade_license_no.pristine" class="alert text-right"
+                        style="color: #f54b5e;">
                         رقم الترخيص مطلوب
                       </div>
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Name text-right" for="name">تاريخ صلاحية الرخصة التجارية<span class="req" style="color: #f54b5e;">*
+                      <label class="Name text-right" for="name">تاريخ صلاحية الرخصة التجارية<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'dd-MM-yyyy' }}" class="form-control col-md-8"
-                        [(ngModel)]="model.trade_license_validity" name="trade_license_validity"
-                        #trade_license_validity="ngModel" bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_validity.invalid } "
-                        [minDate]="minDate">
+                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'yyyy-MM-dd' }}"
+                        class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
+                        #trade_license_vdate="ngModel" bsDatepicker
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid } " [minDate]="minDate">
 
-                      <div *ngIf="f.submitted && trade_license_validity.invalid" class="invalid-feedback">
-                        <div *ngIf="trade_license_validity.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
-                      </div>
+                      <!-- <div *ngIf="f.submitted && trade_license_vdate.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_vdate.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
+                      </div> -->
+
+
+
+
                       <!-- <div [hidden]="name.valid || name.pristine"
                       class="alert alert-danger">
                    Name is required
@@ -426,8 +463,8 @@
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id=" company_name" required [(ngModel)]="model.companyname"
-                        name="company_name" #companyname="ngModel">
+                      <input type="text" class="form-control col-md-8" id=" company_name" required
+                        [(ngModel)]="model.company_name" name="company_name" #company_name="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                         class="alert alert-danger">
                      Name is required
@@ -438,11 +475,11 @@
                       <label class="Name text-right" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة
                         الاقتصادية <span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <textarea type="text" class="form-control col-md-8" id="listofservices" required [(ngModel)]="model.listofservices"
-                        name="listofservices" #listofservices="ngModel"></textarea>
+                      <textarea type="text" class="form-control col-md-8" id="listofservices" required
+                        [(ngModel)]="model.services_list" name="services_list" #services_list="ngModel"></textarea>
 
-                      <div *ngIf="f.submitted && listofservices.invalid" class="invalid-feedback">
-                        <div *ngIf="listofservices.errors.required">يرجى إدخال قائمة الخدمات</div>
+                      <div *ngIf="f.submitted && services_list.invalid" class="invalid-feedback">
+                        <div *ngIf="services_list.errors.required">يرجى إدخال قائمة الخدمات</div>
                       </div>
 
 
@@ -454,8 +491,8 @@
 
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="address">العنوان المسجل للمكتب:</label>
-                      <input type="text" class="form-control col-md-8" id="reg_office_add" required [(ngModel)]="model.officeaddress"
-                        name="reg_office_add" #officeaddress="ngModel">
+                      <input type="text" class="form-control col-md-8" id="reg_office_add" required
+                        [(ngModel)]="model.reg_off_add" name="reg_office_add" #reg_off_add="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                             class="alert alert-danger">
                          Name is required
@@ -463,11 +500,12 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Name text-right" for="pobox">اسم شخص الاتصال<span class="req" style="color: #f54b5e;">*
+                      <label class="Name text-right" for="pobox">اسم شخص الاتصال<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id="contact_name" required [(ngModel)]="model.contactpersonnumber"
-                        name="contact_name" #contactpersonnumber="ngModel">
-                      <div [hidden]="contactpersonnumber.valid || contactpersonnumber.pristine" class="alert text-right"
+                      <input type="text" class="form-control col-md-8" id="contact_name" required
+                        [(ngModel)]="model.contact_name" name="contact_name" #contact_name="ngModel">
+                      <div [hidden]="contact_name.valid || contact_name.pristine" class="alert text-right"
                         style="color: #f54b5e;">
                         مطلوب اسم
                       </div>
@@ -475,8 +513,8 @@
 
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="mobile">رقم الاتصال</label>
-                      <input type="number" class="form-control col-md-8" id="contact_no" required [(ngModel)]="model.contactnumber"
-                        name="contact_no" #contactnumber="ngModel">
+                      <input type="number" class="form-control col-md-8" id="contact_no" required
+                        [(ngModel)]="model.contact_no" name="contact_no" #contact_no="ngModel">
                       <!-- <div [hidden]="mobile.valid || mobile.pristine"
                                 class="alert" style="color: #f54b5e;">
                              Mobile number is required
@@ -485,8 +523,9 @@
 
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="contactpersonposition">جهة الاتصال</label>
-                      <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contactpersonposition"
-                        name="contact_position" #contactpersonposition="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      <input type="text" class="form-control col-md-8" id="contact_position" required
+                        [(ngModel)]="model.contact_desig" name="contact_desig" #contact_desig="ngModel"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                       <!-- <div [hidden]="email.valid || email.pristine"
                                   class="alert" style="color: #f54b5e;">
                        Invalid Email Address
@@ -494,8 +533,8 @@
                     </div>
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="password">فاكس</label>
-                      <input type="text" class="form-control col-md-8" id="fax_no" required [(ngModel)]="model.fax"
-                        name="fax_no" #fax="ngModel">
+                      <input type="text" class="form-control col-md-8" id="fax_no" required
+                        [(ngModel)]="model.contact_fax" name="contact_fax" #contact_fax="ngModel">
 
                       <!-- <div [hidden]="fax.valid || password.pristine"
                                   class="alert" style="color: #f54b5e;">
@@ -504,12 +543,11 @@
                              <span id="strength_message"></span> -->
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="Name text-right" for="confirmpassword">رقم الاتصال. (التليفون المحمول)<span class="req"
-                          style="color: #f54b5e;">* </span></label>
-                      <input type="password" class="form-control col-md-8" id="contactmobilenumber" passvalidator="password"
-                        required [(ngModel)]="model.contactmobilenumber" name="contactmobilenumber"
-                        #contactmobilenumber="ngModel">
-                      <div [hidden]="contactmobilenumber.valid || contactmobilenumber.pristine" class="alert text-right"
+                      <label class="Name text-right" for="confirmpassword">رقم الاتصال. (التليفون المحمول)<span
+                          class="req" style="color: #f54b5e;">* </span></label>
+                      <input type="password" class="form-control col-md-8" id="contant_mobile" passvalidator="password"
+                        required [(ngModel)]="model.contant_mobile" name="contant_mobile" #contant_mobile="ngModel">
+                      <div [hidden]="contant_mobile.valid || contant_mobile.pristine" class="alert text-right"
                         style="color: #f54b5e;">
                         رقم الاتصال. مطلوب
                       </div>
@@ -518,10 +556,10 @@
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label>
                       <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
-                        required [(ngModel)]="model.companyemail" name="company_email_id" #companyemail="ngModel"
+                        required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-                      <!-- <div [hidden]="companyemail.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
+                      <!-- <div [hidden]="company_email.touched && company_email.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
 
                       <!-- s -->
                       <!-- </div> -->
@@ -530,14 +568,17 @@
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span
                           class="req" style="color: #f54b5e;">* </span></label>
-                      <input type="email" class="form-control col-md-8" id="contact_email_id" passvalidator="password"
-                        required [(ngModel)]="model.emailcontactperson" name="contact_email_id" #emailcontactperson="ngModel"
+                      <input type="email" class="form-control col-md-8" id="contact_email" passvalidator="password"
+                        required [(ngModel)]="model.contact_email" name="contact_email" #contact_email="ngModel"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                      <div [hidden]="emailcontactperson.valid || emailcontactperson.pristine" class="alert text-right"
+                      <!-- <div [hidden]="contact_email.valid || contact_email.pristine" class="alert text-right"
                         style="color: #f54b5e;">
                         معرف البريد الإلكتروني غير صالح
-                      </div>
-                      <!-- <div [hidden]="emailcontactperson.touched && emailcontactperson.errors?.notequal"class="alert" style="color: #f54b5e;">
+                      </div> -->
+
+
+
+                      <!-- <div [hidden]="contact_email.touched && contact_email.errors?.notequal"class="alert" style="color: #f54b5e;">
                                    -->
                       <!-- s -->
                       <!-- </div> -->
@@ -546,8 +587,9 @@
 
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="confirmpassword">عنوان موقع ويب</label>
-                      <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.websiteaddress"
-                        name="website_add" #websiteaddress="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                      <input type="email" class="form-control col-md-8" id="website_add" required
+                        [(ngModel)]="model.website_add" name="website_add" #website_add="ngModel"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
                     </div>
 

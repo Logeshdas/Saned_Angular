@@ -59,24 +59,30 @@ export class SupplierRegisterArabicComponent implements OnInit {
   supplierregister(model) {
     this.apiService.supplierregister(model).subscribe((response) => {
       this.data = response;
-      if (this.data.Message == "User Already Registered") {
+      var res_data = response
+      console.log("res_data", res_data)
+      console.log("this.data ", this.data)
+      console.log("Checking", this.data = response)
+      swal("شكرا لتقديم البيانات الخاصة بك")
+      this.router.navigate(['/login-arbic']);
+      // if (this.data.Message == "User Already Registered") {
 
-        console.log("data=====>", this.data);
+      //   console.log("data=====>", this.data);
 
-        swal(this.data.Message + "<br>" + "مستخدم مسجل بالفعل");
+      //   swal(this.data.Message + "<br>" + "مستخدم مسجل بالفعل");
 
 
-      }
-      else if (this.data.message == "Please provide an Emailid") {
-        console.log("email")
-        swal("Please fill the Mandatory fields")
-      }
+      // }
+      // else if (this.data.message == "Please provide an Emailid") {
+      //   console.log("email")
+      //   swal("Please fill the Mandatory fields")
+      // }
 
-      else if (this.data.Message == "please check your email for one time password") {
-        swal("please check your email for one time password")
-        document.getElementById('id01').style.display = 'block'
-      }
-      // this.router.navigate(['/login']);
+      // else if (this.data.Message == "please check your email for one time password") {
+      //   swal("please check your email for one time password")
+      //   document.getElementById('id01').style.display = 'block'
+      // }
+      // // this.router.navigate(['/login']);
 
     });
 

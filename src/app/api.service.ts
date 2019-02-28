@@ -6,8 +6,10 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class APIService {
-    
-    API_URL = 'http://35.244.46.106:8083';
+
+    API_URL = 'http://saned.ae';
+
+
 
     constructor(private httpClient: HttpClient) { }
     createContact(contact) {
@@ -23,7 +25,7 @@ export class APIService {
 
     supplierregister(contact) {
         console.log("enter in to the supplier register")
-        return this.httpClient.post(`${this.API_URL}/supplier-registration`, contact);
+        return this.httpClient.post(`http://saned.ae/api/supplierregistration`, contact);
 
     }
     newsletter(contact) {

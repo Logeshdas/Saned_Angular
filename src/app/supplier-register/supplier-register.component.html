@@ -3,30 +3,35 @@
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-    body {font-family: Arial, Helvetica, sans-serif;}
-    nav{
-        width: 100%;
-        height: 50px;
-        background:rgba(0,0,0,.8);
-        border-top: 1px solid rgba(255,255);
-        border-bottom: 1px solid rgba(255,255);
-        position: sticky;
-        top:0px;
-        z-index: 99;
-    }
-    /* ======login form start========= */
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-/* Set a style for all buttons */
-/* button {
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+  }
+
+  /* ======login form start========= */
+  /* Full-width input fields */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  /* button {
   background-color:#f34235;
   color: white;
   padding: 14px 20px;
@@ -36,271 +41,314 @@ input[type=text], input[type=password] {
   width: 100%;
 } */
 
-button:hover {
-  opacity: 0.8;
-}
+  button:hover {
+    opacity: 0.8;
+  }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
 
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
 
-.container {
-  padding: 16px;
-}
+  .container {
+    padding: 16px;
+  }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+  }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+  }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
 
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
 
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0)
+    }
 
-/* Change styles for span and cancel button on extra small screens */
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
 
-/* ========login form end====== */
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        /* background: #000; */
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
     }
-    header{
-        padding: 10px 100px;
-        box-sizing: border-box;
+
+    to {
+      transform: scale(1)
     }
-    section{
-        width: 100%;
-        height: 100vh;
-    }
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-    
-    .navbar a:hover, .dropdown:hover .dropbtn {
-      /* background-color: red; */
-    }
-    
-    .dropdown-content {
-      display: block;
-      position: absolute;
-      background-color: red;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    ul li a {
-      text-decoration: none;
-      color: #e74c3c;
-      font-family: Tahoma, Arial;
-    }
-    .navigation {
-      background-color: #35353500;
-      width: 75%;
-      margin: 20px auto;
-      min-height: 50px;
-    }
-    .navigation > li {
-      float: left;
-      padding: 0 20px;
-    }
-    .navigation > li > a {
-      line-height: 50px;
-      color: #FFF;
-    }
-    .navigation .menu {
-      position: relative
-    }
-    .navigation .menu .submenu {
-      position: absolute;
-      /* width: 200px; */
-      -webkit-box-shadow: 0px 1px 1px #CCC;
-      box-shadow: 0px 1px 1px #CCC;
-      display: none;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu:hover .submenu {
-      display: block
-    }
-    .navigation .menu .submenu:before {
-      content: "";
-      position: absolute;
-      display: block;
-      border-width: 0 6px 6px 6px;
-      border-style: solid;
-      border-color: #FFF transparent;
-      top: -6px;
-      left: 5px
-    }
-    .navigation .menu .submenu li {
-      padding: 5px 10px;
-      -webkit-transition: all .5s ease-in-out;
-      -moz-transition: all .5s ease-in-out;
-      transition: all .5s ease-in-out;
-    }
-    .navigation .menu .submenu li:hover {
-      background-color: #e74c3c;
-    }
-    .navigation .menu .submenu li:hover a {
-      color: #FFF;
-      /* padding: 0 11px; */
-    }
-    
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    section.sec1{
-        background: url(natures-temples.png);
-        background-size: cover;
-    }
-    section.banner{
-        background: url(Group.png);
-        background-size: cover;
-        margin-left: 15px;
-    }
-    section.sec2{
-       padding: 100px;
-       box-sizing: border-box;
-    }
-    nav{
-        width: 100%;
-        height: 50px;
-         background:rgba(0,0,0,.8); 
-        border-top: 1px solid rgba(255,255);
-        border-bottom: 1px solid rgba(255,255);
-        position: sticky;
-        top:0px;
-        z-index: 99
-    }
-    nav ul{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-        float: right;
-    }
-    nav ul li{
-        list-style: none;
-    }
-    
-    
-    nav ul{
-        display: flex;
-       
-        padding: 0px;
-        /* float: ; */
-    }
-    
-    nav ul li a{
-        display:block;
-        color: #fff;
-        padding: 0 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 50px;
-    
-    }
-    /* .switch{
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+
+  /* ========login form end====== */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: #000; */
+  }
+
+  header {
+    padding: 10px 100px;
+    box-sizing: border-box;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
+
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Tahoma, Arial;
+  }
+
+  .navigation {
+    background-color: #35353500;
+    width: 75%;
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    float: left;
+    padding: 0 20px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px
+  }
+
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
+
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
+    background: url(natures-temples.png);
+    background-size: cover;
+  }
+
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+
+  nav ul {
+    display: flex;
+
+    padding: 0px;
+    /* float: ; */
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+
+  }
+
+  /* .switch{
     margin-top: 0;
     margin-bottom: -5rem;
     margin-left: 83%;
@@ -313,8 +361,8 @@ span.psw {
     margin-left: 0%;
     color: red;
 } */
-    /* ==============footer style start ========= */
-    .footer {
+  /* ==============footer style start ========= */
+  .footer {
     /* position: fixed; */
     left: 0;
     bottom: 0;
@@ -323,63 +371,71 @@ span.psw {
     color: white;
     text-align: center;
     /* height: 75px; */
- }
- .container{
-   /* background: black; */
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
-  
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
+  }
 
- .home{
+  .container {
+    /* background: black; */
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .about{
+
+  .about {
     font-family: Roboto-Regular;
     font-size: 13px;
     line-height: 15px;
-  letter-spacing: 0;
+    letter-spacing: 0;
   }
-  .container1{
-   background: black;
-   color: white
- }
- .intro-2 {
+
+  .container1 {
+    background: black;
+    color: white
+  }
+
+  .intro-2 {
     background: url("/assets/hero_image.png")no-repeat center center;
     background-size: cover;
     height: 623px;
- }
-    /* ===========================footer style end================ */
+  }
 
-    </style>
+  /* ===========================footer style end================ */
+</style>
 
 
 <!-- <div> -->
@@ -401,12 +457,13 @@ span.psw {
         <div class="col-md-1">
 
           <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                        ./assets/group@3x.png 3x"
-            class="img-responsive">
+                        ./assets/group@3x.png 3x" class="img-responsive">
         </div>
         <br>
-        <div class="col-md-5"></div>
-        <div class="col-md-6 mt-2 text-right">
+        <div class="col-md-4"></div>
+        <div class="col-md-6   text-right">
+
+
           <br><br>
           <input type="radio" checked />&nbsp;
           <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
@@ -415,15 +472,14 @@ span.psw {
           <font color="white" style="font-size: 14px;">عربى</font>
 
           &nbsp;
-          <button type="submit" style="background-color: #ff0000; height: 35px;
-                                          width: 100px; padding: 2px 20px;margin-top: -2px;"
-            class="btn Rectangle-5">
+          <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
+                                        width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
             <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
           </button>
-
+    
           <a class="btn mb-1">
             <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
-          </a>
+          </a> -->
 
         </div>
 
@@ -468,7 +524,8 @@ span.psw {
 
       <form class="modal-content animate col-md-4" action="/action_page.php">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="close">&times;</span>
           <br>
           <br>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
@@ -497,8 +554,8 @@ span.psw {
           <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
           <div class="ml-3">
-            <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center" (click)="supplieremailotpverification(model)"
-              type="submit">Submit</button>
+            <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center"
+              (click)="supplieremailotpverification(model)" type="submit">Submit</button>
           </div>
           <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -542,7 +599,8 @@ span.psw {
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                   <div class="row col-md-12">
                     <div class="form-group col-md-6">
-                      <label class="Name" for="name">UAE Trade License Number <span class="req" style="color: #f54b5e;">*
+                      <label class="Name" for="name">UAE Trade License Number <span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
 
                       <!-- <input type="text" class="form-control col-md-8" id="uae_trade_license_no" 
@@ -553,12 +611,12 @@ span.psw {
              class="alert" style="color: #f54b5e;">
              License Number is required
         </div> -->
-                      <input type="text" class="form-control col-md-8" name="uae_trade_license_no" [(ngModel)]="model.uae_trade_license_no"
-                        #uae_trade_license_no="ngModel" [ngClass]="{ 'is-invalid': f.submitted && uae_trade_license_no.invalid }"
-                        required />
+                      <input type="text" class="form-control col-md-8" name="uae_trade_license_no"
+                        [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }" required />
 
-                      <div *ngIf="f.submitted && uae_trade_license_no.invalid" class="invalid-feedback">
-                        <div *ngIf="uae_trade_license_no.errors.required">Please enter a License number</div>
+                      <div *ngIf="f.submitted && trade_license_no.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_no.errors.required">Please enter a License number</div>
                       </div>
                       <!-- <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
 
@@ -572,19 +630,20 @@ span.psw {
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Name" for="name">Trade License Validity Date<span class="req" style="color: #f54b5e;">*
+                      <label class="Name" for="name">Trade License Validity Date<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
                       <!-- <input type="text" class="form-control col-md-8" id="licensevalidity"
                         required
                         [(ngModel)]="model.licensevalidity" name="licensevalidity"
                         #licensevalidity="ngModel"> -->
-                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'dd-MM-yyyy' }}" class="form-control col-md-8"
-                        [(ngModel)]="model.trade_license_validity" name="trade_license_validity"
-                        #trade_license_validity="ngModel" bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_validity.invalid }"
-                        [minDate]="minDate">
+                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'dd-MM-yyyy' }}"
+                        class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
+                        #trade_license_vdate="ngModel" bsDatepicker
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
 
-                      <div *ngIf="f.submitted && trade_license_validity.invalid" class="invalid-feedback">
-                        <div *ngIf="trade_license_validity.errors.required">Please enter a Contact Person Name</div>
+                      <div *ngIf="f.submitted && trade_license_vdate.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_vdate.errors.required">Please enter a Contact Person Name</div>
                       </div>
 
                       <!-- <ng-datepicker [(ngModel)]="date" /> -->
@@ -595,7 +654,8 @@ span.psw {
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Name" for="name">Company Name<span class="req" style="color: #f54b5e;">* </span></label>
+                      <label class="Name" for="name">Company Name<span class="req" style="color: #f54b5e;">*
+                        </span></label>
                       <!-- <input type="text" class="form-control col-md-8" id="company_name"
                           required
                           [(ngModel)]="model.companyname" name="company_name"
@@ -604,9 +664,9 @@ span.psw {
                         class="alert alert-danger">
                      Name is required
                    </div> -->
-                      <input type="text" class="form-control col-md-8" name="company_name" [(ngModel)]="model.company_name"
-                        #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
-                        required />
+                      <input type="text" class="form-control col-md-8" name="company_name"
+                        [(ngModel)]="model.company_name" #company_name="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }" required />
 
                       <div *ngIf="f.submitted && company_name.invalid" class="invalid-feedback">
                         <div *ngIf="company_name.errors.required">Please enter a Company Name</div>
@@ -618,18 +678,18 @@ span.psw {
                         department<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <textarea type="text" class="form-control col-md-8" style="height: 90px;" id="listofservices"
-                        required [(ngModel)]="model.listofservices" name="listofservices" #listofservices="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && listofservices.invalid }"></textarea>
-                      <div *ngIf="f.submitted && listofservices.invalid" class="invalid-feedback">
-                        <div *ngIf="listofservices.errors.required">Please enter list of services</div>
+                        required [(ngModel)]="model.services_list" name="services_list" #services_list="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
+                      <div *ngIf="f.submitted && services_list.invalid" class="invalid-feedback">
+                        <div *ngIf="services_list.errors.required">Please enter list of services</div>
                       </div>
                     </div>
 
 
                     <div class="form-group col-md-6">
                       <label class="Name" for="address">Registered Office Address:</label>
-                      <input type="text" class="form-control col-md-8" id="reg_office_add" required [(ngModel)]="model.officeaddress"
-                        name="reg_office_add" #officeaddress="ngModel">
+                      <input type="text" class="form-control col-md-8" id="reg_office_add" required
+                        [(ngModel)]="model.reg_off_add" name="reg_office_add" #reg_off_add="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                             class="alert alert-danger">
                          Name is required
@@ -647,9 +707,9 @@ span.psw {
                               class="alert" style="color: #f54b5e;">
                            Name is required
                          </div> -->
-                      <input type="text" class="form-control col-md-8" name="contact_name" [(ngModel)]="model.contact_name"
-                        #contact_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }"
-                        required />
+                      <input type="text" class="form-control col-md-8" name="contact_name"
+                        [(ngModel)]="model.contact_name" #contact_name="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }" required />
 
                       <div *ngIf="f.submitted && contact_name.invalid" class="invalid-feedback">
                         <div *ngIf="contact_name.errors.required">Please enter a Contact Person Name</div>
@@ -658,8 +718,8 @@ span.psw {
 
                     <div class="form-group col-md-6">
                       <label class="Name" for="mobile">Contact No</label>
-                      <input type="number" class="form-control col-md-8" id="contact_no" required [(ngModel)]="model.contactnumber"
-                        name="contact_no" #contactnumber="ngModel">
+                      <input type="number" class="form-control col-md-8" id="contact_no" required
+                        [(ngModel)]="model.contact_no" name="contact_no" #contact_no="ngModel">
                       <!-- <div [hidden]="mobile.valid || mobile.pristine"
                                 class="alert" style="color: #f54b5e;">
                              Mobile number is required
@@ -668,8 +728,9 @@ span.psw {
 
                     <div class="form-group col-md-6">
                       <label class="Name" for="contactpersonposition">Contact Person Position</label>
-                      <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contactpersonposition"
-                        name="contact_position" #contactpersonposition="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      <input type="text" class="form-control col-md-8" id="contact_position" required
+                        [(ngModel)]="model.contact_desig" name="contact_position" #contact_desig="ngModel"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                       <!-- <div [hidden]="email.valid || email.pristine"
                                   class="alert" style="color: #f54b5e;">
                        Invalid Email Address
@@ -677,8 +738,8 @@ span.psw {
                     </div>
                     <div class="form-group col-md-6">
                       <label class="Name" for="password">Fax</label>
-                      <input type="text" class="form-control col-md-8" id="fax_no" required [(ngModel)]="model.fax"
-                        name="fax_no" #fax="ngModel">
+                      <input type="text" class="form-control col-md-8" id="fax_no" required
+                        [(ngModel)]="model.contact_fax" name="contact_fax" #contact_fax="ngModel">
 
                       <!-- <div [hidden]="fax.valid || password.pristine"
                                   class="alert" style="color: #f54b5e;">
@@ -687,7 +748,8 @@ span.psw {
                              <span id="strength_message"></span> -->
                     </div>
                     <div class="form-group col-md-6">
-                      <label class="Name" for="confirmpassword">Contact No. (mobile)<span class="req" style="color: #f54b5e;">*
+                      <label class="Name" for="confirmpassword">Contact No. (mobile)<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
                       <!-- <input type="text" class="form-control col-md-8" id="contact_no_mobile" passvalidator="password"
                                       required
@@ -697,54 +759,56 @@ span.psw {
                                   class="alert" style="color: #f54b5e;">
                                Contact no. is required
                              </div> -->
-                      <input type="number" class="form-control col-md-8" name="contact_no_mobile" [(ngModel)]="model.contact_no_mobile"
-                        #contact_no_mobile="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_no_mobile.invalid }"
-                        required />
+                      <input type="number" class="form-control col-md-8" name="contact_no_mobile"
+                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" required />
 
-                      <div *ngIf="f.submitted && contact_no_mobile.invalid" class="invalid-feedback">
-                        <div *ngIf="contact_no_mobile.errors.required">Please enter a Mobile number</div>
+                      <div *ngIf="f.submitted && contant_mobile.invalid" class="invalid-feedback">
+                        <div *ngIf="contant_mobile.errors.required">Please enter a Mobile number</div>
                       </div>
                     </div>
 
                     <div class="form-group col-md-6">
                       <label class="Name" for="confirmpassword">Company Email Address</label>
                       <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
-                        required [(ngModel)]="model.companyemail" name="company_email_id" #companyemail="ngModel"
+                        required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-                      <!-- <div [hidden]="companyemail.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
+                      <!-- <div [hidden]="company_email.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
 
 
                       <!-- </div> -->
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Name" for="confirmpassword">Email address of Contact Person<span class="req" style="color: #f54b5e;">*
+                      <label class="Name" for="confirmpassword">Email address of Contact Person<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
-                      <!-- <input type="email" class="form-control col-md-8" id="contact_email_id" passvalidator="password"
+                      <!-- <input type="email" class="form-control col-md-8" id="contact_email" passvalidator="password"
                                       required
-                                      [(ngModel)]="model.emailcontactperson" name="contact_email_id" 
+                                      [(ngModel)]="model.emailcontactperson" name="contact_email" 
                                       #emailcontactperson="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                                <div [hidden]="emailcontactperson.valid || emailcontactperson.pristine"
                                     class="alert" style="color: #f54b5e;">
                               
                                      </div> -->
                       <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control col-md-8"
-                        name="contact_email_id" [(ngModel)]="model.contact_email_id" #contact_email_id="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && contact_email_id.invalid }" required />
+                        name="contact_email" [(ngModel)]="model.contact_email" #contact_email="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }" required />
 
                       <!-- <input type="text" class="form-control col-md-8" id="email"
                                      required 
                                      [(ngModel)]="model.email" name="email" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
                                      #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> -->
-                      <div [hidden]="contact_email_id.valid || contact_email_id.pristine" class="alert" style="color: #f54b5e;">
+                      <div [hidden]="contact_email.valid || contact_email.pristine" class="alert"
+                        style="color: #f54b5e;">
                         Invalid Email Address
                       </div>
 
 
 
-                      <div *ngIf="f.submitted && contact_email_id.invalid" class="invalid-feedback">
-                        <div *ngIf="contact_email_id.errors.required">Please enter a Contact Person Email</div>
+                      <div *ngIf="f.submitted && contact_email.invalid" class="invalid-feedback">
+                        <div *ngIf="contact_email.errors.required">Please enter a Contact Person Email</div>
                       </div>
                       <!-- <div [hidden]="emailcontactperson.touched && emailcontactperson.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
 
@@ -755,8 +819,9 @@ span.psw {
 
                     <div class="form-group col-md-6">
                       <label class="Name" for="confirmpassword">Website Address</label>
-                      <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.websiteaddress"
-                        name="website_add" #websiteaddress="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                      <input type="email" class="form-control col-md-8" id="website_add" required
+                        [(ngModel)]="model.website_add" name="website_add" #website_add="ngModel"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
                     </div>
 
@@ -771,8 +836,9 @@ span.psw {
                       <div class="col-md-4">
 
                         <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-                        <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='none'"
-                          class="btn Rectangle-5-Copy" (click)="supplierregister(model)">
+                        <button type="submit" style="background-color: #ff0000;padding: 8px 20px;"
+                          onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
+                          (click)="supplierregister(model)">
                           <font color="white">Submit</font>
                         </button>
                         <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
@@ -803,8 +869,7 @@ span.psw {
 
         <div class="col-sm-2">
           <img src="./assets/footersanedlogo.png" srcset="./assets/footersanedlogo@2x.png 2x,
-              ./assets/footersanedlogo@3x.png 3x"
-            class="img-responsive">
+              ./assets/footersanedlogo@3x.png 3x" class="img-responsive">
 
         </div>
 
