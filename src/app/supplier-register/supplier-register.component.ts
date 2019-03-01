@@ -5,11 +5,15 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from '../auth.service';
 // import { RegisterForm }    from '../register-form';
 import swal from 'sweetalert2';
+
+
+
 @Component({
   selector: 'app-supplier-register',
   templateUrl: './supplier-register.component.html',
   styleUrls: ['./supplier-register.component.css']
 })
+
 export class SupplierRegisterComponent implements OnInit {
   navbarOpen = false;
 
@@ -19,6 +23,7 @@ export class SupplierRegisterComponent implements OnInit {
   localVar;
   model: any = {};
   data: any = {};
+  dateNow: any = {};
   submitted: any = {};
   newVar: any = {};
   onSubmit: any = {};
@@ -27,6 +32,16 @@ export class SupplierRegisterComponent implements OnInit {
     this.minDate = new Date();
     this.minDate.setDate(this.minDate.getDate() - 1);
   }
+
+  formatsDateTest: string[] = [
+
+    'yyyy/MM/dd',
+
+  ];
+
+
+
+
 
   ngOnInit() {
   }
@@ -59,7 +74,7 @@ export class SupplierRegisterComponent implements OnInit {
     })
   }
   supplierregister(model) {
-    console.log("hello", this.newVar)
+    console.log("hello", this.dateNow)
     this.apiService.supplierregister(model).subscribe((response) => {
       console.log("response", response)
       console.log("Checking", this.data = response)

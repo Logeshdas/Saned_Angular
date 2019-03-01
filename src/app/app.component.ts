@@ -3,6 +3,9 @@ import { TranslateService } from '@ngx-translate/core';
 import { SimpleGlobal } from 'ng2-simple-global';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { environment } from '../environments/environment';
+
+
+
 @Component({
 
   selector: 'app-root',

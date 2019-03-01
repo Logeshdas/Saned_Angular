@@ -3,6 +3,10 @@ import { APIService } from '../api.service';
 import { Router } from '@angular/router';
 import swal from 'sweetalert2';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
+
+
+
+
 @Component({
   selector: 'app-supplier-register-arabic',
   templateUrl: './supplier-register-arabic.component.html',
@@ -24,7 +28,10 @@ export class SupplierRegisterArabicComponent implements OnInit {
   emailotpverification: any = {};
   onSubmit: any = {};
   Lang: any = {};
-  constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) { }
+  constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
+    this.minDate = new Date();
+    this.minDate.setDate(this.minDate.getDate() - 1);
+  }
 
   ngOnInit() {
   }

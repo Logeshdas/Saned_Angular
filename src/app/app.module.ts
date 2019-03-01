@@ -71,7 +71,7 @@ const routes: Routes = [
   { path: 'privacy-arabic', component: PrivacyArabicComponent },
   { path: 'navbararabic', component: NavbararabicComponent },
 
-  
+
   { path: 'facilityarabic', component: FacilityarabicComponent },
 
 
@@ -101,7 +101,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   declarations: [
     AppComponent,
-   
+
     RegisterFormComponent,
     NavbarComponent,
     AboutUsComponent,
