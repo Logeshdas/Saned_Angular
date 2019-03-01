@@ -33,11 +33,14 @@ export class SupplierRegisterComponent implements OnInit {
     this.minDate.setDate(this.minDate.getDate() - 1);
   }
 
-  formatsDateTest: string[] = [
+  // formatsDateTest: string[] = [
 
-    'yyyy/MM/dd',
+  //   'yyyy/MM/dd',
 
-  ];
+  // ];
+
+
+
 
 
 
