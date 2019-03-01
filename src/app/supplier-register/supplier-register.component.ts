@@ -59,14 +59,17 @@ export class SupplierRegisterComponent implements OnInit {
     })
   }
   supplierregister(model) {
-    console.log("hello")
+    console.log("hello", this.newVar)
     this.apiService.supplierregister(model).subscribe((response) => {
       console.log("response", response)
-      var res_data = response
-      console.log("res_data", res_data)
-      console.log("this.data ", this.data)
       console.log("Checking", this.data = response)
-      swal("Thank you for submitting your data")
+      this.data = response
+      var res_data = this.data.data
+      console.log("res_data", res_data)
+
+      // console.log("this.data ", this.data)
+
+      swal(res_data)
       this.router.navigate(['/login']);
       // if (this.data.Message == "User Already Registered") {
 

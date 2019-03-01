@@ -364,6 +364,7 @@
     <br>
     <br><br>
     <br>
+
     <div id="id01" class="modal" dir="rtl">
 
       <form class="modal-content animate col-md-4">
@@ -409,6 +410,7 @@
     <div class=" col-md-12">
       <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>"Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal."</b></h3> -->
 
+
       <div class="card col-md-12" style="border-radius: 18px;
     background: white;color:#494949;margin-top: -338px;">
         <br>
@@ -417,9 +419,16 @@
             <!-- <h4><b>Who We Are</b></h4> -->
             <h3 class="col-sm-12 Welcome-to-Aman-port text-right"><b>مرحبا بكم في بوابة الموردين</b></h3>
 
+
             <br>
             <br>
             <div class="col-md-12">
+
+
+
+              <!-- <ngb-datepicker #dp [(ngModel)]="model" [firstDayOfWeek]="6"></ngb-datepicker> -->
+
+
 
 
 
@@ -446,18 +455,6 @@
                         class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
                         #trade_license_vdate="ngModel" bsDatepicker
                         [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid } " [minDate]="minDate">
-
-                      <!-- <div *ngIf="f.submitted && trade_license_vdate.invalid" class="invalid-feedback">
-                        <div *ngIf="trade_license_vdate.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
-                      </div> -->
-
-
-
-
-                      <!-- <div [hidden]="name.valid || name.pristine"
-                      class="alert alert-danger">
-                   Name is required
-                 </div> -->
                     </div>
 
                     <div class="form-group col-md-6">

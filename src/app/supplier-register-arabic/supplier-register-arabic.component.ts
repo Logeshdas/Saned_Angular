@@ -58,13 +58,15 @@ export class SupplierRegisterArabicComponent implements OnInit {
   }
   supplierregister(model) {
     this.apiService.supplierregister(model).subscribe((response) => {
-      this.data = response;
-      var res_data = response
-      console.log("res_data", res_data)
-      console.log("this.data ", this.data)
+      console.log("response", response)
       console.log("Checking", this.data = response)
-      swal("شكرا لتقديم البيانات الخاصة بك")
-      this.router.navigate(['/login-arbic']);
+      this.data = response
+      var res_data = this.data.data
+      console.log("res_data", res_data)
+
+      // console.log("this.data ", this.data)
+
+      swal(res_data)
       // if (this.data.Message == "User Already Registered") {
 
       //   console.log("data=====>", this.data);
