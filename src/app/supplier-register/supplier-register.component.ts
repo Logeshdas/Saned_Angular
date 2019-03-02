@@ -28,6 +28,7 @@ export class SupplierRegisterComponent implements OnInit {
   newVar: any = {};
   onSubmit: any = {};
   minDate: Date;
+  trade_license_vdate: any = {};
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
     this.minDate = new Date();
     this.minDate.setDate(this.minDate.getDate() - 1);
@@ -76,7 +77,7 @@ export class SupplierRegisterComponent implements OnInit {
     })
   }
   supplierregister(model) {
-    console.log("hello", this.dateNow)
+    console.log("hello", this.trade_license_vdate)
     this.apiService.supplierregister(model).subscribe((response) => {
       console.log("response", response)
       console.log("Checking", this.data = response)

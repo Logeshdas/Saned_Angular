@@ -385,7 +385,7 @@
           Newsletter</h6>
         <div class="input-group mb-3">
 
-          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+          <input type="email" name="email_id" [(ngModel)]="model_value.email" #name="ngModel" id="email_id" style="background: black;
                                         border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
             class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
             aria-describedby="basic-addon2">
@@ -393,7 +393,7 @@
           <div class="input-group-append">
 
             <button class="btn btn-outline-secondary" type="button">
-              <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+              <font style="color:#ff0000;font-family: Roboto" (click)="Subscribe(model_value)">Subscribe</font>
             </button>
           </div>
         </div>

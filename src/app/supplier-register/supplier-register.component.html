@@ -638,8 +638,8 @@
                         required
                         [(ngModel)]="model.licensevalidity" name="licensevalidity"
                         #licensevalidity="ngModel"> -->
-                      <input type="text" autocomplete="off" [(bsValue)]="newVar"
-                        value="{{ dateNow | date:'yyyy/MM/dd' }}" class="form-control col-md-8"
+                      <!-- value="{{ date:'yyyy/MM/dd' }}" -->
+                      <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8"
                         [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
                         #trade_license_vdate="ngModel" bsDatepicker
                         [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">

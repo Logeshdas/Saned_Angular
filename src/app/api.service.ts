@@ -9,7 +9,10 @@ export class APIService {
 
     API_URL = 'http://saned.ae';
 
+    Subscribe(contact) {
+        return this.httpClient.post(`http://saned.ae/api/subscribe`, contact);
 
+    }
 
     constructor(private httpClient: HttpClient) { }
     createContact(contact) {
