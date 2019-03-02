@@ -33,6 +33,7 @@ export class LoginArbicComponent implements OnInit {
     }
 
     ngOnInit() {
+
     }
 
     login(model) {

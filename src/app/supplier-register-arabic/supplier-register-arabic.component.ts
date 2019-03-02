@@ -23,6 +23,7 @@ export class SupplierRegisterArabicComponent implements OnInit {
   rtl: Date;
   model: any = {};
   data: any = {};
+  dateNow: any = {};
   submitted: any = {};
   newVar: any = {};
   minDate: any = {};
@@ -79,6 +80,7 @@ export class SupplierRegisterArabicComponent implements OnInit {
     })
   }
   supplierregister(model) {
+    console.log("hello", this.dateNow)
     this.apiService.supplierregister(model).subscribe((response) => {
       console.log("response", response)
       console.log("Checking", this.data = response)
@@ -88,7 +90,9 @@ export class SupplierRegisterArabicComponent implements OnInit {
 
       // console.log("this.data ", this.data)
 
-      swal(res_data)
+      swal("شكرا لتقديم البيانات الخاصة بك")
+      this.router.navigate(['/login-arbic']);
+
       // if (this.data.Message == "User Already Registered") {
 
       //   console.log("data=====>", this.data);

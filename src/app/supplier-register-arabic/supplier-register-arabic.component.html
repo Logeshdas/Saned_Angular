@@ -412,90 +412,120 @@
 
 
       <div class="card col-md-12" style="border-radius: 18px;
-    background: white;color:#494949;margin-top: -338px;">
+    background: white;color:#494949;margin-top: -321px; " dir="rtl">
         <br>
-        <div class="row ml-5">
+        <div class="row" dir="rtl">
+          <div class="col-md-1"></div>
           <div class="col-md-12 Who-We-Are-Aman-is-a">
             <!-- <h4><b>Who We Are</b></h4> -->
             <h3 class="col-sm-12 Welcome-to-Aman-port text-right"><b>مرحبا بكم في بوابة الموردين</b></h3>
 
-
             <br>
             <br>
-            <div class="col-md-12">
+            <div class="ml-4" dir="rtl">
 
 
 
-              <!-- <ngb-datepicker #dp [(ngModel)]="model" [firstDayOfWeek]="6"></ngb-datepicker> -->
-
-
-
-
-
-              <div id="submitted" dir="rtl">
+              <div id="submitted">
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
-                  <div class="row col-md-12 ml-5">
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="name">رقم الرخصة التجارية الإماراتية <span class="req"
+                  <div class="row col-md-12" dir="rtl">
+
+
+                    <div class="form-group col-md-6  text-right" dir="rtl">
+                      <label class="Name" for="name">رقم الرخصة التجارية الإماراتية <span class="req"
                           style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id="uae_trade_license_no" required
-                        [(ngModel)]="model.trade_license_no" name="uae_trade_license_no" #trade_license_no="ngModel">
-                      <div [hidden]="trade_license_no.valid || trade_license_no.pristine" class="alert text-right"
-                        style="color: #f54b5e;">
-                        رقم الترخيص مطلوب
+
+                      <!-- <input type="text" class="form-control col-md-8" id="uae_trade_license_no" 
+               required
+               [(ngModel)]="model.licensenumber" name="uae_trade_license_no"
+               #licensenumber="ngModel">
+        <div [hidden]="licensenumber.valid || licensenumber.pristine"
+             class="alert" style="color: #f54b5e;">
+             License Number is required
+        </div> -->
+                      <input type="text" class="form-control col-md-8 text-right" name="uae_trade_license_no"
+                        [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }" required />
+
+                      <div *ngIf="f.submitted && trade_license_no.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_no.errors.required">يرجى إدخال رقم الترخيص</div>
                       </div>
+                      <!-- <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+
+               <hr/>
+               
+               <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday()">Select Today</button>
+               <button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo()">To current month</button>
+               <button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo({year: 2013, month: 2})">To Feb 2013</button>
+               
+               <hr/> -->
                     </div>
 
 
-                    <!-- //Date===== -->
-
-                    <div class="form-group col-md-6">
-
-                      <label class="Name text-right" for="name">تاريخ صلاحية الرخصة التجارية<span class="req"
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="name">تاريخ صلاحية الرخصة التجارية<span class="req"
                           style="color: #f54b5e;">*
                         </span></label>
-                      <div class="" dir="rtl">
-                        <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'yyyy-MM-dd'  }}"
-                          class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate"
-                          name="trade_license_vdate" #trade_license_vdate="ngModel" bsDatepicker
-                          [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid } " [minDate]="minDate"
-                          dir="rtl">
+                      <!-- <input type="text" class="form-control col-md-8" id="licensevalidity"
+                        required
+                        [(ngModel)]="model.licensevalidity" name="licensevalidity"
+                        #licensevalidity="ngModel"> -->
+                      <input type="text" autocomplete="off" [(bsValue)]="newVar"
+                        value="{{ dateNow | date:'yyyy/MM/dd' }}" class="form-control col-md-8"
+                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
+                        #trade_license_vdate="ngModel" bsDatepicker
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
+
+                      <div *ngIf="f.submitted && trade_license_vdate.invalid" class="invalid-feedback">
+                        <div *ngIf="trade_license_vdate.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
                       </div>
+
+
+                      <!-- <ng-datepicker [(ngModel)]="date" /> -->
+                      <!-- <div [hidden]="name.valid || name.pristine"
+                      class="alert alert-danger">
+                   Name is required
+                 </div> -->
                     </div>
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
+
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id=" company_name" required
-                        [(ngModel)]="model.company_name" name="company_name" #company_name="ngModel">
+                      <!-- <input type="text" class="form-control col-md-8" id="company_name"
+                          required
+                          [(ngModel)]="model.companyname" name="company_name"
+                          #companyname="ngModel"> -->
                       <!-- <div [hidden]="name.valid || name.pristine"
                         class="alert alert-danger">
                      Name is required
                    </div> -->
+                      <input type="text" class="form-control col-md-8 text-right" name="company_name"
+                        [(ngModel)]="model.company_name" #company_name="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }" required />
+
+                      <div *ngIf="f.submitted && company_name.invalid" class="invalid-feedback">
+                        <div *ngIf="company_name.errors.required">يرجى إدخال اسم الشركة</div>
+                      </div>
                     </div>
 
-
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة
-                        الاقتصادية <span class="req" style="color: #f54b5e;">*
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة الاقتصادية<span
+                          class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <textarea type="text" class="form-control col-md-8" id="listofservices" required
-                        [(ngModel)]="model.services_list" name="services_list" #services_list="ngModel"></textarea>
-
+                      <textarea type="text" class="form-control col-md-8 text-right" style="height: 90px;"
+                        id="listofservices" required [(ngModel)]="model.services_list" name="services_list"
+                        #services_list="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
                       <div *ngIf="f.submitted && services_list.invalid" class="invalid-feedback">
                         <div *ngIf="services_list.errors.required">يرجى إدخال قائمة الخدمات</div>
                       </div>
-
-
-                      <!-- <div [hidden]="name.valid || name.pristine"
-                          class="alert alert-danger">
-                       Name is required
-                     </div> -->
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="address">العنوان المسجل للمكتب:</label>
-                      <input type="text" class="form-control col-md-8" id="reg_office_add" required
+
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="address">العنوان المسجل للمكتب</label>
+                      <input type="text" class="form-control col-md-8 text-right" id="reg_office_add" required
                         [(ngModel)]="model.reg_off_add" name="reg_office_add" #reg_off_add="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                             class="alert alert-danger">
@@ -503,21 +533,29 @@
                        </div> -->
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="pobox">اسم شخص الاتصال<span class="req"
-                          style="color: #f54b5e;">*
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="pobox">اسم شخص الاتصال<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" class="form-control col-md-8" id="contact_name" required
-                        [(ngModel)]="model.contact_name" name="contact_name" #contact_name="ngModel">
-                      <div [hidden]="contact_name.valid || contact_name.pristine" class="alert text-right"
-                        style="color: #f54b5e;">
-                        مطلوب اسم
+                      <!-- <input type="text" class="form-control col-md-8" id="contact_name"
+                                required
+                                [(ngModel)]="model.contactpersonnumber" name="contact_name"
+                                #contactpersonnumber="ngModel">
+                         <div [hidden]="contactpersonnumber.valid || contactpersonnumber.pristine"
+                              class="alert" style="color: #f54b5e;">
+                           Name is required
+                         </div> -->
+                      <input type="text" class="form-control col-md-8 text-right" name="contact_name"
+                        [(ngModel)]="model.contact_name" #contact_name="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }" required />
+
+                      <div *ngIf="f.submitted && contact_name.invalid" class="invalid-feedback">
+                        <div *ngIf="contact_name.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
                       </div>
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="mobile">رقم الاتصال</label>
-                      <input type="number" class="form-control col-md-8" id="contact_no" required
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="mobile">رقم الاتصال</label>
+                      <input type="number" class="form-control col-md-8 text-right" id="contact_no" required
                         [(ngModel)]="model.contact_no" name="contact_no" #contact_no="ngModel">
                       <!-- <div [hidden]="mobile.valid || mobile.pristine"
                                 class="alert" style="color: #f54b5e;">
@@ -525,19 +563,19 @@
                            </div> -->
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="contactpersonposition">جهة الاتصال</label>
-                      <input type="text" class="form-control col-md-8" id="contact_position" required
-                        [(ngModel)]="model.contact_desig" name="contact_desig" #contact_desig="ngModel"
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="contactpersonposition">جهة الاتصال</label>
+                      <input type="text" class="form-control col-md-8 text-right" id="contact_position" required
+                        [(ngModel)]="model.contact_desig" name="contact_position" #contact_desig="ngModel"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                       <!-- <div [hidden]="email.valid || email.pristine"
                                   class="alert" style="color: #f54b5e;">
                        Invalid Email Address
                              </div> -->
                     </div>
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="password">فاكس</label>
-                      <input type="text" class="form-control col-md-8" id="fax_no" required
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="password">فاكس</label>
+                      <input type="text" class="form-control col-md-8 text-right" id="fax_no" required
                         [(ngModel)]="model.contact_fax" name="contact_fax" #contact_fax="ngModel">
 
                       <!-- <div [hidden]="fax.valid || password.pristine"
@@ -546,67 +584,104 @@
                              </div>
                              <span id="strength_message"></span> -->
                     </div>
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="confirmpassword">رقم الاتصال. (التليفون المحمول)<span
-                          class="req" style="color: #f54b5e;">* </span></label>
-                      <input type="password" class="form-control col-md-8" id="contant_mobile" passvalidator="password"
-                        required [(ngModel)]="model.contant_mobile" name="contant_mobile" #contant_mobile="ngModel">
-                      <div [hidden]="contant_mobile.valid || contant_mobile.pristine" class="alert text-right"
-                        style="color: #f54b5e;">
-                        رقم الاتصال. مطلوب
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="confirmpassword">رقم الاتصال (المحمول)<span class="req"
+                          style="color: #f54b5e;">*
+                        </span></label>
+                      <!-- <input type="text" class="form-control col-md-8" id="contact_no_mobile" passvalidator="password"
+                                      required
+                                      [(ngModel)]="model.contactmobilenumber" name="contact_no_mobile" 
+                                      #contactmobilenumber="ngModel">
+                             <div [hidden]="contactmobilenumber.valid || contactmobilenumber.pristine"
+                                  class="alert" style="color: #f54b5e;">
+                               Contact no. is required
+                             </div> -->
+                      <input type="number" class="form-control col-md-8 text-right" name="contact_no_mobile"
+                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" required />
+
+                      <div *ngIf="f.submitted && contant_mobile.invalid" class="invalid-feedback">
+                        <div *ngIf="contant_mobile.errors.required">الرجاء إدخال رقم الهاتف النقال</div>
                       </div>
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label>
-                      <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
-                        required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label>
+                      <input type="email" class="form-control col-md-8 text-right" id="company_email_id"
+                        passvalidator="password" required [(ngModel)]="model.company_email" name="company_email_id"
+                        #company_email="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-                      <!-- <div [hidden]="company_email.touched && company_email.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
+                      <!-- <div [hidden]="company_email.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
 
-                      <!-- s -->
+
                       <!-- </div> -->
                     </div>
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span
-                          class="req" style="color: #f54b5e;">* </span></label>
-                      <input type="email" class="form-control col-md-8" id="contact_email" passvalidator="password"
-                        required [(ngModel)]="model.contact_email" name="contact_email" #contact_email="ngModel"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                      <!-- <div [hidden]="contact_email.valid || contact_email.pristine" class="alert text-right"
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span class="req"
+                          style="color: #f54b5e;">*
+                        </span></label>
+                      <!-- <input type="email" class="form-control col-md-8" id="contact_email" passvalidator="password"
+                                      required
+                                      [(ngModel)]="model.emailcontactperson" name="contact_email" 
+                                      #emailcontactperson="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                               <div [hidden]="emailcontactperson.valid || emailcontactperson.pristine"
+                                    class="alert" style="color: #f54b5e;">
+                              
+                                     </div> -->
+                      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        class="form-control col-md-8 text-right" name="contact_email" [(ngModel)]="model.contact_email"
+                        #contact_email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }"
+                        required />
+
+                      <!-- <input type="text" class="form-control col-md-8" id="email"
+                                     required 
+                                     [(ngModel)]="model.email" name="email" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
+                                     #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> -->
+                      <div [hidden]="contact_email.valid || contact_email.pristine" class="alert"
                         style="color: #f54b5e;">
-                        معرف البريد الإلكتروني غير صالح
-                      </div> -->
+                        عنوان البريد الإلكتروني غير صالح
+                      </div>
 
 
 
-                      <!-- <div [hidden]="contact_email.touched && contact_email.errors?.notequal"class="alert" style="color: #f54b5e;">
-                                   -->
+                      <div *ngIf="f.submitted && contact_email.invalid" class="invalid-feedback text-right">
+                        <div *ngIf="contact_email.errors.required">الرجاء إدخال البريد الإلكتروني لجهة الاتصال</div>
+                      </div>
+                      <!-- <div [hidden]="emailcontactperson.touched && emailcontactperson.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
+
                       <!-- s -->
                       <!-- </div> -->
                     </div>
 
 
-                    <div class="form-group col-md-6">
-                      <label class="Name text-right" for="confirmpassword">عنوان موقع ويب</label>
+                    <div class="form-group col-md-6 text-right">
+                      <label class="Name" for="confirmpassword">عنوان موقع ويب</label>
                       <input type="email" class="form-control col-md-8" id="website_add" required
                         [(ngModel)]="model.website_add" name="website_add" #website_add="ngModel"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
                     </div>
 
+                    <br><br>
 
-                    <div class="col-md-12">
 
-                      <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-                      <button type="submit" style="background-color: #ff0000;padding: 8px 20px;margin-left: 319px;"
-                        onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
-                        (click)="supplierregister(model)">
-                        <font color="white"> خضع</font>
-                      </button>
-                      <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-4">
+
+                        <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+                        <button type="submit" style="background-color: #ff0000;padding: 8px 20px;"
+                          onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
+                          (click)="supplierregister(model)">
+                          <font color="white">خضع</font>
+                        </button>
+                        <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
+                      </div>
+                      <div class="col-md-4"></div>
                     </div>
                   </div>
                 </form>
@@ -622,6 +697,10 @@
 
         </div>
       </div>
+
+
+
+
     </div>
     <br>
     <br>

@@ -10,6 +10,8 @@ import { SimpleGlobal } from 'ng2-simple-global';
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.css']
 })
+
+
 export class LoginComponent implements OnInit {
     navbarOpen = false;
 
@@ -32,6 +34,7 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
+
     }
     // logout(model){
     //     document.getElementById('logout').style.display='none'

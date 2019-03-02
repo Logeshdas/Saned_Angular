@@ -46,10 +46,13 @@ import { NavbararabicComponent } from './navbararabic/navbararabic.component';
 import { FacilityarabicComponent } from './facilityarabic/facilityarabic.component';
 
 
+//routing page while refreshing
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', redirectTo: 'home', pathMatch: 'full' },
+  //{ path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: 'register-form', component: RegisterFormComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'facilitymanagement', component: facilitymanagementComponent },
@@ -145,7 +148,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       provide: RECAPTCHA_LANGUAGE,
       useValue: 'En', // use French language
     },
-    { provide: SimpleGlobal }
+    { provide: SimpleGlobal },
+
+
+    //routing page while refreshing
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
