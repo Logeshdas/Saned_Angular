@@ -1,5 +1,6 @@
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
 <button (click)="switchLanguage('en')">English</button> -->
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -7,10 +8,74 @@
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+  /* ==============footer style start ========= */
+  .container1 {
+    background: black;
+    color: white
   }
 
+  .footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* height: 75px; */
+  }
+
+  .container {
+    background: black;
+    color: white
+  }
+
+  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .img-thumbnail {
+    background: black;
+    border-color: black
+  }
+
+  .home {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0;
+  }
+
+  .about {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+
+  /* ===========================footer style end================ */
   nav {
     width: 100%;
     height: 50px;
@@ -51,7 +116,7 @@
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: Roboto;
     margin: 0;
   }
 
@@ -91,19 +156,20 @@
   ul li a {
     text-decoration: none;
     color: #e74c3c;
-    font-family: Tahoma, Arial;
+    font-family: Roboto;
+    /* font-size: 18px; */
   }
 
   .navigation {
     background-color: #35353500;
-    /* width: 100%; */
+    /* width: 75%; */
     margin: 20px auto;
     min-height: 50px;
   }
 
   .navigation>li {
-    float: center;
-    padding: 0 20px;
+    float: left;
+    padding: 4 10px;
   }
 
   .navigation>li>a {
@@ -193,7 +259,7 @@
     display: flex;
     margin: 0px;
     padding: 0px;
-    float: center;
+    float: right;
   }
 
   nav ul li {
@@ -211,106 +277,46 @@
   nav ul li a {
     display: block;
     color: #fff;
-    padding: 0 5px;
+    padding: 0 35px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 50px;
 
   }
-
-  /* ==============footer style start ========= */
-  .footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* height: 75px; */
-  }
-
-  .container1 {
-    background: black;
-    color: white
-  }
-
-  .container {
-    /* background: black; */
-    color: white
-  }
-
-  .social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-
-  .social {
-    -webkit-transform: scale(0.8);
-    /* Browser Variations: */
-
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-  }
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .img-thumbnail {
-    background: black;
-    border-color: black
-  }
-
-  .home {
-    font-family: Roboto-Bold;
-    font-size: 16px;
-    line-height: 14px;
-    letter-spacing: 0;
-  }
-
-  .about {
-    font-family: GeezaPro;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0;
-  }
-
-  /* ===========================footer style end===============*/
 </style>
 
+<!-- <p>
+        <label><input #arabic type="radio" name="size" (change)="0" >عربى</label>
+        <label><input #english type="radio" name="size" (change)="0" checked>English</label>
+    </p> -->
 
-
-<div>
+<div dir="rtl">
   <!------ Include the above in your HEAD tag ---------->
-  <section class="view intro-2 hm-gradient" dir="rtl" style="width:100%;height:100vh">
+  <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
     <div class="row">
       <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x" class="img-responsive">
+                                                                   ./assets/group@3x.png 3x" class="img-responsive">
+        <!-- <button><a routerLink="aboutusarabic">arabic</a></button>
+                                                           <button><a routerLink="about-us">English</a></button> -->
+        <!-- <input type="radio" class="btn ml-2" routerLink="aboutusarabic" name="arabic"> <font color="white">عربى</font>
+            
+                                                           <input type="radio" class="btn ml-2" routerLink="about-us" name="arabic"> <font color="white"> English</font>
+                      -->
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-6 mt-5" dir="ltr">
         &nbsp; &nbsp;
         <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-          margin-left: -18px;">
-            <font color="white">تسجيل الدخول </font>
-          </a>&nbsp;&nbsp;
-          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-              width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-            <font color="white">تسجيل</font>
-          </button>&nbsp; -->
+        margin-left: -18px;">
+          <font color="white">تسجيل الدخول </font>
+        </a>&nbsp;&nbsp;
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+            width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+          <font color="white">تسجيل</font>
+        </button>&nbsp; -->
 
 
 
@@ -326,46 +332,59 @@
       </div>
     </div>
 
-
-    <br><br><br><br><br>
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+          assests/lawyer-today-1@3x.png 3x"
+      class="NEM mt-3"> -->
+    <!-- <div class="full-bg-img"> -->
+    <!-- <div class="container flex-center"> -->
+    <!-- <div class="row flex-center pt-5 mt-3"> -->
+    <!-- <div class="col-md-6 text-center"> -->
+    <br><br><br>
     <div class="text-center">
       <h1>
-        <font color="white" style="font-size: 50px;" class="title">سلامة</font>
+        <font color="white" style="font-size: 50px;" class="about-us">معلومات عنا</font>
       </h1>
 
     </div>
+    <!-- </div> -->
 
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
   </section>
-  <br>
-  <br>
-  <br>
 
-  <app-navbararabic></app-navbararabic>
-  <br>
-  <br><br>
-  <br>
-  <br><br>
-  <br>
-  <br>
-  <br><br><br><br><br><br>
+</div>
+<br>
+<br>
+<br>
 
-  <div class="rtl">
-    <!-- <h3 class="col-sm-12 Welcome-to-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+<app-navbararabic></app-navbararabic>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-    <div class="card col-md-12" style="border-radius: 18px;
-   background: white;">
-      <br>
-      <!-- <div class="row ml-4"> -->
+<div class=" col-md-12" dir="rtl">
+  <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
-
-
-      <!-- =====test==== -->
+  <div class="card col-md-12" style="border-radius: 18px;
+    background: white;margin-top: -225px;" dir="rtl">
+    <br>
+    <div class="row" dir="rtl">
       <div class="row" dir="rtl">
         <div class="col-md-1" dir="rtl">
           <!-- <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
-              /assets/1@3x.png 3x" class="layer"> -->
+                  /assets/1@3x.png 3x" class="layer"> -->
           <img src="/assets/noun-connection-657013.png" srcset="/assets/noun-connection-657013@2x.png 2x,
-              /assets/noun-connection-657013@3x.png 3x" class="layer">
+                  /assets/noun-connection-657013@3x.png 3x" class="layer">
         </div>
         <div class="col-md-4 ml-3">
 
@@ -387,7 +406,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-1">
           <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x" class="layer">
+                    /assets/2@3x.png 3x" class="layer">
         </div>
         <div class="col-md-4">
 
@@ -410,7 +429,7 @@
       <div class="row" dir="rtl">
         <div class="col-md-1">
           <img src="./assets/3.png" srcset="./assets/3@2x.png 2x,
-            ./assets/3@3x.png 3x" class="img-responsive">
+                ./assets/3@3x.png 3x" class="img-responsive">
         </div>
         <div class="col-md-4 ml-3">
 
@@ -431,7 +450,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-1">
           <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="img-responsive">
+                /assets/4@3x.png 3x" class="img-responsive">
         </div>
         <div class="col-md-4">
 
@@ -453,29 +472,19 @@
         <br>
         <br>
         <br>
-        <div class="col-md-5"></div>
-        <div class="col-md-7 center">
+
+        <div class="col-md-8 center">
 
           <button type="submit" class="Rectangle-5-Copy" routerLink="register-form-arabic">سجل هنا</button>
 
         </div>
       </div>
-      <br>
 
-
-      <br>
     </div>
   </div>
-  <!-- =============footer arabic start====== -->
-  <app-footer></app-footer>
-
-  <!-- ========footer arabic end====== -->
 </div>
-
-
-
-<!-- ===arabic -->
-
-
+<br>
+<br>
+<app-footer></app-footer>
 
 <router-outlet></router-outlet>

@@ -49,6 +49,7 @@ import { FacilityarabicComponent } from './facilityarabic/facilityarabic.compone
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', redirectTo: 'home', pathMatch: 'full' },
   { path: 'register-form', component: RegisterFormComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'facilitymanagement', component: facilitymanagementComponent },

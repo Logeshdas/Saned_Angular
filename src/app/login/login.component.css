@@ -2,7 +2,7 @@
 
 /* desktop  css */
   .intro-2 {
-    background: url("/assets/Group.png")no-repeat center center;
+    background: url("/assets/Group_home.png")no-repeat center center;
     background-size: cover;
   
   }
@@ -835,9 +835,12 @@
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
   .ml_mr{
-    margin-right: 35px !important;
+    margin-right: 61px !important;
     margin-left: -22px !important;
   }
+  .mt-2, .my-2 {
+    margin-top: -1.5rem!important;
+}
   .pt-120{
     position: relative;
     right: 90px;

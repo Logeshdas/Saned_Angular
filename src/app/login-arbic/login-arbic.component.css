@@ -834,7 +834,7 @@
 
   }
   .mt-414{
-    margin-top: 3px !important;
+    margin-top: 2px !important;
   }
 
   .mr-5, .mx-5 {
@@ -877,12 +877,20 @@ li[_ngcontent-c1] {
 
 
 } */
+@media screen and (max-width: 768px){
+  .ft_11{
+font-size: 20 !important
+  }
+  
+}
 
 @media screen and (max-width: 1024px){
   .nav-bg {
     /* background-color: rgba(0, 0, 0, 0.65) !important; */
   }
-
+  .mt-5, .my-5 {
+    margin-top: 2rem!important;
+}
 
 
   .pt-120{

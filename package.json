@@ -28,6 +28,7 @@
     "angular-google-recaptcha": "^1.0.3",
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
+    "mobiscroll-angular": "^4.0.0",
     "ng-recaptcha": "^4.2.1",
     "ng2-datepicker": "^3.1.1",
     "ng2-simple-global": "^1.2.5",

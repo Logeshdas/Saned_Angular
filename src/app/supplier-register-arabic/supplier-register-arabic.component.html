@@ -449,17 +449,20 @@
 
 
                     <!-- //Date===== -->
+
                     <div class="form-group col-md-6">
+
                       <label class="Name text-right" for="name">تاريخ صلاحية الرخصة التجارية<span class="req"
                           style="color: #f54b5e;">*
                         </span></label>
-                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'yyyy-MM-dd'  }}"
-                        class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
-                        #trade_license_vdate="ngModel" bsDatepicker
-                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid } " [minDate]="minDate"
-                        dir="rtl">
+                      <div class="" dir="rtl">
+                        <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'yyyy-MM-dd'  }}"
+                          class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate"
+                          name="trade_license_vdate" #trade_license_vdate="ngModel" bsDatepicker
+                          [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid } " [minDate]="minDate"
+                          dir="rtl">
+                      </div>
                     </div>
-
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
                         </span></label>
@@ -470,6 +473,7 @@
                      Name is required
                    </div> -->
                     </div>
+
 
                     <div class="form-group col-md-6">
                       <label class="Name text-right" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة

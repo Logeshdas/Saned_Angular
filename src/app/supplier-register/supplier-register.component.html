@@ -638,7 +638,7 @@
                         required
                         [(ngModel)]="model.licensevalidity" name="licensevalidity"
                         #licensevalidity="ngModel"> -->
-                      <input type="text" [(bsValue)]="newVar" value="{{ newVar | date:'dd/MM/yyyy' }}"
+                      <input type="text" [(bsValue)]="newVar" value="{{ dateNow | date:formatsDateTest }}"
                         class="form-control col-md-8" [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
                         #trade_license_vdate="ngModel" bsDatepicker
                         [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
@@ -794,9 +794,10 @@
                                     class="alert" style="color: #f54b5e;">
                               
                                      </div> -->
-                      <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control col-md-8"
-                        name="contact_email" [(ngModel)]="model.contact_email" #contact_email="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }" required />
+                      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        class="form-control col-md-8" name="contact_email" [(ngModel)]="model.contact_email"
+                        #contact_email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }"
+                        required />
 
                       <!-- <input type="text" class="form-control col-md-8" id="email"
                                      required 

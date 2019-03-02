@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import swal from 'sweetalert2';
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 
+//import { mobiscroll, MbscCalendarOptions, MbscFormOptions } from '@mobiscroll/angular';
 
 
 
@@ -19,7 +20,7 @@ export class SupplierRegisterArabicComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
   localVar;
-
+  rtl: Date;
   model: any = {};
   data: any = {};
   submitted: any = {};
@@ -45,6 +46,20 @@ export class SupplierRegisterArabicComponent implements OnInit {
       swal(this.data.Message + "<br>" + "اشتركت بنجاح في النشرة الإخبارية");
     })
   };
+
+
+
+  // rtlSettings: MbscCalendarOptions = {
+  //   rtl: true
+  // };
+
+
+
+
+
+
+
+
   supplieremailotpverification(model) {
     this.apiService.supplieremailotpverification(model).subscribe((response) => {
       this.data = response;

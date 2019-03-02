@@ -31,16 +31,15 @@ export class SupplierRegisterComponent implements OnInit {
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
     this.minDate = new Date();
     this.minDate.setDate(this.minDate.getDate() - 1);
+
   }
 
-  // formatsDateTest: string[] = [
 
-  //   'yyyy/MM/dd',
+  formatsDateTest: string[] = [
 
-  // ];
+    'yyyy/MM/dd',
 
-
-
+  ];
 
 
 

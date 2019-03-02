@@ -1,227 +1,25 @@
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
 <button (click)="switchLanguage('en')">English</button> -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+
+
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99;
-  }
-
-  body {
-
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    /* background: #000; */
-  }
-
-  header {
-    padding: 10px 100px;
-    box-sizing: border-box;
-  }
-
-  section {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    /* background-color: red; */
-  }
-
-  .dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  ul li a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-family: Tahoma, Arial;
-  }
-
-  .navigation {
-    background-color: #35353500;
-    /* width: 75%; */
-    margin: 20px auto;
-    min-height: 50px;
-  }
-
-  .navigation>li {
-    justify-content: center;
-    padding: 0 20px;
-  }
-
-  .navigation>li>a {
-    line-height: 50px;
-    color: #FFF;
-  }
-
-  .navigation .menu {
-    position: relative
-  }
-
-  .navigation .menu .submenu {
-    position: absolute;
-    /* width: 200px; */
-    -webkit-box-shadow: 0px 1px 1px #CCC;
-    box-shadow: 0px 1px 1px #CCC;
-    display: none;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-
-  .navigation .menu:hover .submenu {
-    display: block
-  }
-
-  .navigation .menu .submenu:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-width: 0 6px 6px 6px;
-    border-style: solid;
-    border-color: #FFF transparent;
-    top: -6px;
-    left: 5px;
-    /* font-weight:bold */
-  }
-
-  .navigation .menu .submenu li {
-    padding: 5px 10px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-
-  .navigation .menu .submenu li:hover {
-    background-color: #e74c3c;
-  }
-
-  .navigation .menu .submenu li:hover a {
-    color: #FFF;
-    /* padding: 0 11px; */
-  }
-
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  section.sec1 {
-    background: url(natures-temples.png);
-    background-size: cover;
-  }
-
-  section.banner {
-    background: url(Group.png);
-    background-size: cover;
-    margin-left: 15px;
-  }
-
-  section.sec2 {
-    padding: 100px;
-    box-sizing: border-box;
-  }
-
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99
-  }
-
-  nav ul {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-  }
-
-  nav ul li {
-    list-style: none;
-  }
-
-
-  nav ul {
-    display: flex;
-
-    padding: 0px;
-    /* float: ; */
-  }
-
-  nav ul li a {
-    display: block;
-    color: #fff;
-    padding: 0 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 50px;
-
-  }
-
   /* ==============footer style start ========= */
+  .container1 {
+    background: black;
+    color: white
+  }
+
   .footer {
     /* position: fixed; */
     left: 0;
@@ -283,135 +81,334 @@
     letter-spacing: 0;
   }
 
-  .container1 {
-    background: black;
-    color: white
+  /* ===========================footer style end================ */
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
   }
 
-  /* ===========================footer style end================ */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: #000; */
+  }
+
+  header {
+    padding: 10px 100px;
+    box-sizing: border-box;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Roboto;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
+
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Roboto;
+    /* font-size: 18px; */
+  }
+
+  .navigation {
+    background-color: #35353500;
+    width: 75%;
+    margin: 20px auto;
+    min-height: 50px;
+  }
+
+  .navigation>li {
+    float: left;
+    padding: 0 20px;
+  }
+
+  .navigation>li>a {
+    line-height: 50px;
+    color: #FFF;
+  }
+
+  .navigation .menu {
+    position: relative
+  }
+
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+  }
+
+  .navigation .menu:hover .submenu {
+    display: block;
+
+  }
+
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    right: 5px;
+
+  }
+
+
+
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section.sec1 {
+    background: url(natures-temples.png);
+    background-size: cover;
+  }
+
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+  }
+
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255);
+    border-bottom: 1px solid rgba(255, 255);
+    position: sticky;
+    top: 0px;
+    z-index: 99
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+
+  nav ul {
+    display: flex;
+
+    padding: 0px;
+    /* float: ; */
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+
+  }
 </style>
-<!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
-&nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
-&nbsp; -->
+
+<!-- <p>
+        <label><input #arabic type="radio" name="size" (change)="0" >عربى</label>
+        <label><input #english type="radio" name="size" (change)="0" checked>English</label>
+    </p> -->
 
 
-<div>
-  <!------ Include the above in your HEAD tag ---------->
-  <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
-    <div class="row">
-      <div class="col-md-1">
-        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
-        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                             ./assets/group@3x.png 3x" class="img-responsive">
-      </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-6   text-right">
+<!------ Include the above in your HEAD tag ---------->
+<section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
 
+  <div class="row">
+    <div class="col-md-1">
 
-        <br><br>
-        <input type="radio" checked />&nbsp;
-        <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
-        &nbsp;
-        <input type="radio" style="margin-left: -9px;" routerLink="/amanservices-arabic" />&nbsp;
-        <font color="white" style="font-size: 14px;">عربى</font>
-
-        &nbsp;
-        <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
-                                        width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
-            <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
-          </button>
-    
-          <a class="btn mb-1">
-            <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
-          </a> -->
-
-      </div>
-
-
-
-
-
+      <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+                    ./assets/group@3x.png 3x" class="img-responsive">
     </div>
-    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-    assests/lawyer-today-1@3x.png 3x"
-class="NEM mt-3"> -->
-    <!-- <div class="full-bg-img"> -->
-    <!-- <div class="container flex-center"> -->
-    <!-- <div class="row flex-center pt-5 mt-3"> -->
-    <!-- <div class="col-md-6 text-center"> -->
-    <br><br><br>
-    <div class="text-center">
-      <h1>
-        <font color="white" style="font-size: 50px;" class="Aman">Aman</font>
-      </h1>
-
-    </div>
-    <!-- </div> -->
-
-
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-  </section>
-  <br>
-  <br>
-  <br>
-
-
-  <app-navbar></app-navbar>
-  <br><br><br><br><br><br><br><br>
-
-  <br><br>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="card col-md-12 mt-4" style="border-radius: 18px;
-   background: white;">
     <br>
+    <div class="col-md-4"></div>
+    <div class="col-md-6   text-right">
 
-    <div class="row ml-4">
+
+      <br><br>
+      <input type="radio" checked />&nbsp;
+      <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
+      &nbsp;
+      <input type="radio" style="margin-left: -9px;" routerLink="/amanservices-arabic" />&nbsp;
+      <font color="white" style="font-size: 14px;">عربى</font>
+
+      &nbsp;
+      <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
+                                      width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
+          <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
+        </button>
+  
+        <a class="btn mb-1">
+          <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
+        </a> -->
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <br><br><br>
+  <div class="text-center">
+    <h1>
+      <font color="white" style="font-family:Roboto;font-size: 50px;">Aman</font>
+    </h1>
+
+  </div>
+  <!-- </div> -->
+
+
+  <!-- </div> -->
+  <!-- </div> -->
+
+  <!-- </div> -->
+</section>
+<br> <br><br>
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class=" col-md-12">
+  <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+
+  <div class="card col-md-12" style="border-radius: 18px;
+    background: white;margin-top:-210px;">
+    <br>
+    <div class="row ml-2">
 
 
 
       <!-- =====test==== -->
-      <div class="row">
-        <div class="col-md-1">
-          <!-- <img src="img/noun-connection-657013.png"
-            srcset="img/noun-connection-657013@2x.png 2x,
-                    img/noun-connection-657013@3x.png 3x"
-            class="noun_connection_657013"> -->
-          <img src="/assets/noun-connection-657013.png" srcset="/assets/noun-connection-657013@2x.png 2x,
-              /assets/noun-connection-657013@3x.png 3x" class="layer">
-        </div>
-        <div class="col-md-5">
-          <h5><b>Description</b></h5>
-          <p class="AMAN-is-a-first-of-i text-justify">To ensure fast response to fire emergencies, SPSA partnered with
-            SANED have initiated “AMAN” project. AMAN, aims to protect lives and properties by establishing a safe and
-            reliable connection between all firefighting systems in all properties in Sharjah, with the central
-            monitoring station that is continuously monitored to identify and respond to emergencies instantly ensuring
-            the safety of people and assets.</p>
-        </div>
-        <div class="ml-5"></div>
-        <div class="col-md-1">
-          <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x" class="layer">
 
-        </div>
-
-        <div class="col-md-4 ">
-
-          <h5> <b>Objectives</b></h5>
-
-          <p class="AMAN-is-a-first-of-i text-justify">
-            Enhance the quality of life in the Emirate of Sharjah by applying the highest internationally recognized
-            standards to ensure the protection and safety of individuals and properties. The mission is a <b>Zero Harm
-              Environment</b>.
-          </p>
-
-        </div>
+      <div class="col-md-1">
+        <!-- <img src="img/noun-connection-657013.png"
+              srcset="img/noun-connection-657013@2x.png 2x,
+                      img/noun-connection-657013@3x.png 3x"
+              class="noun_connection_657013"> -->
+        <img src="/assets/noun-connection-657013.png" srcset="/assets/noun-connection-657013@2x.png 2x,
+                /assets/noun-connection-657013@3x.png 3x" class="layer">
       </div>
+      <div class="col-md-5">
+        <h5><b>Description</b></h5>
+        <p class="AMAN-is-a-first-of-i text-justify">To ensure fast response to fire emergencies, SPSA partnered with
+          SANED have initiated “AMAN” project. AMAN, aims to protect lives and properties by establishing a safe and
+          reliable connection between all firefighting systems in all properties in Sharjah, with the central
+          monitoring station that is continuously monitored to identify and respond to emergencies instantly ensuring
+          the safety of people and assets.</p>
+      </div>
+      <div class="ml-5"></div>
+      <div class="col-md-1">
+        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                  /assets/2@3x.png 3x" class="layer">
+
+      </div>
+
+      <div class="col-md-4 ">
+
+        <h5> <b>Objectives</b></h5>
+
+        <p class="AMAN-is-a-first-of-i text-justify">
+          Enhance the quality of life in the Emirate of Sharjah by applying the highest internationally recognized
+          standards to ensure the protection and safety of individuals and properties. The mission is a <b>Zero Harm
+            Environment</b>.
+        </p>
+
+      </div>
+
+
+
+
+
+
+
+
+
 
 
     </div>
@@ -429,7 +426,7 @@ class="NEM mt-3"> -->
       <div class="row col-md-12">
         <div class="col-md-1">
           <img src="./assets/3.png" srcset="./assets/3@2x.png 2x,
-                  ./assets/3@3x.png 3x" class="img-responsive">
+                    ./assets/3@3x.png 3x" class="img-responsive">
         </div>
         <div class="col-md-5">
           <h5><b>Technical Information</b></h5>
@@ -457,7 +454,7 @@ class="NEM mt-3"> -->
         <div class="mr-4"></div>
         <div class="col-md-1">
           <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-                  /assets/4@3x.png 3x" class="img-responsive">
+                    /assets/4@3x.png 3x" class="img-responsive">
         </div>
 
 
@@ -481,60 +478,55 @@ class="NEM mt-3"> -->
         </div>
       </div>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
 
       <div class="col-md-4"></div>
       <div class="col-md-7 center">
 
         <button type="submit" class="Rectangle-5-Copy" routerLink="register-form">Register Here</button>
-
       </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+<br>
+<br>
+<!--=====footer english start==-->
+<div class="container1 col-md-12">
+  <br><br>
+  <div class="row">
+
+    <div class="col-sm-2">
+      <img src="./assets/footersanedlogo.png" srcset="./assets/footersanedlogo@2x.png 2x,
+              ./assets/footersanedlogo@3x.png 3x" class="img-responsive">
 
     </div>
 
-    <br>
+    <div class="col-md-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
+      <ul class="list-unstyled quick-links">
 
-  </div>
+        <li><a routerLink="/about-us" class="about">
+            <font color="white">About Us</font>
+          </a></li>
+        <li><a routerLink="/amanservices" class="about">
+            <font color="white">Services</font>
+          </a></li>
+        <li><a routerLink="/sitemap" class="about">
+            <font color="white">Sitemap</font>
+          </a></li>
+        <li><a routerLink="/contactus" class="about">
+            <font color="white">Contact Us</font>
+          </a></li>
+        <li><a routerLink="/privacy" class="about">
+            <font color="white">Privacy Policy</font>
+          </a></li>
+      </ul>
+    </div>
 
-
-  <!--=====footer english start==-->
-  <div class="container1 col-md-12">
-    <br><br>
-    <div class="row">
-
-      <div class="col-sm-2">
-        <img src="./assets/footersanedlogo.png" srcset="./assets/footersanedlogo@2x.png 2x,
-              ./assets/footersanedlogo@3x.png 3x" class="img-responsive">
-
-      </div>
-
-      <div class="col-md-2">
-        <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
-        <ul class="list-unstyled quick-links">
-
-          <li><a routerLink="/about-us" class="about">
-              <font color="white">About Us</font>
-            </a></li>
-          <li><a routerLink="/amanservices" class="about">
-              <font color="white">Services</font>
-            </a></li>
-          <li><a routerLink="/sitemap" class="about">
-              <font color="white">Sitemap</font>
-            </a></li>
-          <li><a routerLink="/contactus" class="about">
-              <font color="white">Contact Us</font>
-            </a></li>
-          <li><a routerLink="/privacy" class="about">
-              <font color="white">Privacy Policy</font>
-            </a></li>
-        </ul>
-      </div>
-
-      <!-- <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
                                      <h5 class="home">Support</h5>
                                      <ul class="list-unstyled quick-links">
                                        <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -544,90 +536,81 @@ class="NEM mt-3"> -->
                           
                                      </ul>
                                    </div> -->
-      <div class="col-sm-2">
-        <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
-        <ul class="list-unstyled quick-links">
-          <li>
-            <p class="about">
-              <font color="white">Tower 400, 18th Floor,</font>
-              <br>
-              <font color="white"> Mina Road Sharjah,</font>
-              <br>
-              <font color="white"> PO Box 4648 Sharjah - UAE </font>
-              <br>
-              <font color="white">Phone: +971 6 506 6555</font>
-              <br>
-              <font color="white">Fax: +971 6 572 2331</font>
-              <br>
-              <font color="white">Email: helpdesk@saned.ae</font>
-              <br>
-              <a routerLink="login">
-                <font color="white">Website: www.saned.ae</font>
-              </a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3 ">
-        <img src="./assets/map.png" srcset="./assets/map@2x.png 2x,
+    <div class="col-sm-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
+      <ul class="list-unstyled quick-links">
+        <li>
+          <p class="about">
+            <font color="white">Tower 400, 18th Floor,</font>
+            <br>
+            <font color="white"> Mina Road Sharjah,</font>
+            <br>
+            <font color="white"> PO Box 4648 Sharjah - UAE </font>
+            <br>
+            <font color="white">Phone: +971 6 506 6555</font>
+            <br>
+            <font color="white">Fax: +971 6 572 2331</font>
+            <br>
+            <font color="white">Email: helpdesk@saned.ae</font>
+            <br>
+            <a routerLink="login">
+              <font color="white">Website: www.saned.ae</font>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 ">
+      <img src="./assets/map.png" srcset="./assets/map@2x.png 2x,
       ./assets/map@3x.png 3x" class="img-responsive">
-      </div>
-      <div class="col-sm-3 col-sm-2">
-        <p style="color:white; font-family: Roboto;
+    </div>
+    <div class="col-sm-3 col-sm-2">
+      <p style="color:white; font-family: Roboto;
                                   font-size: 14px;">Follow us
-          <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-          <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-          <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-          <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-          <h6 style="color:white;font-family: Roboto;
-                                    font-size: 14px;">Subscribe
-            to
-            Our
-            Newsletter</h6>
-          <div class="input-group mb-3">
+        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+        <h6 style="color:white;font-family: Roboto;
+                                    font-size: 14px;">Subscribe to
+          Our
+          Newsletter</h6>
+        <div class="input-group mb-3">
 
-            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
                                         border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
-              class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
+            class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
 
-            <div class="input-group-append">
+          <div class="input-group-append">
 
-              <button class="btn btn-outline-secondary" type="button">
-                <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
-              </button>
-            </div>
+            <button class="btn btn-outline-secondary" type="button">
+              <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+            </button>
           </div>
-          <div class="col-md-14" style="margin-left: -462px;color: white">Website in construction mode</div>
-      </div>
-      <!-- <div class="col-md-2"></div> -->
-
-      <hr class="col-md-8" style="background:white">
+        </div>
+        <div class="col-md-14" style="margin-left: -462px;color: white">Website in construction mode</div>
     </div>
+    <!-- <div class="col-md-2"></div> -->
 
-
-    <div class="footer">
-      <div>
-        <p style=" font-family: Roboto;
-                                  font-size: 12px;">By continuing past this
-          page,
-          you
-          agree
-          to our
-          Terms of Service, Cookie Policy, Privacy Policy and
-          Content Policies. © 2019.</p>
-      </div>
-
-    </div>
-    <br>
+    <hr class="col-md-8" style="background:white">
   </div>
-  <!-- ================footer  english end== -->
 
 
+  <div class="footer">
+    <div>
+      <p style=" font-family: Roboto;
+                                  font-size: 12px;">By continuing past this page,
+        you
+        agree
+        to our
+        Terms of Service, Cookie Policy, Privacy Policy and
+        Content Policies. © 2019.</p>
+    </div>
 
-
+  </div>
+  <br>
 </div>
-<!-- ===arabic -->
-
+<!-- ================footer  english end== -->
 
 <router-outlet></router-outlet>
