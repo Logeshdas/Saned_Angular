@@ -22,6 +22,7 @@ export class SupplierRegisterComponent implements OnInit {
   }
   localVar;
   model: any = {};
+  Lang: any = {};
   data: any = {};
   dateNow: any = {};
   submitted: any = {};

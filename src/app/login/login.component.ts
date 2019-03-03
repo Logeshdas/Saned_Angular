@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
     toggleNavbar() {
         this.navbarOpen = !this.navbarOpen;
     }
+    Lang: any = {};
     localVar;
 
 

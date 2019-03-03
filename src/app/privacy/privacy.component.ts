@@ -13,6 +13,7 @@ export class PrivacyComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
   localVar;
+  Lang: any = {};
 
 
   constructor() { }

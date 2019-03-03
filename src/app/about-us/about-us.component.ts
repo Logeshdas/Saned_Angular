@@ -13,29 +13,29 @@ export class AboutUsComponent implements OnInit {
   navbarOpen = false;
 
   toggleNavbar() {
-      this.navbarOpen = !this.navbarOpen;
+    this.navbarOpen = !this.navbarOpen;
   }
   localVar;
 
-
+  Lang: any = {}
   model: any = {};
   data: any = {};
-  constructor(private translate: TranslateService,private  apiService:  APIService,private router: Router,private sg: SimpleGlobal) { }
+  constructor(private translate: TranslateService, private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }
 
   ngOnInit() {
   }
   switchLanguage(language: string) {
     this.translate.use(language);
   }
-  newsletter(model){
+  newsletter(model) {
     this.apiService.newsletter(model).subscribe((response) => {
-        this.data = response;
-        console.log(this.data);
-        swal(this.data.Message+"<br>"+"اشتركت بنجاح في النشرة الإخبارية" );
+      this.data = response;
+      console.log(this.data);
+      swal(this.data.Message + "<br>" + "اشتركت بنجاح في النشرة الإخبارية");
     })
-};
-   user:{
-  
-    }
+  };
+  user: {
+
+  }
 
 }

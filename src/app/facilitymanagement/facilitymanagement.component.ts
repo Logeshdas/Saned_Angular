@@ -12,7 +12,7 @@ export class facilitymanagementComponent implements OnInit {
     this.navbarOpen = !this.navbarOpen;
   }
   localVar;
-
+  Lang: any = {}
   model: any = {};
   pow: any = {};
   constructor() { }

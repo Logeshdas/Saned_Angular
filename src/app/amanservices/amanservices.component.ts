@@ -13,9 +13,10 @@ export class AmanservicesComponent implements OnInit {
   navbarOpen = false;
 
   toggleNavbar() {
-      this.navbarOpen = !this.navbarOpen;
+    this.navbarOpen = !this.navbarOpen;
   }
   localVar;
+  Lang: any = {};
   model: any = {};
   data: any = {};
   constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }
