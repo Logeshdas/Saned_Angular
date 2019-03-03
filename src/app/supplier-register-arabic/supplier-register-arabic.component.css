@@ -76,6 +76,25 @@ background-color: #ff0000;
 }
 
 /* ========== navabar end=========== */
+/* ===========HEADING STYLE=========== */
+.saned_para-1{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+  color: red
+}
+.saned_para{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+}
+.saned_heading{
+  font-size: 28px;
+  font-family: GeezaPro;
+
+}
+
+/* ==============HEADING STYLE========== */
 /* ====================responsive================= */
 @media screen and (min-width: 320px) and (max-width: 767px){
   .nav-bg {

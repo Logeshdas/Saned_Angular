@@ -366,3 +366,17 @@ li[_ngcontent-c1] {
 
 
   /* ======= align end======= */
+  /* ===========HEADING STYLE=========== */
+.saned_para{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+}
+.saned_heading{
+  font-size: 37px;
+  font-family: GeezaPro;
+  color: #212529 !important;
+
+}
+
+/* ==============HEADING STYLE========== */

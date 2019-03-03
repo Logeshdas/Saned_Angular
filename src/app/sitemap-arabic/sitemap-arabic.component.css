@@ -358,3 +358,25 @@ height: 100px;
 .bb_3{
   border-bottom: 3px solid transparent;
 }
+.saned_para{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+}
+.saned_heading{
+  font-size: 28px;
+  font-family: GeezaPro;
+
+}
+.Sharjah-Asset-Manage {
+  /* width: 535px; */
+  /* height: 283px; */
+  font-family: GeezaPro;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  /* color: black */
+}

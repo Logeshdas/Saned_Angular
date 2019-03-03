@@ -918,3 +918,16 @@ li[_ngcontent-c1] {
 }
 
 /* =========Mobile navbar End========== */
+/* ===========HEADING STYLE=========== */
+.saned_para{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+}
+.saned_heading{
+  font-size: 30px;
+  font-family: GeezaPro;
+
+}
+
+/* ==============HEADING STYLE========== */

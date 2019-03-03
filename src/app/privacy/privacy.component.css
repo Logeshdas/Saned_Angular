@@ -46,6 +46,42 @@
     color: var(--black);
   }
    /* ===========navbar start========= */
+   .WHAT-IS-Aman-1 {
+    width: 300px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: #212529;
+  }
+   .WHAT-IS-Aman- {
+    width: 400px;
+  height: 53px;
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  color: var(--black);
+  }
+  .Sharjah-Asset-Manage {
+    /* width: 535px; */
+    /* height: 283px; */
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    /* color: black */
+  }
    /* ===Mobile navbar start=========== */
 
 

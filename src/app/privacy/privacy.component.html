@@ -332,30 +332,30 @@
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
                                                                ./assets/group@3x.png 3x" class="img-responsive">
       </div>
-      <div class="col-md-5"></div>
-      <div class="col-md-6   text-right">
+      <div class="col-md-4"></div>
+      <div class="col-md-6 mt-5 text-right">
+        &nbsp; &nbsp;
+        <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+              margin-left: -18px;">
+                <font color="white">تسجيل الدخول </font>
+              </a>&nbsp;&nbsp;
+              <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+                  width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+                <font color="white">تسجيل</font>
+              </button>&nbsp; -->
 
 
-        <br><br>
-        <input type="radio" checked />&nbsp;
-        <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
-        &nbsp;
-        <input type="radio" style="margin-left: -9px;" routerLink="/privacy-arabic" />&nbsp;
 
-        <font color="white" style="font-size: 14px;">عربى</font>
+        <font style="color:#F90E35">English</font>&nbsp;
+        <input type="radio" checked>&nbsp;
 
-        &nbsp;
-        <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
-                                          width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
-              <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
-            </button>
-      
-            <a class="btn mb-1">
-              <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
-            </a> -->
+
+
+        <font color="white"> عربى </font>
+        <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
+          routerLink="/privacy-arabic" [checked]="Lang" />&nbsp;
 
       </div>
-
 
 
 
@@ -370,9 +370,10 @@
     <!-- <div class="col-md-6 text-center"> -->
     <br><br><br>
     <div class="text-center">
-      <h1>
-        <font color="white" style="font-size: 50px;" class="Aman">Privacy Policy</font>
-      </h1>
+      <a class="WHAT-IS-Aman-">
+        <font color="white">Privacy Policy</font>
+      </a>
+
 
     </div>
     <!-- </div> -->
@@ -398,24 +399,27 @@
   <br>
   <br><br>
   <br>
+  <br><br>
+
   <div class="card col-md-12" style="border-radius: 18px;
-   background: white;color:#494949;margin-top: -208px;">
+   background: white;color:#212529;;margin-top: -222px;">
     <br>
+    <br>
+    <a class="WHAT-IS-Aman-1">Privacy Policy</a>
+
     <br>
 
-    <h2 class="ml-4" style="color:black;font-family: Roboto;font-size: 36px">Privacy Policy</h2>
-    <br>
-
-    <div class="An-overview-of-da  text-justify">
+    <div class="Sharjah-Asset-Manage  text-justify">
       <div class="col-sm-12 text-justify">
 
-        <div class="col-sm-12">
-          <h4 style="font-size: 18px;font-family: Roboto;color: black;"> 1. An overview of data protection</h4>
+        <div class="col-md-12">
+          <a class="WHAT-IS-Aman-1 mt-2">1.An overview of data protection</a>
+
+          <a class="WHAT-IS-Aman-1 mt-2">General</a>
+
           <br>
-          <b style="font-size: 18px;font-family: Roboto;color: black;">General</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">The following gives a simple overview of what
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">The following gives a simple overview of what
             happens to your personal information when you visit our
             website. Personal information is any data with which you could be personally identified. Detailed
             information on the subject of data protection can be found in our privacy policy found below.</p>
@@ -423,40 +427,38 @@
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Data collection on our website</b>
+          <a class="WHAT-IS-Aman-1">Data collection on our website</a>
+
           <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">Who is responsible for the data collection on
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">Who is responsible for the data collection on
             this website?</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">The data collected on this website are processed
+          <p class="Sharjah-Asset-Manage text-justify mt-2">The data collected on this website are processed
             by the website operator. The operator&apos;s contact
             details can be found in the website&apos;s required legal notice.</p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> How do we collect your data?</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">Some data are collected when you provide it to
+          <a class="WHAT-IS-Aman-1">How do we collect your data?</a>
+          <p class="Sharjah-Asset-Manage text-justify mt-2">Some data are collected when you provide it to
             us. This could, for example, be data you enter on a contact
             form.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> Other data are collected automatically by our
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> Other data are collected automatically by our
             IT systems when you visit the website. These data are
             primarily technical data such as the browser and operating system you are using or when you accessed the
             page. These data are collected automatically as soon as you enter our website.</p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> What do we use your data for?</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">Part of the data is collected to ensure the
+          <b class="WHAT-IS-Aman-1"> What do we use your data for?</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">Part of the data is collected to ensure the
             proper functioning of the website. Other data can be used to
             analyze how visitors use the site.</p>
         </div>
 
         <div class="col-sm-12">
-          <p style="font-size: 16px;font-family: Roboto;color: black;">You always have the right to request information
+          <p class="Sharjah-Asset-Manage text-justify mt-2">You always have the right to request information
             about your stored data, its origin, its recipients, and
             the purpose of its collection at no charge. You also have the right to request that it be corrected,
             blocked, or deleted. You can contact us at any time using the address given in the legal notice if you have
@@ -465,44 +467,42 @@
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Analytics and third-party tools</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">When visiting our website, statistical analyses
+          <b class="WHAT-IS-Aman-1">Analytics and third-party tools</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">When visiting our website, statistical analyses
             may be made of your surfing behavior. This happens
             primarily using cookies and analytics. The analysis of your surfing behavior is usually anonymous, i.e. we
             will not be able to identify you from this data. You can object to this analysis or prevent it by not using
             certain tools. Detailed information can be found in the following privacy policy.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> You can object to this analysis. We will inform
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> You can object to this analysis. We will inform
             you below about how to exercise your options in this
             regard.</p>
         </div>
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> 2. General information and mandatory
+          <b class="WHAT-IS-Aman-1"> 2. General information and mandatory
             information</b>
           <br>
-          <br>
-          <b style="font-size: 16px;font-family: Roboto;color: black;">Data protection</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">The operators of this website take the
+
+          <b class="Sharjah-Asset-Manage text-justify mt-2">Data protection</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">The operators of this website take the
             protection of your personal data very seriously. We treat your
             personal data as confidential and in accordance with the statutory data protection regulations and this
             privacy policy.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> If you use this website, various pieces of
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> If you use this website, various pieces of
             personal data will be collected. Personal information is any
             data with which you could be personally identified. This privacy policy explains what information we
             collect and what we use it for. It also explains how and for what purpose this happens.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">Please note that data transmitted via the
+          <p class="Sharjah-Asset-Manage text-justify mt-2">Please note that data transmitted via the
             internet (e.g. via email communication) may be subject to
             security breaches. Complete protection of your data from third-party access is not possible.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> Notice concerning the party responsible for
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> Notice concerning the party responsible for
             this website</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> The party responsible for processing data on
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> The party responsible for processing data on
             this website is:</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Tower 400, 18th Floor,<br>
             Mina Road, Sharjah, <br>
             PO Box 4648 Sharjah - UAE, <br>
@@ -511,24 +511,23 @@
             Email: helpdesk@saned.ae<br>
             <a routerLink="login">www.saned.ae</a>
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">The responsible party is the natural or legal
+          <p class="Sharjah-Asset-Manage text-justify mt-2">The responsible party is the natural or legal
             person who alone or jointly with others decides on the
             purposes and means of processing personal data (names, email addresses, etc.).</p>
         </div>
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> Revocation of your consent to the processing of
+          <b class="WHAT-IS-Aman-1"> Revocation of your consent to the processing of
             your data</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> Many data processing operations are only
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> Many data processing operations are only
             possible with your express consent. You may revoke your consent
             at any time with future effect. An informal email making this request is sufficient. The data processed
             before we receive your request may still be legally processed.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> Right to file complaints with regulatory
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> Right to file complaints with regulatory
             authorities</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> If there has been a breach of data protection
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> If there has been a breach of data protection
             legislation, the person affected may file a complaint with
             the competent regulatory authorities. The competent regulatory authority for matters related to data
             protection legislation is the data protection officer of the German state in which our company is
@@ -537,23 +536,20 @@
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> SSL or TLS encryption</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">This site uses SSL or TLS encryption for
+          <b class="WHAT-IS-Aman-1"> SSL or TLS encryption</b>
+          <p class="Sharjah-Asset-Manage text-justify mt-2">This site uses SSL or TLS encryption for
             security reasons and for the protection of the transmission of
             confidential content, such as the inquiries you send to us as the site operator. You can recognize an
             encrypted connection in your browser&apos;s address line when it changes from &quot;http://&quot; to
             &quot;https://&quot; and the lock icon is displayed in your browser&apos;s address bar.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">If SSL or TLS encryption is activated, the data
+          <p class="Sharjah-Asset-Manage text-justify mt-2">If SSL or TLS encryption is activated, the data
             you transfer to us cannot be read by third parties.</p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Information, blocking, deletion</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> As permitted by law, you have the right to be
+          <b class="WHAT-IS-Aman-1">Information, blocking, deletion</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> As permitted by law, you have the right to be
             provided at any time with information free of charge about
             any of your personal data that is stored as well as its origin, the recipient and the purpose for which it
             has been processed. You also have the right to have this data corrected, blocked or deleted. You can
@@ -562,15 +558,13 @@
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> 3. Data protection officer</b>
-          <br>
-          <br>
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Statutory data protection officer</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> We have appointed a data protection officer for
+          <b class="WHAT-IS-Aman-1"> 3. Data protection officer</b>
+
+          <b class="WHAT-IS-Aman-1">Statutory data protection officer</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> We have appointed a data protection officer for
             our company.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Tower 400, 18th Floor,<br>
             Mina Road, Sharjah, <br>
             PO Box 4648 Sharjah - UAE, <br>
@@ -581,28 +575,27 @@
           </p>
         </div>
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">
             4.Data collection on our website Cookies
           </b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Some of our web pages use cookies. Cookies do not harm your computer and do not contain any viruses.
             Cookies help make our website more user-friendly, efficient, and secure. Cookies are small text files that
             are stored on your computer and saved by your browser.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Most of the cookies we use are so-called &quot;session cookies.&quot; They are automatically deleted after
             your visit. Other cookies remain in your device&apos;s memory until you delete them. These cookies make it
             possible to recognize your browser when you next visit the site.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             You can configure your browser to inform you about the use of cookies so that you can decide on a
             case-by-case basis whether to accept or reject a cookie. Alternatively, your browser can be configured to
             automatically accept cookies under certain conditions or to always reject them, or to automatically delete
             cookies when closing your browser. Disabling cookies may limit the functionality of this website.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Cookies which are necessary to allow electronic communications or to provide certain functions you wish to
             use (such as the shopping cart) are stored pursuant to Art. 6 paragraph 1, letter f of DSGVO. The website
             operator has a legitimate interest in the storage of cookies to ensure an optimized service provided free
@@ -614,13 +607,11 @@
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> Server log files</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1"> Server log files</b>
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             The website provider automatically collects and stores information that your browser automatically
             transmits to us in &quot;server log files&quot;. These are:</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Browser type and browser version<br>
             Operating system used <br>
             Referrer URL <br>
@@ -629,23 +620,22 @@
             IP address <br>
             These data will not be combined with data from other sources.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">The basis for data processing is Art. 6 (1) (f)
+          <p class="Sharjah-Asset-Manage text-justify mt-2">The basis for data processing is Art. 6 (1) (f)
             DSGVO, which allows the processing of data to fulfill a
             contract or for measures preliminary to a contract.</p>
         </div>
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Contact form</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> Should you send us questions via the contact
+          <b class="WHAT-IS-Aman-1">Contact form</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> Should you send us questions via the contact
             form, we will collect the data entered on the form,
             including the contact details you provide, to answer your question and any follow-up questions. We do not
             share this information without your permission.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;"> We will, therefore, process any data you enter
+          <p class="Sharjah-Asset-Manage text-justify mt-2"> We will, therefore, process any data you enter
             onto the contact form only with your consent per Art. 6
             (1)(a) DSGVO. You may revoke your consent at any time. An informal email making this request is sufficient.
             The data processed before we receive your request may still be legally processed.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">We will retain the data you provide on the
+          <p class="Sharjah-Asset-Manage text-justify mt-2">We will retain the data you provide on the
             contact form until you request its deletion, revoke your
             consent for its storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your
             request). Any mandatory statutory provisions, especially those regarding mandatory data retention periods,
@@ -653,18 +643,16 @@
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;"> 5. Social media</b>
-          <br>
-          <br>
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Facebook plugins (Like &amp; Share buttons)</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1"> 5. Social media</b>
+
+          <b class="WHAT-IS-Aman-1">Facebook plugins (Like &amp; Share buttons)</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Our website includes plugins for the social network Facebook, Facebook Inc., 1 Hacker Way, Menlo Park,
             California 94025, USA. The Facebook plugins can be recognized by the Facebook logo or the Like button on
             our site. For an overview of Facebook plugins, see developers.facebook.com/docs/plugins/.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             When you visit our site, a direct connection between your browser and the Facebook server is established
             via the plugin. This enables Facebook to receive information that you have visited our site from your IP
             address. If you click on the Facebook &quot;Like button&quot; while you are logged into your Facebook
@@ -673,7 +661,7 @@
             knowledge of the content of the data transmitted to Facebook or of how Facebook uses these data. For more
             information, please see Facebook&apos;s privacy policy at https://www.facebook.com/about/privacy/update.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             If you do not want Facebook to associate your visit to our site with your Facebook account, please log out
             of your Facebook account.
           </p>
@@ -681,10 +669,9 @@
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">Twitter plugin</b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">Twitter plugin</b>
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Functions of the Twitter service have been integrated into our website and app. These features are offered
             by Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. When you use Twitter and the
             “Retweet” function, the websites you visit are connected to your Twitter account and made known to other
@@ -693,23 +680,22 @@
             by Twitter. For more information on Twitter&apos;s privacy policy, please go to
             https://twitter.com/privacy.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Your privacy preferences with Twitter can be modified in your account settings at
             https://twitter.com/account/setting.
           </p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">
             Google+ plugin
           </b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Our pages use Google+ functions. It is operated by Google Inc., 1600 Amphitheatre Parkway, Mountain View,
             CA 94043, USA.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Collection and disclosure of information: Using the Google +1 button allows you to publish information
             worldwide. By means of the Google+ button, you and other users can receive custom content from Google and
             our partners. Google stores both the fact that you have +1&apos;d a piece of content and information about
@@ -717,14 +703,14 @@
             photo in Google services, for example in search results or in your Google profile, or in other places on
             websites and advertisements on the Internet.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Google records information about your +1 activities to improve Google services for you and others. To use
             the Google + button, you need a globally visible, public Google profile that must contain at least the name
             chosen for the profile. This name is used by all Google services. In some cases, this name may also replace
             a different name that you have used to share content via your Google account. The identity of your Google
             profile can be shown to users who know your email address or other information that can identify you.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Use of collected data: In addition to the uses mentioned above, the information you provide is used in
             accordance with the applicable Google data protection policies. Google may publish summary statistics about
             users&apos; +1 activity or share it with users and partners, such as publishers, advertisers, or affiliate
@@ -734,16 +720,15 @@
 
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">
             LinkedIn plugin
           </b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Our site uses functions from the LinkedIn network. The service is provided by LinkedIn Corporation, 2029
             Stierlin Court, Mountain View, CA 94043, USA.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Each time one of our pages containing LinkedIn features is accessed, your browser establishes a direct
             connection to the LinkedIn servers. LinkedIn is informed that you have visited our web pages from your IP
             address. If you use the LinkedIn “Recommend” button and are logged into your LinkedIn account, it is
@@ -751,63 +736,61 @@
             out that, as the provider of these pages, we have no knowledge of the content of the data transmitted or
             how it will be used by LinkedIn.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             More information can be found in the LinkedIn privacy policy at
             https://www.linkedin.com/legal/privacy-policy.
           </p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">
             XING Plugin
           </b>
-          <br>
-          <br>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">Our website uses features provided by the XING
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">Our website uses features provided by the XING
             network. The provider is XING AG, Dammtorstraße 29-32,
             20354 Hamburg, Germany.</p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Each time one of our pages containing XING features is accessed, your browser establishes a direct
             connection to the XING servers. To the best of our knowledge, no personal data is stored in the process. In
             particular, no IP addresses are stored nor is usage behavior evaluated.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             For more information about data protection and the XING Share button, please see the XING privacy policy at
             https://www.xing.com/app/share?op=data_protection.
           </p>
         </div>
 
         <div class="col-sm-12">
-          <b style="font-size: 18px;font-family: Roboto;color: black;">
+          <b class="WHAT-IS-Aman-1">
             6. Analytics and advertising
           </b>
-          <br>
-          <br>
-          <p style="font-size: 18px;font-family: Roboto;color: black;">
+
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Matomo (formerly Piwik)
           </p>
 
 
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             This website uses the open source web analytics service Matomo. Matomo uses so-called &quot;cookies&quot;.
             These are text files that are stored on your computer and that allow an analysis of the use of the website
             by you. For this purpose, the information generated by the cookie about the use of this website is stored
             on our server. The IP address is anonymized before it is stored.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             Matomo cookies remain on your device until you delete them.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             The storage of Matomo cookies is based on Art. 6 (1) (f) DSGVO. The website operator has a legitimate
             interest in analyzing user behavior in order to optimize both its website and its advertising.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             The information generated by the cookies about your use of this website will not be disclosed to third
             parties. You can prevent these cookies being stored by selecting the appropriate settings in your browser.
             However, we wish to point out that doing so may mean you will not be able to enjoy the full functionality
             of this website.
           </p>
-          <p style="font-size: 16px;font-family: Roboto;color: black;">
+          <p class="Sharjah-Asset-Manage text-justify mt-2">
             If you do not agree with the storage and use of your data, you can disable this feature here. In this case,
             an opt-out cookie will be stored in your browser to prevent Matomo from storing your usage data. If you
             delete your cookies, this will mean that the opt-out cookie will also be deleted. You will then need to

@@ -414,3 +414,31 @@ padding:0 0px !important;
   .bb_3{
     border-bottom: 3px solid transparent;
   }
+
+   /* //====================text font size */
+  
+ .WHAT-IS-Aman- {
+  width: 313px;
+height: 53px;
+font-family: Roboto;
+font-size: 33px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.18;
+letter-spacing: normal;
+color: var(--black);
+}
+.Sharjah-Asset-Manage {
+  /* width: 535px; */
+  /* height: 283px; */
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  /* color: black */
+}
+/* //====================text font size */

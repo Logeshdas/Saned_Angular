@@ -379,7 +379,44 @@ padding:0 0px !important;
   letter-spacing: normal;
   color: var(--black);
 }
- .Sharjah-Asset-Manage {
+/* //====================text font size */
+.WHAT-IS-Aman-2 {
+  width: 600px;
+height: 53px;
+font-family: Roboto;
+font-size: 22px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.18;
+letter-spacing: normal;
+color: var(--black);
+}
+.WHAT-IS-Aman-1 {
+  width: 800px;
+height: 53px;
+font-family: Roboto;
+font-size: 26px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.18;
+letter-spacing: normal;
+color: var(--black);
+}
+.WHAT-IS-Aman- {
+  width: 400px;
+height: 53px;
+font-family: Roboto;
+font-size: 31px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.18;
+letter-spacing: normal;
+color: var(--black);
+}
+.Sharjah-Asset-Manage {
   /* width: 535px; */
   /* height: 283px; */
   font-family: Roboto;
@@ -391,6 +428,7 @@ padding:0 0px !important;
   letter-spacing: normal;
   /* color: black */
 }
+/* //====================text font size */
 .reg{
   background-color: #ff0000; 
   width: min-content;

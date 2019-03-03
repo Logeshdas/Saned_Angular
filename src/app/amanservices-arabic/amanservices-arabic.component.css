@@ -363,6 +363,18 @@ padding: 0 12px !important;
 }
 /* =========Mobile navbar End========== */
 
+/* ===========HEADING STYLE=========== */
+.saned_para{
+  font-size:16px;
+  color: #333; 
+  font-family: GeezaPro;
+}
+.saned_heading{
+  font-size: 28px;
+  font-family: GeezaPro;
 
+}
+
+/* ==============HEADING STYLE========== */
 
 /* ======= align end======= */

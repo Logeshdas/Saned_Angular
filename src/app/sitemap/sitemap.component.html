@@ -303,25 +303,27 @@
     </div>
     <br>
     <div class="col-md-4"></div>
-    <div class="col-md-6   text-right">
+    <div class="col-md-6 mt-5 text-right">
+      &nbsp; &nbsp;
+      <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+            margin-left: -18px;">
+              <font color="white">تسجيل الدخول </font>
+            </a>&nbsp;&nbsp;
+            <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+                width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+              <font color="white">تسجيل</font>
+            </button>&nbsp; -->
 
 
-      <br><br>
-      <input type="radio" checked />&nbsp;
-      <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
-      &nbsp;
-      <input type="radio" style="margin-left: -9px;" routerLink="/login-arbic" />&nbsp;
-      <font color="white" style="font-size: 14px;">عربى</font>
 
-      &nbsp;
-      <!-- <button type="submit" style="background-color: #ff0000; height: 35px;
-                                    width: 100px; padding: 2px 20px;margin-top: -2px;" class="btn Rectangle-5-Copy">
-        <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
-      </button>
+      <font style="color:#F90E35">English</font>&nbsp;
+      <input type="radio" checked>&nbsp;
 
-      <a class="btn mb-1">
-        <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
-      </a> -->
+
+
+      <font color="white"> عربى </font>
+      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
+        routerLink="/sitemap-arabic" [checked]="Lang" />&nbsp;
 
     </div>
 
@@ -352,7 +354,7 @@
 <br>
 
 
-<div class="card col-md-12 " style="border-radius: 18px;
+<div class="card col-md-12" style="border-radius: 18px;
    background: white;">
   <br>
   <br>
@@ -372,23 +374,23 @@
    
   </ul>
 </form> -->
-  <ul class="w3-ul w3-hoverable bb_3 ml-3">
-    <li style="cursor:pointer" style="font-size: 18px;font-family: Roboto" routerLink="/login">Home</li>
+  <ul class="Sharjah-Asset-Manage ml-2">
+    <li style="cursor:pointer" routerLink="/login">Home</li>
     <br>
-    <li style="cursor:pointer" style="font-size: 18px;font-family: Roboto" routerLink="/about-us">About Us</li>
+    <li style="cursor:pointer" routerLink="/about-us">About Us</li>
     <br>
-    <li style="cursor:pointer" style="font-size: 18px;font-family: Roboto" routerLink="/supplier-register">Supplier</li>
+    <li style="cursor:pointer" routerLink="/supplier-register">Suppliers</li>
     <br>
-    <li style="cursor:pointer" style="font-size: 18px;font-family: Roboto" routerLink="/contactus">Contact Us</li>
+    <li style="cursor:pointer" routerLink="/contactus">Contact Us</li>
     <br>
-    <li style="font-size: 18px;font-family: Roboto">Services</li>
+    <li>Services</li>
     <!-- <h2><a >Services</h2> -->
     <br>
-    <ul style="margin-left: 35px;">
-      <li style="cursor:pointer" style="font-size: 16px;font-family: Roboto" routerLink="/amanservices">Aman</li><br>
-      <li style="cursor:pointer" style="font-size: 16px;font-family: Roboto" routerLink="/salamaservices">Salama</li>
+    <ul class="Sharjah-Asset-Manage ml-5">
+      <li style="cursor:pointer" routerLink="/amanservices">Aman</li><br>
+      <li style="cursor:pointer" routerLink="/salamaservices">Salama</li>
       <br>
-      <li style="cursor:pointer" style="font-size: 16px;font-family: Roboto" routerLink="/facilitymanagement">Integrated
+      <li style="cursor:pointer" routerLink="/facilitymanagement">Integrated
         Facility Management</li>
 
     </ul>
