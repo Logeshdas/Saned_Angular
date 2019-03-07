@@ -1,0 +1,255 @@
+
+.Coming-Soon {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0000;
+    
+  }
+
+  .Coming-Soon-ar{
+    font-family: GeezaPro;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+
+  .foot1{
+    font-family: GeezaPro;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+  }
+
+  .foot2{
+    font-family: GeezaPro;
+    font-size: 16px;
+    text-align: center;
+    color: #EAE7E7;
+    margin: 0px;
+    font-weight: 300;
+  }
+
+  /* .foot3{
+    font-family: Roboto;
+  font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+  } */
+
+  /* .foot4{
+    font-family: Roboto;
+  font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+  } */
+
+  .Company-Address-Tow {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px;
+  }
+
+  .Company-Address {
+    font-family: Roboto;
+    font-size: 16px;
+    text-align: center;
+    color: #D3CFCF;
+    margin: 0px;
+  }
+
+  .hr-white{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #979797;
+    margin: 1em 0;
+    padding: 0; 
+  }
+
+  .hr-black{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    width: 500px;
+    margin: 1em 0;
+    padding: 0; 
+  }
+
+  .img-set{
+    width: 80%;
+    height: auto;
+  }
+
+  .bg-img {
+    background: url("/assets/rectangle-2.png")no-repeat center center;
+    /* height: 500px; */
+   }
+
+   .img-bg{
+     width: 100%;
+     height: auto;
+   }
+
+
+   .img-on-text {
+    position: relative;
+    text-align: center;
+    /* color: white; */
+  }
+
+  .pos1{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+  }
+
+  .pos2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pos3{
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 70%;
+  transform: translate(-70%, -57%);
+}
+
+
+@media (max-width: 575.98px) {
+
+  .img-set{
+    width: 65%;
+    height: auto;
+  }
+
+  .hr-black{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    width: 230px;
+    margin: 1em 0;
+    padding: 0; 
+  }
+
+  .Coming-Soon {
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+
+  .Coming-Soon-ar{
+    font-family: GeezaPro;
+    font-size: 27px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+
+  .pos1{  
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.pos2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos3{
+position: absolute;
+width: 100%;
+top: 85%;
+left: 70%;
+transform: translate(-70%, -57%);
+}
+
+.foot1{
+  font-family: GeezaPro;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.foot2{
+  font-family: GeezaPro;
+  font-size: 12px;
+  text-align: center;
+  color: #EAE7E7;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.Company-Address-Tow {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.Company-Address {
+  font-family: Roboto;
+  font-size: 12px;
+  text-align: center;
+  color: #D3CFCF;
+  margin: 0px;
+}
+
+
+}
+
+ /* ipad */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .pos1{  
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.pos2{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos3{
+position: absolute;
+width: 100%;
+top: 85%;
+left: 70%;
+transform: translate(-70%, -57%);
+}
+
+}
+
+
+
+  /****   ipone 5   ***/
+  @media screen and (device-aspect-ratio: 40/71) {}

@@ -48,6 +48,7 @@ import { FacilityarabicComponent } from './facilityarabic/facilityarabic.compone
 
 //routing page while refreshing
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommingsoonComponent } from './commingsoon/commingsoon.component';
 
 
 const routes: Routes = [
@@ -75,8 +76,9 @@ const routes: Routes = [
   { path: 'privacy-arabic', component: PrivacyArabicComponent },
   { path: 'navbararabic', component: NavbararabicComponent },
 
+  { path: 'navbararabic', component: NavbararabicComponent },
 
-  { path: 'facilityarabic', component: FacilityarabicComponent },
+  { path: 'commingsoon', component: CommingsoonComponent },
 
 
 
@@ -133,6 +135,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyArabicComponent,
     NavbararabicComponent,
     FacilityarabicComponent,
+    CommingsoonComponent,
 
 
 
