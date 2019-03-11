@@ -55,6 +55,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   //{ path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: 'register-form', component: RegisterFormComponent },
+  { path: 'facilityarabic', component: FacilityarabicComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'facilitymanagement', component: facilitymanagementComponent },
   { path: 'home', component: LoginComponent },

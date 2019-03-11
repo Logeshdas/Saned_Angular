@@ -751,6 +751,7 @@
                        Invalid Email Address
                              </div> -->
                     </div>
+
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="password">Fax</label>
                       <br>
@@ -775,8 +776,12 @@
                                   class="alert" style="color: #f54b5e;">
                                Contact no. is required
                              </div> -->
-                      <input type="number" class="form-control col-md-8" name="contact_no_mobile"
+
+                      
+ 
+                      <input type="number"  class="form-control col-md-8" name="contact_no_mobile"
                         [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel"
+                        
                         [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" required />
 
                       <div *ngIf="f.submitted && contant_mobile.invalid" class="Sharjah-Asset-Manage-1">
@@ -819,7 +824,7 @@
                                      #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> -->
                       <div [hidden]="contact_email.valid || contact_email.pristine" class="Sharjah-Asset-Manage-1"
                         style="color: #f54b5e;">
-                        Invalid Email Address
+                        Please enter valid Email Address
                       </div>
 
 

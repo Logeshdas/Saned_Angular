@@ -290,11 +290,14 @@
 <!------ Include the above in your HEAD tag ---------->
 <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
 
+  <!-- <div class="sticky">I will stick to the screen when you reach my scroll position</div> -->
+
   <div class="row">
     <div class="col-md-1">
 
       <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                    ./assets/group@3x.png 3x" class="img-responsive">
+                    ./assets/group@3x.png 3x"
+        class="img-responsive">
     </div>
     <br>
     <div class="col-md-4"></div>
@@ -317,14 +320,16 @@
 
 
       <font color="white"> عربى </font>
-      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
-        routerLink="/facilityarabic" [checked]="Lang" />&nbsp;
+      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/facilityarabic"
+        [checked]="Lang" />&nbsp;
 
     </div>
 
 
 
   </div>
+
+
 
 
 
@@ -399,7 +404,7 @@
         <div class="col-md-8">
           <a class="WHAT-IS-Aman-">Our Core services:</a>
           <br>
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>1.Facilities Management Services</b></a>
+          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>1. Facilities Management Services</b></a>
 
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
@@ -416,7 +421,7 @@
         </div>
         <br>
         <div class="col-md-8">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>2.FM Consulting Services</b></a>
+          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>2. FM Consulting Services</b></a>
           <br>
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
@@ -434,7 +439,7 @@
         </div>
         <br>
         <div class="col-md-8">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>3.Industrial Maintenance Services</b></a>
+          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>3. Industrial Maintenance Services</b></a>
 
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
@@ -448,13 +453,13 @@
           </div>
         </div>
         <br>
-        <div class="col-md-8">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>4.Facilities Management Services</b></a>
+        <div class="col-md-8 ml-0 ml-sm-3">
+          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Facilities Management Services</b></a>
 
           <br>
-
+<div class="ml-0 ml-sm-3">
           <a class="WHAT-IS-Aman-2">Hard Services</a>
-          <!-- <h6><b>Hard Services</b></h6> -->
+       
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
 
@@ -468,6 +473,7 @@
 
             </ul>
           </div>
+       
           <br>
           <a class="WHAT-IS-Aman-2">Soft Services</a>
 
@@ -511,21 +517,33 @@
             </ul>
           </div>
         </div>
+        </div>
         <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
-          <p>These services are offered as bundled services (two or more services) or fully integrated and tailored to
+          <p class="ml-0 ml-sm-3">These services are offered as bundled services (two or more services) or fully
+            integrated and tailored to
             each
             customer’s unique requirements.</p>
         </div>
 
         <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>FM Consulting Services</b></a>
+          <div class="ml-0 ml-sm-3">
+            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;">
+              <b>FM Consulting Services</b>
+            </a>
 
-          <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED offers partnerships with building owners and
-            users for facilitation of an efficient transition,
-            maximizing revenues with lower operating costs while maintaining high service levels.
-            <br>
-            In addition to providing core Facilities Management Services our FMCS provides solutions to our clients on:
-          </p>
+            <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED offers partnerships with building owners and
+              users for facilitation of an efficient transition,
+              maximizing revenues with lower operating costs while maintaining high service levels.
+              <br>
+              In addition to providing core Facilities Management Services our FMCS provides solutions to our clients
+              on:
+            </p>
+
+        
+
+
+
+
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
               <li>Accounts and Administration</li>
@@ -559,7 +577,8 @@
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
             <ul>
               <li>Property and Services takeover for complete maintenance and management</li>
-              <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely payment of
+              <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely payment
+                of
                 all
                 dues and taxes</li>
 
@@ -575,11 +594,13 @@
                 maintenance
               </li>
 
-              <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and complaints,
+              <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and
+                complaints,
                 MIS’s
                 – daily, monthly and quarterly and annual</li>
 
-              <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease agreements
+              <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease
+                agreements
                 /
                 Terms and Conditions of occupants /Timely submission of bills, follow up and collection of rents and
                 payments
@@ -653,7 +674,8 @@
             <p class="Sharjah-Asset-Manage text-justify mt-2 ">Supported by a large pool of resources with varied
               skill sets to match the requirements of manufacturing
               units
-              enables ramping up or down activities effectively, in a time bound manner while developing and maintaining
+              enables ramping up or down activities effectively, in a time bound manner while developing and
+              maintaining
               a
               database of trained workforce as a buffer at all times for temporary placement.</p>
 
@@ -673,10 +695,12 @@
 
                 <li> Achieve highest level of quality through process-driven service delivery methods</li>
 
-                <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality standards
+                <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality
+                  standards
                 </li>
 
-                <li> Contribute to industry with continuous innovations and improvements on quality and processes in our
+                <li> Contribute to industry with continuous innovations and improvements on quality and processes in
+                  our
                   Quality Management Systems</li>
               </ul>
             </div>
@@ -715,19 +739,17 @@
           <br>
           <br>
           <br>
-
+        </div>
         </div>
 
       </div>
 
 
       <div class="col-md-5 img ">
-        <!-- <img src="./assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
-          ./assets/shutterstock-772324159@3x.png 3x" class="img-responsive"> -->
-        <img src="./assets/facility_image1.png" srcset="./assets/facility_image1@2x.png 2x,
-          ./assets/facility_image1@3x.png 3x" class="img-responsive" width="100%" height="400vh">
-        <!-- <img src="./assets/shutterstock-772324159.png" class="img-responsive" width="100%" height="50%"> -->
 
+        <img src="./assets/facility_image1.png" srcset="./assets/facility_image1@2x.png 2x,
+          ./assets/facility_image1@3x.png 3x"
+          class="img-responsive sticky" width="100%" height="400vh">
 
       </div>
 
