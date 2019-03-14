@@ -25,6 +25,9 @@ export class Loginv2Component implements OnInit {
   ngOnInit() {
   }
 
+  goToTop(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   Subscribe(model_value) {
     console.log("hello", this.email_id)

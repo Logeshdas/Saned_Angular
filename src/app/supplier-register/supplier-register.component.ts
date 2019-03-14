@@ -17,9 +17,13 @@ import swal from 'sweetalert2';
 export class SupplierRegisterComponent implements OnInit {
   navbarOpen = false;
 
+  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
+
+  
+
   localVar;
   model: any = {};
   Lang: any = {};
@@ -30,17 +34,15 @@ export class SupplierRegisterComponent implements OnInit {
   onSubmit: any = {};
   minDate: Date;
   trade_license_vdate: any = {};
+
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
     this.minDate = new Date();
     this.minDate.setDate(this.minDate.getDate() - 1);
-
   }
 
 
   formatsDateTest: string[] = [
-
     'yyyy/MM/dd',
-
   ];
 
 
@@ -90,26 +92,19 @@ export class SupplierRegisterComponent implements OnInit {
 
       swal(res_data)
       this.router.navigate(['/login']);
-      // if (this.data.Message == "User Already Registered") {
-
-      //   console.log("data=====>", this.data);
-
-      //   swal(this.data.Message + "<br>" + "مستخدم مسجل بالفعل");
-
-
-      // }
-      // else if (this.data.message == "Please provide an Emailid") {
-      //   console.log("email")
-      //   swal("Please fill the Mandatory fields")
-      // }
-
-      // else if (this.data.Message == "please check your email for one time password") {
-      //   swal("please check your email for one time password")
-      //   document.getElementById('id01').style.display = 'block'
-      // }
-      // this.router.navigate(['/login']);
-
+      
     });
 
   };
+
+  
+  contactNo_mobile(event){
+      var value =  String(this.model.contant_mobile);
+     
+      if(value.length > 9){
+      this.model.contant_mobile = Number(value.substring(0,9).match(/\d+$/));
+      }
+      console.log(value)
+  }
+
 }

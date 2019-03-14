@@ -302,48 +302,17 @@
   /* ===========================footer style end================ */
 </style>
 
-<!-- <header>
-                                   <img src="Group.png" style="flex:left">
-                                   </header> -->
-
-
-
-
-
-
-
-
-
-
-<!--<h1>English</h1>-->
-
-
-
 
 <!--Intro Section-->
-<section class="view intro-2 hm-gradient" style="width: 100%;
-         height: 100vh;" dir="">
-  <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-                                       assests/lawyer-today-1@3x.png 3x"
-                          class="NEM mt-3"> -->
+<section class="view intro-2 hm-gradient container-fluid" style="width: 100%; height: 100vh;" dir="">
+
   <div class="row">
-    <div class="col-md-1">
-      <img src="./assets/group.png" class="img-responsive">
-
+    <div class="col-md-5 p-0">
+      <img src="./assets/group.png" class="img-fluid">
     </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-6 mt-5 text-right">
+
+    <div class="col-md-6 mt-0 mt-md-5 text-right">
       &nbsp; &nbsp;
-      <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-          margin-left: -18px;">
-            <font color="white">تسجيل الدخول </font>
-          </a>&nbsp;&nbsp;
-          <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-              width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-            <font color="white">تسجيل</font>
-          </button>&nbsp; -->
-
-
 
       <font style="color:#F90E35">English</font>&nbsp;
       <input type="radio" checked>&nbsp;
@@ -351,8 +320,8 @@
 
 
       <font color="white"> عربى </font>
-      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
-        routerLink="/login-arbic" [checked]="Lang" />&nbsp;
+      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/login-arbic"
+        [checked]="Lang" />&nbsp;
 
     </div>
   </div>
@@ -366,16 +335,6 @@
 
       &nbsp; &nbsp; <input type="radio" checked />
       <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
-      <!-- &nbsp; <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
-        class="btn Rectangle-5-Copy">
-        <font color="white">Register</font>
-      </button>
-
-      <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
-        routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
-                          ">
-        <font color="white" style="font-family: Roboto;">Sign out </font>
-      </a> -->
 
     </div>
 
@@ -384,8 +343,7 @@
 
       <form class="col-md-4 modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <br>
           <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
         </div>
@@ -394,12 +352,11 @@
           <div class="row">
             <div class="col-md-12">
               <label class="col-md text-left"><b>Email ID</b></label>
-              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name"
-                #name="ngModel">
+              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name" #name="ngModel">
 
               <label class="col-md text-left"><b>Password</b> </label>
-              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password"
-                name="password" #password="ngModel">
+              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
+                #password="ngModel">
 
               <label class="col-md text-left">
                 <input type="checkbox" class="Rectangle-4 "> Remember me
@@ -408,7 +365,8 @@
                   password?</a></label>
               <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
                                    color: white;
-                                   height: 47px;"><a class="">Submit</a></button>
+                                   height: 47px;"><a
+                  class="">Submit</a></button>
               <p>New to Saned?<a routerLink="/register-form" class="Mask ml-2">
                   <font color="#f34235">Register Here</font>
                 </a></p>
@@ -424,8 +382,7 @@
 
       <form class="col-md-4 modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id02').style.display='none'" class="close"
-            title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
           <br>
           <a class="Welcome-To-Aman">{{'Forgot password'| translate:user}}</a>
         </div>
@@ -439,18 +396,11 @@
               <div [hidden]="name.email || name.pristine" class="alert" style="color: #f54b5e;">
                 Invalid Email Address
               </div>
-              <!-- <div class="form-group">
-                                                       <label>Email</label>
-                                                       <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                                                       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                                                           <div *ngIf="f.email.errors.required">Email is required</div>
-                                                           <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                                                       </div>
-                                                   </div> -->
+
 
               <label class="col-md text-left"><b>New Password</b> </label>
-              <input type="password" class="w3-input" id="new_password" required [(ngModel)]="model.password"
-                name="password" #password="ngModel">
+              <input type="password" class="w3-input" id="new_password" required [(ngModel)]="model.password" name="password"
+                #password="ngModel">
 
               <label class="col-md text-left"><b>Confirm Password</b></label>
               <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
@@ -459,7 +409,8 @@
               <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
                 (click)="forgetpassword(model)" style="background: red;
                                    color: white;
-                                   height: 47px;"><a class="">Submit</a></button>
+                                   height: 47px;"><a
+                  class="">Submit</a></button>
 
             </div>
           </div>
@@ -473,8 +424,7 @@
 
       <form class="modal-content animate col-md-4" action="/action_page.php">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id03').style.display='none'" class="close"
-            title="close">&times;</span>
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="close">&times;</span>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>Enter One Time Password</h4>
         </div>
@@ -483,52 +433,45 @@
           <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password
             has
             been sent to your email address and mobile number</p>
-          <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-          <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+
           <input type="text" class="form-control col-md-12 inline" id="otp" required [(ngModel)]="model.otp" name="name"
             #name="ngModel">
 
-          <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
-
-          <!-- <div id="divOuter">
-                                                               <div id="divInner">
-                                                                   <input id="partitioned" type="text" maxlength="4" />
-                                                               </div>
-                                                           </div> -->
-          <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                                   <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                                   <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
-          <!-- <label for="psw"><b>Password</b></label>
-                                   <input type="password" placeholder="Enter Password" name="psw" required> -->
 
           <button style="background-color: #ff0000;height: 47px;
-                                   color: white;" class="w3-btn w3-red col-md-12"
-            (click)="forgetotpverification(model)" type="submit">Submit</button>
-          <!-- <label>
-                                     <input type="checkbox" checked="checked" name="remember"> Remember me
-                                   </label> -->
+                                   color: white;"
+            class="w3-btn w3-red col-md-12" (click)="forgetotpverification(model)" type="submit">Submit</button>
 
         </div>
         <br><br><br>
-        <!-- <div class="container" style="background-color:#f1f1f1">
-                                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                   <span class="psw">Forgot <a href="#">password?</a></span>
-                                 </div> -->
+
       </form>
     </div>
     <!-- ======otp end========== -->
 
   </div>
 
+  <div class="container-fluid">
+    <div class="row mt-5 mt-sm-0 mt-md-5">
+      <div class="col-md-7 col-sm-7 ">
+        <!-- <h1>hai</h1> -->
+        <div class="ml_33">
+          <a class="h1-responsive Delivering-your-divi ft_18" data-wow-delay="0.3s">
+            <font color="white"><b>Welcome to SANED</b> - We manage and run
+              your real estate and technical facilities and
+              support you in your core business with our
+              wide range of services.</font>
+          </a>
+        </div>
+      </div>
+    </div>
 
+  </div>
 
-
-
-
-  <div class="mt">
+  <!-- <div class="mt">
     <div class="row">
 
-      <div class="col-md-7">
+      <div class="col-md-7 col-sm-7 bg-danger">
 
         <div class="full-bg-img">
 
@@ -536,9 +479,7 @@
 
             <div class="row flex-center pt-4 ">
               <div class="col-md-12 text-center text-md-left margins">
-                <!-- <section class="logov2"></section> -->
-
-
+               
                 <div class="white-text mt-2 text-justify ml_mr">
                   <a class="h1-responsive Delivering-your-divi ft_18 ml_33" data-wow-delay="0.3s">
                     <font color="white"><b>Welcome to SANED</b> - We manage and run
@@ -548,14 +489,9 @@
 
                   </a>
                   <br>
-                  <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-
+                 
                   <br>
-                  <!-- <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a> -->
-                  <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                                                                srcset="./assets/tail-left-copy@2x.png 2x,
-                                                                        ./assets/tail-left-copy@3x.png 3x"
-                                                                class="tail-left-copy"></a> -->
+                
                 </div>
               </div>
             </div>
@@ -566,7 +502,7 @@
 
       <hr style="color:red;">
     </div>
-  </div>
+  </div> -->
 
 </section>
 
@@ -593,10 +529,6 @@
 
     <br><br>
     <div class="col-md-6">
-      <!-- <a routerLink="/amanservices">
-                                          <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
-                                                 /assets/002-fire-extinguisher@3x.png 3x"
-                                            class="fire-extinguisher " style="cursor: pointer;"> </a> -->
       <br>
       <br>
       <a class="WHAT-IS-Aman-">WHAT IS AMAN ?</a>
@@ -606,17 +538,15 @@
 
       <p class="Sharjah-Asset-Manage text-justify">
 
-        To ensure fast response to fire emergencies, SPSA partnered with SANED have initiated “AMAN” project. AMAN, aims
+        To ensure fast response to fire emergencies, SPSA partnered with SANED have initiated “AMAN” project. AMAN,
+        aims
         to protect lives and properties by establishing a safe and reliable connection between all firefighting systems
-        in all properties in Sharjah, with the central monitoring station that is continuously monitored to identify and
+        in all properties in Sharjah, with the central monitoring station that is continuously monitored to identify
+        and
         respond to emergencies instantly ensuring the safety of people and assets.
         <br>
         <br>
-        <!-- <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
-        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                                    srcset="./assets/tail-left-copy@2x.png 2x,
-                                            ./assets/tail-left-copy@3x.png 3x"
-                                    class="tail-left-copy"></a> -->
+
       </p>
     </div>
     <!-- <div class="col-md-2"></div> -->
@@ -634,11 +564,7 @@
         training programs in the prevention and safety of workers within the private and public sectors.
 
         <br>
-        <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
-        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                                              srcset="./assets/tail-left-copy@2x.png 2x,
-                                                      ./assets/tail-left-copy@3x.png 3x"
-                                              class="tail-left-copy"></a> -->
+
       </p>
       <!-- </div> -->
     </div>
@@ -661,13 +587,9 @@
 
 
         <br>
-        <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
-        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                                              srcset="./assets/tail-left-copy@2x.png 2x,
-                                                      ./assets/tail-left-copy@3x.png 3x"
-                                              class="tail-left-copy"></a> -->
+
       </p>
-      <!-- </div> -->
+
     </div>
 
 
@@ -708,7 +630,8 @@
         <div class="col-md-7">
 
           <img src="./assets/home1.png" srcset="./assets/home1@2x.png 2x,
-                      ./assets/home1@3x.png 3x" class="img-responsive" width="100%" height="95%">
+                      ./assets/home1@3x.png 3x"
+            class="img-responsive" width="100%" height="95%">
           <br>
           <!-- <p>hello moto</p> -->
         </div>

@@ -166,8 +166,8 @@
   
   }
   .Delivering-your-divi {
-    width: 699px;
-    height: 168px;
+    /* width: 699px;
+    height: 168px; */
     font-family: Roboto;
     font-size: 30px;
     font-weight: 500;
@@ -770,74 +770,8 @@
     background-size: cover;
     
     }
+
    
-    /* ===========navbar start========= */
-  /* .Rectangle-2 {
-    width: 123px;
-    height: 41px;
-    border-radius: 5px;
-    background-color: #ff0000;
-  }
-   .Contact-Us {
-    width: 90px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-   .Suppliers {
-    width: 77px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-   .Services {
-    width: 70px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-   .About-Us-Copy {
-    width: 75px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-   .Home-Copy {
-    width: 49px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  } */
 /* ====================responsive================= */
   .mt_20{
     margin-top: 0px;
@@ -851,8 +785,17 @@
 .wt_140{
   width: 140% !important;
 }
+
+  /* .ft_18 {
+    font-size: 30px !important;
+} */
+
+
 /* mobile media query */
-@media screen and (min-device-width: 320px) and (max-device-width: 760px){
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
   .nav-bg {
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
@@ -874,11 +817,102 @@
     font-size: 17px !important;
 }
 .ml_33{
-  /* margin-left: -27px !important; */
+  /* margin-left: -20px !important; */
+  margin-top: -15px;
+
+  /* width: 90%; */
+ 
+ }
+   
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+  .ml_mr{
+    margin-right: 61px !important;
+    margin-left: -22px !important;
+  }
+  .mt-2, .my-2 {
+    margin-top: -1.5rem!important;
+}
+  .pt-120{
+    position: relative;
+    right: 90px;
+  }
+  .mt-414{
+    margin-top: 0px !important;
+  }
+  .ft_18 {
+    font-size: 20px !important;
+}
+.ml_33{
+  margin-left: -20px !important;
+  width: 90%;
+  /* background: #000; */
+ }
+}
+
+/* only for iphone 5s */
+@media (width: 568px) { 
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+  .ml_mr{
+    margin-right: 61px !important;
+    margin-left: -22px !important;
+  }
+  .mt-2, .my-2 {
+    margin-top: -1.5rem!important;
+}
+  .pt-120{
+    position: relative;
+    right: 90px;
+  }
+  .mt-414{
+    margin-top: 0px !important;
+  }
+  .ft_18 {
+    font-size: 14px !important;
+}
+.ml_33{
+  margin-left: -20px !important;
+  margin-top: -70px;
+  width: 67%;
+  /* background:green; */
+ }
 }
 
 
+/* @media screen and (min-device-width: 320px) and (max-device-width: 760px){
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+  .ml_mr{
+    margin-right: 61px !important;
+    margin-left: -22px !important;
+  }
+  .mt-2, .my-2 {
+    margin-top: -1.5rem!important;
 }
+  .pt-120{
+    position: relative;
+    right: 90px;
+  }
+  .mt-414{
+    margin-top: 0px !important;
+  }
+  .ft_18 {
+    font-size: 17px !important;
+}
+.ml_33{
+  margin-left: -20px !important;
+  width: 90%;
+}
+} */
+
 /* css for ipad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1022px){
   .nav-bg {
@@ -907,9 +941,7 @@ width: 135px !important;
   }
 
   .mt_20{
-    
-      margin-top: 4px !important; 
-    
+    margin-top: 4px !important; 
     shape-margin: 0px !important;
   }
 
@@ -933,16 +965,22 @@ width: 135px !important;
 padding:0 0px !important;
 }
   .ft_18 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .wt_106{
     width: 106% !important;
   }
 
+  .ml_33{
+    margin-left: -20px !important;
+    margin-top: -30px;
+    /* width: 90%; */
+   }
 
 }
-@media screen and (max-device-width: 1024px){
+
+@media screen and (min-device-width: 1023px) and (max-device-width: 1024px){
   .nav-bg {
     /* background-color: rgba(0, 0, 0, 0.65) !important; */
   }
@@ -997,6 +1035,7 @@ padding:0 0px !important;
 }
   .ft_18 {
     font-size: 30px;
+  
   }
 
   .wt_106{
@@ -1010,8 +1049,3 @@ padding:0 0px !important;
 }
 
 }
-
-/* css for ipad pro*/
-
-
-/* ======navbar end===== */

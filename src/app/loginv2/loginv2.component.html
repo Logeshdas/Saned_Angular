@@ -311,34 +311,25 @@
       <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
       <ul class="list-unstyled quick-links">
 
-        <li><a routerLink="/about-us" class="about">
+        <li><a routerLink="/about-us" (click)="goToTop()" class="about">
             <font color="white">About Us</font>
           </a></li>
-        <li><a routerLink="/amanservices" class="about">
+        <li><a routerLink="/amanservices" (click)="goToTop()" class="about">
             <font color="white">Services</font>
           </a></li>
-        <li><a routerLink="/sitemap" class="about">
-            <font color="white">Sitemap</font>
+        <li><a routerLink="/sitemap" (click)="goToTop()" class="about">
+            <font color="white">Site map</font>
           </a></li>
-        <li><a routerLink="/contactus" class="about">
+        <li><a routerLink="/contactus" (click)="goToTop()" class="about">
             <font color="white">Contact Us</font>
           </a></li>
-        <li><a routerLink="/privacy" class="about">
+        <li><a routerLink="/privacy" (click)="goToTop()" class="about">
             <font color="white">Privacy Policy</font>
           </a></li>
       </ul>
     </div>
 
-    <!-- <div class="col-sm-3">
-                                     <h5 class="home">Support</h5>
-                                     <ul class="list-unstyled quick-links">
-                                       <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-                                       <li><a class="about"><font color="white">Disclaimer</font></a></li>
-                                       <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-                                       <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-                          
-                                     </ul>
-                                   </div> -->
+
     <div class="col-sm-2">
       <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
       <ul class="list-unstyled quick-links">
@@ -385,9 +376,9 @@
           Newsletter</h6>
         <div class="input-group mb-3">
 
-          <input type="email" name="email_id" [(ngModel)]="model_value.email" #name="ngModel" id="email_id" style="background: black;
+          <input type="email"  name="email_id" [(ngModel)]="model_value.email" #name="ngModel" id="email_id" style="background: black;
                                         border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
-            class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+            class="form-control"  placeholder="Enter your mail id" aria-label="Recipient's username"
             aria-describedby="basic-addon2">
 
           <div class="input-group-append">

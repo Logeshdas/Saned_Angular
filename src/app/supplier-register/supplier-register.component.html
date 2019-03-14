@@ -438,60 +438,37 @@
 </style>
 
 
-<!-- <div> -->
 
-<!-- <div class = "switch" id="en" >
-      <label><input #arabic type="radio" id= "ar1" name="size" (change)="0" >عربى</label>
-      <label><input #english type="radio" id= "ar1" name="size" (change)="0" checked>English</label>
-  </div> -->
 
 <div class="">
 
 
   <div>
-    <!------ Include the above in your HEAD tag ---------->
-    <!-- <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image.png);height: 623px;">
-     -->
+
     <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
-      <div class="row">
-        <div class="col-md-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 p-0">
+            <img class="img-fluid" src="./assets/group.png" srcset="./assets/group@2x.png 2x, ./assets/group@3x.png 3x">
+          </div>
+          <br>
 
-          <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                        ./assets/group@3x.png 3x" class="img-responsive">
+          <div class="col-md-6 mt-5 text-right">
+            &nbsp; &nbsp;
+
+            <font style="color:#F90E35">English</font>&nbsp;
+            <input type="radio" checked>&nbsp;
+
+
+
+            <font color="white"> عربى </font>
+            <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/supplier-register-arabic"
+              [checked]="Lang" />&nbsp;
+
+          </div>
         </div>
-        <br>
-        <div class="col-md-4"></div>
-        <div class="col-md-6 mt-5 text-right">
-          &nbsp; &nbsp;
-          <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-                margin-left: -18px;">
-                  <font color="white">تسجيل الدخول </font>
-                </a>&nbsp;&nbsp;
-                <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-                    width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-                  <font color="white">تسجيل</font>
-                </button>&nbsp; -->
-
-
-
-          <font style="color:#F90E35">English</font>&nbsp;
-          <input type="radio" checked>&nbsp;
-
-
-
-          <font color="white"> عربى </font>
-          <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
-            routerLink="/supplier-register-arabic" [checked]="Lang" />&nbsp;
-
-        </div>
-
-
-
       </div>
-      <!-- <div class="full-bg-img"> -->
-      <!-- <div class="container flex-center"> -->
-      <!-- <div class="row flex-center pt-5 mt-3"> -->
-      <!-- <div class="col-md-6 text-center"> -->
+
       <br><br><br><br><br><br>
       <div class="text-center">
         <h1>
@@ -499,12 +476,7 @@
         </h1>
 
       </div>
-      <!-- </div> -->
 
-
-      <!-- </div> -->
-      <!-- </div> -->
-      <!-- </div> -->
     </section>
     <br>
     <br>
@@ -526,8 +498,7 @@
 
       <form class="modal-content animate col-md-4" action="/action_page.php">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="close">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
           <br>
           <br>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
@@ -556,8 +527,8 @@
           <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
           <div class="ml-3">
-            <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center"
-              (click)="supplieremailotpverification(model)" type="submit">Submit</button>
+            <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center" (click)="supplieremailotpverification(model)"
+              type="submit">Submit</button>
           </div>
           <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -604,8 +575,7 @@
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                   <div class="row col-md-12">
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="name">UAE Trade License Number <span class="req"
-                          style="color: #f54b5e;">*
+                      <label class="Sharjah-Asset-Manage" for="name">UAE Trade License Number <span class="req" style="color: #f54b5e;">*
                         </span></label>
 
                       <!-- <input type="text" class="form-control col-md-8" id="uae_trade_license_no" 
@@ -616,9 +586,9 @@
              class="alert" style="color: #f54b5e;">
              License Number is required
         </div> -->
-                      <input type="text" class="form-control col-md-8" name="uae_trade_license_no"
-                        [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }" required />
+                      <input type="text" class="form-control col-md-8" name="uae_trade_license_no" [(ngModel)]="model.trade_license_no"
+                        #trade_license_no="ngModel" [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }"
+                        required />
 
                       <div *ngIf="f.submitted && trade_license_no.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="trade_license_no.errors.required" class="">Please enter a License number</div>
@@ -636,8 +606,7 @@
 
 
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="name">Trade License Validity Date<span class="req"
-                          style="color: #f54b5e;">*
+                      <label class="Sharjah-Asset-Manage" for="name">Trade License Validity Date<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <!-- <input type="text" class="form-control col-md-8" id="licensevalidity"
                         required
@@ -645,9 +614,8 @@
                         #licensevalidity="ngModel"> -->
                       <!-- value="{{ date:'yyyy/MM/dd' }}" -->
                       <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8"
-                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
-                        #trade_license_vdate="ngModel" bsDatepicker
-                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
+                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate" #trade_license_vdate="ngModel"
+                        bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
 
                       <div *ngIf="f.submitted && trade_license_vdate.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="trade_license_vdate.errors.required">Please enter a Contact Person Name</div>
@@ -662,8 +630,7 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="name">Company Name<span class="req"
-                          style="color: #f54b5e;">*
+                      <label class="Sharjah-Asset-Manage" for="name">Company Name<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <br>
                       <!-- <input type="text" class="form-control col-md-8" id="company_name"
@@ -674,9 +641,9 @@
                         class="alert alert-danger">
                      Name is required
                    </div> -->
-                      <input type="text" class="form-control col-md-8" name="company_name"
-                        [(ngModel)]="model.company_name" #company_name="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }" required />
+                      <input type="text" class="form-control col-md-8" name="company_name" [(ngModel)]="model.company_name"
+                        #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
+                        required />
 
                       <div *ngIf="f.submitted && company_name.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="company_name.errors.required">Please enter a Company Name</div>
@@ -684,7 +651,8 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="phonenumber">List of services and products as approved by
+                      <label class="Sharjah-Asset-Manage" for="phonenumber">List of services and products as approved
+                        by
                         the economic
                         department<span class="req" style="color: #f54b5e;">*
                         </span></label>
@@ -700,8 +668,8 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="address">Registered Office Address:</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="reg_office_add" required
-                        [(ngModel)]="model.reg_off_add" name="reg_office_add" #reg_off_add="ngModel">
+                      <input type="text" class="form-control col-md-8" id="reg_office_add" required [(ngModel)]="model.reg_off_add"
+                        name="reg_office_add" #reg_off_add="ngModel">
                       <!-- <div [hidden]="name.valid || name.pristine"
                             class="alert alert-danger">
                          Name is required
@@ -709,8 +677,7 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="pobox">Contact Person Name<span class="req"
-                          style="color: #f54b5e;">*
+                      <label class="Sharjah-Asset-Manage" for="pobox">Contact Person Name<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <br>
                       <!-- <input type="text" class="form-control col-md-8" id="contact_name"
@@ -721,9 +688,9 @@
                               class="alert" style="color: #f54b5e;">
                            Name is required
                          </div> -->
-                      <input type="text" class="form-control col-md-8" name="contact_name"
-                        [(ngModel)]="model.contact_name" #contact_name="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }" required />
+                      <input type="text" class="form-control col-md-8" name="contact_name" [(ngModel)]="model.contact_name"
+                        #contact_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }"
+                        required />
 
                       <div *ngIf="f.submitted && contact_name.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="contact_name.errors.required">Please enter a Contact Person Name</div>
@@ -732,8 +699,8 @@
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="mobile">Contact No</label>
-                      <input type="number" class="form-control col-md-8" id="contact_no" required
-                        [(ngModel)]="model.contact_no" name="contact_no" #contact_no="ngModel">
+                      <input type="number" class="form-control col-md-8" id="contact_no" required [(ngModel)]="model.contact_no"
+                        name="contact_no" #contact_no="ngModel">
                       <!-- <div [hidden]="mobile.valid || mobile.pristine"
                                 class="alert" style="color: #f54b5e;">
                              Mobile number is required
@@ -743,9 +710,8 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="contactpersonposition">Contact Person Position</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="contact_position" required
-                        [(ngModel)]="model.contact_desig" name="contact_position" #contact_desig="ngModel"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                      <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contact_desig"
+                        name="contact_position" #contact_desig="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                       <!-- <div [hidden]="email.valid || email.pristine"
                                   class="alert" style="color: #f54b5e;">
                        Invalid Email Address
@@ -755,34 +721,28 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="password">Fax</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="fax_no" required
-                        [(ngModel)]="model.contact_fax" name="contact_fax" #contact_fax="ngModel">
-
-                      <!-- <div [hidden]="fax.valid || password.pristine"
-                                  class="alert" style="color: #f54b5e;">
-                               Password Should contain atleast one Uppercase,one number Min 8 characters
-                             </div>
-                             <span id="strength_message"></span> -->
+                      <input type="text" class="form-control col-md-8" id="fax_no" required [(ngModel)]="model.contact_fax"
+                        name="contact_fax" #contact_fax="ngModel">
                     </div>
+
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Contact No. (mobile)<span class="req"
                           style="color: #f54b5e;">*
                         </span></label>
-                      <!-- <input type="text" class="form-control col-md-8" id="contact_no_mobile" passvalidator="password"
-                                      required
-                                      [(ngModel)]="model.contactmobilenumber" name="contact_no_mobile" 
-                                      #contactmobilenumber="ngModel">
-                             <div [hidden]="contactmobilenumber.valid || contactmobilenumber.pristine"
-                                  class="alert" style="color: #f54b5e;">
-                               Contact no. is required
-                             </div> -->
 
-                      
- 
-                      <input type="number"  class="form-control col-md-8" name="contact_no_mobile"
-                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel"
+                      <input type="number" class="form-control col-md-8"
+                      (keydown)="contactNo_mobile($event)"
+                       required name="contact_no_mobile" autocomplete="off"
+                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel" 
+                        pattern="^[6-9]\d{9}$"
+                        [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" />
+
+                   
+                     
                         
-                        [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" required />
+                      <div [hidden]="!model.contant_mobile" style="color:red">
+                          <div *ngIf="!contant_mobile.valid">Please enter valid Contact NO </div> 
+                      </div>
 
                       <div *ngIf="f.submitted && contant_mobile.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="contant_mobile.errors.required">Please enter a Mobile number</div>
@@ -794,56 +754,35 @@
                       <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
                         required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-
-                      <!-- <div [hidden]="company_email.touched && companyemail.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
-
-
-                      <!-- </div> -->
                     </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Email address of Contact Person<span
                           class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <!-- <input type="email" class="form-control col-md-8" id="contact_email" passvalidator="password"
-                                      required
-                                      [(ngModel)]="model.emailcontactperson" name="contact_email" 
-                                      #emailcontactperson="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                               <div [hidden]="emailcontactperson.valid || emailcontactperson.pristine"
-                                    class="alert" style="color: #f54b5e;">
-                              
-                                     </div> -->
-                      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        class="form-control col-md-8" name="contact_email" [(ngModel)]="model.contact_email"
-                        #contact_email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }"
-                        required />
 
-                      <!-- <input type="text" class="form-control col-md-8" id="email"
-                                     required 
-                                     [(ngModel)]="model.email" name="email" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
-                                     #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> -->
-                      <div [hidden]="contact_email.valid || contact_email.pristine" class="Sharjah-Asset-Manage-1"
-                        style="color: #f54b5e;">
+                      <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control col-md-8"
+                        name="contact_email" [(ngModel)]="model.contact_email" autocomplete="off" #contact_email="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }" required />
+
+                    
+
+
+                      <div [hidden]="contact_email.valid ||!model.contact_email" class="Sharjah-Asset-Manage-1" style="color: #f54b5e;">
                         Please enter valid Email Address
                       </div>
-
-
 
                       <div *ngIf="f.submitted && contact_email.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="contact_email.errors.required">Please enter a Contact Person Email</div>
                       </div>
-                      <!-- <div [hidden]="emailcontactperson.touched && emailcontactperson.errors?.notequal"class="alert" style="color: #f54b5e;"> -->
 
-                      <!-- s -->
-                      <!-- </div> -->
                     </div>
 
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Website Address</label>
-                      <input type="email" class="form-control col-md-8" id="website_add" required
-                        [(ngModel)]="model.website_add" name="website_add" #website_add="ngModel"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                      <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.website_add"
+                        name="website_add" #website_add="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
                     </div>
 
@@ -852,21 +791,18 @@
 
 
                   </div>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-4"></div>
-                      <div class="col-md-4">
+                  <div class="container-fluid text-center mt-4">
 
-                        <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
-                        <button type="submit" style="background-color: #ff0000;padding: 8px 20px;"
-                          onclick="document.getElementById('id01').style.display='none'"
-                          class="btn Sharjah-Asset-Manage-submit" (click)="supplierregister(model)">
-                          <font color="white">Submit</font>
-                        </button>
-                        <!-- <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">Reset</button> -->
-                      </div>
-                      <div class="col-md-4"></div>
+                    <div>
+
+                      <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='none'"
+                        class="btn Sharjah-Asset-Manage-submit" (click)="supplierregister(model)">
+                        <font color="white">Submit</font>
+                      </button>
+
                     </div>
+
+
                   </div>
                 </form>
                 <br>

@@ -3,7 +3,9 @@ import { TranslateService } from '@ngx-translate/core';
 import { APIService } from '../api.service';
 import { Router } from '@angular/router';
 import swal from 'sweetalert2';
+import { Props } from '../props';
 import { SimpleGlobal } from 'ng2-simple-global';
+
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
@@ -11,6 +13,10 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class AboutUsComponent implements OnInit {
   navbarOpen = false;
+
+  //  props : Props ={
+  //   head:"aboutus-arabic"
+  // }
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

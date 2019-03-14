@@ -13,13 +13,11 @@
 
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
   /* ==============footer style start ========= */
   .container1 {
     background: black;
     color: white
   }
-
   .footer {
     /* position: fixed; */
     left: 0;
@@ -30,29 +28,24 @@
     text-align: center;
     /* height: 75px; */
   }
-
   .container {
     background: black;
     color: white
   }
-
   .social:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
   }
-
   .social {
     -webkit-transform: scale(0.8);
     /* Browser Variations: */
-
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
   }
-
   .fa {
     padding: 20px;
     font-size: 30px;
@@ -61,26 +54,22 @@
     text-decoration: none;
     border-radius: 50%;
   }
-
   .img-thumbnail {
     background: black;
     border-color: black
   }
-
   .home {
     font-family: Roboto-Bold;
     font-size: 16px;
     line-height: 14px;
     letter-spacing: 0;
   }
-
   .about {
     font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0;
   }
-
   /* ===========================footer style end================ */
   nav {
     width: 100%;
@@ -92,29 +81,24 @@
     top: 0px;
     z-index: 99;
   }
-
   body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     /* background: #000; */
   }
-
   header {
     padding: 10px 100px;
     box-sizing: border-box;
   }
-
   section {
     width: 100%;
     height: 100vh;
   }
-
   .dropdown {
     float: left;
     overflow: hidden;
   }
-
   .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -125,12 +109,10 @@
     font-family: Roboto;
     margin: 0;
   }
-
   .navbar a:hover,
   .dropdown:hover .dropbtn {
     /* background-color: red; */
   }
-
   .dropdown-content {
     display: block;
     position: absolute;
@@ -139,7 +121,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
-
   .dropdown-content a {
     float: none;
     color: black;
@@ -148,45 +129,36 @@
     display: block;
     text-align: left;
   }
-
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-
   ul {
     padding: 0;
     margin: 0;
-
   }
-
   ul li a {
     text-decoration: none;
     color: #e74c3c;
     font-family: Roboto;
     /* font-size: 18px; */
   }
-
   .navigation {
     background-color: #35353500;
     width: 75%;
     margin: 20px auto;
     min-height: 50px;
   }
-
   .navigation>li {
     float: left;
     padding: 0 20px;
   }
-
   .navigation>li>a {
     line-height: 50px;
     color: #FFF;
   }
-
   .navigation .menu {
     position: relative
   }
-
   .navigation .menu .submenu {
     position: absolute;
     /* width: 200px; */
@@ -196,14 +168,10 @@
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-
   }
-
   .navigation .menu:hover .submenu {
     display: block;
-
   }
-
   .navigation .menu .submenu:before {
     content: "";
     position: absolute;
@@ -213,32 +181,23 @@
     border-color: #FFF transparent;
     top: -6px;
     right: 5px;
-
   }
-
-
-
-
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
   section.sec1 {
     background: url(natures-temples.png);
     background-size: cover;
   }
-
   section.banner {
     background: url(Group.png);
     background-size: cover;
     margin-left: 15px;
   }
-
   section.sec2 {
     padding: 100px;
     box-sizing: border-box;
   }
-
   nav {
     width: 100%;
     height: 50px;
@@ -249,26 +208,20 @@
     top: 0px;
     z-index: 99
   }
-
   nav ul {
     display: flex;
     margin: 0px;
     padding: 0px;
     float: right;
   }
-
   nav ul li {
     list-style: none;
   }
-
-
   nav ul {
     display: flex;
-
     padding: 0px;
     /* float: ; */
   }
-
   nav ul li a {
     display: block;
     color: #fff;
@@ -277,56 +230,35 @@
     text-transform: uppercase;
     font-weight: bold;
     line-height: 50px;
-
   }
 </style>
 
-<!-- <p>
-        <label><input #arabic type="radio" name="size" (change)="0" >عربى</label>
-        <label><input #english type="radio" name="size" (change)="0" checked>English</label>
-    </p> -->
+
 
 
 <!------ Include the above in your HEAD tag ---------->
 <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
 
-  <!-- <div class="sticky">I will stick to the screen when you reach my scroll position</div> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 p-0">
+        <img class="img-fluid" src="./assets/group.png" srcset="./assets/group@2x.png 2x, ./assets/group@3x.png 3x" >
+      </div>
 
-  <div class="row">
-    <div class="col-md-1">
+      <br>
+      <!-- <div class="col-md-4"></div> -->
+      <div class="col-md-6 mt-5 text-right">
+        &nbsp; &nbsp;
 
-      <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                    ./assets/group@3x.png 3x"
-        class="img-responsive">
+        <font style="color:#F90E35">English</font>&nbsp;
+        <input type="radio" checked>&nbsp;
+
+        <font color="white"> عربى </font>
+        <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/facilityarabic"
+          [checked]="Lang" />&nbsp;
+
+      </div>
     </div>
-    <br>
-    <div class="col-md-4"></div>
-    <div class="col-md-6 mt-5 text-right">
-      &nbsp; &nbsp;
-      <!-- <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
-            margin-left: -18px;">
-              <font color="white">تسجيل الدخول </font>
-            </a>&nbsp;&nbsp;
-            <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
-                width: 100px;margin-left: -17px" routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
-              <font color="white">تسجيل</font>
-            </button>&nbsp; -->
-
-
-
-      <font style="color:#F90E35">English</font>&nbsp;
-      <input type="radio" checked>&nbsp;
-
-
-
-      <font color="white"> عربى </font>
-      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/facilityarabic"
-        [checked]="Lang" />&nbsp;
-
-    </div>
-
-
-
   </div>
 
 
@@ -371,14 +303,8 @@
     <div class="row">
       <div class="col-md-7">
 
-
         <div class="col-md-12">
-          <!-- <h4 style="font-size: 18px;font-family: Roboto;color: black;"> <b><a href="" style="color: black;">Integrated
-              Facilities Management
-              Services </a></b>
-        </h4> -->
-
-
+        
           <br>
           <a class="WHAT-IS-Aman-">Introduction</a>
 
@@ -401,12 +327,12 @@
 
 
 
-        <div class="col-md-8">
+        <div class="col-md-10">
           <a class="WHAT-IS-Aman-">Our Core services:</a>
           <br>
           <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>1. Facilities Management Services</b></a>
 
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+          <div class="Sharjah-Asset-Manage mt-2 ml-5">
             <ul>
 
               <li>Hard Services</li>
@@ -420,10 +346,11 @@
           </div>
         </div>
         <br>
-        <div class="col-md-8">
+
+        <div class="col-md-10">
           <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>2. FM Consulting Services</b></a>
           <br>
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+          <div class="Sharjah-Asset-Manage mt-2 ml-5">
             <ul>
 
               <li>Design and Consultancy</li>
@@ -437,8 +364,10 @@
             </ul>
           </div>
         </div>
+
         <br>
-        <div class="col-md-8">
+
+        <div class="col-md-10">
           <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>3. Industrial Maintenance Services</b></a>
 
           <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
@@ -452,73 +381,76 @@
             </ul>
           </div>
         </div>
+
         <br>
-        <div class="col-md-8 ml-0 ml-sm-3">
+
+        <div class="col-md-10 ml-0 ml-sm-3">
           <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Facilities Management Services</b></a>
 
           <br>
-<div class="ml-0 ml-sm-3">
-          <a class="WHAT-IS-Aman-2">Hard Services</a>
-       
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
 
-              <li>Mechanical and Electrical Maintenance</li>
+          <div class="ml-0 ml-sm-3">
+            <a class="WHAT-IS-Aman-2">Hard Services</a>
 
-              <li>BMS Operation</li>
+            <div  class="Sharjah-Asset-Manage mt-2 ml-5">
+              <ul>
 
-              <li>Plant Maintenance</li>
-              <li>HVAC (Operation & Maintenance)</li>
-              <li>Plumbing & Water Management</li>
+                <li >Mechanical and Electrical Maintenance</li>
 
-            </ul>
-          </div>
-       
-          <br>
-          <a class="WHAT-IS-Aman-2">Soft Services</a>
+                <li>BMS Operation</li>
 
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
+                <li>Plant Maintenance</li>
+                <li>HVAC (Operation & Maintenance)</li>
+                <li>Plumbing & Water Management</li>
 
-              <li>Housekeeping & Janitorial Services</li>
+              </ul>
+            </div>
 
-              <li>Garden and Lawn Maintenance</li>
+            <br>
+            <a class="WHAT-IS-Aman-2">Soft Services</a>
 
-              <li> Specialized Services</li>
+            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+              <ul>
 
-              <li>Events & Selective unique contracts</li>
+                <li>Housekeeping & Janitorial Services</li>
 
-              <li>Facade Cleaning</li>
+                <li>Garden and Lawn Maintenance</li>
 
-              <li>Carpet & Upholstery</li>
+                <li> Specialized Services</li>
 
-              <li>Marble Crystallization</li>
+                <li>Events & Selective unique contracts</li>
 
-              <li>Energy Management</li>
+                <li>Facade Cleaning</li>
 
-              <li>Security Services</li>
+                <li>Carpet & Upholstery</li>
 
-              <li>Guarding and Patrolling</li>
+                <li>Marble Crystallization</li>
 
-              <li>Electronic Surveillance</li>
+                <li>Energy Management</li>
 
-              <li>Business Support Services</li>
+                <li>Security Services</li>
 
-              <li>Staffing</li>
+                <li>Guarding and Patrolling</li>
 
-              <li>Payroll Management</li>
+                <li>Electronic Surveillance</li>
 
-              <li>Office Administration</li>
+                <li>Business Support Services</li>
 
-              <li>Mail Room Management</li>
+                <li>Staffing</li>
 
-              <li>Food and Beverage Vending</li>
+                <li>Payroll Management</li>
 
-            </ul>
+                <li>Office Administration</li>
+
+                <li>Mail Room Management</li>
+
+                <li>Food and Beverage Vending</li>
+
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-        <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
+        <div  class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
           <p class="ml-0 ml-sm-3">These services are offered as bundled services (two or more services) or fully
             integrated and tailored to
             each
@@ -539,207 +471,209 @@
               on:
             </p>
 
-        
 
 
 
 
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
-              <li>Accounts and Administration</li>
-
-              <li> Occupant Management</li>
-
-              <li> Complete maintenance of property including common area maintenance (CAM)</li>
-
-              <li> Liaison and PR with Government Agencies</li>
-
-              <li> Civil Supervision</li>
-
-              <li> Vendor Management</li>
-
-              <li> Health, Safety, Security and Environment</li>
-
-              <li> Space Management</li>
-
-              <li> Statutory / Legal Compliances and licenses</li>
-
-              <li> Help Desk Management</li>
-
-              <li> Visitor Management</li>
-
-              <li> Parking Management</li>
-            </ul>
-          </div>
-          <br>
-          <p class="Sharjah-Asset-Manage text-justify mt-2 ml-4">In addition to providing core FMCS will provide
-            solutions to our clients on:</p>
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
-              <li>Property and Services takeover for complete maintenance and management</li>
-              <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely payment
-                of
-                all
-                dues and taxes</li>
-
-              <li> Maintain and assist in updating NOC’s, permits, renewals , insurance coverage , claims etc.</li>
-
-              <li> Vendor management / Maintain 3rd party contracts</li>
-
-              <li> Life Safety and Security Systems Management</li>
-
-              <li> Procurement of consumables and inventory management</li>
-
-              <li> Maintain PPM schedules of all equipment’s and installations - routine, annual and breakdown
-                maintenance
-              </li>
-
-              <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and
-                complaints,
-                MIS’s
-                – daily, monthly and quarterly and annual</li>
-
-              <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease
-                agreements
-                /
-                Terms and Conditions of occupants /Timely submission of bills, follow up and collection of rents and
-                payments
-                from occupants</li>
-
-              <li> Coordination and inspection of any work initiated within the premises until completion</li>
-            </ul>
-          </div>
-          <br>
-
-          <a class="WHAT-IS-Aman-2">Pre-Occupancy Management:</a>
-
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
-              <li>CAM Estimations and Budgeting</li>
-
-              <li> Transition Phase Management</li>
-
-              <li>Property Take Over</li>
-            </ul>
-          </div>
-          <br>
-          <a class="WHAT-IS-Aman-2">Post Occupancy Management:</a>
-
-          <div>
-            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-              <ul>
-                <li>Tenant Relationship Management</li>
-
-                <li> Operations and Maintenance</li>
-
-                <li> Set Up Budgets - Revenue / Operations
-                </li>
-                <li> Client Relationship Management</li>
-
-                <li> Risk Mitigation and Management</li>
-
-                <li> Traffic Management</li>
-
-                <li> Liaise with Government Bodies</li>
-
-                <li> New Tenant Move-In Management</li>
-
-                <li> Rent Collection</li>
-              </ul>
-            </div>
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">CAFM software ensures Helpdesk and Resource Planning
-              and Allocation, Service tracker, Asset maintenance,
-              Inventory management, Conference room bookings, Guest house bookings, Lease management, Invoice tracker,
-              Visitor
-              management, Material movement management and Staff management.</p>
-          </div>
-
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ">
-            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Industrial Services</b></a>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED provides world class Industrial services with
-              unmatched experience and results that include all
-              related
-              activities in different industries, infrastructural projects, District Cooling Plants, shop floors
-              including
-              assembly, packaging, warehousing, logistic support and dispatch services. Our services are extended to
-              various
-              leading manufacturing units and a range of industries like Automobile, Automobile ancillaries, Glass,
-              Steel,
-              Electrical and electronic components, Heavy machinery, Foundries, Tires, Pharma, Specialty Chemicals,
-              Petrol
-              by
-              products etc.</p>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">Supported by a large pool of resources with varied
-              skill sets to match the requirements of manufacturing
-              units
-              enables ramping up or down activities effectively, in a time bound manner while developing and
-              maintaining
-              a
-              database of trained workforce as a buffer at all times for temporary placement.</p>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">Various contract models are offered like Customized
-              Contract Staffing models or Service Delivery Models or
-              Turnkey models on output basis.</p>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our commitment to People, Processes and consistent
-              quality are the three most important aspects of our
-              business.</p>
-
-            <br>
-            <a class="WHAT-IS-Aman-2">Our Quality Processes:</a>
 
             <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
               <ul>
+                <li>Accounts and Administration</li>
 
-                <li> Achieve highest level of quality through process-driven service delivery methods</li>
+                <li> Occupant Management</li>
 
-                <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality
-                  standards
+                <li> Complete maintenance of property including common area maintenance (CAM)</li>
+
+                <li> Liaison and PR with Government Agencies</li>
+
+                <li> Civil Supervision</li>
+
+                <li> Vendor Management</li>
+
+                <li> Health, Safety, Security and Environment</li>
+
+                <li> Space Management</li>
+
+                <li> Statutory / Legal Compliances and licenses</li>
+
+                <li> Help Desk Management</li>
+
+                <li> Visitor Management</li>
+
+                <li> Parking Management</li>
+              </ul>
+            </div>
+            <br>
+            <p class="Sharjah-Asset-Manage text-justify mt-2 ml-4">In addition to providing core FMCS will provide
+              solutions to our clients on:</p>
+            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+              <ul>
+                <li>Property and Services takeover for complete maintenance and management</li>
+                <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely payment
+                  of
+                  all
+                  dues and taxes</li>
+
+                <li> Maintain and assist in updating NOC’s, permits, renewals , insurance coverage , claims etc.</li>
+
+                <li> Vendor management / Maintain 3rd party contracts</li>
+
+                <li> Life Safety and Security Systems Management</li>
+
+                <li> Procurement of consumables and inventory management</li>
+
+                <li> Maintain PPM schedules of all equipment’s and installations - routine, annual and breakdown
+                  maintenance
                 </li>
 
-                <li> Contribute to industry with continuous innovations and improvements on quality and processes in
-                  our
-                  Quality Management Systems</li>
+                <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and
+                  complaints,
+                  MIS’s
+                  – daily, monthly and quarterly and annual</li>
+
+                <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease
+                  agreements
+                  /
+                  Terms and Conditions of occupants /Timely submission of bills, follow up and collection of rents and
+                  payments
+                  from occupants</li>
+
+                <li> Coordination and inspection of any work initiated within the premises until completion</li>
               </ul>
+            </div>
+            <br>
+
+            <a class="WHAT-IS-Aman-2">Pre-Occupancy Management:</a>
+
+            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+              <ul>
+                <li>CAM Estimations and Budgeting</li>
+
+                <li> Transition Phase Management</li>
+
+                <li>Property Take Over</li>
+              </ul>
+            </div>
+            <br>
+            <a class="WHAT-IS-Aman-2">Post Occupancy Management:</a>
+
+            <div>
+              <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+                <ul>
+                  <li>Tenant Relationship Management</li>
+
+                  <li> Operations and Maintenance</li>
+
+                  <li> Set Up Budgets - Revenue / Operations
+                  </li>
+                  <li> Client Relationship Management</li>
+
+                  <li> Risk Mitigation and Management</li>
+
+                  <li> Traffic Management</li>
+
+                  <li> Liaise with Government Bodies</li>
+
+                  <li> New Tenant Move-In Management</li>
+
+                  <li> Rent Collection</li>
+                </ul>
+              </div>
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">CAFM software ensures Helpdesk and Resource Planning
+                and Allocation, Service tracker, Asset maintenance,
+                Inventory management, Conference room bookings, Guest house bookings, Lease management, Invoice
+                tracker,
+                Visitor
+                management, Material movement management and Staff management.</p>
+            </div>
+
+            <div class="Sharjah-Asset-Manage  mt-2 ">
+              <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Industrial Services</b></a>
+<!-- 
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED provides world class Industrial services with
+                unmatched experience and results that include all
+                related
+                activities in different industries, infrastructural projects, District Cooling Plants, shop floors
+                including
+                assembly, packaging, warehousing, logistic support and dispatch services. Our services are extended to
+                various
+                leading manufacturing units and a range of industries like Automobile, Automobile ancillaries, Glass,
+                Steel,
+                Electrical and electronic components, Heavy machinery, Foundries, Tires, Pharma, Specialty Chemicals,
+                Petrol
+                by
+                products etc.</p>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Supported by a large pool of resources with varied
+                skill sets to match the requirements of manufacturing
+                units
+                enables ramping up or down activities effectively, in a time bound manner while developing and
+                maintaining
+                a
+                database of trained workforce as a buffer at all times for temporary placement.</p>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Various contract models are offered like Customized
+                Contract Staffing models or Service Delivery Models or
+                Turnkey models on output basis.</p>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our commitment to People, Processes and consistent
+                quality are the three most important aspects of our
+                business.</p> -->
+
+              <br>
+              <a class="WHAT-IS-Aman-2">Our Quality Processes:</a>
+
+              <div style="" class="Sharjah-Asset-Manage mt-2 ml-5">
+                <ul>
+
+                  <li> Achieve highest level of quality through process-driven service delivery methods</li>
+
+                  <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality
+                    standards
+                  </li>
+
+                  <li> Contribute to industry with continuous innovations and improvements on quality and processes in
+                    our
+                    Quality Management Systems</li>
+                </ul>
+              </div>
+
+
+              <br>
+              <a class="WHAT-IS-Aman-2">People:</a>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our industry is people oriented and we have a
+                professional skills enhancement programmed for the workforce.
+                Continuous training and knowledge sharing ensure excellence in work output at all areas</p>
+              <a class="WHAT-IS-Aman-2">Processes:</a>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Regular scheduled monitoring and quality customized
+                services with continuous improvement ensures process
+                flow
+                resulting in a 'Great Place to Work’ culture across our clients manufacturing facilities.</p>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2">SANED is aware of the sensitivity and confidential
+                nature of all businesses and our services are designed
+                to
+                support your business, enabling your staff to function at optimum levels. It is essential that
+                facilities
+                operate smoothly to ensure 'zero' down time.</p>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">
+                From pharmaceutical laboratories and large-scale car manufacturing plants, to District Cooling Plants-
+                SANED
+                has
+                the expertise needed to support your businesses with all non-core support services needs like PPE.
+                equipment’s,
+                waste & power management systems etc.
+              </p>
             </div>
 
 
             <br>
-            <a class="WHAT-IS-Aman-2">People:</a>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our industry is people oriented and we have a
-              professional skills enhancement programmed for the workforce.
-              Continuous training and knowledge sharing ensure excellence in work output at all areas</p>
-            <a class="WHAT-IS-Aman-2">Processes:</a>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">Regular scheduled monitoring and quality customized
-              services with continuous improvement ensures process
-              flow
-              resulting in a 'Great Place to Work’ culture across our clients manufacturing facilities.</p>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2">SANED is aware of the sensitivity and confidential
-              nature of all businesses and our services are designed
-              to
-              support your business, enabling your staff to function at optimum levels. It is essential that facilities
-              operate smoothly to ensure 'zero' down time.</p>
-
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">
-              From pharmaceutical laboratories and large-scale car manufacturing plants, to District Cooling Plants-
-              SANED
-              has
-              the expertise needed to support your businesses with all non-core support services needs like PPE.
-              equipment’s,
-              waste & power management systems etc.
-            </p>
+            <br>
+            <br>
           </div>
-
-
-          <br>
-          <br>
-          <br>
-        </div>
         </div>
 
       </div>

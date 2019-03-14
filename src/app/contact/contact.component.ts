@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { Props } from '../props';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  // props : Props ={
+  //   head:"some contat is he"
+  // }
+
+  
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }

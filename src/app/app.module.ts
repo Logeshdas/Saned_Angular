@@ -61,6 +61,7 @@ const routes: Routes = [
   { path: 'home', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contactus', component: ContactusComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'amanservices', component: AmanservicesComponent },
   { path: 'salamaservices', component: SalamaservicesComponent },
   { path: 'supplier-register', component: SupplierRegisterComponent },

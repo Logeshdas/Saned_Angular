@@ -275,7 +275,12 @@ color: #9b9b9b;
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
 
-
+.Rectangle-5-Copy {
+  width: 150px;
+  height: 59px;
+  border-radius: 8px;
+  background-color: #f34235;
+  }
 
 
 .pt-120{

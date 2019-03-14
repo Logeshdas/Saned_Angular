@@ -7,6 +7,8 @@
   font-size: 20px;
 }
 
+
+
 .intro-2 {
     background: url("/assets/hero_image.png")no-repeat center center;
     background-size: cover;
@@ -35,8 +37,12 @@ width: 232px;
 .wt_140{
 width: 140% !important;
 }
+
+
 /* mobile media query */
 @media screen and (min-device-width: 320px) and (max-device-width: 760px){
+
+  
 
   .img{
     
@@ -126,6 +132,7 @@ padding:0 0px !important;
 
 
 }
+
 @media screen and (max-device-width: 1024px){
 .nav-bg {
   /* background-color: rgba(0, 0, 0, 0.65) !important; */
