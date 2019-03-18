@@ -15,6 +15,9 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 })
 export class SupplierRegisterArabicComponent implements OnInit {
   navbarOpen = false;
+  head = "سجل الموردين";
+  bg="bg_img";
+  nav_arabic = "/supplier-register";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

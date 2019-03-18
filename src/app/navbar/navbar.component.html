@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark" dir="auto"  style="margin-top: -151px;background: rgba(0, 0, 0, 0.27);">
+<!-- <nav class="navbar navbar-expand-md navbar-dark" dir="auto"  style="margin-top: -151px;background: rgba(0, 0, 0, 0.27);">
 
 
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
@@ -20,7 +20,7 @@
                     </a>
                 </li>
 
-                <!-- =============bootstrap navbar=====start====== -->
+              
                 <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
                     <div class=" nav-link dropdown" style="margin-top: -9px;
                     margin-left: -19px;">
@@ -43,7 +43,7 @@
                     </div>
                 </li>
 
-                <!-- =============bootstrap navbar===end======== -->
+              
                 <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
                     <a routerLink="/supplier-register" class="nav-link Rectangle-2">Suppliers</a>
                 </li>
@@ -56,4 +56,58 @@
 
 
     </div>
+</nav> -->
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-md  navbar-dark"  
+style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
+
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" 
+  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse mobile-bg ml-manual" 
+   id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
+   
+   
+  
+    <ul class="navbar-nav p-0 m-0">
+      <li class="nav-item">
+       <a routerLink="/login" class="nav-link nav-text">Home</a>
+      </li>
+      <li class="nav-item">
+            <a routerLink="/about-us" class="nav-link nav-text">About Us</a>
+      
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-text" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+          </a>
+          <div class="dropdown-menu">
+            <a routerLink="/amanservices" class="dropdown-item nav-drop-text" >Aman</a>
+            <a routerLink="/salamaservices" class="dropdown-item nav-drop-text" >Salama</a>
+            <a routerLink="/facilitymanagement" class="dropdown-item nav-drop-text" >Integrated Facility Management</a>
+          </div>
+        </li>
+
+      <li class="nav-item">
+        <a routerLink="/supplier-register" class="nav-link nav-text" href="#">Suppliers</a>
+      </li>
+      <li class="nav-item">
+          <a routerLink="/contactus" class="nav-link nav-text" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
 </nav>
+
+

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacilityarabicComponent implements OnInit {
 
+  head = "إدارة المرافق المتكاملة";
+  bg="bg_img";
+  nav_arabic = "/facilitymanagement";
+  
   constructor() { }
   Lang: any = {};
   ngOnInit() {

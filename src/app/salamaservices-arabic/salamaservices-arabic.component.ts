@@ -9,7 +9,10 @@ import swal from 'sweetalert2';
 })
 export class SalamaservicesArabicComponent implements OnInit {
   navbarOpen = false;
-
+  head = "سلامة";
+  bg="bg_img";
+  nav_arabic = "/salamaservices";
+  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }

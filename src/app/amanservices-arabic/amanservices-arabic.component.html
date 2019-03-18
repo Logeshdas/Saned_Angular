@@ -1,484 +1,116 @@
-<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
-<button (click)="switchLanguage('en')">English</button> -->
+<app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<style>
-  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+<div>
+    <div class="container-fluid" dir="rtl">
+        <div class="card my-4">
+            <div class="row my-4 mx-2">
 
-  /* ==============footer style start ========= */
-  .container1 {
-    background: black;
-    color: white
-  }
+                <div class="col-md-1 text-left ">
+                        <img src="/assets/noun-connection-657013.png" srcset="/assets/noun-connection-657013@2x.png 2x,
+                        /assets/noun-connection-657013@3x.png 3x" class="img-fluid mx-3 mx-sm-0 mx-md-0">
+                </div>
+                <div class="col-md-5 text-justify ">
+                    <div class="setWidth">
+                        <h2 class="head">نبذة عن أمان</h2>
 
-  .footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* height: 75px; */
-  }
-
-  .container {
-    background: black;
-    color: white
-  }
-
-  .social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-
-  .social {
-    -webkit-transform: scale(0.8);
-    /* Browser Variations: */
-
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-  }
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .img-thumbnail {
-    background: black;
-    border-color: black
-  }
-
-  .home {
-    font-family: Roboto-Bold;
-    font-size: 16px;
-    line-height: 14px;
-    letter-spacing: 0;
-  }
-
-  .about {
-    font-family: Roboto;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0;
-  }
-
-  /* ===========================footer style end================ */
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    /* background: #000; */
-  }
-
-  header {
-    padding: 10px 100px;
-    box-sizing: border-box;
-  }
-
-  section {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: Roboto;
-    margin: 0;
-  }
-
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    /* background-color: red; */
-  }
-
-  .dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: bullets;
-
-  }
-
-  ul li a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-family: Roboto;
-    /* font-size: 18px; */
-  }
-
-  .navigation {
-    background-color: #35353500;
-    /* width: 75%; */
-    margin: 20px auto;
-    min-height: 50px;
-  }
-
-  .navigation>li {
-    float: left;
-    padding: 4 10px;
-  }
-
-  .navigation>li>a {
-    line-height: 50px;
-    color: #FFF;
-  }
-
-  .navigation .menu {
-    position: relative
-  }
-
-  .navigation .menu .submenu {
-    position: absolute;
-    /* width: 200px; */
-    -webkit-box-shadow: 0px 1px 1px #CCC;
-    box-shadow: 0px 1px 1px #CCC;
-    display: none;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-
-  .navigation .menu:hover .submenu {
-    display: block
-  }
-
-  .navigation .menu .submenu:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-width: 0 6px 6px 6px;
-    border-style: solid;
-    border-color: #FFF transparent;
-    top: -6px;
-    left: 5px
-  }
-
-  .navigation .menu .submenu li {
-    padding: 5px 10px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-
-  .navigation .menu .submenu li:hover {
-    background-color: #e74c3c;
-  }
-
-  .navigation .menu .submenu li:hover a {
-    color: #FFF;
-    /* padding: 0 11px; */
-  }
+                        <p class="para">إن التطور العمراني - بكافة فئاته السكنية والتجارية والتعليمية - المستمر بالدولأمان هو عبارة
+                            عن
+                            منصة
+                            ربط آمن وموثوق بين جميع أنظمة إنذار الحريق في العقارات وغرف التحكم في الدفاع المدني ومن
+                            ينوب
+                            عنها
+                            في إمارة الشارقة صممت لضمان الإستجابة السريعة لحالات الطوارئ المتعلقة بالحرائق، أمان هو
+                            نتاج
+                            شراكة
+                            بين هيئة الوقاية والسلامة و شركة ساند، ويهدف لحماية الأرواح والممتلكات.</p>
+                    </div>
+                </div>
 
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 
-  section.sec1 {
-    background: url(natures-temples.png);
-    background-size: cover;
-  }
-
-  section.banner {
-    background: url(Group.png);
-    background-size: cover;
-    margin-left: 15px;
-  }
-
-  section.sec2 {
-    padding: 100px;
-    box-sizing: border-box;
-  }
-
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99
-  }
-
-  nav ul {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    float: right;
-  }
-
-  nav ul li {
-    list-style: none;
-  }
+                <div class="col-md-1 text-left pr-4">
+                        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                        /assets/2@3x.png 3x" class="img-fluid mx-3 mx-sm-0 mx-md-0">
+                </div>
+                <div class="col-md-5 text-justify">
+                    <div class="setWidth">
+                        <h2 class="head">الأهداف المرجوة من أمان</h2>
+                        <p class="para">من أهم الأهداف المرجوه من أمان تعزيز جودة الحياة في إمارة الشارقة من خلال تطبيق أعلى
+                            المعايير
+                            المعترف بها دوليًا لضمان حماية وسلامة الأفراد والممتلكات وتقليل فترة الإستجابة للحرائق
+                            والتقليل
+                            من
+                            الإعتماد على العامل البشري.</p>
+                    </div>
+                </div>
 
 
-  nav ul {
-    display: flex;
-
-    padding: 0px;
-    /* float: ; */
-  }
-
-  nav ul li a {
-    display: block;
-    color: #fff;
-    padding: 0 35px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 50px;
-
-  }
-</style>
-
-<div dir="rtl">
-  <!------ Include the above in your HEAD tag ---------->
-  <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-1">
-       
-        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                                   ./assets/group@3x.png 3x" class="img-responsive">
-             </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-6 mt-5" dir="ltr">
-        &nbsp; &nbsp;
-       
-
-        <font style="color:white">English</font>&nbsp;
-
-        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
-          routerLink="/amanservices" [checked]="Lang" />&nbsp;
-
-        <font color="#F90E35"> عربى </font>
-        <input type="radio" checked>&nbsp;
 
 
-      </div>
+                <div class="col-md-1 text-left pr-4">
+                        <img src="./assets/3.png" srcset="./assets/3@2x.png 2x,
+                        ./assets/3@3x.png 3x" class="img-fluid mx-3 mx-sm-0 mx-md-0">
+                </div>
+                <div class="col-md-5 text-justify">
+                    <div class="setWidth">
+                        <h2 class="head">المعلومات التقنية عن أمان</h2>
+                        <p class="para">أمان هو نظام الاتصالات يعمل على مدار الساعة بلا توقف وهو قادر على الآتي:</p>
+
+                        <ul class="para">
+                            <li>الربط مع جميع أنظمة الحرائق المتوافرة في المنشآت.</li>
+                            <li>يمكن تثبيته في العديد من الأنظمة في مختلف تطبيقات المنشأت.</li>
+                            <li>يمكن استخدامها بسهولة وصيانتها في ظروف مختلفة.</li>
+                            <li>يمكن دمجها مع غرف التحكم المركزية لمحطة المراقبة من خلال النظام الموحد للاتصالات
+                                المتنقلة والشبكة الهاتفية العمومية.</li>
+                            <li>التوسع المستقبلي لتشمل تطبيقا المصاعد وغيرها.</li>
+
+                        </ul>
+
+                        <p class="para">يسهّل تطبيق أمان الإلكتروني التابع لهيئة الوقاية والسلامة على ملاك ومدراء المباني التسجيل في
+                            النظام وطلب الحصول على الخدمات </p>
+
+                        <p class="para">يمكن التواصل مع الجهات المعنية عن طريق الاتصال التابع لنا على مدار اليوم طوال أيام الأسبوع
+                            والإجابة عن أي استفسارات على الرقم التالي: 600515152</p>
+
+                        <p>الموقع الإلكتروني و تطبيق الجوال قيد التنفيذ وسيتم إنجازها قريبا.</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-1 text-left pr-4">
+                    <img src="/assets/4.png" srcset="/assets/4@2x.png 2x, /assets/4@3x.png 3x"
+                        class="img-fluid mx-3 mx-sm-0 mx-md-0">
+                </div>
+                <div class="col-md-5 text-justify">
+                    <div class="setWidth">
+                        <h2 class="head">الرسوم</h2>
+                        <p class="para">تشمل الرسوم الثابتة لملاك المباني ما يلي: </p>
+
+                        <ul class="para">
+                            <li>قييمان للمباني مع تقارير مخصصة يقدمها فنيو أمان.</li>
+                            <li>جهاز الاتصال مع صندوق يركب على الحائط للحماية.</li>
+                            <li>تركيب جهاز الاتصال.</li>
+                            <li>بطاقة SIM ورسوم خدمة لمدة سنة واحدة من تاريخ التركيب.</li>
+                            <li>إغلاق التقرير بعد التثبيت الناجح.</li>
+                            <li>عامين من الصيانة على الجهاز.</li>
+                            <li>تسجيل مجاني ودخول غير محدود إلى التطبيق والبرامج المتعلقة بالنظام.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="text-center mb-4">
+                    <button type="submit" class="setButton" routerLink="register-form-arabic">سجل هنا</button>
+                  </div>
+        </div>
     </div>
-  </div>
-
-    <br><br><br>
-    <div class="text-center">
-      <h1>
-        <font color="white" style="font-size: 50px;" class="about-us">أمـــــان</font>
-      </h1>
-
-    </div>
-    
-  </section>
-
 </div>
-<br>
-<br>
-<br>
-
-<app-navbararabic></app-navbararabic>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="container-fluid">
-<div class=" col-md-14" dir="rtl">
-  <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-
-  <div class="card col-md-12 ml-2" style="border-radius: 18px;
-    background: white;margin-top: -233px;" dir="rtl">
-    <br>
-    <div class="row" dir="rtl">
-      <div class="col-md-1">
-        <!-- <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
-                /assets/1@3x.png 3x" class="layer"> -->
-        <img src="/assets/noun-connection-657013.png" srcset="/assets/noun-connection-657013@2x.png 2x,
-                /assets/noun-connection-657013@3x.png 3x" class="layer">
-      </div>
-      <div class="col-md-4 ml-3">
-
-        <div class="text-right">
-          <a class="saned_heading   text-justify">نبذة عن أمان
-          </a>
-        </div>
-        <p class=" saned_para text-justify  ">إن التطور العمراني - بكافة فئاته السكنية والتجارية والتعليمية - المستمر
-          بالدولأمان هو
-          عبارة عن منصة ربط آمن وموثوق بين جميع أنظمة إنذار الحريق في العقارات وغرف التحكم في الدفاع المدني ومن ينوب
-          عنها في إمارة الشارقة صممت لضمان الإستجابة السريعة لحالات الطوارئ المتعلقة بالحرائق، أمان هو نتاج شراكة بين
-          هيئة الوقاية والسلامة و شركة ساند، ويهدف لحماية الأرواح والممتلكات.
-        </p>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-1">
-        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                  /assets/2@3x.png 3x" class="layer">
-      </div>
-      <div class="col-md-4">
-        <div class="text-right">
-          <a class="saned_heading   text-justify">الأهداف المرجوة من أمان
-          </a>
-        </div>
-
-        <p class="saned_para text-justify ">من أهم الأهداف المرجوه من أمان تعزيز جودة الحياة في إمارة الشارقة من خلال
-          تطبيق أعلى
-          المعايير المعترف بها دوليًا لضمان حماية وسلامة الأفراد والممتلكات وتقليل فترة الإستجابة للحرائق والتقليل من
-          الإعتماد على العامل البشري.
 
 
-        </p>
-
-      </div>
-    </div>
-    <!-- </div> -->
-
-
-    <!-- ====test======== -->
-<div class="container-fluid">
-    <div class="row" dir="rtl">
-      <div class="col-md-1">
-        <img src="./assets/3.png" srcset="./assets/3@2x.png 2x,
-            ./assets/3@3x.png 3x" class="img-responsive">
-      </div>
-      <div class="col-md-4 ml-3">
-
-
-        <div class="text-right">
-          <a class=" saned_heading text-justify">المعلومات التقنية عن أمان
-
-          </a>
-        </div>
-        <p class="saned_para text-justify  ">أمان هو نظام الاتصالات يعمل على مدار الساعة بلا توقف وهو قادر على
-          الآتي:</p>
-        <div class="saned_para text-right mr-4">
-          <ul>
-            <li> الربط مع جميع أنظمة الحرائق المتوافرة في المنشآت.</li>
-            <li> يمكن تثبيته في العديد من الأنظمة في مختلف تطبيقات المنشأت.</li>
-            <li> يمكن استخدامها بسهولة وصيانتها في ظروف مختلفة.</li>
-            <li> يمكن دمجها مع غرف التحكم المركزية لمحطة المراقبة من خلال النظام الموحد للاتصالات المتنقلة والشبكة
-              الهاتفية العمومية.</li>
-            <li> التوسع المستقبلي لتشمل تطبيقا المصاعد وغيرها.</li>
-          </ul>
-        </div>
-        <br>
-
-        <p class="saned_para text-right">
-          يسهّل تطبيق أمان الإلكتروني التابع لهيئة الوقاية والسلامة على ملاك ومدراء المباني التسجيل في النظام وطلب
-          الحصول على الخدمات
-        </p>
-        <p class="saned_para text-right">
-          يمكن التواصل مع الجهات المعنية عن طريق الاتصال التابع لنا على مدار اليوم طوال أيام الأسبوع والإجابة عن أي
-          استفسارات على الرقم التالي: 600515152
-        </p>
-        <!-- 600 515152 -->
-        <br>
-
-        <p class="saned_para text-right">
-          الموقع الإلكتروني و تطبيق الجوال قيد التنفيذ وسيتم إنجازها قريبا.
-        </p>
-
-
-
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-1">
-        <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="img-responsive">
-      </div>
-      <div class="col-md-4">
-        <div class="text-right">
-          <a class=" saned_heading text-justify">الرسوم</a>
-        </div>
-        <p class="saned_para text-justify">تشمل الرسوم الثابتة لملاك المباني ما يلي: </p>
-        <div class="saned_para text-right">
-          <ul class="mr-4">
-            <li> تقييمان للمباني مع تقارير مخصصة يقدمها فنيو أمان.</li>
-            <li> جهاز الاتصال مع صندوق يركب على الحائط للحماية.</li>
-            <li> تركيب جهاز الاتصال.</li>
-            <li>بطاقة SIM ورسوم خدمة لمدة سنة واحدة من تاريخ التركيب.</li>
-            <li> إغلاق التقرير بعد التثبيت الناجح.</li>
-            <li>عامين من الصيانة على الجهاز.</li>
-            <li>تسجيل مجاني ودخول غير محدود إلى التطبيق والبرامج المتعلقة بالنظام.</li>
-          </ul>
-        </div>
-
-
-      </div>
-   
-
-    </div>
-  </div>
-
-  <div class="text-center my-3">
-    <button type="submit" class="Rectangle-5-Copy" routerLink="register-form-arabic">سجل هنا</button>
-  </div>
-
-  </div>
-</div>
-</div>
-<br>
-<br>
 <app-footer></app-footer>
-
 <router-outlet></router-outlet>

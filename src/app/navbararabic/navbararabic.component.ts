@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbararabicComponent implements OnInit {
   navbarOpen = false;
+ 
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
+
   localVar;
 
   constructor() { }

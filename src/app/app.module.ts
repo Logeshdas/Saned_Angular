@@ -49,6 +49,8 @@ import { FacilityarabicComponent } from './facilityarabic/facilityarabic.compone
 //routing page while refreshing
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { CommingsoonComponent } from './commingsoon/commingsoon.component';
+import { NavBgComponent } from './nav-bg/nav-bg.component';
+import { NavBgArComponent } from './nav-bg-ar/nav-bg-ar.component';
 
 
 const routes: Routes = [
@@ -138,6 +140,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbararabicComponent,
     FacilityarabicComponent,
     CommingsoonComponent,
+    NavBgComponent,
+    NavBgArComponent,
 
 
 

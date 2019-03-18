@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyArabicComponent implements OnInit {
   navbarOpen = false;
+  head = "سياسة خاصة";
+  bg="bg_img";
+  nav_arabic = "/privacy";
   Lang: any = {};
   model: any = {};
 

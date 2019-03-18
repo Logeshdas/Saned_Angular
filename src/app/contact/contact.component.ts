@@ -9,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  // props : Props ={
-  //   head:"some contat is he"
-  // }
+ 
+
+  head = "Integrated Facility Management";
+  bg = "bg_img";
+  nav_arabic = "/supplier-register-arabic";
 
   
   constructor() { }

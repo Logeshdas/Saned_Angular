@@ -11,6 +11,9 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class AboutusArabicComponent implements OnInit {
   navbarOpen = false;
+  head = "معلومات عنا";
+  bg="bg_img";
+  nav_arabic = "/about-us";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

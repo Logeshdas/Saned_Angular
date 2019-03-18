@@ -1,598 +1,206 @@
-<!-- <button (click)="switchLanguage('arabic')">Arabic</button>
-<button (click)="switchLanguage('en')">English</button> -->
+<app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic"></app-nav-bg>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<style>
-  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+<div class="container-fluid" dir="rtl">
 
-  /* ==============footer style start ========= */
-  .container1 {
-    background: black;
-    color: white
-  }
+    <div class="card my-4">
 
-  .footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* height: 75px; */
-  }
+        <div class="row text-justify my-4">
 
-  .container {
-    background: black;
-    color: white
-  }
+            <div class="col-sm-7 col-md-7">
+                <div class="mx-3">
+                    <div>
+                        <h1 class="head mt-4">المقدمة</h1>
+                        <p class="contant"> تقدم شركة ساند أفضل الخدمات في فئتها في جميع الصناعات والمواقع المتعددة
+                            التي
+                            تتميز بنموذج تقديم
+                            خدمة ذات جودة عالية، يقوم مبدأ عمل الشركة على أن يكون مكملا للأهداف الإستراتيجية والتشغيلية
+                            لأي
+                            مؤسسة. وعليه فإننا في ساند نقوم بدمج الوظائف الأساسية مثل العمليات والتقنيات مع الأفراد
+                            لضمان
+                            المرونة والتكامل المستقبلي ودعمها من خلال أحدث الأنظمة الحاسوبية. تقوم ساند بالمشاركة مع
+                            العملاء
+                            بتحديث وتطوير مستوى الخدمة بشكل مستمر وزيادة الكفاءة التشغيلية للأنظمة المراد صيانتها، مما
+                            ينتج
+                            عنه
+                            تقليل الوقت اللازم للصيانة وزيادة الإيرادات بخفض تكاليف التشغيل، والقضاء على الازدواجية بين
+                            العميل
+                            وشركة التشغيل.</p>
 
-  .social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
+                        <h1 class="head mt-5">الخدمات الأساسية </h1>
+                        <h2 class="subhead mt-2">1. خدمات إدارة المرافق</h2>
 
-  .social {
-    -webkit-transform: scale(0.8);
-    /* Browser Variations: */
+                        <ul class="contant">
+                            <li>الخدمات التقنية والفنية التخصصية</li>
+                            <li>خدمات غير التقنية</li>
+                            <li>خدمات العملاء</li>
+                            <li>خدمات إدارة وتوفير استهلاك الطاقة</li>
+                        </ul>
 
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-  }
+                        <h2 class="subhead mt-4">2. الخدمات الإستشارية</h2>
 
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
+                        <ul class="contant">
+                            <li>التصميم والاستشارات</li>
+                            <li>إدارة المشارويع</li>
+                            <li>الأعمال الداخلية والديكور</li>
+                            <li>إدارة مشتريات</li>
+                        </ul>
 
-  .img-thumbnail {
-    background: black;
-    border-color: black
-  }
+                        <h2 class="subhead mt-4">3. خدمات الصيانة الصناعية</h2>
 
-  .home {
-    font-family: Roboto-Bold;
-    font-size: 16px;
-    line-height: 14px;
-    letter-spacing: 0;
-  }
+                        <ul class="contant">
+                            <li>خدمات دعم الإنتاج عبر الإنترنت</li>
+                            <li>خدمات دعم الإنتاج دون اتصال</li>
+                            <li>إدارة المستودعات</li>
+                        </ul>
 
-  .about {
-    font-family: Roboto;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0;
-  }
+                    </div>
 
-  /* ===========================footer style end================ */
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99;
-  }
+                    <div class="mr-4 mr-md-5 mr-sm-5">
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    /* background: #000; */
-  }
+                        <h2 class="subhead mt-4">خدمات إدارة المرافق</h2>
+                        <h4 class="subhead-unbold">الخدمات التقنية والفنية التخصصية</h4>
+                        <ul class="contant">
+                            <li>الصيانة الميكانيكية والكهربائية</li>
+                            <li>إدارة أنظمة المباني</li>
+                            <li>صيانة المحطات</li>
+                            <li>نظام التبريد (التشغيل والصيانة)</li>
+                            <li>السباكة وإدارة المياه</li>
+                            <li>إدارة الطاقة</li>
+                            <li>تنظيف واجهة المباني</li>
+                            <li>تنظيف السجاد والتنجيد</li>
+                            <li>تنظيف و بلورة الرخام</li>
+                            <li>إدارة الطاقة</li>
+                        </ul>
 
-  header {
-    padding: 10px 100px;
-    box-sizing: border-box;
-  }
+                        <h2 class="subhead-unbold mt-4">خدمات غير تخصصية</h2>
 
-  section {
-    width: 100%;
-    height: 100vh;
-  }
+                        <ul class="contant">
+                            <li>خدمات النظافة</li>
+                            <li>خدمات الحراسة</li>
+                            <li>عمليات البستنة وصياننتها</li>
+                            <li>مكافحة الحشرات</li>
+                            <li>توريد العمالة</li>
 
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
+                        </ul>
 
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: Roboto;
-    margin: 0;
-  }
+                        <p class="contant">ويتم تفصيل هذه الخدمات لملاءمة كل عميل كل حسب حاجته.</p>
 
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    /* background-color: red; */
-  }
+                        <h2 class="subhead mt-4">الخدمات الإستشارية</h2>
 
-  .dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+                        <p class="contant">تقدم شركة ساند شراكات مع مالكي المباني والمستخدمين لتسهيل الانتقال الفعال،
+                            وتحقيق
+                            أقصى عائد بخفض
+                            تكاليف التشغيل مع الحفاظ على مستويات خدمة عالية.</p>
 
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+                        <p class="contant">بالإضافة إلى توفير خدمات إدارة المرافق الأساسية ، فإن ساند تقدم حلولًا
+                            لعملائنا
+                            حول:</p>
 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+                        <ul class="contant">
+                            <li>الحسابات والإدارة</li>
+                            <li>صيانة كاملة للممتلكات</li>
+                            <li>الاتصال والعلاقات العامة مع الوكالات الحكومية</li>
+                            <li>الإشراف المدني</li>
+                            <li>إدارة المقاولين</li>
+                            <li>الصحة والسلامة والأمن والبيئة</li>
+                            <li>الأمور القانونية والتراخيص</li>
+                            <li>إدارة الإتصال والتعامل مع العملاء</li>
+                            <li>إدارة الزوار</li>
+                            <li>إدارة مواقف السيارات</li>
 
-  ul {
-    padding: 0;
-    margin: 0;
-    /* list-style: none; */
-  }
+                        </ul>
 
-  ul li a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-family: Roboto;
-    /* font-size: 18px; */
-  }
+                        <h2 class="subhead">الخدمات الصناعية</h2>
 
-  .navigation {
-    background-color: #35353500;
-    /* width: 75%; */
-    margin: 20px auto;
-    min-height: 50px;
-  }
+                        <p class="contant">تقدم شركة ساند خدمات صناعية ذات مستوى عالمي مع خبرة لا مثيل لها ونتائج تشمل
+                            جميع
+                            الأنشطة ذات الصلة
+                            في الصناعات المختلفة ، ومشاريع البنية التحتية ، ومحطات التبريد العملاقة، والمحلات بما في
+                            ذلك
+                            التجميع والتعبئة والتخزين والدعم اللوجستي وخدمات الإرسال. يتم توسيع خدماتنا لتشمل العديد من
+                            وحدات
+                            التصنيع الرائدة ومجموعة من الصناعات مثل السيارات، الزجاج ، الفولاذ ، المكونات الكهربائية
+                            والإلكترونية ، الآلات الثقيلة ، المسابك ، الإطارات ، الكيماويات المتخصصة ، البنزين
+                            بالمنتجات
+                            الخ...
 
-  .navigation>li {
-    float: left;
-    padding: 4 10px;
-  }
+                        </p>
 
-  .navigation>li>a {
-    line-height: 50px;
-    color: #FFF;
-  }
+                        <p class="contant">بدعم من مجموعة كبيرة من الموارد مع مجموعات متنوعة من المهارات لتتناسب مع
+                            متطلبات
+                            وحدات التصنيع ،
+                            نستطيع زيادة أو خفض الأنشطة بفعالية، في إطار زمني محدد، مع تطوير وصيانة قاعدة بيانات من
+                            القوى
+                            العاملة المدربة كإجراء احترازي لجميع الأوقات.
 
-  .navigation .menu {
-    position: relative
-  }
+                        </p>
 
-  .navigation .menu .submenu {
-    position: absolute;
-    /* width: 200px; */
-    -webkit-box-shadow: 0px 1px 1px #CCC;
-    box-shadow: 0px 1px 1px #CCC;
-    display: none;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
+                        <p class="contant">تم تقديم نماذج عقود مختلفة مثل نماذج التوظيف المخصصة أو نماذج تقديم الخدمات
+                            على
+                            أساس
+                            الإنتاج.
+                        </p>
 
-  .navigation .menu:hover .submenu {
-    display: block
-  }
+                        <p class="contant">إن التزامنا تجاه الأشخاص والعمليات والجودة المتسقة هي أهم ثلاثة جوانب من
+                            أعمالنا.</p>
 
-  .navigation .menu .submenu:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border-width: 0 6px 6px 6px;
-    border-style: solid;
-    border-color: #FFF transparent;
-    top: -6px;
-    left: 5px
-  }
+                        <h4 class="subhead-unbold">عمليات الجودة لدينا:</h4>
 
-  .navigation .menu .submenu li {
-    padding: 5px 10px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
+                        <ul class="contant">
+                            <li>تحقيق أعلى مستوى من الجودة</li>
+                            <li>تعزيز رضا العملاء برفع الأداء والتحسين المستمر في معايير الجودة</li>
+                            <li>المساهمة في الصناعة مع الابتكارات المستمرة والتحسينات على الجودة والعمليات في أنظمة
+                                إدارة
+                                الجودة لدينا</li>
+                        </ul>
 
-  .navigation .menu .submenu li:hover {
-    background-color: #e74c3c;
-  }
+                        <h2 class="subhead-unbold">الكادر الفني والعملي</h2>
 
-  .navigation .menu .submenu li:hover a {
-    color: #FFF;
-    /* padding: 0 11px; */
-  }
+                        <p class="contant">إن صناعتنا موجهة للناس ولذلك نولي أهمية كبيرة لتعزيز المهارات المهنية
+                            المبرمجة
+                            للقوى
+                            العاملة. ولضمان
+                            ذلك نولي أهمية كبيرة للتدريب المستمر والمشاركة في المعرفة التميز في إنتاج العمل في جميع
+                            المجالات
+
+                        </p>
+
+                        <h2 class="subhead-unbold">العمليات</h2>
+
+                        <p class="contant">تضمن خدمات المراقبة المجدولة الدورية والجودة مع التحسين المستمر تدفق العملية
+                            مما
+                            يؤدي إلى ثقافة مكان
+                            أفضل للعمل عبر مرافق التصنيع الخاصة بالعملاء.
+
+                        </p>
+
+                        <p class="contant">تدرك شركة ساند مدى حساسية جميع الأعمال التجارية وسريتها ، كما أن خدماتنا
+                            مصممة
+                            لدعم
+                            أعمال العملاء
+                            وتمكين موظفيهم من العمل في المستويات المثلى. من الضروري أن تعمل المرافق بسلاسة لضمان هدر
+                            أقل
+                            للوقت
 
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  section.sec1 {
-    background: url(natures-temples.png);
-    background-size: cover;
-  }
-
-  section.banner {
-    background: url(Group.png);
-    background-size: cover;
-    margin-left: 15px;
-  }
-
-  section.sec2 {
-    padding: 100px;
-    box-sizing: border-box;
-  }
-
-  nav {
-    width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, .8);
-    border-top: 1px solid rgba(255, 255);
-    border-bottom: 1px solid rgba(255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 99
-  }
-
-  nav ul {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    float: right;
-  }
-
-  nav ul li {
-    list-style: none;
-  }
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
-  nav ul {
-    display: flex;
+            <div class="col-sm-5 col-md-5 text-center">
 
-    padding: 0px;
-    /* float: ; */
-  }
+                <img src="./assets/facility_image1.png" srcset="./assets/facility_image1@2x.png 2x,
+                ./assets/facility_image1@3x.png 3x"
+                    class="img-fluid sticky">
 
-  nav ul li a {
-    display: block;
-    color: #fff;
-    padding: 0 35px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 50px;
-
-  }
-</style>
-
-<div dir="rtl">
-  <!------ Include the above in your HEAD tag ---------->
-  <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1 p-0">
-
-          <img class="img-responsive" src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                                   ./assets/group@3x.png 3x">
+            </div>
 
         </div>
-
-        <div class="col-md-4"></div>
-
-        <div class="col-md-6 mt-5" dir="ltr">
-          &nbsp; &nbsp;
-
-          <font style="color:white">English</font>&nbsp;
-
-          <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/facilitymanagement"
-            [checked]="Lang" />&nbsp;
-
-          <font color="#F90E35"> عربى </font>
-          <input type="radio" checked>&nbsp;
-
-
-        </div>
-      </div>
     </div>
-
-    <br><br><br>
-    <div class="text-center">
-      <h1>
-        <font color="white" style="font-size: 50px;" class="about-us">إدارة المرافق المتكاملة</font>
-      </h1>
-
-    </div>
-
-  </section>
-
 </div>
-<br>
-<br>
-<br>
 
-<app-navbararabic></app-navbararabic>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class=" col-md-14" dir="rtl">
-  <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-
-  <div class="card col-md-12" style="border-radius: 18px;
-    background: white;margin-top: -234px;" dir="rtl">
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="row" dir="rtl">
-      <div class="col-md-7 text-justify">
-        <div class="col-md-12">
-          <!-- <h3 style="font-family: GeezaPro;"><b>خدمات إدارة المرافق المتكاملة</b></h3> -->
-          <a class="saned_heading_top2">المقدمة</a>
-
-          <p class="saned_para ">تقدم شركة ساند أفضل الخدمات في فئتها في جميع
-            الصناعات والمواقع المتعددة التي تتميز بنموذج تقديم خدمة ذات
-            جودة
-            عالية، يقوم مبدأ عمل الشركة على أن يكون مكملا للأهداف الإستراتيجية والتشغيلية لأي مؤسسة. وعليه فإننا في
-            ساند
-            نقوم بدمج الوظائف الأساسية مثل العمليات والتقنيات مع الأفراد لضمان المرونة والتكامل المستقبلي ودعمها من
-            خلال
-            أحدث الأنظمة الحاسوبية. تقوم ساند بالمشاركة مع العملاء بتحديث وتطوير مستوى الخدمة بشكل مستمر وزيادة الكفاءة
-            التشغيلية للأنظمة المراد صيانتها، مما ينتج عنه تقليل الوقت اللازم للصيانة وزيادة الإيرادات بخفض تكاليف
-            التشغيل،
-            والقضاء على الازدواجية بين العميل وشركة التشغيل.</p>
-        </div>
-        <br>
-        <div class="col-md-12">
-          <a class="saned_heading_top2 head">الخدمات الأساسية
-          </a>
-          <br>
-          <a class="saned_heading" style="text-decoration: underline;">
-            <b>
-              1. خدمات إدارة المرافق
-            </b>
-          </a>
-
-          <div class="col-md-12" class="saned_para align_text mr-sm-5 mr-4">
-            <ul>
-              <li> الخدمات التقنية والفنية التخصصية</li>
-
-              <li> خدمات غير التقنية</li>
-
-              <li> خدمات العملاء</li>
-
-              <li> خدمات إدارة وتوفير استهلاك الطاقة</li>
-            </ul>
-          </div>
-        </div>
-        <br>
-
-        <div class="col-md-12">
-          <a class="saned_heading" style="text-decoration: underline;"><b>2. الخدمات الإستشارية</b></a>
-
-          <div class="col-md-12" class="saned_para align_text mr-sm-5 mr-4">
-            <ul>
-              <li> التصميم والاستشارات</li>
-
-              <li> إدارة المشارويع</li>
-
-              <li> الأعمال الداخلية والديكور</li>
-
-              <li> إدارة مشتريات</li>
-            </ul>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="col-md-12">
-          <a class="saned_heading" style="text-decoration: underline;"><b>3. خدمات الصيانة الصناعية</b></a>
-
-          <div class="col-md-12" class="saned_para align_text mr-sm-5 mr-4">
-            <ul>
-              <li> خدمات دعم الإنتاج عبر الإنترنت</li>
-
-              <li> خدمات دعم الإنتاج دون اتصال</li>
-
-              <li> إدارة المستودعات</li>
-            </ul>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="mr-sm-5 mr-4">
-          <div class="col-md-12">
-            <a class="saned_heading" style="text-decoration: underline;"><b>خدمات إدارة المرافق</b></a>
-            <br>
-            <a class="saned_heading">الخدمات التقنية والفنية التخصصية</a>
-
-            <div class="col-md-12" class="saned_para mr-sm-5 mr-4">
-              <ul>
-                <li>الصيانة الميكانيكية والكهربائية</li>
-
-                <li> إدارة أنظمة المباني</li>
-
-                <li> صيانة المحطات</li>
-
-                <li> نظام التبريد (التشغيل والصيانة)</li>
-
-                <li> السباكة وإدارة المياه</li>
-
-                <li> إدارة الطاقة</li>
-
-                <li> تنظيف واجهة المباني</li>
-
-                <li> تنظيف السجاد والتنجيد</li>
-
-                <li> تنظيف و بلورة الرخام</li>
-                <li> إدارة الطاقة</li>
-              </ul>
-            </div>
-          </div>
-          <br>
-          <div class="col-md-12">
-            <a class="saned_heading">خدمات غير تخصصية</a>
-
-            <div class="col-md-12" class="saned_para mr-sm-5 mr-4">
-              <ul>
-
-                <li> خدمات النظافة</li>
-
-                <li> خدمات الحراسة</li>
-
-                <li> عمليات البستنة وصياننتها</li>
-
-                <li> مكافحة الحشرات</li>
-
-                <li> توريد العمالة</li>
-
-              </ul>
-            </div>
-            <p class="saned_para ">ويتم تفصيل هذه الخدمات لملاءمة كل عميل كل حسب
-              حاجته.</p>
-          </div>
-          <div class="col-md-12">
-            <a class="saned_heading" style="text-decoration: underline;"><b>الخدمات الإستشارية</b></a>
-
-            <p class="saned_para ">تقدم شركة ساند شراكات مع مالكي المباني
-              والمستخدمين لتسهيل الانتقال الفعال، وتحقيق أقصى عائد بخفض تكاليف
-              التشغيل مع الحفاظ على مستويات خدمة عالية.</p>
-            <p>بالإضافة إلى توفير خدمات إدارة المرافق الأساسية ، فإن ساند تقدم حلولًا لعملائنا حول:</p>
-
-            <div class="col-md-12" class="saned_para align_text text-justify mr-sm-5 mr-4">
-              <ul style="display:inline">
-                <li>الحسابات والإدارة</li>
-
-                <li> صيانة كاملة للممتلكات</li>
-
-                <li> الاتصال والعلاقات العامة مع الوكالات الحكومية</li>
-
-                <li> الإشراف المدني</li>
-
-                <li> إدارة المقاولين</li>
-
-                <li> الصحة والسلامة والأمن والبيئة</li>
-
-                <li> الأمور القانونية والتراخيص</li>
-
-                <li> إدارة الإتصال والتعامل مع العملاء</li>
-
-                <li> إدارة الزوار</li>
-
-                <li> إدارة مواقف السيارات</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-
-            <a class="saned_heading" style="text-decoration: underline;"><b>الخدمات الصناعية</b></a>
-
-            <p class="saned_para ">تقدم شركة ساند خدمات صناعية ذات مستوى عالمي مع
-              خبرة لا مثيل لها ونتائج تشمل جميع الأنشطة ذات الصلة في
-              الصناعات المختلفة ، ومشاريع البنية التحتية ، ومحطات التبريد العملاقة، والمحلات بما في ذلك التجميع
-              والتعبئة
-              والتخزين والدعم اللوجستي وخدمات الإرسال. يتم توسيع خدماتنا لتشمل العديد من وحدات التصنيع الرائدة ومجموعة
-              من
-              الصناعات مثل السيارات، الزجاج ، الفولاذ ، المكونات الكهربائية والإلكترونية ، الآلات الثقيلة ، المسابك ،
-              الإطارات ، الكيماويات المتخصصة ، البنزين بالمنتجات الخ...</p>
-
-            <p class="saned_para ">بدعم من مجموعة كبيرة من الموارد مع مجموعات
-              متنوعة من المهارات لتتناسب مع متطلبات وحدات التصنيع ، نستطيع
-              زيادة أو خفض الأنشطة بفعالية، في إطار زمني محدد، مع تطوير وصيانة قاعدة بيانات من القوى العاملة المدربة
-              كإجراء احترازي لجميع الأوقات.</p>
-            <p class="saned_para ">يتم تقديم نماذج عقود مختلفة مثل نماذج التوظيف
-              المخصصة أو نماذج تقديم الخدمات على أساس الإنتاج.</p>
-            <p class="saned_para ">إن التزامنا تجاه الأشخاص والعمليات والجودة
-              المتسقة هي أهم ثلاثة جوانب من أعمالنا.</p>
-
-          </div>
-          <div class="col-md-12">
-
-            <a class="saned_heading">عمليات الجودة لدينا:</a>
-
-            <div class="col-md-12" class="saned_para mr-sm-5 mr-4">
-              <ul>
-                <li> تحقيق أعلى مستوى من الجودة</li>
-
-                <li> تعزيز رضا العملاء برفع الأداء والتحسين المستمر في معايير الجودة</li>
-
-                <li> المساهمة في الصناعة مع الابتكارات المستمرة والتحسينات على الجودة والعمليات في أنظمة إدارة الجودة
-                  لدينا</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-
-            <a class="saned_heading">الكادر الفني والعملي</a>
-
-            <p class="saned_para ">إن صناعتنا موجهة للناس ولذلك نولي أهمية كبيرة
-              لتعزيز المهارات المهنية المبرمجة للقوى العاملة. ولضمان ذلك
-              نولي أهمية كبيرة للتدريب المستمر والمشاركة في المعرفة التميز في إنتاج العمل في جميع المجالات</p>
-          </div>
-          <div class="col-md-12">
-
-            <a class="saned_heading">العمليات</a>
-
-            <p class="saned_para ">تضمن خدمات المراقبة المجدولة الدورية والجودة مع
-              التحسين المستمر تدفق العملية مما يؤدي إلى ثقافة مكان أفضل
-              للعمل عبر مرافق التصنيع الخاصة بالعملاء.</p>
-            <p class="saned_para ">تدرك شركة ساند مدى حساسية جميع الأعمال التجارية
-              وسريتها ، كما أن خدماتنا مصممة لدعم أعمال العملاء وتمكين
-              موظفيهم من العمل في المستويات المثلى. من الضروري أن تعمل المرافق بسلاسة لضمان هدر أقل للوقت</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 img ">
-        <!-- <img src="./assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
-            ./assets/shutterstock-772324159@3x.png 3x" class="img-responsive"> -->
-        <img src="./assets/facility_image1.png" srcset="./assets/facility_image1@2x.png 2x,
-            ./assets/facility_image1@3x.png 3x"
-          class="img-responsive sticky" width="100%" height="400vh">
-        <!-- <img src="./assets/shutterstock-772324159.png" class="img-responsive" width="100%" height="50%"> -->
-
-
-      </div>
-
-    </div>
-
-    <br>
-
-
-  </div>
-
-
-
-</div>
-<br>
 <app-footer></app-footer>
 
 <router-outlet></router-outlet>

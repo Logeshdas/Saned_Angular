@@ -469,7 +469,7 @@
         </div>
       </div>
 
-      <br><br><br><br><br><br>
+      <br><br><br>
       <div class="text-center">
         <h1>
           <font color="white" style="font-family:Roboto;font-size:50px">Supplier Registration </font>
@@ -501,7 +501,6 @@
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
           <br>
           <br>
-          <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>Enter One Time Password</h4>
         </div>
 
@@ -511,35 +510,22 @@
         <div class="">
           <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent
             to your email address and mobile number</p>
-          <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-          <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
           <input type="text" class="form-control col-md-12 inline" id="otp" required [(ngModel)]="model.otp" name="name"
             #name="ngModel">
 
-          <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
 
           <div [hidden]="name.valid || name.pristine" class="alert" style="color: #f54b5e;">
             One Time Password is required
           </div>
-          <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-        <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-        <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
-          <!-- <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required> -->
+         
           <div class="ml-3">
             <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center" (click)="supplieremailotpverification(model)"
               type="submit">Submit</button>
           </div>
-          <!-- <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label> -->
+         
           <br><br>
         </div>
 
-        <!-- <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div> -->
       </form>
     </div>
 
@@ -547,14 +533,12 @@
 
 
 
-
-
     <br><br><br><br><br>
-    <div class=" col-md-14">
+    <div class="container-fluid">
       <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
       <div class="card col-md-12" style="border-radius: 18px;
-    background: white;color:#494949;margin-top: -321px;">
+    background: white;color:#494949;margin-top: -308px;">
         <br>
         <div class="row">
           <div class="col-md-1"></div>
@@ -578,14 +562,7 @@
                       <label class="Sharjah-Asset-Manage" for="name">UAE Trade License Number <span class="req" style="color: #f54b5e;">*
                         </span></label>
 
-                      <!-- <input type="text" class="form-control col-md-8" id="uae_trade_license_no" 
-               required
-               [(ngModel)]="model.licensenumber" name="uae_trade_license_no"
-               #licensenumber="ngModel">
-        <div [hidden]="licensenumber.valid || licensenumber.pristine"
-             class="alert" style="color: #f54b5e;">
-             License Number is required
-        </div> -->
+                    
                       <input type="text" class="form-control col-md-8" name="uae_trade_license_no" [(ngModel)]="model.trade_license_no"
                         #trade_license_no="ngModel" [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }"
                         required />
@@ -593,26 +570,14 @@
                       <div *ngIf="f.submitted && trade_license_no.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="trade_license_no.errors.required" class="">Please enter a License number</div>
                       </div>
-                      <!-- <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
-
-               <hr/>
-               
-               <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday()">Select Today</button>
-               <button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo()">To current month</button>
-               <button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo({year: 2013, month: 2})">To Feb 2013</button>
-               
-               <hr/> -->
+                     
                     </div>
 
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="name">Trade License Validity Date<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <!-- <input type="text" class="form-control col-md-8" id="licensevalidity"
-                        required
-                        [(ngModel)]="model.licensevalidity" name="licensevalidity"
-                        #licensevalidity="ngModel"> -->
-                      <!-- value="{{ date:'yyyy/MM/dd' }}" -->
+                      
                       <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8"
                         [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate" #trade_license_vdate="ngModel"
                         bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
@@ -622,25 +587,13 @@
                       </div>
 
 
-                      <!-- <ng-datepicker [(ngModel)]="date" /> -->
-                      <!-- <div [hidden]="name.valid || name.pristine"
-                      class="alert alert-danger">
-                   Name is required
-                 </div> -->
                     </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="name">Company Name<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <br>
-                      <!-- <input type="text" class="form-control col-md-8" id="company_name"
-                          required
-                          [(ngModel)]="model.companyname" name="company_name"
-                          #companyname="ngModel"> -->
-                      <!-- <div [hidden]="name.valid || name.pristine"
-                        class="alert alert-danger">
-                     Name is required
-                   </div> -->
+                     
                       <input type="text" class="form-control col-md-8" name="company_name" [(ngModel)]="model.company_name"
                         #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
                         required />
@@ -737,8 +690,6 @@
                         pattern="^[6-9]\d{9}$"
                         [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" />
 
-                   
-                     
                         
                       <div [hidden]="!model.contant_mobile" style="color:red">
                           <div *ngIf="!contant_mobile.valid">Please enter valid Contact NO </div> 
@@ -819,7 +770,7 @@
       </div>
     </div>
     <br>
-    <br>
+    
     <!--=====footer english start==-->
     <app-loginv2></app-loginv2>
     <!-- ================footer  english end== -->
