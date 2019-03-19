@@ -17,8 +17,9 @@ nav{
     right: 0;
     z-index: 1000;
     display: none;
-    float: right;
-    min-width: 12rem;
+    float: left;
+    left: 10px;
+    min-width: 18rem;
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
@@ -65,7 +66,7 @@ nav{
 
 
   .nav-text{
-    margin: 0px 20px;
+    margin: 0px 25px;
     color: #fff!important;
     font-family: Roboto;
     font-size: 18px;
@@ -80,7 +81,7 @@ nav{
   }
 
   .ml-manual{
-    margin-right: 100px;
+    margin-left: 100px;  
   }
 
   @media screen and (min-device-width: 320px) and (max-device-width: 760px){
@@ -90,13 +91,13 @@ nav{
   }
 
   .ml-manual{
-    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
   .ml-manual{
-    margin-right: 0px;
+    margin-left: 0px;
   }
 }
   /* mediaquery */

@@ -1,3 +1,37 @@
-<p>
-  nav-bg-ar works!
-</p>
+<div [class]='bg' style="margin-bottom: -50px; position: relative;">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 p-0 text-left">
+                <img class="img-fluid img-size" src="./assets/newChk.png">
+            </div>
+
+            <div class="col-md-4 col-sm-4"> </div>
+
+            <div class="col-md-4 col-sm-4 text-right">
+                <div class="mt-sm-5 mr-sm-4 mt-md-5 mr-md-5 mt-0 mr-0">
+
+                    <font class="mr-2" style="color:#F90E35">English</font>
+                    <input type="radio" checked>
+
+                    <font class="ml-3 mr-1" color="white"> عربى </font>
+                    <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="true" routerLink={{nav_arabic}}
+                        [checked]="Lang" />
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="font-center">
+            <font class="head"> {{ head }} </font>
+        </div>
+
+    </div>
+
+</div>
+
+<app-navbar style="position:relative; bottom: 30px;"></app-navbar>
+
+
+

@@ -12,7 +12,10 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class SalamaservicesComponent implements OnInit {
   navbarOpen = false;
-
+  head = "Salama";
+  bg="bg_img";
+  nav_arabic = "/salamaservices-arabic";
+  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }

@@ -11,7 +11,10 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class ContactusComponent implements OnInit {
   navbarOpen = false;
-
+  head = "Contact Us";
+  bg="bg_img";
+  nav_arabic = "/contactus-arabic";
+  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }

@@ -12,6 +12,9 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class SitemapComponent implements OnInit {
   navbarOpen = false;
+  head = "Site map";
+  bg="bg_img";
+  nav_arabic = "/sitemap-arabic";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

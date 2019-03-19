@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyComponent implements OnInit {
   navbarOpen = false;
+  head = "Privacy Policy";
+  bg="bg_img";
+  nav_arabic = "/privacy-arabic";
   model: any = {};
 
   toggleNavbar() {

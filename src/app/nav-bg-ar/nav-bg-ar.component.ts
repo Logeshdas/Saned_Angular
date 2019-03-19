@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bg-ar',
@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NavBgArComponent implements OnInit {
 
   constructor() { }
+
+
+  @Input() public head;
+  @Input() public bg;
+  @Input() public nav_arabic;
 
   ngOnInit() {
   }

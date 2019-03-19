@@ -45,7 +45,9 @@ export class SupplierRegisterComponent implements OnInit {
     'yyyy/MM/dd',
   ];
 
-
+  head = "Supplier Registration";
+  bg="bg_img";
+  nav_arabic = "/supplier-register-arabic";
 
 
 

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class facilitymanagementComponent implements OnInit {
   navbarOpen = false;
+  head = "Integrated Facility Management";
+  bg="bg_img";
+  nav_arabic = "/facilityarabic";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

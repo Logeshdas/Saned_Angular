@@ -11,9 +11,9 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class AmanservicesComponent implements OnInit {
   navbarOpen = false;
-  head = "أمـــــان";
+  head = "Aman";
   bg="bg_img";
-  nav_arabic = "/amanservices";
+  nav_arabic = "/amanservices-arabic";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

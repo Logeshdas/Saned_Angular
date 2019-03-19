@@ -13,7 +13,9 @@ import { SimpleGlobal } from 'ng2-simple-global';
 })
 export class AboutUsComponent implements OnInit {
   navbarOpen = false;
-
+  head = "About Us";
+  bg="bg_img1";
+  nav_arabic = "/aboutus-arabic";
   //  props : Props ={
   //   head:"aboutus-arabic"
   // }
