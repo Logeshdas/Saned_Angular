@@ -100,13 +100,23 @@ export class SupplierRegisterComponent implements OnInit {
   };
 
   
-  contactNo_mobile(event){
-      var value =  String(this.model.contant_mobile);
-     
-      if(value.length > 9){
-      this.model.contant_mobile = Number(value.substring(0,9).match(/\d+$/));
-      }
-      console.log(value)
+  contactNo_mobile(){
+    
+      let getdata = this.model.contant_mobile;
+         
+      (getdata == undefined) ? (getdata = "") :
+      (getdata.length > 10) ? ( this.model.contant_mobile = getdata.substring(0,10)) :
+      this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
+    
+      console.log(this.model.contant_mobile)
+  }
+
+  contactNo_no(){
+    let getdata = this.model.contact_no;
+  
+    (getdata == undefined) ? (getdata = "") :
+    (getdata.length > 10) ? ( this.model.contact_no = getdata.substring(0,10)) :
+    this.model.contact_no = getdata.replace(/\D/g, ""); 
   }
 
 }

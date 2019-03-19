@@ -1,74 +1,6 @@
 
-<!-- <nav class="navbar navbar-expand-md navbar-dark" dir="rtl" style="background: rgba(0, 0, 0, 0.27);">
 
-  
-  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="mr-5 bg-danger">
-    <div class="collapse navbar-collapse mr-5" [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navigation ml-5 navbar-nav nav-bg pt-120" style="font-size: 18px; color: black;">
-
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
-          <a routerLink="/login-arbic" class=" nav-link  Home_navbar">الصفحة الرئيسية</a>
-        </li>
-
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 wt_237 ">
-          <a routerLink="/aboutus-arabic" class="nav-link Rectangle-2">معلومات عنا
-          </a>
-        </li>
-
-
-      
-        <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135  wt_220">
-          <div class=" nav-link dropdown">
-
-            <button class="btn btn-primary-dark dropdown-toggle Rectangle-2" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <font style="color:white">خدمات</font>
-            </button>
-
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background:rgba(0, 0, 0, 0.63);"
-              dir="rtl">
-              <a (click)="toggleNavbar()" class="dropdown-item" routerLink="/amanservices-arabic">
-                <font style="color:white">أمـــــان</font>
-              </a>
-              <a (click)="toggleNavbar()" class="dropdown-item" routerLink="/salamaservices-arabic">
-                <font style="color:white">سلامة</font>
-              </a>
-              <a (click)="toggleNavbar()" class="dropdown-item" routerLink="/facilityarabic">
-                <font style="color:white">إدارة المرافق المتكاملة</font>
-              </a>
-            </div>
-          </div>
-        </li>
-
-      
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
-          <a routerLink="/supplier-register-arabic" class="nav-link supplier_navbar">الموردين</a>
-        </li>
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
-          <a routerLink="/contactus-arabic" class="nav-link contact_navbar">اتصل بنا
-          </a>
-        </li>
-       
-
-      </ul>
-    </div>
-
-
-  </div>
-</nav> -->
-
-
-
-
-
-
-<nav dir="rtl" class="navbar navbar-expand-md  navbar-dark"  
-style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
+<nav dir="rtl" class="navbar navbar-expand-md  navbar-dark">
 
 
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,10 +14,10 @@ style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
    
   
     <ul class="navbar-nav p-0 m-0">
-      <li class="nav-item">
+      <li (click)="toggleNavbar()" class="nav-item">
         <a class="nav-link nav-text" routerLink="/login-arbic">الصفحة الرئيسية</a>
       </li>
-      <li class="nav-item">
+      <li (click)="toggleNavbar()" class="nav-item">
         <a routerLink="/aboutus-arabic" class="nav-link nav-text" >معلومات عنا</a>
       </li>
 
@@ -94,16 +26,16 @@ style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
               خدمات
           </a>
           <div class="dropdown-menu text-right">
-            <a routerLink="/amanservices-arabic" class="dropdown-item nav-drop-text" >أمـــــان</a>
-            <a routerLink="/salamaservices-arabic" class="dropdown-item nav-drop-text" >سلامة</a>
-            <a routerLink="/facilityarabic" class="dropdown-item nav-drop-text" >إدارة المرافق المتكاملة</a>
+            <a (click)="toggleNavbar()" routerLink="/amanservices-arabic" class="dropdown-item nav-drop-text text-white" >أمـــــان</a>
+            <a (click)="toggleNavbar()" routerLink="/salamaservices-arabic" class="dropdown-item nav-drop-text text-white" >سلامة</a>
+            <a (click)="toggleNavbar()" routerLink="/facilityarabic" class="dropdown-item nav-drop-text text-white" >إدارة المرافق المتكاملة</a>
           </div>
         </li>
 
-      <li class="nav-item">
+      <li (click)="toggleNavbar()" class="nav-item">
         <a routerLink="/supplier-register-arabic" class="nav-link nav-text" href="#">الموردين</a>
       </li>
-      <li class="nav-item">
+      <li (click)="toggleNavbar()" class="nav-item">
           <a routerLink="/contactus-arabic" class="nav-link nav-text" href="#">اتصل بنا</a>
       </li>
     </ul>

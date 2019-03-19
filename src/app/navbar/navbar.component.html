@@ -1,72 +1,6 @@
-<!-- <nav class="navbar navbar-expand-md navbar-dark" dir="auto"  style="margin-top: -151px;background: rgba(0, 0, 0, 0.27);">
 
 
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-
-    <div class="ml-5">
-        <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
-            <ul class="navigation col-md-12 ml-5 navbar-nav nav-bg pt-120 wt-228"
-                style="font-size: 18px; color: black;">
-
-                <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
-                    <a routerLink="/login" class=" nav-link  Rectangle-2">Home</a>
-                </li>
-
-                <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 wt_237">
-                    <a routerLink="/about-us" class="nav-link Rectangle-2">About Us
-                    </a>
-                </li>
-
-              
-                <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
-                    <div class=" nav-link dropdown" style="margin-top: -9px;
-                    margin-left: -19px;">
-                        <button class="btn btn-primary-dark dropdown-toggle Rectangle-2" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <font style="color:white">Services</font>
-                        </button>
-                        <div (click)="toggleNavbar()" class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                            style="background:rgba(0, 0, 0, 0.63);">
-                            <a class="dropdown-item" routerLink="/amanservices">
-                                <font style="color:white">Aman</font>
-                            </a>
-                            <a class="dropdown-item" routerLink="/salamaservices">
-                                <font style="color:white">Salama</font>
-                            </a>
-                            <a class="dropdown-item" routerLink="/facilitymanagement">
-                                <font style="color:white">Integrated Facility Management</font>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-              
-                <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
-                    <a routerLink="/supplier-register" class="nav-link Rectangle-2">Suppliers</a>
-                </li>
-                <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
-                    <a routerLink="/contactus" class="nav-link Rectangle-2">Contact Us
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-
-    </div>
-</nav> -->
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-md  navbar-dark"  
-style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
+<nav class="navbar navbar-expand-md  navbar-dark"  >
 
 
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" 
@@ -81,10 +15,10 @@ style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
    
   
     <ul class="navbar-nav p-0 m-0">
-      <li class="nav-item">
+      <li  (click)="toggleNavbar()" class="nav-item">
        <a routerLink="/login" class="nav-link nav-text">Home</a>
       </li>
-      <li class="nav-item">
+      <li  (click)="toggleNavbar()" class="nav-item">
             <a routerLink="/about-us" class="nav-link nav-text">About Us</a>
       
       </li>
@@ -95,16 +29,16 @@ style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80);">
                 Services
           </a>
           <div class="dropdown-menu">
-            <a routerLink="/amanservices" class="dropdown-item nav-drop-text" >Aman</a>
-            <a routerLink="/salamaservices" class="dropdown-item nav-drop-text" >Salama</a>
-            <a routerLink="/facilitymanagement" class="dropdown-item nav-drop-text" >Integrated Facility Management</a>
+            <a  (click)="toggleNavbar()" routerLink="/amanservices" class="dropdown-item nav-drop-text text-white" >Aman</a>
+            <a  (click)="toggleNavbar()" routerLink="/salamaservices" class="dropdown-item nav-drop-text text-white" >Salama</a>
+            <a  (click)="toggleNavbar()" routerLink="/facilitymanagement" class="dropdown-item nav-drop-text text-white" >Integrated Facility Management</a>
           </div>
         </li>
 
-      <li class="nav-item">
+      <li  (click)="toggleNavbar()" class="nav-item">
         <a routerLink="/supplier-register" class="nav-link nav-text" >Suppliers</a>
       </li>
-      <li class="nav-item">
+      <li  (click)="toggleNavbar()" class="nav-item">
           <a routerLink="/contactus" class="nav-link nav-text">Contact Us</a>
       </li>
     </ul>

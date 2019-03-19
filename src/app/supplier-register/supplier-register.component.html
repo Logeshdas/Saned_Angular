@@ -170,30 +170,40 @@
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="mobile">Contact No</label>
-                      <input type="number" class="form-control col-md-8" id="contact_no" required [(ngModel)]="model.contact_no"
+                      <input type="text" autocomplete="off" class="form-control col-md-8" 
+                       pattern="^[6-9]\d{9}$" 
+                      id="contact_no" required [(ngModel)]="model.contact_no"
+                      (keyup)="contactNo_no()"
                         name="contact_no" #contact_no="ngModel">
-                      <!-- <div [hidden]="mobile.valid || mobile.pristine"
-                                class="alert" style="color: #f54b5e;">
-                             Mobile number is required
-                           </div> -->
+
+                        <div [hidden]="!model.contact_no" style="color:red">
+                            <div *ngIf="!contact_no.valid">Please enter valid Contact NO </div> 
+                        </div>
+
                     </div>
+
+                   
+
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="contactpersonposition">Contact Person Position</label>
                       <br>
                       <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contact_desig"
                         name="contact_position" #contact_desig="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                      <!-- <div [hidden]="email.valid || email.pristine"
-                                  class="alert" style="color: #f54b5e;">
-                       Invalid Email Address
-                             </div> -->
+                     
                     </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="password">Fax</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="fax_no" required [(ngModel)]="model.contact_fax"
+                      <input type="text" class="form-control col-md-8" id="fax_no" autocomplete="off"
+                       required [(ngModel)]="model.contact_fax" pattern="/^\+?[0-9]+$/"
                         name="contact_fax" #contact_fax="ngModel">
+
+                        <div [hidden]="!model.contact_fax" style="color:red">
+                            <div *ngIf="!contact_fax.valid">Please enter valid Fax NO </div> 
+                        </div>
+
                     </div>
 
                     <div class="form-group col-md-6">
@@ -201,8 +211,8 @@
                           style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="number" class="form-control col-md-8"
-                      (keydown)="contactNo_mobile($event)"
+                      <input type="text" class="form-control col-md-8"
+                      (keyup)="contactNo_mobile(contant_mobile.value)"
                        required name="contact_no_mobile" autocomplete="off"
                         [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel" 
                         pattern="^[6-9]\d{9}$"
@@ -222,8 +232,13 @@
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Company Email Address</label>
                       <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
                         required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                    </div>
+                        pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+
+                        <div [hidden]="company_email.valid ||!model.company_email" class="Sharjah-Asset-Manage-1" style="color: #f54b5e;">
+                            Please enter valid Email Address
+                          </div>
+                  
+                      </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Email address of Contact Person<span
@@ -251,8 +266,13 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Website Address</label>
                       <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.website_add"
-                        name="website_add" #website_add="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        name="website_add" #website_add="ngModel" autocomplete="off"
+                         pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{0,0}(:[0-9]{1,5})?(\/.*)?$" >
 
+
+                        <div [hidden]="!model.website_add" style="color:red">
+                            <div *ngIf="!website_add.valid">Please enter valid Web Address </div> 
+                        </div>
                     </div>
 
                     <br><br>
