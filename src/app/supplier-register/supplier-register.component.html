@@ -1,6 +1,3 @@
-
-
-
 <div class="">
 
 
@@ -29,12 +26,12 @@
           <div [hidden]="name.valid || name.pristine" class="alert" style="color: #f54b5e;">
             One Time Password is required
           </div>
-         
+
           <div class="ml-3">
             <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center" (click)="supplieremailotpverification(model)"
               type="submit">Submit</button>
           </div>
-         
+
           <br><br>
         </div>
 
@@ -47,28 +44,57 @@
 
 
 
+    <!-- <div>
+      <div class="container-fluid">
+
+        <h2>Welcome to Suppliers portal</h2>
+        <div id="submitted">
+          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+            <div class="row">
+
+              <div class="col-sm-6">
+
+              </div>
+
+
+              
+
+              <div class="col-sm-6">
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <app-nav-bg-ar [head]="head" [bg]="bg" [nav_arabic]="nav_arabic"></app-nav-bg-ar>
 
 
 
 
-    <app-nav-bg-ar [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg-ar>
+
+
 
 
     <div class="container-fluid">
-    <br>
+      <br>
       <div class="card" style="border-radius: 18px;
     background: white;color:#494949;">
         <br>
         <div class="row ">
           <div class="col-md-1"></div>
-          <div class="col-md-12"> <!-- <h4><b>Who We Are</b></h4> -->
+          <div class="col-md-12">
+
             <div class="col-md-12">
               <a class="WHAT-IS-Aman-">Welcome to Suppliers portal</a>
 
             </div>
 
             <br>
-          
+
             <div class="Sharjah-Asset-Manage ml-4">
 
 
@@ -80,28 +106,34 @@
                       <label class="Sharjah-Asset-Manage" for="name">UAE Trade License Number <span class="req" style="color: #f54b5e;">*
                         </span></label>
 
-                    
-                      <input type="text" class="form-control col-md-8" name="uae_trade_license_no" [(ngModel)]="model.trade_license_no"
-                        #trade_license_no="ngModel" [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }"
-                        required />
+                      <input type="text" (keyup)="tradeLicenceNO()" class="form-control col-md-8" autocomplete="off" name="uae_trade_license_no"
+                        [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel" pattern="^[0-9]*$"
+                        maxlength="30"  [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }" required />
+
+                        
+
+                      <!-- <div [hidden]="!model.trade_license_no" style="color:red">
+                        <div *ngIf="trade_license_no.errors.maxlength">Only 20 characters are allowed</div>
+                      </div> -->
 
                       <div *ngIf="f.submitted && trade_license_no.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="trade_license_no.errors.required" class="">Please enter a License number</div>
                       </div>
-                     
+
                     </div>
 
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="name">Trade License Validity Date<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      
-                      <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8"
-                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate" #trade_license_vdate="ngModel"
+
+                      <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8" 
+                        [(ngModel)]="model.trade_license_vdate" required name="trade_license_vdate" #trade_license_vdate="ngModel"
                         bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
 
+
                       <div *ngIf="f.submitted && trade_license_vdate.invalid" class="Sharjah-Asset-Manage-1">
-                        <div *ngIf="trade_license_vdate.errors.required">Please enter a Contact Person Name</div>
+                        <div *ngIf="trade_license_vdate.errors.required">Select the Trade License Validity Date</div>
                       </div>
 
 
@@ -111,10 +143,14 @@
                       <label class="Sharjah-Asset-Manage" for="name">Company Name<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <br>
-                     
+
                       <input type="text" class="form-control col-md-8" name="company_name" [(ngModel)]="model.company_name"
-                        #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
+                        maxlength="30" #company_name="ngModel" pattern="[\s\S]*" autocomplete="off" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
                         required />
+
+                      <!-- <div [hidden]="!model.company_name" style="color:red">
+                        <div *ngIf="!company_name.errors.minlength">Only 20 characters are allowed</div>
+                      </div> -->
 
                       <div *ngIf="f.submitted && company_name.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="company_name.errors.required">Please enter a Company Name</div>
@@ -122,14 +158,18 @@
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label class="Sharjah-Asset-Manage" for="phonenumber">List of services and products as approved
-                        by
-                        the economic
-                        department<span class="req" style="color: #f54b5e;">*
+                      <label class="Sharjah-Asset-Manage" for="phonenumber">List of services and products as
+                        approved by the economic department<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <textarea type="text" class="form-control col-md-8" style="height: 90px;" id="listofservices"
-                        required [(ngModel)]="model.services_list" name="services_list" #services_list="ngModel"
-                        [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
+
+                      <textarea type="text" class="form-control col-md-8" maxlength="500" pattern="[\s\S]*" style="height: 90px;"
+                        id="listofservices" required [(ngModel)]="model.services_list" name="services_list"
+                        #services_list="ngModel" [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
+
+                      <!-- <div [hidden]="!model.services_list" style="color:red">
+                        <div *ngIf="!services_list.errors.minlength">Only 500 characters are allowed</div>
+                      </div> -->
+
                       <div *ngIf="f.submitted && services_list.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="services_list.errors.required">Please enter list of services</div>
                       </div>
@@ -139,29 +179,28 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="address">Registered Office Address:</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="reg_office_add" required [(ngModel)]="model.reg_off_add"
-                        name="reg_office_add" #reg_off_add="ngModel">
-                      <!-- <div [hidden]="name.valid || name.pristine"
-                            class="alert alert-danger">
-                         Name is required
-                       </div> -->
+                      <input type="text" class="form-control col-md-8" autocomplete="off" id="reg_office_add" required
+                        [(ngModel)]="model.reg_off_add" pattern="[a-zA-z0-9]" name="reg_office_add" #reg_off_add="ngModel"
+                        maxlength="30">
+
+                        <!-- <div [hidden]="!model.reg_off_add" style="color:red">
+                            <div *ngIf="!reg_off_add.errors.minlength">Only 20 characters are allowed</div>
+                          </div> -->
                     </div>
 
+                    
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="pobox">Contact Person Name<span class="req" style="color: #f54b5e;">*
                         </span></label>
                       <br>
-                      <!-- <input type="text" class="form-control col-md-8" id="contact_name"
-                                required
-                                [(ngModel)]="model.contactpersonnumber" name="contact_name"
-                                #contactpersonnumber="ngModel">
-                         <div [hidden]="contactpersonnumber.valid || contactpersonnumber.pristine"
-                              class="alert" style="color: #f54b5e;">
-                           Name is required
-                         </div> -->
+
                       <input type="text" class="form-control col-md-8" name="contact_name" [(ngModel)]="model.contact_name"
                         #contact_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }"
-                        required />
+                        pattern="[\s\S]*" required autocomplete="off" maxlength="30" />
+
+                      <!-- <div [hidden]="!model.contact_name" style="color:red">
+                        <div *ngIf="!contact_name.errors.minlength">Only 20 characters are allowed</div>
+                      </div> -->
 
                       <div *ngIf="f.submitted && contact_name.invalid" class="Sharjah-Asset-Manage-1">
                         <div *ngIf="contact_name.errors.required">Please enter a Contact Person Name</div>
@@ -170,39 +209,37 @@
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="mobile">Contact No</label>
-                      <input type="text" autocomplete="off" class="form-control col-md-8" 
-                       pattern="^[6-9]\d{9}$" 
-                      id="contact_no" required [(ngModel)]="model.contact_no"
-                      (keyup)="contactNo_no()"
-                        name="contact_no" #contact_no="ngModel">
+                      <br>
+                      <input type="text" autocomplete="off" class="form-control col-md-8" pattern="^[6-9]\d{9}$" id="contact_no"
+                        required [(ngModel)]="model.contact_no" (keyup)="contactNo_no()" name="contact_no" #contact_no="ngModel">
 
-                        <div [hidden]="!model.contact_no" style="color:red">
-                            <div *ngIf="!contact_no.valid">Please enter valid Contact NO </div> 
-                        </div>
+                      <div [hidden]="!model.contact_no" style="color:red">
+                        <div *ngIf="!contact_no.valid">Please enter valid Contact NO </div>
+                      </div>
 
                     </div>
 
-                   
+
 
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="contactpersonposition">Contact Person Position</label>
                       <br>
                       <input type="text" class="form-control col-md-8" id="contact_position" required [(ngModel)]="model.contact_desig"
-                        name="contact_position" #contact_desig="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                     
+                        autocomplete="off" maxlength="30" name="contact_position" #contact_desig="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                      <!-- <div [hidden]="!model.contact_desig" style="color:red">
+                        <div *ngIf="!contact_desig.errors.minlength">Only 20 characters are allowed</div>
+                      </div> -->
+
                     </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="password">Fax</label>
                       <br>
-                      <input type="text" class="form-control col-md-8" id="fax_no" autocomplete="off"
-                       required [(ngModel)]="model.contact_fax" pattern="/^\+?[0-9]+$/"
-                        name="contact_fax" #contact_fax="ngModel">
+                      <input type="text" class="form-control col-md-8" id="fax_no" autocomplete="off" required
+                        [(ngModel)]="model.contact_fax" pattern="/^\+?[0-9]+$/" name="contact_fax" #contact_fax="ngModel">
 
-                        <div [hidden]="!model.contact_fax" style="color:red">
-                            <div *ngIf="!contact_fax.valid">Please enter valid Fax NO </div> 
-                        </div>
 
                     </div>
 
@@ -210,17 +247,15 @@
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Contact No. (mobile)<span class="req"
                           style="color: #f54b5e;">*
                         </span></label>
+                        <br>
 
-                      <input type="text" class="form-control col-md-8"
-                      (keyup)="contactNo_mobile(contant_mobile.value)"
-                       required name="contact_no_mobile" autocomplete="off"
-                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel" 
-                        pattern="^[6-9]\d{9}$"
-                        [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" />
+                      <input type="text" class="form-control col-md-8" (keyup)="contactNo_mobile(contant_mobile.value)"
+                        required name="contact_no_mobile" autocomplete="off" [(ngModel)]="model.contant_mobile"
+                        #contant_mobile="ngModel" pattern="^[6-9]\d{9}$" [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" />
 
-                        
+
                       <div [hidden]="!model.contant_mobile" style="color:red">
-                          <div *ngIf="!contant_mobile.valid">Please enter valid Contact NO </div> 
+                        <div *ngIf="!contant_mobile.valid">Please enter valid Contact NO </div>
                       </div>
 
                       <div *ngIf="f.submitted && contant_mobile.invalid" class="Sharjah-Asset-Manage-1">
@@ -232,13 +267,13 @@
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Company Email Address</label>
                       <input type="email" class="form-control col-md-8" id="company_email_id" passvalidator="password"
                         required [(ngModel)]="model.company_email" name="company_email_id" #company_email="ngModel"
-                        pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                        pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-                        <div [hidden]="company_email.valid ||!model.company_email" class="Sharjah-Asset-Manage-1" style="color: #f54b5e;">
-                            Please enter valid Email Address
-                          </div>
-                  
+                      <div [hidden]="company_email.valid ||!model.company_email" class="Sharjah-Asset-Manage-1" style="color: #f54b5e;">
+                        Please enter valid Email Address
                       </div>
+
+                    </div>
 
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Email address of Contact Person<span
@@ -248,9 +283,6 @@
                       <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control col-md-8"
                         name="contact_email" [(ngModel)]="model.contact_email" autocomplete="off" #contact_email="ngModel"
                         [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }" required />
-
-                    
-
 
                       <div [hidden]="contact_email.valid ||!model.contact_email" class="Sharjah-Asset-Manage-1" style="color: #f54b5e;">
                         Please enter valid Email Address
@@ -263,16 +295,16 @@
                     </div>
 
 
+
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="confirmpassword">Website Address</label>
                       <input type="email" class="form-control col-md-8" id="website_add" required [(ngModel)]="model.website_add"
-                        name="website_add" #website_add="ngModel" autocomplete="off"
-                         pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{0,0}(:[0-9]{1,5})?(\/.*)?$" >
+                      maxlength="30" name="website_add" #website_add="ngModel" autocomplete="off" pattern="[wW]{3}\.[a-z0-9.-]{3,}\.[a-z]{2,}$">
 
+                      <div [hidden]="!model.website_add" style="color:red">
+                        <div *ngIf="!website_add.valid">Please enter valid Web Address </div>
 
-                        <div [hidden]="!model.website_add" style="color:red">
-                            <div *ngIf="!website_add.valid">Please enter valid Web Address </div> 
-                        </div>
+                      </div>
                     </div>
 
                     <br><br>
@@ -308,7 +340,7 @@
       </div>
     </div>
     <br>
-    
+
     <!--=====footer english start==-->
     <app-loginv2></app-loginv2>
     <!-- ================footer  english end== -->

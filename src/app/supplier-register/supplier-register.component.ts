@@ -119,4 +119,12 @@ export class SupplierRegisterComponent implements OnInit {
     this.model.contact_no = getdata.replace(/\D/g, ""); 
   }
 
+  tradeLicenceNO(){
+    let getdata = this.model.trade_license_no;
+  
+    (getdata == undefined) ? (getdata = "") :
+    // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
+    this.model.trade_license_no = getdata.replace(/\D/g, ""); 
+  }
+
 }

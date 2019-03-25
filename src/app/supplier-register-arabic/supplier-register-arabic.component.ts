@@ -57,8 +57,32 @@ export class SupplierRegisterArabicComponent implements OnInit {
   //   rtl: true
   // };
 
+  contactNo_mobile(){
+   
+    let getdata = this.model.contant_mobile;
+       
+    (getdata == undefined) ? (getdata = "") :
+    (getdata.length > 10) ? ( this.model.contant_mobile = getdata.substring(0,10)) :
+    this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
+  
+    console.log(this.model.contant_mobile)
+}
 
+contactNo_no(){
+  let getdata = this.model.contact_no;
 
+  (getdata == undefined) ? (getdata = "") :
+  (getdata.length > 10) ? ( this.model.contact_no = getdata.substring(0,10)) :
+  this.model.contact_no = getdata.replace(/\D/g, ""); 
+}
+
+tradeLicenceNO(){
+  let getdata = this.model.trade_license_no;
+
+  (getdata == undefined) ? (getdata = "") :
+  // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
+  this.model.trade_license_no = getdata.replace(/\D/g, ""); 
+}
 
 
 
