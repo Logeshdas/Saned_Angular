@@ -105,6 +105,7 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="name">UAE Trade License Number <span class="req" style="color: #f54b5e;">*
                         </span></label>
+                        <br>
 
                       <input type="text" (keyup)="tradeLicenceNO()" class="form-control col-md-8" autocomplete="off" name="uae_trade_license_no"
                         [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel" pattern="^[0-9]*$"
@@ -126,6 +127,7 @@
                     <div class="form-group col-md-6">
                       <label class="Sharjah-Asset-Manage" for="name">Trade License Validity Date<span class="req" style="color: #f54b5e;">*
                         </span></label>
+                        <br>
 
                       <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8" 
                         [(ngModel)]="model.trade_license_vdate" required name="trade_license_vdate" #trade_license_vdate="ngModel"
