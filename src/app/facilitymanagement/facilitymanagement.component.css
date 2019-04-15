@@ -1,3 +1,4 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -487,32 +488,7 @@ color: var(--black);
     font-size: 24px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
   /* ==============footer style start ========= */
   .container1 {
     background: black;
