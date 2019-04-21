@@ -17,12 +17,12 @@ import swal from 'sweetalert2';
 export class SupplierRegisterComponent implements OnInit {
   navbarOpen = false;
 
-  
+
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  
+
 
   localVar;
   model: any = {};
@@ -34,6 +34,7 @@ export class SupplierRegisterComponent implements OnInit {
   onSubmit: any = {};
   minDate: Date;
   trade_license_vdate: any = {};
+  keyup = '';
 
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
     this.minDate = new Date();
@@ -46,7 +47,7 @@ export class SupplierRegisterComponent implements OnInit {
   ];
 
   head = "Supplier Registration";
-  bg="bg_img";
+  bg = "bg_img";
   nav_arabic = "/supplier-register-arabic";
 
 
@@ -94,37 +95,37 @@ export class SupplierRegisterComponent implements OnInit {
 
       swal(res_data)
       this.router.navigate(['/login']);
-      
+
     });
 
   };
 
-  
-  contactNo_mobile(){
-    
-      let getdata = this.model.contant_mobile;
-         
-      (getdata == undefined) ? (getdata = "") :
-      (getdata.length > 10) ? ( this.model.contant_mobile = getdata.substring(0,10)) :
-      this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
-    
-      console.log(this.model.contant_mobile)
+
+  contactNo_mobile() {
+
+    let getdata = this.model.contant_mobile;
+
+    (getdata == undefined) ? (getdata = "") :
+      (getdata.length > 10) ? (this.model.contant_mobile = getdata.substring(0, 10)) :
+        this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
+
+    console.log(this.model.contant_mobile)
   }
 
-  contactNo_no(){
+  contactNo_no() {
     let getdata = this.model.contact_no;
-  
+
     (getdata == undefined) ? (getdata = "") :
-    (getdata.length > 10) ? ( this.model.contact_no = getdata.substring(0,10)) :
-    this.model.contact_no = getdata.replace(/\D/g, ""); 
+      (getdata.length > 10) ? (this.model.contact_no = getdata.substring(0, 10)) :
+        this.model.contact_no = getdata.replace(/\D/g, "");
   }
 
-  tradeLicenceNO(){
+  tradeLicenceNO() {
     let getdata = this.model.trade_license_no;
-  
+
     (getdata == undefined) ? (getdata = "") :
-    // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
-    this.model.trade_license_no = getdata.replace(/\D/g, ""); 
+      // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
+      this.model.trade_license_no = getdata.replace(/\D/g, "");
   }
 
 }

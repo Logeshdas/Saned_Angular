@@ -13,7 +13,7 @@ export class NavBgArComponent implements OnInit {
   @Input() public head;
   @Input() public bg;
   @Input() public nav_arabic;
-
+  Lang: any = {};
   ngOnInit() {
   }
 

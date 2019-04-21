@@ -251,7 +251,8 @@
                         </span></label>
                         <br>
 
-                      <input type="text" class="form-control col-md-8" (keyup)="contactNo_mobile(contant_mobile.value)"
+                      <input type="text" class="form-control col-md-8" 
+                     
                         required name="contact_no_mobile" autocomplete="off" [(ngModel)]="model.contant_mobile"
                         #contant_mobile="ngModel" pattern="^[6-9]\d{9}$" [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }" />
 

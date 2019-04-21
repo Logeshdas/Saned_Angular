@@ -12,12 +12,13 @@ export class ContactComponent implements OnInit {
   head = "Integrated Facility Management";
   bg = "bg_img";
   nav_arabic = "/supplier-register-arabic";
-  
+  Lang: any = {};
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  
+
 
 }

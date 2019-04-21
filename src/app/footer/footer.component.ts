@@ -9,13 +9,14 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
   model: any = {};
-
+  model_value: any = {};
+  Subscribe:any={};
   ngOnInit() {
   }
 
-  goToTop(){
+  goToTop() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
-  
+
 }
