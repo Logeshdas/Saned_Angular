@@ -20,7 +20,13 @@
       font-family: GeezaPro;
     
     }
-
+    .Rectangle-5-Copy {
+      width: 290px !important;
+      height: 59px !important;
+      border-radius: 8px !important;
+      background-color: #f34235 !important;
+      color: #fbfbfb !important;
+    }
 @media screen and (min-width: 320px) and (max-width: 767px){
   .setWidth{
     width: 100%;

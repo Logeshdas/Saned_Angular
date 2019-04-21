@@ -1,4 +1,3 @@
-
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -22,8 +21,8 @@
 
 
       <font color="white"> عربى </font>
-      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/login-arbic"
-        [checked]="Lang" />&nbsp;
+      <input name="Lang" style="color:#ff0000;" checked [(ngModel)]="Lang" type="radio" [value]="true"
+        routerLink="/login-arbic" [checked]="Lang" />&nbsp;
 
     </div>
   </div>
@@ -35,6 +34,7 @@
       <input type="radio" routerLink="/login-arbic" />
       <font color="white">عربى</font>
 
+     
       &nbsp; &nbsp; <input type="radio" checked />
       <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
 
@@ -45,7 +45,8 @@
 
       <form class="col-md-4 modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
           <br>
           <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
         </div>
@@ -54,11 +55,12 @@
           <div class="row">
             <div class="col-md-12">
               <label class="col-md text-left"><b>Email ID</b></label>
-              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name" #name="ngModel">
+              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name"
+                #name="ngModel">
 
               <label class="col-md text-left"><b>Password</b> </label>
-              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
-                #password="ngModel">
+              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password"
+                name="password" #password="ngModel">
 
               <label class="col-md text-left">
                 <input type="checkbox" class="Rectangle-4 "> Remember me
@@ -67,8 +69,7 @@
                   password?</a></label>
               <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
                                    color: white;
-                                   height: 47px;"><a
-                  class="">Submit</a></button>
+                                   height: 47px;"><a class="">Submit</a></button>
               <p>New to Saned?<a routerLink="/register-form" class="Mask ml-2">
                   <font color="#f34235">Register Here</font>
                 </a></p>
@@ -84,7 +85,8 @@
 
       <form class="col-md-4 modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
           <br>
           <a class="Welcome-To-Aman">{{'Forgot password'| translate:user}}</a>
         </div>
@@ -101,8 +103,8 @@
 
 
               <label class="col-md text-left"><b>New Password</b> </label>
-              <input type="password" class="w3-input" id="new_password" required [(ngModel)]="model.password" name="password"
-                #password="ngModel">
+              <input type="password" class="w3-input" id="new_password" required [(ngModel)]="model.password"
+                name="password" #password="ngModel">
 
               <label class="col-md text-left"><b>Confirm Password</b></label>
               <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
@@ -111,8 +113,7 @@
               <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
                 (click)="forgetpassword(model)" style="background: red;
                                    color: white;
-                                   height: 47px;"><a
-                  class="">Submit</a></button>
+                                   height: 47px;"><a class="">Submit</a></button>
 
             </div>
           </div>
@@ -126,7 +127,8 @@
 
       <form class="modal-content animate col-md-4" action="/action_page.php">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="close">&times;</span>
+          <span onclick="document.getElementById('id03').style.display='none'" class="close"
+            title="close">&times;</span>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>Enter One Time Password</h4>
         </div>
@@ -141,8 +143,8 @@
 
 
           <button style="background-color: #ff0000;height: 47px;
-                                   color: white;"
-            class="w3-btn w3-red col-md-12" (click)="forgetotpverification(model)" type="submit">Submit</button>
+                                   color: white;" class="w3-btn w3-red col-md-12"
+            (click)="forgetotpverification(model)" type="submit">Submit</button>
 
         </div>
         <br><br><br>
@@ -174,111 +176,112 @@
 
 
 
-<app-navbar style="position: relative; bottom:80px;" ></app-navbar>
+<app-navbar style="position: relative; bottom:80px;"></app-navbar>
 
 <br>
 
 <div class="container-fluid">
 
 
-<div class="card" style="border-radius: 18px; margin-top: -44px;
+  <div class="card" style="border-radius: 18px; margin-top: -44px;
                           background: white;">
 
-  <div class="row mx-3">
+    <div class="row mx-3">
 
 
-    
-    <div class="col-md-6">
-     
-      <br>
-      <a class="WHAT-IS-Aman-">WHAT IS AMAN ?</a>
 
-      <br>
-      <br>
+      <div class="col-md-6">
 
-      <p class="Sharjah-Asset-Manage text-justify">
+        <br>
+        <a class="WHAT-IS-Aman-">WHAT IS AMAN ?</a>
 
-        To ensure fast response to fire emergencies, SPSA partnered with SANED have initiated “AMAN” project. AMAN,
-        aims
-        to protect lives and properties by establishing a safe and reliable connection between all firefighting systems
-        in all properties in Sharjah, with the central monitoring station that is continuously monitored to identify
-        and
-        respond to emergencies instantly ensuring the safety of people and assets.
         <br>
         <br>
 
-      </p>
-    </div>
-  
-    <br>
-  
-    <div class="col-md-6">
-      <br>
-    
-      <a class="WHAT-IS-Aman-">WHAT IS SALAMA ?</a>
-      <br>
-      <br>
-      <p class="Sharjah-Asset-Manage text-justify">
-        SALAMA is a high-level training center established as a collaboration between Sharjah Prevention and Safety
-        Authority (SPSA) and SANED, to serve the various sectors in the Emirate of Sharjah, providing specialized
-        training programs in the prevention and safety of workers within the private and public sectors.
+        <p class="Sharjah-Asset-Manage text-justify">
 
-        <br>
-
-      </p>
-      <!-- </div> -->
-    </div>
-
-    <div class="col-md-6">
-      <br>
-      <br>
-      <a class="WHAT-IS-Aman-">INTEGRATED FACILITY MANAGEMENT</a>
-      <br>
-      <br>
-      <p class="Sharjah-Asset-Manage text-justify">
-        SANED offers the best in class services across all industries and multiple sites with a robust and systematic
-        service delivery model, designed to complement the strategic and operational objectives of an organization.
-        Integrating key functions like processes and technologies with people to ensure flexibility for future
-        integration and supported by the latest CAFM (computer aided facilities management) systems and platforms and
-        Integrated packages in Microsoft for all backend business processes - SANED has partnered with clients to
-        deliver and maintain consistently high service levels, operational efficiency and continuous improvement.
-        Reduced down time, maximizing revenues with lower operating costs, eliminating duplications are some of our key
-        result areas (KRA’s).
-
-
-        <br>
-
-      </p>
-
-    </div>
-
-
-
-
-
-
-
-  </div>
-
-  <br>
-  <br>
-
-
-
-  <section class="">
-    <div class="">
-      <div class="row ">
-
-        <!-- <div class="col-md-2"></div> -->
-        <div class="col-md-7">
-
-          <img src="./assets/home1.png" srcset="./assets/home1@2x.png 2x,
-                      ./assets/home1@3x.png 3x"
-            class="img-responsive" width="100%" height="95%">
+          To ensure fast response to fire emergencies, SPSA partnered with SANED have initiated “AMAN” project. AMAN,
+          aims
+          to protect lives and properties by establishing a safe and reliable connection between all firefighting
+          systems
+          in all properties in Sharjah, with the central monitoring station that is continuously monitored to identify
+          and
+          respond to emergencies instantly ensuring the safety of people and assets.
           <br>
-          <!-- <p>hello moto</p> -->
-        </div>
-        <!-- <div class="col-md-4">
+          <br>
+
+        </p>
+      </div>
+
+      <br>
+
+      <div class="col-md-6">
+        <br>
+
+        <a class="WHAT-IS-Aman-">WHAT IS SALAMA ?</a>
+        <br>
+        <br>
+        <p class="Sharjah-Asset-Manage text-justify">
+          SALAMA is a high-level training center established as a collaboration between Sharjah Prevention and Safety
+          Authority (SPSA) and SANED, to serve the various sectors in the Emirate of Sharjah, providing specialized
+          training programs in the prevention and safety of workers within the private and public sectors.
+
+          <br>
+
+        </p>
+        <!-- </div> -->
+      </div>
+
+      <div class="col-md-6">
+        <br>
+        <br>
+        <a class="WHAT-IS-Aman-">INTEGRATED FACILITY MANAGEMENT</a>
+        <br>
+        <br>
+        <p class="Sharjah-Asset-Manage text-justify">
+          SANED offers the best in class services across all industries and multiple sites with a robust and systematic
+          service delivery model, designed to complement the strategic and operational objectives of an organization.
+          Integrating key functions like processes and technologies with people to ensure flexibility for future
+          integration and supported by the latest CAFM (computer aided facilities management) systems and platforms and
+          Integrated packages in Microsoft for all backend business processes - SANED has partnered with clients to
+          deliver and maintain consistently high service levels, operational efficiency and continuous improvement.
+          Reduced down time, maximizing revenues with lower operating costs, eliminating duplications are some of our
+          key
+          result areas (KRA’s).
+
+
+          <br>
+
+        </p>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <section class="">
+      <div class="">
+        <div class="row ">
+
+          <!-- <div class="col-md-2"></div> -->
+          <div class="col-md-7">
+
+            <img src="./assets/home1.png" srcset="./assets/home1@2x.png 2x,
+                      ./assets/home1@3x.png 3x" class="img-responsive" width="100%" height="95%">
+            <br>
+            <!-- <p>hello moto</p> -->
+          </div>
+          <!-- <div class="col-md-4">
           <h3>News</h3>
           <br>
           <br>
@@ -291,49 +294,49 @@
 
 
         </div> -->
-        <div class="col-md-1"></div>
+          <div class="col-md-1"></div>
 
-        <div class="col-md-3">
-          <div class="card-content">
-            <!-- <div class="card-img">
+          <div class="col-md-3">
+            <div class="card-content">
+              <!-- <div class="card-img">
 
               <a href="#" class="">News</a>
 
             </div> -->
 
 
-            <div class="card-desc text-justify mt-2">
-              <h4>News</h4>
-              <br>
-              <br>
-              <br>
-              <br>
+              <div class="card-desc text-justify mt-2">
+                <h4>News</h4>
+                <br>
+                <br>
+                <br>
+                <br>
 
-              <h4>Coming Soon...</h4>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-
-
+                <h4>Coming Soon...</h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
 
+
+
+
+              </div>
 
             </div>
 
+
           </div>
 
-
         </div>
-      
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 </div>
 <br>
 

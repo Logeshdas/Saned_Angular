@@ -1,48 +1,46 @@
+<nav class="navbar navbar-expand-md  navbar-dark">
 
 
-<nav class="navbar navbar-expand-md  navbar-dark"  >
-
-
-  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse" 
-  data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse"
+    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 
-  <div class="collapse navbar-collapse mobile-bg ml-manual" 
-   id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
-   
-   
-  
+  <div class="collapse navbar-collapse mobile-bg ml-manual" id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
+
+
+
     <ul class="navbar-nav p-0 m-0">
-      <li  (click)="toggleNavbar()" class="nav-item">
-       <a routerLink="/login" class="nav-link nav-text">Home</a>
+      <li (click)="toggleNavbar()" class="nav-item">
+        <a routerLink="/login" class="nav-link nav-text">Home</a>
       </li>
-      <li  (click)="toggleNavbar()" class="nav-item">
-            <a routerLink="/about-us" class="nav-link nav-text">About Us</a>
-      
+      <li (click)="toggleNavbar()" class="nav-item">
+        <a routerLink="/about-us" class="nav-link nav-text">About Us</a>
+
       </li>
 
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-text" id="navbarDropdownMenuLink" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-          </a>
-          <div class="dropdown-menu">
-            <a  (click)="toggleNavbar()" routerLink="/amanservices" class="dropdown-item nav-drop-text text-white" >Aman</a>
-            <a  (click)="toggleNavbar()" routerLink="/salamaservices" class="dropdown-item nav-drop-text text-white" >Salama</a>
-            <a  (click)="toggleNavbar()" routerLink="/facilitymanagement" class="dropdown-item nav-drop-text text-white" >Integrated Facility Management</a>
-          </div>
-        </li>
-
-      <li  (click)="toggleNavbar()" class="nav-item">
-        <a routerLink="/supplier-register" class="nav-link nav-text" >Suppliers</a>
+        <a class="nav-link dropdown-toggle nav-text" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu">
+          <a (click)="toggleNavbar()" routerLink="/amanservices" class="dropdown-item nav-drop-text text-white">Aman</a>
+          <a (click)="toggleNavbar()" routerLink="/salamaservices"
+            class="dropdown-item nav-drop-text text-white">Salama</a>
+          <a (click)="toggleNavbar()" routerLink="/facilitymanagement"
+            class="dropdown-item nav-drop-text text-white">Integrated Facility Management</a>
+        </div>
       </li>
-      <li  (click)="toggleNavbar()" class="nav-item">
-          <a routerLink="/contactus" class="nav-link nav-text">Contact Us</a>
+
+      <li (click)="toggleNavbar()" class="nav-item">
+        <a routerLink="/supplier-register" class="nav-link nav-text">Suppliers</a>
+      </li>
+      <li (click)="toggleNavbar()" class="nav-item">
+        <a routerLink="/contactus" target="blank" class="nav-link nav-text">Contact Us</a>
       </li>
     </ul>
   </div>
 </nav>
-
-
