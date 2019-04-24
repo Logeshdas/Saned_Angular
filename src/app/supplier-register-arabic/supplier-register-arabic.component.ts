@@ -16,7 +16,7 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 export class SupplierRegisterArabicComponent implements OnInit {
   navbarOpen = false;
   head = "سجل الموردين";
-  bg="bg_img";
+  bg = "bg_img";
   nav_arabic = "/supplier-register";
 
   toggleNavbar() {
@@ -57,32 +57,32 @@ export class SupplierRegisterArabicComponent implements OnInit {
   //   rtl: true
   // };
 
-  contactNo_mobile(){
-   
+  contactNo_mobile() {
+
     let getdata = this.model.contant_mobile;
-       
+
     (getdata == undefined) ? (getdata = "") :
-    (getdata.length > 10) ? ( this.model.contant_mobile = getdata.substring(0,10)) :
-    this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
-  
+      (getdata.length > 10) ? (this.model.contant_mobile = getdata.substring(0, 10)) :
+        this.model.contant_mobile = getdata.replace(/\D/g, ""); //getdata.replace(/\D/g, "");
+
     console.log(this.model.contant_mobile)
-}
+  }
 
-contactNo_no(){
-  let getdata = this.model.contact_no;
+  contactNo_no() {
+    let getdata = this.model.contact_no;
 
-  (getdata == undefined) ? (getdata = "") :
-  (getdata.length > 10) ? ( this.model.contact_no = getdata.substring(0,10)) :
-  this.model.contact_no = getdata.replace(/\D/g, ""); 
-}
+    (getdata == undefined) ? (getdata = "") :
+      (getdata.length > 10) ? (this.model.contact_no = getdata.substring(0, 10)) :
+        this.model.contact_no = getdata.replace(/\D/g, "");
+  }
 
-tradeLicenceNO(){
-  let getdata = this.model.trade_license_no;
+  tradeLicenceNO() {
+    let getdata = this.model.trade_license_no;
 
-  (getdata == undefined) ? (getdata = "") :
-  // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
-  this.model.trade_license_no = getdata.replace(/\D/g, ""); 
-}
+    (getdata == undefined) ? (getdata = "") :
+      // (getdata.length > 10) ? ( this.model.trade_license_no = getdata.substring(0,10)) :
+      this.model.trade_license_no = getdata.replace(/\D/g, "");
+  }
 
 
 
@@ -96,12 +96,12 @@ tradeLicenceNO(){
       if (this.data.message == "You are successfully registered") {
         console.log("data=====>", this.data);
 
-        swal("Registration Successful" + "<br>" + "التسجيل ناجح")
+        swal("التسجيل ناجح")
 
         this.router.navigate(['/login']);
       }
       else if (this.data.message == "Invalid one time password") {
-        swal("Invalid one time password")
+        swal("كلمة مرور غير صالحة لمرة واحدة")
       }
 
     })

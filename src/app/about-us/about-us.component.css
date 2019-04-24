@@ -11,16 +11,17 @@
   line-height: 1.18;
   color: #212529;
 }
-.bg_img1 {
-  background: url("../../assets/newChkBg.png")no-repeat center center;
+.bg_about {
+  background: url("/assets/newChkBg.png")no-repeat center center;
   background-size: cover;
   width:100%;
   height: 100vh;
 }
 
 
+
 .bg_img{
-  background: url("../../assets/bulding_img.png")no-repeat center center;
+  background: url("/assets/bulding_img.png")no-repeat center center;
   background-size: cover;
   width:100%;
   height: 100vh;
@@ -65,3 +66,94 @@ color: #ffffff;
       transform: translate(-50%, -50%);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg_img {
+  background: url("/assets/bulding_img.png")no-repeat center center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+  }
+
+  .bg_img1 {
+    background: url("/assets/newChkBg.png")no-repeat center center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+  }
+  
+
+  .head{
+    font-family: Roboto;
+  font-size: 45px;
+  color: #ffffff;
+  line-height: normal;
+  }
+  
+  .font-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  /* only for iphone 5s */
+  /* @media only screen and (max-width: 320px) {
+  
+  } */
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 760px){
+    .head{
+      font-family: Roboto;
+      font-size: 50px;
+      color: #ffffff;
+      
+      }
+  
+      .font-center{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+  }
+  
+
+/* only for iphoe 5s */
+  @media screen and (min-device-width: 560px) and (max-device-width: 570px){
+
+    .img-size{
+      width: 30%;
+      height: auto;
+    }
+
+    .head{
+      font-family: Roboto;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: normal;
+    }
+  }
