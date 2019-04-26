@@ -12,12 +12,13 @@ import { SimpleGlobal } from 'ng2-simple-global';
 export class AmanservicesComponent implements OnInit {
   navbarOpen = false;
   head = "Aman";
-  bg="bg_img";
+  bg = "bg_img";
   nav_arabic = "/amanservices-arabic";
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
+
   localVar;
   Lang: any = {};
   model: any = {};

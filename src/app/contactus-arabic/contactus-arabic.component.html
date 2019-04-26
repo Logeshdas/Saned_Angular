@@ -1,32 +1,65 @@
 <style>
   section.sec1 {
-  background: url(natures-temples.png);
-  background-size: cover;
-}
+    background: url(natures-temples.png);
+    background-size: cover;
+  }
 
-section.banner {
-  background: url(Group.png);
-  background-size: cover;
-  margin-left: 15px;
-}
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+  }
 
-section.sec2 {
-  padding: 100px;
-  box-sizing: border-box;
-}
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
 
   /* ===========================footer style end================ */
 </style>
 
 
 
-<app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg>
+<!-- <app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg> -->
+<div [class]='bg' style="margin-bottom: -50px; position: relative;">
+  <div class="container-fluid">
+
+    <div dir="rtl" class="row">
+      <div class="col-md-4 col-sm-4 p-0 text-right">
+        <img class="img-fluid" src="./assets/logo_ar.png">
+      </div>
+
+      <div class="col-md-4 col-sm-4"> </div>
+
+      <div class="col-md-4 col-sm-4">
+        <div class="mt-sm-5 ml-sm-5 mt-md-5 ml-md-5 mt-0 ml-0">
+
+          <input type="radio" checked>
+          <font class="ml-3 mr-1" color="#F90E35"> عربى </font>
+
+          <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
+            routerLink={{nav_arabic}} [checked]="Lang" />
+          <font class="mr-1" style="color:white">English</font>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <font class="head"> {{ head }} </font>
+    </div>
+  </div>
+
+</div>
+
+<app-navbararabic></app-navbararabic>
 <!-- =======arabic -->
 <div>
-  
+
   <div class="container">
     <br>
-   
+
     <div class="container">
 
       <div class="row" dir="rtl">

@@ -9,28 +9,27 @@
   font-size: 33px;
   font-weight: 400;
   line-height: 1.18;
-  color: #212529;
+  color: #ffffff;
 }
-.bg_about {
-  background: url("/assets/newChkBg.png")no-repeat center center;
-  background-size: cover;
-  width:100%;
-  height: 100vh;
-}
+.bg_img {
+  background: url("/assets/newbg.png")no-repeat center center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+  }
 
-
-
-.bg_img{
-  background: url("/assets/bulding_img.png")no-repeat center center;
-  background-size: cover;
-  width:100%;
-  height: 100vh;
-}
+  .bg_img1 {
+    background: url("/assets/newbg.png")no-repeat center center;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+  }
+  
 
 .head{
   font-family: GeezaPro;
 font-size: 60px;
-color: #ffffff;
+color: #212529;
 
 }
 
@@ -86,19 +85,7 @@ color: #ffffff;
 
 
 
-.bg_img {
-  background: url("/assets/bulding_img.png")no-repeat center center;
-    background-size: cover;
-    width:100%;
-    height: 100vh;
-  }
 
-  .bg_img1 {
-    background: url("/assets/newChkBg.png")no-repeat center center;
-    background-size: cover;
-    width:100%;
-    height: 100vh;
-  }
   
 
   .head{

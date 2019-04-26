@@ -2,190 +2,16 @@
 nav{
   width: 100%;
   height: 50px;
-  background: rgba(0, 0, 0, 0.50); 
-  border: 1px solid rgba(0,0,0,.80);
+  background:rgba(0,0,0,.8);
+  border-top: 1px solid rgba(255,255);
+  border-bottom: 1px solid rgba(255,255);
   position: sticky;
   top:0px;
   z-index: 99;
 }
-
-
-  .dropdown-menu {
-    position: relative;
-    top: 100%;
-    right: 0;
-    z-index: 1000;
-    display: none;
-    float: right;
-    min-width: 12rem;
-    padding: .5rem 0;
-    margin: .125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color:  rgba(0,0,0,.70);
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.80);
-    border-radius: .25rem;
-  }
-
-
-  .show-on-hover:hover > ul.dropdown-menu {
-    display: block;    
-  }
-  
-  .dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  .dropdown-item:focus, .dropdown-item:hover {
-    color: #16181b;
-    text-decoration: none;
-    background-color:#8080808c !important
-  }
-  .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-      pointer-events: none;
-  }
-  
-  
-  .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: .25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-  }
-
-
-  .nav-text{
-    margin: 0px 20px;
-    color: #fff!important;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  .nav-drop-text{
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Roboto;
-    color: #fff;
-  }
-
-  .ml-manual{
-    margin-right: 100px;
-  }
-
-  @media screen and (min-device-width: 320px) and (max-device-width: 760px){
-  .mobile-bg{
-    background: rgba(0, 0, 0, 0.70);
-    border: 1px solid rgba(0,0,0,.80);
-  }
-
-  .ml-manual{
-    margin-right: 0px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px){
-  .ml-manual{
-    margin-right: 0px;
-  }
-}
-  /* mediaquery */
-  /* style="background: rgba(0, 0, 0, 0.27); border: 1px solid rgba(0,0,0,.80); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .navigation .menu {
+.navigation .menu {
   position: relative
-} */
+}
 .navigation .menu .submenu {
   position: absolute;
   /* width: 200px; */
@@ -196,6 +22,10 @@ nav{
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 
+}
+.navbar-nav .dropdown-menu {
+  /* position: static; */
+  float: left !important;
 }
 .navigation .menu:hover .submenu {
   display: block;
@@ -222,6 +52,62 @@ display: none
   /* ===========navbar start========= */
 .Rectangle-2 {
   width: 137px;
+  height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.Rectangle-abt {
+  width: 137px;
+  margin-right: 14px;
+  height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.Rectangle-cnct{
+  width: 106px;
+  margin-right: -33px;
+  height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.Rectangle-service{
+  width: 106px;
+  height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.Rectangle-3 {
+  width: 151px;
   height: 41px;
   border-radius: 5px;
   color:white !important;
@@ -334,6 +220,9 @@ display: none
   color: #ffffff;
 }
 /* ====================responsive================= */
+/* .txt_rgt{
+  text-align: right !important;
+} */
 .mt_20{
   margin-top: 0px;
 }
@@ -354,6 +243,9 @@ width: 140% !important;
 .nav-bg {
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
+.mr_79{
+  margin-right: -79px !important;
+}
 .ml_mr{
   margin-right: 35px !important;
   margin-left: -22px !important;
@@ -362,12 +254,18 @@ width: 140% !important;
 
   width: 99px;
   }
+  .mr_24{
+    text-align: right
+  }
+  .txt_rgt{
+    text-align: right !important;
+  }
   .ml-5{
     margin-left: 4.2rem !important;
   }
 .pt-120{
   position: relative;
-  left: 111px;
+  left: 16px;
 }
 .mt-414{
   margin-top: 0px !important;
@@ -378,13 +276,18 @@ width: 140% !important;
 .ml_33{
 /* margin-left: -27px !important; */
 }
-
+.mr_10{
+  margin-right: -10px;
+}
 
 }
 /* css for ipad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1022px){
 .nav-bg {
   /* background-color: rgba(0, 0, 0, 0.65) !important; */
+}
+.mr_18{
+  margin-right: 18px;
 }
 .maxwt_19{
   max-width: 19%;
@@ -421,7 +324,7 @@ width: 109px;
 
 .pt-120{
   position: relative;
-  left: 136px;
+  /* left: 136px; */
 }
 .mt-414{
   margin-top:0px !important;
@@ -515,7 +418,54 @@ padding:1 22px !important;
 /* 
 ============dropdown style start============= */
 
+.show-on-hover:hover > ul.dropdown-menu {
+  display: block;    
+}
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color:#8080808c !important
+}
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-menu {
+  /* position: absolute; */
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 12rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
 
 /* 
 ============dropdown style End============= */

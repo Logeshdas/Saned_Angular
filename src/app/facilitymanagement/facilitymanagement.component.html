@@ -1,376 +1,413 @@
-<app-nav-bg-ar [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg-ar>
+<!-- <app-nav-bg-ar [head]="head" [bg]="bg" [nav_arabic]="nav_arabic" ></app-nav-bg-ar> -->
+<div [class]='bg' style="margin-bottom: -50px; position: relative;">
+  <div class="container-fluid">
 
+    <div class="row">
+      <div class="col-md-4 col-sm-4 p-0 text-left">
+        <img class="img-fluid img-size" src="./assets/newChk.png">
+      </div>
+
+      <div class="col-md-4 col-sm-4"> </div>
+
+      <div class="col-md-4 col-sm-4 text-right">
+        <div class="mt-sm-5 mr-sm-4 mt-md-5 mr-md-5 mt-0 mr-0">
+
+          <font class="mr-2" style="color:#F90E35">English</font>
+          <input type="radio" checked>
+
+          <font class="ml-3 mr-1" color="white"> عربى </font>
+          <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="true" routerLink={{nav_arabic}}
+            [checked]="Lang" />
+
+        </div>
+      </div>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="text-center">
+      <font class="head"> {{ head }} </font>
+    </div>
+
+  </div>
+
+</div>
+
+<app-navbar></app-navbar>
 
 
 <div class="container-fluid">
- <br>
-  <div class="card" style="border-radius: 18px; background: white;">
- 
+  <br>
+  <div class="card" style="border-radius: 18px; background: white;margin-top: -21px;">
+
     <div class="mx-3 mx-md-1 mx-sm-3">
-    <div class="row">
-      <div class="col-md-7">
+      <div class="row">
+        <div class="col-md-7">
 
-        <div class="col-md-12">
-        
-          <br>
-          <a class="WHAT-IS-Aman-">Introduction</a>
-
-       
-          <br>
-          <p class="Sharjah-Asset-Manage text-justify mt-2">SANED offers the best in
-            class
-            services across all industries and multiple sites with a
-            robust and systematic
-            service delivery model, designed to complement the strategic and operational objectives of an organization.
-            Integrating key functions like processes and technologies with people to ensure flexibility for future
-            integration and supported by the latest CAFM (computer aided facilities management) systems and platforms
-            and
-            Integrated packages in Microsoft for all backend business processes - SANED has partnered with clients to
-            deliver and maintain consistently high service levels, operational efficiency and continuous improvement.
-            Reduced down time, maximizing revenues with lower operating costs, eliminating duplications are some of our
-            key
-            result areas (KRA’s).</p>
-        </div>
-
-
-
-        <div class="col-md-10">
-          <a class="WHAT-IS-Aman-">Our Core services:</a>
-          <br>
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>1. Facilities Management Services</b></a>
-
-          <div class="Sharjah-Asset-Manage mt-2 ml-5">
-            <ul>
-
-              <li>Hard Services</li>
-
-              <li>Soft Services</li>
-
-              <li>Help Desk Management Services</li>
-
-              <li>Energy Management Services</li>
-            </ul>
-          </div>
-        </div>
-        <br>
-
-        <div class="col-md-10">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>2. FM Consulting Services</b></a>
-          <br>
-          <div class="Sharjah-Asset-Manage mt-2 ml-5">
-            <ul>
-
-              <li>Design and Consultancy</li>
-
-              <li>Project Management</li>
-
-              <li>Fit out works</li>
-
-              <li>Vendor Management</li>
-              <li>Help Desk Management Services</li>
-            </ul>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="col-md-10">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>3. Industrial Maintenance Services</b></a>
-
-          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-            <ul>
-              <li>Online Production Support Services</li>
-
-              <li>Offline Production Support Services</li>
-
-              <li>Warehouse Management</li>
-
-            </ul>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="col-md-10 ml-0 ml-sm-3">
-          <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Facilities Management Services</b></a>
-
-          <br>
-
-          <div class="ml-0 ml-sm-3">
-            <a class="WHAT-IS-Aman-2">Hard Services</a>
-
-            <div  class="Sharjah-Asset-Manage mt-2 ml-5">
-              <ul>
-
-                <li >Mechanical and Electrical Maintenance</li>
-
-                <li>BMS Operation</li>
-
-                <li>Plant Maintenance</li>
-                <li>HVAC (Operation & Maintenance)</li>
-                <li>Plumbing & Water Management</li>
-
-              </ul>
-            </div>
+          <div class="col-md-12">
 
             <br>
-            <a class="WHAT-IS-Aman-2">Soft Services</a>
+            <a class="WHAT-IS-Aman-">Introduction</a>
+
+
+            <br>
+            <p class="Sharjah-Asset-Manage text-justify mt-2">SANED offers the best in
+              class
+              services across all industries and multiple sites with a
+              robust and systematic
+              service delivery model, designed to complement the strategic and operational objectives of an
+              organization.
+              Integrating key functions like processes and technologies with people to ensure flexibility for future
+              integration and supported by the latest CAFM (computer aided facilities management) systems and platforms
+              and
+              Integrated packages in Microsoft for all backend business processes - SANED has partnered with clients to
+              deliver and maintain consistently high service levels, operational efficiency and continuous improvement.
+              Reduced down time, maximizing revenues with lower operating costs, eliminating duplications are some of
+              our
+              key
+              result areas (KRA’s).</p>
+          </div>
+
+
+
+          <div class="col-md-10">
+            <a class="WHAT-IS-Aman-">Our Core services:</a>
+            <br>
+            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>1. Facilities Management Services</b></a>
+
+            <div class="Sharjah-Asset-Manage mt-2 ml-5">
+              <ul>
+
+                <li>Hard Services</li>
+
+                <li>Soft Services</li>
+
+                <li>Help Desk Management Services</li>
+
+                <li>Energy Management Services</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+
+          <div class="col-md-10">
+            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>2. FM Consulting Services</b></a>
+            <br>
+            <div class="Sharjah-Asset-Manage mt-2 ml-5">
+              <ul>
+
+                <li>Design and Consultancy</li>
+
+                <li>Project Management</li>
+
+                <li>Fit out works</li>
+
+                <li>Vendor Management</li>
+                <li>Help Desk Management Services</li>
+              </ul>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="col-md-10">
+            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>3. Industrial Maintenance Services</b></a>
 
             <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
               <ul>
+                <li>Online Production Support Services</li>
 
-                <li>Housekeeping & Janitorial Services</li>
+                <li>Offline Production Support Services</li>
 
-                <li>Garden and Lawn Maintenance</li>
-
-                <li> Specialized Services</li>
-
-                <li>Events & Selective unique contracts</li>
-
-                <li>Facade Cleaning</li>
-
-                <li>Carpet & Upholstery</li>
-
-                <li>Marble Crystallization</li>
-
-                <li>Energy Management</li>
-
-                <li>Security Services</li>
-
-                <li>Guarding and Patrolling</li>
-
-                <li>Electronic Surveillance</li>
-
-                <li>Business Support Services</li>
-
-                <li>Staffing</li>
-
-                <li>Payroll Management</li>
-
-                <li>Office Administration</li>
-
-                <li>Mail Room Management</li>
-
-                <li>Food and Beverage Vending</li>
+                <li>Warehouse Management</li>
 
               </ul>
             </div>
           </div>
-        </div>
-        <div  class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
-          <p class="ml-0 ml-sm-3">These services are offered as bundled services (two or more services) or fully
-            integrated and tailored to
-            each
-            customer’s unique requirements.</p>
-        </div>
 
-        <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
-          <div class="ml-0 ml-sm-3">
-            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;">
-              <b>FM Consulting Services</b>
-            </a>
+          <br>
 
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED offers partnerships with building owners and
-              users for facilitation of an efficient transition,
-              maximizing revenues with lower operating costs while maintaining high service levels.
+          <div class="col-md-10 ml-0 ml-sm-3">
+            <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Facilities Management Services</b></a>
+
+            <br>
+
+            <div class="ml-0 ml-sm-3">
+              <a class="WHAT-IS-Aman-2">Hard Services</a>
+
+              <div class="Sharjah-Asset-Manage mt-2 ml-5">
+                <ul>
+
+                  <li>Mechanical and Electrical Maintenance</li>
+
+                  <li>BMS Operation</li>
+
+                  <li>Plant Maintenance</li>
+                  <li>HVAC (Operation & Maintenance)</li>
+                  <li>Plumbing & Water Management</li>
+
+                </ul>
+              </div>
+
               <br>
-              In addition to providing core Facilities Management Services our FMCS provides solutions to our clients
-              on:
-            </p>
+              <a class="WHAT-IS-Aman-2">Soft Services</a>
 
-
-
-
-
-
-            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-              <ul>
-                <li>Accounts and Administration</li>
-
-                <li> Occupant Management</li>
-
-                <li> Complete maintenance of property including common area maintenance (CAM)</li>
-
-                <li> Liaison and PR with Government Agencies</li>
-
-                <li> Civil Supervision</li>
-
-                <li> Vendor Management</li>
-
-                <li> Health, Safety, Security and Environment</li>
-
-                <li> Space Management</li>
-
-                <li> Statutory / Legal Compliances and licenses</li>
-
-                <li> Help Desk Management</li>
-
-                <li> Visitor Management</li>
-
-                <li> Parking Management</li>
-              </ul>
-            </div>
-            <br>
-            <p class="Sharjah-Asset-Manage text-justify mt-2 ml-4">In addition to providing core FMCS will provide
-              solutions to our clients on:</p>
-            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-              <ul>
-                <li>Property and Services takeover for complete maintenance and management</li>
-                <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely payment
-                  of
-                  all
-                  dues and taxes</li>
-
-                <li> Maintain and assist in updating NOC’s, permits, renewals , insurance coverage , claims etc.</li>
-
-                <li> Vendor management / Maintain 3rd party contracts</li>
-
-                <li> Life Safety and Security Systems Management</li>
-
-                <li> Procurement of consumables and inventory management</li>
-
-                <li> Maintain PPM schedules of all equipment’s and installations - routine, annual and breakdown
-                  maintenance
-                </li>
-
-                <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and
-                  complaints,
-                  MIS’s
-                  – daily, monthly and quarterly and annual</li>
-
-                <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease
-                  agreements
-                  /
-                  Terms and Conditions of occupants /Timely submission of bills, follow up and collection of rents and
-                  payments
-                  from occupants</li>
-
-                <li> Coordination and inspection of any work initiated within the premises until completion</li>
-              </ul>
-            </div>
-            <br>
-
-            <a class="WHAT-IS-Aman-2">Pre-Occupancy Management:</a>
-
-            <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
-              <ul>
-                <li>CAM Estimations and Budgeting</li>
-
-                <li> Transition Phase Management</li>
-
-                <li>Property Take Over</li>
-              </ul>
-            </div>
-            <br>
-            <a class="WHAT-IS-Aman-2">Post Occupancy Management:</a>
-
-            <div>
               <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
                 <ul>
-                  <li>Tenant Relationship Management</li>
 
-                  <li> Operations and Maintenance</li>
+                  <li>Housekeeping & Janitorial Services</li>
 
-                  <li> Set Up Budgets - Revenue / Operations
-                  </li>
-                  <li> Client Relationship Management</li>
+                  <li>Garden and Lawn Maintenance</li>
 
-                  <li> Risk Mitigation and Management</li>
+                  <li> Specialized Services</li>
 
-                  <li> Traffic Management</li>
+                  <li>Events & Selective unique contracts</li>
 
-                  <li> Liaise with Government Bodies</li>
+                  <li>Facade Cleaning</li>
 
-                  <li> New Tenant Move-In Management</li>
+                  <li>Carpet & Upholstery</li>
 
-                  <li> Rent Collection</li>
+                  <li>Marble Crystallization</li>
+
+                  <li>Energy Management</li>
+
+                  <li>Security Services</li>
+
+                  <li>Guarding and Patrolling</li>
+
+                  <li>Electronic Surveillance</li>
+
+                  <li>Business Support Services</li>
+
+                  <li>Staffing</li>
+
+                  <li>Payroll Management</li>
+
+                  <li>Office Administration</li>
+
+                  <li>Mail Room Management</li>
+
+                  <li>Food and Beverage Vending</li>
+
                 </ul>
               </div>
-              <p class="Sharjah-Asset-Manage text-justify mt-2 ">CAFM software ensures Helpdesk and Resource Planning
-                and Allocation, Service tracker, Asset maintenance,
-                Inventory management, Conference room bookings, Guest house bookings, Lease management, Invoice
-                tracker,
-                Visitor
-                management, Material movement management and Staff management.</p>
             </div>
-
-            <div class="Sharjah-Asset-Manage  mt-2 ">
-              <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Industrial Services</b></a>
-
-              <br>
-              <a class="WHAT-IS-Aman-2">Our Quality Processes:</a>
-
-              <div style="" class="Sharjah-Asset-Manage mt-2 ml-5">
-                <ul>
-
-                  <li> Achieve highest level of quality through process-driven service delivery methods</li>
-
-                  <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality
-                    standards
-                  </li>
-
-                  <li> Contribute to industry with continuous innovations and improvements on quality and processes in
-                    our
-                    Quality Management Systems</li>
-                </ul>
-              </div>
-
-
-              <br>
-              <a class="WHAT-IS-Aman-2">People:</a>
-
-              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our industry is people oriented and we have a
-                professional skills enhancement programmed for the workforce.
-                Continuous training and knowledge sharing ensure excellence in work output at all areas</p>
-              <a class="WHAT-IS-Aman-2">Processes:</a>
-
-              <p class="Sharjah-Asset-Manage text-justify mt-2 ">Regular scheduled monitoring and quality customized
-                services with continuous improvement ensures process
-                flow
-                resulting in a 'Great Place to Work’ culture across our clients manufacturing facilities.</p>
-
-              <p class="Sharjah-Asset-Manage text-justify mt-2">SANED is aware of the sensitivity and confidential
-                nature of all businesses and our services are designed
-                to
-                support your business, enabling your staff to function at optimum levels. It is essential that
-                facilities
-                operate smoothly to ensure 'zero' down time.</p>
-
-              <p class="Sharjah-Asset-Manage text-justify mt-2 ">
-                From pharmaceutical laboratories and large-scale car manufacturing plants, to District Cooling Plants-
-                SANED
-                has
-                the expertise needed to support your businesses with all non-core support services needs like PPE.
-                equipment’s,
-                waste & power management systems etc.
-              </p>
-            </div>
-
-
-            
           </div>
+          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
+            <p class="ml-0 ml-sm-3">These services are offered as bundled services (two or more services) or fully
+              integrated and tailored to
+              each
+              customer’s unique requirements.</p>
+          </div>
+
+          <div class="Sharjah-Asset-Manage text-justify mt-2 ml-4">
+            <div class="ml-0 ml-sm-3">
+              <a class="WHAT-IS-Aman-1" style="text-decoration: underline;">
+                <b>FM Consulting Services</b>
+              </a>
+
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ">SANED offers partnerships with building owners and
+                users for facilitation of an efficient transition,
+                maximizing revenues with lower operating costs while maintaining high service levels.
+                <br>
+                In addition to providing core Facilities Management Services our FMCS provides solutions to our clients
+                on:
+              </p>
+
+
+
+
+
+
+              <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+                <ul>
+                  <li>Accounts and Administration</li>
+
+                  <li> Occupant Management</li>
+
+                  <li> Complete maintenance of property including common area maintenance (CAM)</li>
+
+                  <li> Liaison and PR with Government Agencies</li>
+
+                  <li> Civil Supervision</li>
+
+                  <li> Vendor Management</li>
+
+                  <li> Health, Safety, Security and Environment</li>
+
+                  <li> Space Management</li>
+
+                  <li> Statutory / Legal Compliances and licenses</li>
+
+                  <li> Help Desk Management</li>
+
+                  <li> Visitor Management</li>
+
+                  <li> Parking Management</li>
+                </ul>
+              </div>
+              <br>
+              <p class="Sharjah-Asset-Manage text-justify mt-2 ml-4">In addition to providing core FMCS will provide
+                solutions to our clients on:</p>
+              <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+                <ul>
+                  <li>Property and Services takeover for complete maintenance and management</li>
+                  <li> Liaise with Public Utility Agencies, Government Bodies and relevant authorities for timely
+                    payment
+                    of
+                    all
+                    dues and taxes</li>
+
+                  <li> Maintain and assist in updating NOC’s, permits, renewals , insurance coverage , claims etc.</li>
+
+                  <li> Vendor management / Maintain 3rd party contracts</li>
+
+                  <li> Life Safety and Security Systems Management</li>
+
+                  <li> Procurement of consumables and inventory management</li>
+
+                  <li> Maintain PPM schedules of all equipment’s and installations - routine, annual and breakdown
+                    maintenance
+                  </li>
+
+                  <li> 24 X 7 Central Help Desk services - record, track, execute and report all work orders and
+                    complaints,
+                    MIS’s
+                    – daily, monthly and quarterly and annual</li>
+
+                  <li> Complete Tenant relationship management - Represent Client for compliance of SLA’s / lease
+                    agreements
+                    /
+                    Terms and Conditions of occupants /Timely submission of bills, follow up and collection of rents and
+                    payments
+                    from occupants</li>
+
+                  <li> Coordination and inspection of any work initiated within the premises until completion</li>
+                </ul>
+              </div>
+              <br>
+
+              <a class="WHAT-IS-Aman-2">Pre-Occupancy Management:</a>
+
+              <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+                <ul>
+                  <li>CAM Estimations and Budgeting</li>
+
+                  <li> Transition Phase Management</li>
+
+                  <li>Property Take Over</li>
+                </ul>
+              </div>
+              <br>
+              <a class="WHAT-IS-Aman-2">Post Occupancy Management:</a>
+
+              <div>
+                <div class="Sharjah-Asset-Manage text-justify mt-2 ml-5">
+                  <ul>
+                    <li>Tenant Relationship Management</li>
+
+                    <li> Operations and Maintenance</li>
+
+                    <li> Set Up Budgets - Revenue / Operations
+                    </li>
+                    <li> Client Relationship Management</li>
+
+                    <li> Risk Mitigation and Management</li>
+
+                    <li> Traffic Management</li>
+
+                    <li> Liaise with Government Bodies</li>
+
+                    <li> New Tenant Move-In Management</li>
+
+                    <li> Rent Collection</li>
+                  </ul>
+                </div>
+                <p class="Sharjah-Asset-Manage text-justify mt-2 ">CAFM software ensures Helpdesk and Resource Planning
+                  and Allocation, Service tracker, Asset maintenance,
+                  Inventory management, Conference room bookings, Guest house bookings, Lease management, Invoice
+                  tracker,
+                  Visitor
+                  management, Material movement management and Staff management.</p>
+              </div>
+
+              <div class="Sharjah-Asset-Manage  mt-2 ">
+                <a class="WHAT-IS-Aman-1" style="text-decoration: underline;"><b>Industrial Services</b></a>
+
+                <br>
+                <a class="WHAT-IS-Aman-2">Our Quality Processes:</a>
+
+                <div style="" class="Sharjah-Asset-Manage mt-2 ml-5">
+                  <ul>
+
+                    <li> Achieve highest level of quality through process-driven service delivery methods</li>
+
+                    <li> Enhance customer satisfaction by outperforming and with continuous improvement in quality
+                      standards
+                    </li>
+
+                    <li> Contribute to industry with continuous innovations and improvements on quality and processes in
+                      our
+                      Quality Management Systems</li>
+                  </ul>
+                </div>
+
+
+                <br>
+                <a class="WHAT-IS-Aman-2">People:</a>
+
+                <p class="Sharjah-Asset-Manage text-justify mt-2 ">Our industry is people oriented and we have a
+                  professional skills enhancement programmed for the workforce.
+                  Continuous training and knowledge sharing ensure excellence in work output at all areas</p>
+                <a class="WHAT-IS-Aman-2">Processes:</a>
+
+                <p class="Sharjah-Asset-Manage text-justify mt-2 ">Regular scheduled monitoring and quality customized
+                  services with continuous improvement ensures process
+                  flow
+                  resulting in a 'Great Place to Work’ culture across our clients manufacturing facilities.</p>
+
+                <p class="Sharjah-Asset-Manage text-justify mt-2">SANED is aware of the sensitivity and confidential
+                  nature of all businesses and our services are designed
+                  to
+                  support your business, enabling your staff to function at optimum levels. It is essential that
+                  facilities
+                  operate smoothly to ensure 'zero' down time.</p>
+
+                <p class="Sharjah-Asset-Manage text-justify mt-2 ">
+                  From pharmaceutical laboratories and large-scale car manufacturing plants, to District Cooling Plants-
+                  SANED
+                  has
+                  the expertise needed to support your businesses with all non-core support services needs like PPE.
+                  equipment’s,
+                  waste & power management systems etc.
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+
         </div>
 
-      </div>
 
-
-      <div class="col-md-5 text-center">
+        <div class="col-md-5 text-center">
           <img src="./assets/facility_image1.png" srcset="./assets/facility_image1@2x.png 2x,
-          ./assets/facility_image1@3x.png 3x"
-          class="img-fluid sticky py-4">
-      
+          ./assets/facility_image1@3x.png 3x" class="img-fluid sticky py-4">
 
+
+        </div>
+
+        <br>
       </div>
-
-      <br>
-    </div>
     </div>
   </div>
 </div>
-  <br>
- 
-  <!--=====footer english start==-->
-  <app-loginv2></app-loginv2>
-  <!-- ================footer  english end== -->
+<br>
 
-  <router-outlet></router-outlet>
+<!--=====footer english start==-->
+<app-loginv2></app-loginv2>
+<!-- ================footer  english end== -->
+
+<router-outlet></router-outlet>

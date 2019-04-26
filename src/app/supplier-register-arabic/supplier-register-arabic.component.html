@@ -2,26 +2,60 @@
 
 <style>
   section.sec1 {
-  background: url(natures-temples.png);
-  background-size: cover;
-}
+    background: url(natures-temples.png);
+    background-size: cover;
+  }
 
-section.banner {
-  background: url(Group.png);
-  background-size: cover;
-  margin-left: 15px;
-}
+  section.banner {
+    background: url(Group.png);
+    background-size: cover;
+    margin-left: 15px;
+  }
 
-section.sec2 {
-  padding: 100px;
-  box-sizing: border-box;
-}
+  section.sec2 {
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
   /* ===========================footer style end================ */
 </style>
 
 
 
-<app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic"></app-nav-bg>
+<!-- <app-nav-bg [head]="head" [bg]="bg" [nav_arabic]="nav_arabic"></app-nav-bg> -->
+<div [class]='bg' style="margin-bottom: -50px; position: relative;">
+  <div class="container-fluid">
+
+    <div dir="rtl" class="row">
+      <div class="col-md-4 col-sm-4 p-0 text-right">
+        <img class="img-fluid" src="./assets/logo_ar.png">
+      </div>
+
+      <div class="col-md-4 col-sm-4"> </div>
+
+      <div class="col-md-4 col-sm-4">
+        <div class="mt-sm-5 ml-sm-5 mt-md-5 ml-md-5 mt-0 ml-0">
+
+          <input type="radio" checked>
+          <font class="ml-3 mr-1" color="#F90E35"> عربى </font>
+
+          <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true"
+            routerLink={{nav_arabic}} [checked]="Lang" />
+          <font class="mr-1" style="color:white">English</font>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <font class="head"> {{ head }} </font>
+    </div>
+  </div>
+
+</div>
+
+<app-navbararabic></app-navbararabic>
 <div class="">
 
 
@@ -36,7 +70,8 @@ section.sec2 {
 
       <form class="modal-content animate col-md-4">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="close">&times;</span>
 
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>أدخل كلمة المرور مرة واحدة</h4>
@@ -104,15 +139,16 @@ section.sec2 {
 
 
                     <div class="form-group col-md-6  text-right" dir="rtl">
-                      <label class="saned_para" for="name">رقم الرخصة التجارية الإماراتية <span class="req" style="color: #f54b5e;">*
+                      <label class="saned_para" for="name">رقم الرخصة التجارية الإماراتية <span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="text" (keyup)="tradeLicenceNO()" autocomplete="off" pattern=[\s\S]* maxlength="30" class="form-control col-md-8 text-right" name="uae_trade_license_no"
-                        [(ngModel)]="model.trade_license_no"  #trade_license_no="ngModel"
-                         [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }"
-                        required />
+                      <input type="text" (keyup)="tradeLicenceNO()" autocomplete="off" pattern=[\s\S]* maxlength="30"
+                        class="form-control col-md-8 text-right" name="uae_trade_license_no"
+                        [(ngModel)]="model.trade_license_no" #trade_license_no="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_no.invalid }" required />
 
-                        <!-- <div [hidden]="!model.trade_license_no" style="color:red">
+                      <!-- <div [hidden]="!model.trade_license_no" style="color:red">
                             <div *ngIf="!trade_license_no.errors.minlength">Only 20 characters are allowed</div>
                         </div> -->
 
@@ -124,12 +160,14 @@ section.sec2 {
 
 
                     <div class="form-group col-md-6 text-right">
-                      <label class="saned_para" for="name">تاريخ صلاحية الرخصة التجارية<span class="req" style="color: #f54b5e;">*
+                      <label class="saned_para" for="name">تاريخ صلاحية الرخصة التجارية<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
-                      
+
                       <input type="text" autocomplete="off" [(bsValue)]="newVar" class="form-control col-md-8" required
-                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate" #trade_license_vdate="ngModel"
-                        bsDatepicker [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
+                        [(ngModel)]="model.trade_license_vdate" name="trade_license_vdate"
+                        #trade_license_vdate="ngModel" bsDatepicker
+                        [ngClass]="{ 'is-invalid': f.submitted && trade_license_vdate.invalid }" [minDate]="minDate">
 
                       <div *ngIf="f.submitted && trade_license_vdate.invalid" class="saned_para-1">
                         <div *ngIf="trade_license_vdate.errors.required">يرجى إدخال اسم الشخص المسؤول</div>
@@ -141,11 +179,12 @@ section.sec2 {
                       <label class="saned_para" for="name">اسم الشركة<span class="req" style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="text" autocomplete="off" maxlength="30" pattern=[\s\S]* class="form-control col-md-8 text-right" name="company_name"
-                        [(ngModel)]="model.company_name" #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
+                      <input type="text" autocomplete="off" maxlength="30" pattern=[\s\S]*
+                        class="form-control col-md-8 text-right" name="company_name" [(ngModel)]="model.company_name"
+                        #company_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && company_name.invalid }"
                         required />
 
-                        <!-- <div [hidden]="!model.company_name" style="color:red">
+                      <!-- <div [hidden]="!model.company_name" style="color:red">
                             <div *ngIf="!company_name.errors.minlength">يُسمح بـ 20 حرفًا فقط</div>
                         </div> -->
 
@@ -158,15 +197,16 @@ section.sec2 {
                       <label class="saned_para" for="phonenumber">قائمة الخدمات والمنتجات المعتمدة من الإدارة
                         الاقتصادية<span class="req" style="color: #f54b5e;">*
                         </span></label>
-                      <textarea type="text" autocomplete="off" maxlength="500" pattern=[\s\S]* class="form-control col-md-8 text-right" style="height: 90px;"
-                        id="listofservices" required [(ngModel)]="model.services_list" name="services_list"
-                        #services_list="ngModel" [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
-                     
-                        <!-- <div [hidden]="!model.services_list" style="color:red">
+                      <textarea type="text" autocomplete="off" maxlength="500" pattern=[\s\S]*
+                        class="form-control col-md-8 text-right" style="height: 90px;" id="listofservices" required
+                        [(ngModel)]="model.services_list" name="services_list" #services_list="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && services_list.invalid }"></textarea>
+
+                      <!-- <div [hidden]="!model.services_list" style="color:red">
                             <div *ngIf="!services_list.errors.minlength">يُسمح بـ 500 حرفًا فقط</div>
                         </div> -->
 
-                        <div *ngIf="f.submitted && services_list.invalid" class="saned_para-1">
+                      <div *ngIf="f.submitted && services_list.invalid" class="saned_para-1">
                         <div *ngIf="services_list.errors.required">يرجى إدخال قائمة الخدمات</div>
                       </div>
 
@@ -175,25 +215,26 @@ section.sec2 {
 
                     <div class="form-group col-md-6 text-right">
                       <label class="saned_para" for="address">العنوان المسجل للمكتب</label>
-                      <input type="text" autocomplete="off" maxlength="30" class="form-control col-md-8 text-right" id="reg_office_add"
-                        required [(ngModel)]="model.reg_off_add" name="reg_office_add" pattern="[\s\S]*"
-                         #reg_off_add="ngModel">
-                    
-                        <!-- <div [hidden]="!model.reg_off_add" style="color:red">
+                      <input type="text" autocomplete="off" maxlength="30" class="form-control col-md-8 text-right"
+                        id="reg_office_add" required [(ngModel)]="model.reg_off_add" name="reg_office_add"
+                        pattern="[\s\S]*" #reg_off_add="ngModel">
+
+                      <!-- <div [hidden]="!model.reg_off_add" style="color:red">
                             <div *ngIf="!reg_off_add.errors.minlength">يُسمح بـ 20 حرفًا فقط</div>
                         </div> -->
-      
+
                     </div>
 
                     <div class="form-group col-md-6 text-right">
                       <label class="saned_para" for="pobox">اسم شخص الاتصال<span class="req" style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="text" autocomplete="off" maxlength="30" pattern="[\s\S]*" class="form-control col-md-8 text-right" name="contact_name"
-                        [(ngModel)]="model.contact_name" #contact_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }"
+                      <input type="text" autocomplete="off" maxlength="30" pattern="[\s\S]*"
+                        class="form-control col-md-8 text-right" name="contact_name" [(ngModel)]="model.contact_name"
+                        #contact_name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && contact_name.invalid }"
                         required />
 
-                        <!-- <div [hidden]="!model.contact_name" style="color:red">
+                      <!-- <div [hidden]="!model.contact_name" style="color:red">
                             <div *ngIf="!contact_name.errors.minlength">يُسمح بـ 20 حرفًا فقط</div>
                         </div> -->
 
@@ -206,49 +247,50 @@ section.sec2 {
                       <label class="saned_para" for="mobile">رقم الاتصال</label>
 
                       <input type="text" autocomplete="off" class="form-control col-md-8 text-right" id="contact_no"
-                      pattern="^[6-9]\d{9}$" (keyup)="contactNo_no()"
-                        required [(ngModel)]="model.contact_no" name="contact_no" #contact_no="ngModel">
+                        pattern="^[6-9]\d{9}$" (keyup)="contactNo_no()" required [(ngModel)]="model.contact_no"
+                        name="contact_no" #contact_no="ngModel">
 
-                        <div [hidden]="!model.contact_no" style="color:red">
-                            <div *ngIf="!contact_no.valid">الرجاء إدخال اسم صالح</div>
-                          </div>
-                     
+                      <div [hidden]="!model.contact_no" style="color:red">
+                        <div *ngIf="!contact_no.valid">الرجاء إدخال اسم صالح</div>
+                      </div>
+
                     </div>
 
                     <div class="form-group col-md-6 text-right">
 
                       <label class="saned_para" for="contactpersonposition">جهة الاتصال</label>
 
-                      <input type="text" autocomplete="off" maxlength="30"
-                      class="form-control col-md-8 text-right" id="contact_position"
-                        required [(ngModel)]="model.contact_desig" name="contact_position" #contact_desig="ngModel"
-                        pattern="[\s\S]*">
+                      <input type="text" autocomplete="off" maxlength="30" class="form-control col-md-8 text-right"
+                        id="contact_position" required [(ngModel)]="model.contact_desig" name="contact_position"
+                        #contact_desig="ngModel" pattern="[\s\S]*">
 
-                        <!-- <div [hidden]="!model.contact_desig" style="color:red">
+                      <!-- <div [hidden]="!model.contact_desig" style="color:red">
                             <div *ngIf="!contact_desig.errors.minlength">يُسمح بـ 20 حرفًا فقط</div>
                         </div> -->
-                    
+
                     </div>
 
                     <div class="form-group col-md-6 text-right">
                       <label class="saned_para" for="password">فاكس</label>
-                      <input type="text" autocomplete="off" class="form-control col-md-8 text-right" id="fax_no" maxlenght="30"
-                        required [(ngModel)]="model.contact_fax" name="contact_fax" #contact_fax="ngModel">
+                      <input type="text" autocomplete="off" class="form-control col-md-8 text-right" id="fax_no"
+                        maxlenght="30" required [(ngModel)]="model.contact_fax" name="contact_fax"
+                        #contact_fax="ngModel">
 
 
                     </div>
                     <div class="form-group col-md-6 text-right">
-                      <label class="saned_para" for="confirmpassword">رقم الاتصال (المحمول)<span class="req" style="color: #f54b5e;">*
+                      <label class="saned_para" for="confirmpassword">رقم الاتصال (المحمول)<span class="req"
+                          style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="text" autocomplete="off" class="form-control col-md-8 text-right" name="contact_no_mobile"
-                        [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel" pattern="^[6-9]\d{9}$"
-                         [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }"
+                      <input type="text" autocomplete="off" class="form-control col-md-8 text-right"
+                        name="contact_no_mobile" [(ngModel)]="model.contant_mobile" #contant_mobile="ngModel"
+                        pattern="^[6-9]\d{9}$" [ngClass]="{ 'is-invalid': f.submitted && contant_mobile.invalid }"
                         required (keyup)="contactNo_mobile()" />
 
-                        <div [hidden]="!model.contant_mobile" style="color:red">
-                            <div *ngIf="!contant_mobile.valid">الرجاء إدخال اسم صالح</div>
-                          </div>
+                      <div [hidden]="!model.contant_mobile" style="color:red">
+                        <div *ngIf="!contant_mobile.valid">الرجاء إدخال اسم صالح</div>
+                      </div>
 
                       <div *ngIf="f.submitted && contant_mobile.invalid" class="saned_para-1">
                         <div *ngIf="contant_mobile.errors.required">الرجاء إدخال رقم الهاتف النقال</div>
@@ -256,33 +298,34 @@ section.sec2 {
                     </div>
 
                     <div class="form-group col-md-6 text-right">
-                      <label class="saned_para" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label> 
-                      <input type="email" autocomplete="off" class="form-control col-md-8 text-right" id="company_email_id"
-                        passvalidator="password" required [(ngModel)]="model.company_email" name="company_email_id"
-                        maxlength="30"
-                        #company_email="ngModel"  pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                      <label class="saned_para" for="confirmpassword">عنوان البريد الإلكتروني للشركة</label>
+                      <input type="email" autocomplete="off" class="form-control col-md-8 text-right"
+                        id="company_email_id" passvalidator="password" required [(ngModel)]="model.company_email"
+                        name="company_email_id" maxlength="30" #company_email="ngModel"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-                        <div [hidden]="company_email.valid || !model.company_email" class="saned_para-1"
+                      <div [hidden]="company_email.valid || !model.company_email" class="saned_para-1"
                         style="color: #f54b5e;">
                         عنوان البريد الإلكتروني غير صالح
                       </div>
 
-                    
+
 
                     </div>
 
                     <div class="form-group col-md-6 text-right">
-                      <label class="saned_para" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span class="req"
-                          style="color: #f54b5e;">*
+                      <label class="saned_para" for="confirmpassword">عنوان البريد الإلكتروني لشخص الاتصال<span
+                          class="req" style="color: #f54b5e;">*
                         </span></label>
 
-                      <input type="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control col-md-8 text-right"
-                        name="contact_email" [(ngModel)]="model.contact_email" #contact_email="ngModel" maxlength="30"
-                         [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }"
-                        required />
+                      <input type="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        class="form-control col-md-8 text-right" name="contact_email" [(ngModel)]="model.contact_email"
+                        #contact_email="ngModel" maxlength="30"
+                        [ngClass]="{ 'is-invalid': f.submitted && contact_email.invalid }" required />
 
 
-                      <div [hidden]="contact_email.valid || !model.contact_email" class="saned_para-1" style="color: #f54b5e;">
+                      <div [hidden]="contact_email.valid || !model.contact_email" class="saned_para-1"
+                        style="color: #f54b5e;">
                         عنوان البريد الإلكتروني غير صالح
                       </div>
 
@@ -297,8 +340,9 @@ section.sec2 {
 
                     <div class="form-group col-md-6 text-right">
                       <label class="saned_para" for="confirmpassword">عنوان موقع ويب</label>
-                      <input type="email" autocomplete="off" class="form-control col-md-8" id="website_add" required 
-                        [(ngModel)]="model.website_add" maxlength="30" name="website_add" #website_add="ngModel" pattern="[wW]{3}\.[a-z0-9.-]{3,}\.[a-z]{2,}$" >
+                      <input type="email" autocomplete="off" class="form-control col-md-8" id="website_add" required
+                        [(ngModel)]="model.website_add" maxlength="30" name="website_add" #website_add="ngModel"
+                        pattern="[wW]{3}\.[a-z0-9.-]{3,}\.[a-z]{2,}$">
 
                       <div [hidden]="!model.website_add" style="color:red">
                         <div *ngIf="!website_add.valid">الرجاء إدخال عنوان ويب صالح </div>
@@ -312,8 +356,9 @@ section.sec2 {
 
                     <div class="text-center mt-4">
 
-                      <button type="submit" style="background-color: #ff0000;padding: 8px 20px;" onclick="document.getElementById('id01').style.display='none'"
-                        class="btn Rectangle-5-Copy" (click)="supplierregister(model)">
+                      <button type="submit" style="background-color: #ff0000;padding: 8px 20px;"
+                        onclick="document.getElementById('id01').style.display='none'" class="btn Rectangle-5-Copy"
+                        (click)="supplierregister(model)">
                         <font color="white">خضع</font>
                       </button>
 
