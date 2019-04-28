@@ -14,7 +14,13 @@
 .head{
   font-family: Roboto;
 font-size: 45px;
-color: #ffffff;
+color: #333;
+line-height: normal;
+}
+.heading{
+  font-family: Roboto;
+font-size: 45px;
+color: white;
 line-height: normal;
 }
 

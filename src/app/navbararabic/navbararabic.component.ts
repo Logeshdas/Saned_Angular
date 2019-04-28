@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-navbararabic',
   templateUrl: './navbararabic.component.html',
@@ -7,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbararabicComponent implements OnInit {
   navbarOpen = false;
- 
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
@@ -15,7 +15,12 @@ export class NavbararabicComponent implements OnInit {
 
   localVar;
 
-  constructor() { }
+
+
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

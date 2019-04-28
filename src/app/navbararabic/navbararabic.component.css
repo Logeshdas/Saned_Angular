@@ -49,10 +49,38 @@ display: none
 .color_white{
   color: white !important;
 }
+.ml_32{
+  margin-left: 32px;
+}
+.mr_6{
+  margin-right: -29px;
+}
+.mr_76{
+  margin-right: -64px;
+}
+.mr_92{
+  margin-right: -68px;
+}
+.mr_42{
+  margin-right: -51px;
+}
   /* ===========navbar start========= */
 .Rectangle-2 {
-  width: 137px;
+  /* width: 137px; */
   height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.rec-dropdown{
+  /* width: 137px;
+  height: 41px; */
   border-radius: 5px;
   color:white !important;
   font-family: Roboto !important;
@@ -78,9 +106,13 @@ display: none
   letter-spacing: normal;
 }
 
+.mr_30{
+  margin-right:-39px 
+}
+
 .Rectangle-cnct{
-  width: 106px;
-  margin-right: -33px;
+  /* width: 106px; */
+  margin-right: 1px;
   height: 41px;
   border-radius: 5px;
   color:white !important;
@@ -227,7 +259,7 @@ display: none
   margin-top: 0px;
 }
 .wt_237{
-width: 237px;
+/* width: 237px; */
 }
 .wt_220{
   width: 81px;
@@ -279,13 +311,21 @@ width: 140% !important;
 .mr_10{
   margin-right: -10px;
 }
-
+/* === */
+.wt_178{
+  width: 177px;
+  text-align: right !important;
+}
+.txt_allign{
+  text-align: right !important;
+}
 }
 /* css for ipad */
 @media screen and (min-device-width: 768px) and (max-device-width: 1022px){
 .nav-bg {
   /* background-color: rgba(0, 0, 0, 0.65) !important; */
 }
+
 .mr_18{
   margin-right: 18px;
 }
@@ -344,7 +384,9 @@ padding:1 22px !important;
 .wt_106{
   width: 106% !important;
 }
-
+.mr_145{
+  margin-right: -145px;
+}
 
 }
 @media screen and (max-device-width: 1024px){
@@ -364,6 +406,7 @@ width: 135px !important;
 .ml_135{
   margin-left: 0px !important;
 }
+
   /* .ml_16{
     margin-left: -16px !important;
   } */

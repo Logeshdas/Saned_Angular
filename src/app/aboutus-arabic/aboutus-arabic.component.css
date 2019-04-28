@@ -639,9 +639,18 @@ li[_ngcontent-c1] {
 
 .head{
   font-family: Roboto;
-font-size: 45px;
-color: #ffffff;
+  font-size: 35px;
+color:  #333;
 line-height: normal;
+
+}
+.heading{
+  font-family: Roboto;
+  font-size: 35px;
+color: floralwhite;
+line-height: normal;
+
+
 }
 
 

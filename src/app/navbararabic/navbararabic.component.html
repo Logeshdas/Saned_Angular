@@ -7,48 +7,74 @@
 
   <div class="ml-5">
     <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navigation col-md-12 ml-5 navbar-nav nav-bg pt-120 wt-228" style="font-size: 18px; color: black;">
-
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 ">
-          <a routerLink="/login-arbic" class="nav-link  Rectangle-3 wt_152 text-right">الصفحة الرئيسية</a>
-        </li>
-
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 wt_237">
-          <a routerLink="/aboutus-arabic" class="nav-link Rectangle-2 ml_147 mr_18 text-right">معلومات عنا
-          </a>
-        </li>
-
-        <!-- =============bootstrap navbar=====start====== -->
-        <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
-          <div class=" nav-link dropdown text-right" style="margin-top: -9px;
-                     ">
-            <button class="btn btn-primary-dark dropdown-toggle Rectangle-service mr_24 mr_10" type="button"
-              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <font style="color:white" class="text-right">خدمات</font>
-            </button>
-            <div (click)="toggleNavbar()" class="dropdown-menu txt_rgt mr_79" aria-labelledby="dropdownMenuButton"
-              style="background:rgba(0, 0, 0, 0.63);">
-              <a class="dropdown-item " routerLink="/amanservices-arabic">
-                <font style="color:white">أمـــــان</font>
+      <div class="col-md-2"></div>
+      <ul class="navbar-nav nav-bg pt-120 wt-228 mr_145">
+        <div class="col-md-4">
+          <li class="nav-item Rectangle-cnct wt_178">
+            <a class="nav-link" routerLink="/login-arbic">
+              <font color="white">
+                الصفحة الرئيسية
+              </font>
+            </a>
+          </li>
+        </div>
+        <div class="col-md-3">
+          <li class="nav-item Rectangle-cnct txt_allign">
+            <a class="nav-link" routerLink="/aboutus-arabic">
+              <font color="white">
+                معلومات عنا
+              </font>
+            </a>
+          </li>
+        </div>
+        <div class="col-md-3">
+          <li class="nav-item dropdown Rectangle-cnct txt_allign">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <font color="white">
+                خدمات
+              </font>
+            </a>
+            <div class="dropdown-menu" style="background:rgba(0, 0, 0, 0.63);" dir="rtl"
+              aria-labelledby="navbarDropdown">
+              <a class="dropdown-item Rectangle-cnct txt_allign" routerLink="/amanservices-arabic">
+                <font color="white">
+                  أمـــــان
+                </font>
               </a>
-              <a class="dropdown-item" routerLink="/salamaservices-arabic">
-                <font style="color:white">سلامة</font>
+              <a class="dropdown-item Rectangle-cnct txt_allign" routerLink="/salamaservices-arabic">
+                <font color="white">
+                  سلامة
+                </font>
               </a>
-              <a class="dropdown-item" routerLink="/facilityarabic">
-                <font style="color:white">إدارة المرافق المتكاملة</font>
+              <a class="dropdown-item Rectangle-cnct txt_allign" routerLink="/facilityarabic">
+                <font color="white">
+                  إدارة المرافق المتكاملة
+                </font>
               </a>
             </div>
-          </div>
-        </li>
+          </li>
+        </div>
+        <div class="col-md-2">
+          <li class="nav-item Rectangle-cnct txt_allign">
+            <a class="nav-link" routerLink="/supplier-register-arabic">
+              <font color="white">
+                الموردين
+              </font>
 
-        <!-- =============bootstrap navbar===end======== -->
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 mt_20 text-right">
-          <a routerLink="/supplier-register-arabic" class="nav-link Rectangle-2">الموردين</a>
-        </li>
-        <li (click)="toggleNavbar()" class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16 text-right">
-          <a routerLink="/contactus-arabic" class="nav-link Rectangle-2">اتصل بنا
-          </a>
-        </li>
+
+            </a>
+          </li>
+        </div>
+        <div class="col-md-2">
+          <li class="nav-item Rectangle-cnct txt_allign" style="width: 100px;">
+            <a class="nav-link " routerLink="/contactus-arabic">
+              <font color="white">
+                اتصل بنا
+              </font>
+            </a>
+          </li>
+        </div>
       </ul>
     </div>
 
