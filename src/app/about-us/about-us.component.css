@@ -18,6 +18,13 @@
     height: 100vh;
   }
 
+  .head1{
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: #ffffff;
+  } 
   .bg_img1 {
     background: url("/assets/newbg.png")no-repeat center center;
     background-size: cover;
